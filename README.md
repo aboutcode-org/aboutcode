@@ -20,4 +20,6 @@ Each project has its own repository:
 
 - TraceCode-build: this is a tool to analyze the traced execution of a build, so you can learn which files are built into binaries and ultimately deployed in your distributed software. It uses strace https://github.com/strace/strace/ to which we contribute to trace system calls on Linux and reconstruct a build graph from syscalls to find which file is used to build a binary. Maintained by @pombredanne 
 
--ABCD: or AboutCode Data is a simple set of convention to define data structures that all the AboutCode tools can understand and use to exachnge data together. The upcoming specification will live in this repository.
+- Conan: stands for "CONtainer ANalysis" and is a tool to analyze the straucture and provenance of software component in Docker images using static analysis. https://github.com/pombredanne/conan Maintained by @pombredanne 
+
+- ABCD: or AboutCode Data is a simple set of convention to define data structures that all the AboutCode tools can understand and use to exachnge data together. The upcoming specification will live in this repository.
