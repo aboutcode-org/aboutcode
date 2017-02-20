@@ -8,7 +8,9 @@
   
 The main homepage lives at http://aboutcode.org
 
-Each project has its own repository:
+Interest in the Google Summer of Code 2017: See https://github.com/nexB/aboutcode/wiki/GSOC-2017
+
+Each AboutCode project has its own repository:
 
 - ScanCode: this the scanner to detect the origin and license of code and its dependencies as a command line tool. https://github.com/nexB/scancode-toolkit . The lead maintainer is @pombredanne
 
