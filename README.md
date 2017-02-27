@@ -9,7 +9,8 @@ All these are questions that are important to find answers to when there are mil
 
 The main homepage lives at http://aboutcode.org
 
-Interest in the Google Summer of Code 2017: AboutCode has been accepted as a mentoring organization in 2017: https://summerofcode.withgoogle.com/organizations/
+Interested in the Google Summer of Code 2017: AboutCode has been accepted as a mentoring organization in 2017: https://summerofcode.withgoogle.com/organizations/
+
 See https://github.com/nexB/aboutcode/wiki/GSOC-2017 for details.
 
 Each AboutCode project has its own repository:
