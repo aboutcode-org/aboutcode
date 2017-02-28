@@ -55,7 +55,8 @@ technology-specific.
 Recently there have been efforts to collect and expose more data such
 as:
 
--  libraries.io (a catalog of packages, AGPL-licensed),
+-  libraries.io (a catalog of packages, AGPL-licensed) 
+   and dependencyci.com its companion commercial service,
 -  versioneye.com (a catalog of package versions updates, now
    MIT-licensed),
 -  softwarearchive.org (an effort to build an all-encompassing software
@@ -116,7 +117,7 @@ or software installation nor is it to compute the resolution of
 dependencies. It only provides information (metadata) about the code.
 
 The vision for the ABC Data structure is to provide a common way to
-exchange data about code between all nexB  tools, such that these tools
+exchange data about code between all nexB tools, such that these tools
 can all import and export data about code seamlessly (TraceCode,
 ScanCode, AboutCode Manager, AttributeCode, upcoming MineCode, etc.).
 The ABCD structure should also be the preferred way to exchange data
@@ -251,7 +252,7 @@ Name conventions
    underscores. Names cannot start with a number. Names cannot contain
    spaces nor other punctuation, not even a dot or period.
 
--  Names are NOT case sensitive:  upper or lowercase does not matter and
+-  Names are NOT case sensitive: upper or lowercase does not matter and
    the standard is to use lowercase. It is a mistake to use upper or
    mixed case but this is something a parser receiving ABC Data should
    recover from nicely by converting the names to lowercase.
