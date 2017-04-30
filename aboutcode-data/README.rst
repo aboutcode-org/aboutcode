@@ -61,7 +61,7 @@ as:
    MIT-licensed),
 -  softwarearchive.org (an effort to build an all-encompassing software
    source code archive),
--  sources.debian.net (a Debian-focused code and metadata serach
+-  sources.debian.net (a Debian-focused code and metadata search
    facility),
 -  searchcode.com (an add-supported source code search engine exposing
    some metadata)
@@ -110,7 +110,7 @@ software code.
 
 In contrast with other approaches, the AboutCode Data structure is
 focused on providing data that is useful to users first and is not
-limited to software package data only. AboutCode Data does not need not
+limited to software package data only. AboutCode Data need not
 be as strictly specified as traditional package manager data formats
 because its purpose is not to drive a software build, package creation
 or software installation nor is it to compute the resolution of
@@ -123,7 +123,7 @@ ScanCode, AboutCode Manager, AttributeCode, upcoming MineCode, etc.).
 The ABCD structure should also be the preferred way to exchange data
 about code between nexB tools and other tools. We may create small
 adapters to convert other data formats in and out of the ABCD structure
-and encourage other tool authors to natively support ABC Data though
+and encourage other tool authors to natively support ABC Data, though
 the main focus is on our tools.
 
 The ABCD structure is technology and programming language neutral and
@@ -183,8 +183,8 @@ And these secondary, important but less prominent object types:
    role relationship such as owner, author, maintainer, etc.
 
 -  License(s): information about the license of code. A License
-   typically has a name and text and additional categories, tags or
-   attributes.
+   typically has a name, text and additional categories. (tags or
+   attributes).
 
 
 Each of these objects has a few identifying attributes and eventually
@@ -299,9 +299,9 @@ Name conventions
 
 -  An attribute names without a value is not needed. Only names with
    values are needed, and attributes without values can be omitted: each
-   tool may do what it wants for these cases. For instance it may handy
+   tool may do what it wants for these cases. For instance it may be handy
    to provide all attributes even if not defined in an API payload. But
-   when serializing data as YAML meant for human editing, including all
+   when serializing data as YAML, meant for human editing, including all
    empty values may not help with reading and processing the YAML text.
    An undefined attribute without a set value should be assigned with
    the null JSON value: this has the same meaning as if the attribute
@@ -309,7 +309,7 @@ Name conventions
    that an attribute has an empty value and does not have a value (as
    opposed to have an unknown value) use an empty string instead.
 
--  Avoid abbreviated names, with some exceptions: names should be always
+-  Avoid abbreviated names, with some exceptions. Names should always be
    fully spelled out except for:
 
     -  url: uniform resource locator
@@ -354,7 +354,7 @@ Well known attribute names include:
    pairs where the name is an algorithm such as sha1 and the value is a
    checksum in hexadecimal such as "sha1": "asasa231212" . The value is
    the standard/default string created by command line tools such as
-   sha1sum. Supported algorithm may evolve over time. Common checksums
+   sha1sum. Supported algorithms may evolve over time. Common checksums
    include md5, sha1, sha256, sha512.
 -  notes: some text notes. This is an exception to the singular/plural
    rule for names: notes is a single text field and not a list.
@@ -421,21 +421,21 @@ for the value type or meaning:
 Object identifiers
 ------------------
 
-We like objects to be identifiable: there is a natural way to identify
-and name most objects: for instance the full name of a person or
+We like objects to be identifiable. There is a natural way to identify
+and name most objects: for instance, the full name of a person or
 organization or the name and version of a Component or Package or the
-path to a File are all natural identifiers to an object.
+path to a File, are all natural identifiers to an object.
 
 However, natural names are not always enough to fully identify an object
 and may need extra context to reference an object unambiguously. There
 could be several persons or organizations with the same name at a
-different address.. Or the foo-1.4 Package could be available as a
+different address. Or the foo-1.4 Package could be available as a
 public RubyGem and also as an NPM; or a private Python package foo-1.4
 has been created by a company and is also available on Pypi. Or the
 "foo" Package is the name of a Linux Package, an NPM and a Ruby Package
 but these three packages are for unrelated components.
 
-Hence each object may need several attributes to be fully identified.
+Hence each object may need several attributes to be fully identifiable.
 
 For example, public package managers ensure that a name is unique within
 the confines of a source. "logging" is the unique name of a single
@@ -450,7 +450,7 @@ guaranteed to be unique is enough to ensure proper identification. This
 "source" is easily identified by its internet source name, and an
 internet source name is guaranteed to be unique globally. The "source"
 of identifiers is not mandatory but it is strongly encouraged to use as
-an attribute to provide good unique identifiers: still, tools exchanging
+an attribute to provide good unique identifiers. Still, tools exchanging
 ABC Data must be able to exchange under-specified and partially
 identified data and may sometimes rely on comparing many attributes of
 two objects to decide if they are the same.
@@ -480,14 +480,14 @@ object. For example:
 
 -  For all object types, we can use a URN
    (https://en.wikipedia.org/wiki/Uniform_resource_name) Tools may
-   also define their own URNs namespaces and names such as a DejaCode
-   urn as is urn:dje:component:16fusb:1.0
+   also define their own URNs, namespaces and names such as a DejaCode
+   urn is, urn:dje:component:16fusb:1.0
 
 
 
 Beyond direct identification, an object may have several alternative
-identifiers aka "external references". For instance a Package may have
-different names and slightly different versions in the Linux Debian or
+identifiers, aka "external references". For instance a Package may have
+different names and slightly different versions in the Linux, Debian or
 Fedora distros and a Pypi Package with yet another name where all these
 Packages are for the same Component and the same code. Or a Party such
 as the Eclipse Foundation may be named differently in DejaCode and the
@@ -497,11 +497,11 @@ To support these cases, the "external_reference(s)" attribute can be
 used where needed in any object to reference one or more external
 identifiers and what is the source for this identifier (note: "external"
 is really a matter of point of view of who owns or produces the ABC
-Data.)  An attribute with name suffix of "xxx_reference" may also be
-used to provide a simpler external reference such as "approval_reference".
+Data).  An attribute with name suffix of "xxx_reference" may also be
+used to provide a simpler external reference, such as "approval_reference".
 
 
-For example this ABC Data could describe the external id of Party to a
+For example, this ABC Data could describe the external id of Party to a
 CPE and to TechnoPedia (here in a YAML format)::
 
     parties:
@@ -516,7 +516,7 @@ CPE and to TechnoPedia (here in a YAML format)::
             - source: googlecode.com
               identifier: apache-foundation
 
-Other identifiers may be used as needed by some tools, such as
+Other identifiers may also be used, as needed by some tools, such as
 in hyperlinked APIs.
 
 
@@ -524,7 +524,7 @@ Organizing data and relationships
 ---------------------------------
 
 Describing relationships between objects is essential in AboutCode Data.
-There are two ways to describe these relationship: by referencing or by
+There are two ways to describe these relationships: by referencing or by
 embedding objects.
 
 When using a reference, you relate objects by providing identifiers to
@@ -533,8 +533,9 @@ lists. When embedding, you include not only the reference but also the
 related object details in another object data. This could include all
 data about an object or a subset as needed.
 
-For example this components list embeds a list of two packages. Note
-that components is always a list even when it has a single component::
+For example, this components list embeds a list of two packages. 
+
+Note: "components" is always a list, *even when it has a single component*::
 
     {"components": [{
         "source": "http://apache.org",
@@ -621,19 +622,19 @@ For example:
 -  A tool may prefer to provide data with products or components as top level
    objects. The components used in a Product are naturally embedded in the products.
 
--  A tool may be concerned more with files will provide files as top
-   level objects and may embed packages details when they are found for
+-  A tool concerned more with files, will provide files as top
+   level objects and may embed package details when they are found for
    a file or directory path.
 
 -  Another tool may focus on packages and provide packages first with
-   components references and possibly embedded files. A matching tool
+   component references and possibly embedded files. A matching tool
    may provide packages first and reference matched files. The file
    paths of a package are naturally embedded in the package, though
    using references may help keep the data simpler when there is a large
-   volume of files
+   volume of files.
 
--  A tool that generates attribution documentation may be interested
-   first by components and second by licenses or packages references.
+-  A tool that generates attribution documentation may interest
+   components first and licenses or packages references second.
 
 -  A tool dealing with security vulnerabilities may define a
    Vulnerability object and reference Packages and Files that are
@@ -744,7 +745,7 @@ References between documents and payload, embedding other files
 ---------------------------------------------------------------
 
 ABC Data may reference other data. For instance in a hyperlinked REST
-API a list of URLs to further invoke the API and get licenses details
+API a list of URLs to further invoke the API and get license' details
 may be provided with an api_url attribute to identify which API calls
 to invoke. The ways to reference data and the semantics and mechanics of
 each of these embeddings or references needed to get the actual data are
@@ -781,11 +782,11 @@ For consistency, tools consuming AboutCode Data are encouraged to use
 the same data structure internally and in their user interface to
 organize and name the data, but this is only a recommendation.
 
-For instance, the AtttributeCode tool use a convention to store ABC Data
-as YAML in a file with an .ABOUT extension and use the ABC Data structures
+For instance, the AttributeCode tool uses a convention to store ABC Data
+as YAML in a file with a .ABOUT extension and uses the ABC Data structures
 internally and externally.
 
-When exchanging data (for instance over an API) the API provider of ABC
+When exchanging data (for instance over an API), the API provider of ABC
 Data should support a request to return either embedded data or data by
 reference and ideally allow the caller to specify which objects and
 attributes it is interested in (possibly in the future using something
@@ -1027,7 +1028,7 @@ and referencing clues for files, directories and packages.
 
 Alternatively Packages could be extracted to an independent PackagedCode library.
 
-The changes will minimal impact onthe layout of the scan results. Here is an
+The changes will minimise impact on the layout of the scan results. Here is an
 example of a scan payload in ABCD format: this is essentially the standard scan
 format::
 
