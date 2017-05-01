@@ -633,8 +633,8 @@ For example:
    using references may help keep the data simpler when there is a large
    volume of files.
 
--  A tool that generates attribution documentation may interest
-   components first and licenses or packages references second.
+-  A tool that generates attribution documentation may focus
+   first on components and second on licenses or packages references.
 
 -  A tool dealing with security vulnerabilities may define a
    Vulnerability object and reference Packages and Files that are
