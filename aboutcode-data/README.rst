@@ -1028,7 +1028,7 @@ and referencing clues for files, directories and packages.
 
 Alternatively Packages could be extracted to an independent PackagedCode library.
 
-The changes will minimise impact on the layout of the scan results. Here is an
+The changes will minimize impact on the layout of the scan results. Here is an
 example of a scan payload in ABCD format: this is essentially the standard scan
 format::
 
