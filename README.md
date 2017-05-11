@@ -1,5 +1,5 @@
 # aboutcode
- AboutCode is an umbrella project to uncover data ... about software code:
+ AboutCode is an umbrella project to uncover data ... about software and code:
 
  - Where does it come from?
  - What is its license?
