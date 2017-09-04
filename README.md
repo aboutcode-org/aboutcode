@@ -19,7 +19,7 @@ Each AboutCode project has its own repository:
 
 - AboutCode Manager: This is a desktop application (based on Electron) to review the results of scans and help document conclusions. https://github.com/nexB/aboutcode-manager . The lead maintainer is @jdaguil
 
-- AttributeCode: This is a command line tool to document the provenance of code and generate attribution notices.  AttributeCode uses small yaml files to document code provenance inside a codebase. https://github.com/nexB/attributecode/ The lead maintainer @chinyeungli
+- AboutCode Toolkit: This is a set of command line tool to document the provenance of your code and generate attribution notices.  AboutCode Toolkit uses small yaml files to document code provenance inside a codebase. https://github.com/nexB/aboutcode-tookit/ The lead maintainer @chinyeungli
 
 - License Expression: this is a library to parse, analyze, compare and normalize SPDX and SPDX-like license expressions using a boolean logic expression engine. See https://spdx.org/spdx-specification-21-web-version#h.jxpfx0ykyb60 to understand what an expression is. See https://github.com/nexB/license-expression for the code. The underlying boolea engine live at https://github.com/bastikr/boolean.py . Both are co-maintained by @pombredanne
 
