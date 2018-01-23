@@ -9,9 +9,9 @@ These are important questions when there are millions of free and open source so
 
 Our homepage lives at http://aboutcode.org
 
-Interested in the Google Summer of Code 2017: AboutCode has been accepted as a mentoring organization in 2017: https://summerofcode.withgoogle.com/organizations/
+Interested in the Google Summer of Code 2018: AboutCode has been accepted as a mentoring organization in 2018:
 
-See https://github.com/nexB/aboutcode/wiki/GSOC-2017 for details.
+See https://github.com/nexB/aboutcode/wiki/GSOC-2018 for details.
 
 Each AboutCode project has its own repository:
 
@@ -19,11 +19,11 @@ Each AboutCode project has its own repository:
 
 - AboutCode Manager: This is a desktop application (based on Electron) to review the results of scans and help document conclusions. https://github.com/nexB/aboutcode-manager . The lead maintainer is @jdaguil
 
-- AboutCode Toolkit: This is a set of command line tool to document the provenance of your code and generate attribution notices.  AboutCode Toolkit uses small yaml files to document code provenance inside a codebase. https://github.com/nexB/aboutcode-toolkit . The lead maintainer @chinyeungli
+- AboutCode Toolkit: This is a set of command line tool to document the provenance of your code and generate attribution notices.  AboutCode Toolkit uses small yaml files to document code provenance inside a codebase. https://github.com/nexB/aboutcode-toolkit . The lead maintainer is @chinyeungli
 
 - License Expression: this is a library to parse, analyze, compare and normalize SPDX and SPDX-like license expressions using a boolean logic expression engine. See https://spdx.org/spdx-specification-21-web-version#h.jxpfx0ykyb60 to understand what an expression is. See https://github.com/nexB/license-expression for the code. The underlying boolea engine live at https://github.com/bastikr/boolean.py . Both are co-maintained by @pombredanne
 
-- TraceCode-build: this is a tool to analyze the trace files from a build, so that you can learn which files are built into binaries and  included in your deployment or distribution of software. It uses strace https://github.com/strace/strace/ to trace system calls on Linux and construct a build graph from syscalls to show which files are used to build a binary. We are contributors to strace. Maintained by @pombredanne
+- TraceCode Toolkit: this is a tool to analyze the trace files from a build, so that you can learn which files are built into binaries and  included in your deployment or distribution of software. It uses strace https://github.com/strace/strace/ to trace system calls on Linux and construct a build graph from syscalls to show which files are used to build a binary. We are contributors to strace. Maintained by @pombredanne
 
 - Conan: stands for "CONtainer ANalysis" and is a tool to analyze the structure and provenance of software components in Docker images using static analysis. https://github.com/pombredanne/conan Maintained by @pombredanne
 
