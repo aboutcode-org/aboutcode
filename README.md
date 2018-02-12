@@ -9,10 +9,6 @@ These are important questions when there are millions of free and open source so
 
 Our homepage lives at http://aboutcode.org
 
-Interested in the Google Summer of Code 2018?
-AboutCode has been accepted as a mentoring organization in 2018:
-See https://github.com/nexB/aboutcode/wiki/GSOC-2018 for details.
-
 Each AboutCode project has its own repository:
 
 - ScanCode Toolkit: This is a set of code scanning tools to detect the origin and license of code and dependencies. ScanCode now uses a plug-in architecture to run a series of scan-related tools in one process flow. https://github.com/nexB/scancode-toolkit . The lead maintainer is @pombredanne
