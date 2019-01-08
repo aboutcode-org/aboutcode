@@ -19,7 +19,7 @@ Each AboutCode project has its own repository:
 
 - TraceCode Toolkit: This is a set of tools to trace files from your deployment or distribution packages back to their origin in a development codebase or repository.  The primary tool uses strace https://github.com/strace/strace/ to trace system calls on Linux and construct a build graph from syscalls to show which files are used to build a binary. We are contributors to strace. Maintained by @pombredanne
 
-- Conan: stands for "CONtainer ANalysis" and is a tool to analyze the structure and provenance of software components in Docker images using static analysis. https://github.com/pombredanne/conan Maintained by @pombredanne
+- Conan: stands for "CONtainer ANalysis" and is a tool to analyze the structure and provenance of software components in Docker images using static analysis. https://github.com/nexB/conan Maintained by @pombredanne
 
 - License Expression: this is a library to parse, analyze, compare and normalize SPDX and SPDX-like license expressions using a boolean logic expression engine. See https://spdx.org/spdx-specification-21-web-version#h.jxpfx0ykyb60 to understand what an expression is. See https://github.com/nexB/license-expression for the code. The underlying boolea engine live at https://github.com/bastikr/boolean.py . Both are co-maintained by @pombredanne
 
