@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'AboutCode'
-copyright = 'Copyright 2019 AboutCode.org'
+copyright = '2019 AboutCode.org'
 author = 'AboutCode.org'
 
 
