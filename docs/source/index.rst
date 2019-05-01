@@ -9,6 +9,7 @@ Guide
 
    license
    help
+   doc_maintenance
 
 
 Tutorial Documents
