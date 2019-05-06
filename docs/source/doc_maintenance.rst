@@ -13,10 +13,20 @@ Clone AboutCode
 
 Create or identify a working directory on your local machine.
 
-Open that directory and execute the following commands in a terminal session::
+Open that directory and execute the following command in a terminal session::
 
     git clone https://github.com/nexB/aboutcode.git
-    git status
+
+That will create an /aboutcode directory in your working directory.
+Now you can install the dependencies in a virtualenv::
+
+    cd aboutcode
+    python3.6 -m venv .
+    source bin/activate
+    pip install Sphinx sphinx_rtd_theme
+
+Now you can build the HTML documents locally::
+
     cd docs
     make html
 
@@ -50,8 +60,8 @@ Share AboutCode Document Improvements
 Follow standard git procedures to upload your new and modified files. The following commands are examples::
 
     git status
-    git add docs/source/index.rst
-    git add docs/source/how-to-scan.rst
+    git add source/index.rst
+    git add source/how-to-scan.rst
     git status
     git commit -m "New how-to document that explains how to scan"
     git status
