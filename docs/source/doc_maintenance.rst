@@ -1,17 +1,27 @@
 Document Maintenance
 ====================
 
-Sphinx
-------
+Document Software Setup
+-----------------------
 
-Install Sphinx on your local machine.
-See http://www.sphinx-doc.org/en/master/usage/installation.html
+AboutCode documentation is built using Sphinx.
+See http://www.sphinx-doc.org/en/master/index.html
+
+AboutCode documentation is distributed using "Read the Docs".
+See https://readthedocs.org/
+
+Individual document files are in reStructuredText format.
+See http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
+
+You create, build, and preview AboutCode documentation on your local machine.
+
+You commit your updates to the AboutCode repository on GitHub, which triggers an automatic rebuild of https://aboutcode.readthedocs.io/en/latest/index.html
 
 
 Clone AboutCode
 ---------------
 
-Create or identify a working directory on your local machine.
+To get started, create or identify a working directory on your local machine.
 
 Open that directory and execute the following command in a terminal session::
 
@@ -23,6 +33,9 @@ Now you can install the dependencies in a virtualenv::
     cd aboutcode
     python3.6 -m venv .
     source bin/activate
+
+Now you can install Sphinx and the format theme used by readthedocs::
+
     pip install Sphinx sphinx_rtd_theme
 
 Now you can build the HTML documents locally::
@@ -30,7 +43,7 @@ Now you can build the HTML documents locally::
     cd docs
     make html
 
-Assuming that your Sphinx installation was successful, Sphinx should build a local instance of the documentaiton .html files::
+Assuming that your Sphinx installation was successful, Sphinx should build a local instance of the documentation .html files::
 
     open build/html/index.html
 
