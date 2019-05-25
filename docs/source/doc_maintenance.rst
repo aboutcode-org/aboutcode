@@ -45,7 +45,11 @@ Now you can build the HTML documents locally::
 
 Assuming that your Sphinx installation was successful, Sphinx should build a local instance of the documentation .html files::
 
-    open build/html/index.html
+    open build/html/index.
+
+In case this command did not work, for example on Ubuntu 18.04 you may get a message like “Couldn’t get a file descriptor referring to the console”, try: ::
+
+    see build/html/index.html
 
 You now have a local build of the AboutCode documents.
 
