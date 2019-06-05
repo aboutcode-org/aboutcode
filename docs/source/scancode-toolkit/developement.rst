@@ -50,7 +50,7 @@ Another useful option after a test run with some failures is to re-run only the 
 pip requirements and the configure script
 -----------------------------------------
 
-ScanCode use the ``configure`` and ``configure.bat`` (and ``etc/configure.py`` behind the scenes) scripts to install a virtualenv, install required packaged dependencies as pip requirements and more configure tasks such that ScanCode can be installed in a self-contained way with no network connectivity required.
+ScanCode use the ``configure`` and ``configure.bat`` (and ``etc/configure.py`` behind the scenes) scripts to install a `virtualenv <https://virtualenv.pypa.io/en/stable/>`_ , install required packaged dependencies as `pip <https://github.com/pypa/pip>`_ requirements and more configure tasks such that ScanCode can be installed in a self-contained way with no network connectivity required.
 
 Earlier unreleased versions of ScanCode where using ``buildout`` to install and configure eventually complex dependencies. We had some improvements that were merged in the upstream ``buildout`` to support bootstrapping and installing without a network connection and When we migrated to use ``pip`` and ``wheels`` as new, improved and faster way to install and configure dependencies we missed some of the features of ``buildout`` like the ``recipes``, being able to invoke arbitrary Python or shell scripts after installing packages and have scripts or requirements that are operating system-specific.
 

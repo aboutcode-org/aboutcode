@@ -1,5 +1,5 @@
-Scancode-Toolkit
-================
+Home
+====
 
 ScanCode is a tool to scan code and detect licenses, copyrights and more
 

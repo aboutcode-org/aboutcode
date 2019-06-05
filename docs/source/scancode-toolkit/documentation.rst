@@ -6,7 +6,7 @@ This page provides an index of current ScanCode user documentation.
 Download
 --------
 
-Download the latest release of ScanCode from our release page.
+Download the latest release of ScanCode from our `release page <https://github.com/nexB/scancode-toolkit/releases.>`_ 
 
 Installation
 ------------
