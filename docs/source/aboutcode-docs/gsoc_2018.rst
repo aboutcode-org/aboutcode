@@ -1,0 +1,4 @@
+Google Summer of Code 2018
+==========================
+
+See :ref:`contributor_project_ideas`.

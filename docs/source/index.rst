@@ -5,10 +5,13 @@ Guide
 *****
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    scancode-toolkit/index
    scancode-workbench/index
+   aboutcode-data/abcd
+   aboutcode-docs/home
+   deltacode/index
    license
    help
    doc_maintenance

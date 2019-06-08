@@ -1,3 +1,5 @@
+.. _license_policy_plugin:
+
 License Policy Plugin
 =====================
 
