@@ -1,7 +1,6 @@
 ABOUT File Specification v3.1.2
 ===============================
 
-
 Purpose
 -------
 
@@ -21,7 +20,7 @@ versions of a software component.
 
 
 Getting Started
----------------
+~~~~~~~~~~~~~~~
 
 A simple and valid ABOUT file named httpd.ABOUT may look like this::
 
@@ -64,7 +63,7 @@ an ABOUT file proper, external files can contain UTF-8 Unicode.
 
 
 ABOUT file name
-~~~~~~~~~~~~~~~
+---------------
 
 An ABOUT file name can use a limited set of characters and is suffixed with a
 ".ABOUT" extension using any combination of uppercase and lowercase characters.
@@ -129,8 +128,8 @@ For instance::
      software component that additional continuation line is used.
 
 
-When a field value contains more than one line of text,  a 'literal block'
-(using |) is need.
+      When a field value contains more than one line of text,  a 'literal block'
+      (using |) is need.
 
 For instance::
 
