@@ -1,28 +1,55 @@
 Document Maintenance
 ====================
 
-Sphinx
-------
+Document Software Setup
+-----------------------
 
-Install Sphinx on your local machine.
-See http://www.sphinx-doc.org/en/master/usage/installation.html
+AboutCode documentation is built using Sphinx.
+See http://www.sphinx-doc.org/en/master/index.html
+
+AboutCode documentation is distributed using "Read the Docs".
+See https://readthedocs.org/
+
+Individual document files are in reStructuredText format.
+See http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
+
+You create, build, and preview AboutCode documentation on your local machine.
+
+You commit your updates to the AboutCode repository on GitHub, which triggers an automatic rebuild of https://aboutcode.readthedocs.io/en/latest/index.html
 
 
 Clone AboutCode
 ---------------
 
-Create or identify a working directory on your local machine.
+To get started, create or identify a working directory on your local machine.
 
-Open that directory and execute the following commands in a terminal session::
+Open that directory and execute the following command in a terminal session::
 
     git clone https://github.com/nexB/aboutcode.git
-    git status
+
+That will create an /aboutcode directory in your working directory.
+Now you can install the dependencies in a virtualenv::
+
+    cd aboutcode
+    python3.6 -m venv .
+    source bin/activate
+
+Now you can install Sphinx and the format theme used by readthedocs::
+
+    pip install Sphinx sphinx_rtd_theme
+
+Now you can build the HTML documents locally::
+
     cd docs
     make html
 
-Assuming that your Sphinx installation was successful, Sphinx should build a local instance of the documentaiton .html files::
+Assuming that your Sphinx installation was successful, Sphinx should build a local instance of the documentation .html files::
 
     open build/html/index.html
+
+In case this command did not work, for example on Ubuntu 18.04 you may get a message like “Couldn’t get a file descriptor referring to the console”, try: ::
+
+    see build/html/index.html
 
 You now have a local build of the AboutCode documents.
 
@@ -50,8 +77,8 @@ Share AboutCode Document Improvements
 Follow standard git procedures to upload your new and modified files. The following commands are examples::
 
     git status
-    git add docs/source/index.rst
-    git add docs/source/how-to-scan.rst
+    git add source/index.rst
+    git add source/how-to-scan.rst
     git status
     git commit -m "New how-to document that explains how to scan"
     git status

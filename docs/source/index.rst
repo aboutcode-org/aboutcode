@@ -5,8 +5,10 @@ Guide
 *****
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
+   scancode-toolkit/index
+   scancode-workbench/index
    license
    help
    doc_maintenance
