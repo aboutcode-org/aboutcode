@@ -9,6 +9,7 @@ Guide
 
    scancode-toolkit/index
    scancode-workbench/index
+   aboutcode-toolkit/index
    license
    help
    doc_maintenance
