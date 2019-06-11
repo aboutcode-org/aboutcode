@@ -8,6 +8,5 @@ The attributes you add (e.g., Name, Version, Owner, License Expression, Copyrigh
 .. toctree::
    :maxdepth: 3
 
-   scancode_workbench_views
-   building
-   platform_support
+   basics/index
+   tutorials/index

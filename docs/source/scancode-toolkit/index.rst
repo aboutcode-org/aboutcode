@@ -12,5 +12,8 @@
    ide_configaration
    licence_policy_plugin
    roadmap
-   runtime_performance_report
    support
+   runtime_performance_reports
+   plugin_architecture
+   gsoc_17_final_report
+   how_to/index

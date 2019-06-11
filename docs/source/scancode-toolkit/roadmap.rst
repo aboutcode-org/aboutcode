@@ -183,9 +183,9 @@ Other
 - |white_check_mark| conversion of scan results to CSV
 - |white_check_mark| improved error handling, verbose and diagnostic output
 
-.. |white_check_mark| image:: done.png
+.. |white_check_mark| image:: data/done.png
 	:scale: 10 %
-.. |white_large_square| image:: planned.png
+.. |white_large_square| image:: data/planned.png
 	:scale: 10 %
-.. |clock1030| image:: clock.png
+.. |clock1030| image:: data/clock.png
 	:scale: 10 %
