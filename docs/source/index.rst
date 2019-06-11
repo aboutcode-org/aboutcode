@@ -11,6 +11,7 @@ Guide
    scancode-workbench/index
    aboutcode-data/abcd
    aboutcode-docs/home
+   aboutcode-toolkit/index
    deltacode/index
    license
    help
