@@ -46,7 +46,7 @@ The meaning of this ABOUT file is:
 - The home URL for this component is http://httpd.apache.org
 
 - The file "httpd-2.4.3.tar.gz" was originally downloaded from
-  http://archive.apache.org/dist/httpd/httpd-2.4.3.tar.gz
+  ``http://archive.apache.org/dist/httpd/httpd-2.4.3.tar.gz``
 
 - In the same directory, "apache-2.0.LICENSE" and "httpd.NOTICE" are files that
   contain respectively the license text and the notice text for this component.
@@ -209,7 +209,7 @@ Field referencing a URL
 
 The value of a field may reference URLs such as a homepage or a download. In
 this case the field name is suffixed with "_url" and the field value must be a
-valid absolute URL starting with ftp://, http:// or https://. URLs are
+valid absolute URL starting with ``ftp://``, ``http://`` or ``https://``. URLs are
 informational and the content they may reference is ignored. For example, a
 download URL is referenced this way::
 

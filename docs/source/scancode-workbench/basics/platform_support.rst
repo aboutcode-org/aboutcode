@@ -46,7 +46,8 @@ Our approach for platform support is to focus on one primary release for each of
 
 Electron Supported Platforms
 ----------------------------
-https://electron.atom.io/docs/tutorial/supported-platforms/
+
+https://electronjs.org/docs/tutorial/support#supported-platforms
 
 The following platforms are supported by Electron:
 

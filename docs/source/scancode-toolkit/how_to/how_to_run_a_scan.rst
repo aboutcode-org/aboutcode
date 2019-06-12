@@ -43,7 +43,7 @@ Static html output
 
 Scan the ``samples`` directory for licenses and copyrights and save the scan results to an HTML file.  When the scan is done, open ``samples.html`` in your web browser.
 
-.. code-block::
+::
 
    ./scancode --format html samples samples.html
 

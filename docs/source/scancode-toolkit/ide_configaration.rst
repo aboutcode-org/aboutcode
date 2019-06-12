@@ -1,7 +1,7 @@
 IDE Configuration
 =================
 
-The instructions below assume that you followed the `steps to set up a development environment <https://github.com/nexB/scancode-toolkit/wiki/FAQ#how-to-get-started-with-development>`_ including a python virtualenv.
+The instructions below assume that you followed the :ref:`scancode_toolkit_faq_how_to_get_started_with_developement` including a python virtualenv.
 
 PyCharm
 -------

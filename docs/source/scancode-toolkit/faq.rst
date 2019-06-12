@@ -110,6 +110,8 @@ More (advanced) rules options:
 
 	license_choice: yes
 
+.. _scancode_toolkit_faq_how_to_get_started_with_developement:
+
 How to get started with development?
 ------------------------------------
 
@@ -138,7 +140,7 @@ To run the tests faster on four processors in parallel run::
 
 	py.test -n 4
 
-See also https://github.com/nexB/scancode-toolkit/wiki/Development#running-tests for more details
+See also :ref:`scancode_toolkit_developement_running_tests` for more details
 
 More info:
 

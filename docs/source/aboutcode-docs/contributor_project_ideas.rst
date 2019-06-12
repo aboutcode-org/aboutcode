@@ -189,8 +189,7 @@ as a 2017 GSoC project) and rename it as the AboutCode server.
 The features of this updated server would be:
 
 
-- Store any ABC data including ScanCode scans See
-  https://github.com/nexB/aboutcode/tree/master/aboutcode-data)
+- Store any ABC data including ScanCode scans See :ref:`aboutcode_data`
 
 - Organize the data in projects (including possibly user-private projects)
 

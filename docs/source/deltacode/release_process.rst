@@ -6,7 +6,7 @@ Steps to cut a new release:
 
 run bumpversion with major, minor or patch to bump the version in:
 
-.. code-block::
+::
 
    src/deltacode/__init__.py
    setup.py
@@ -15,14 +15,14 @@ run bumpversion with major, minor or patch to bump the version in:
 Update the CHANGELOG.rst
 commit changes and push changes to develop:
 
-.. code-block::
+::
 
    git commit -m "commit message"
    git push --set-upstream origin develop
 
 merge develop branch in master and tag the release.
 
-.. code-block::
+::
 
    git checkout master
    git merge develop

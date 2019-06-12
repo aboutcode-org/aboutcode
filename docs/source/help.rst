@@ -18,7 +18,7 @@ AboutCode Projects
 
 - `license-expression <https://github.com/nexB/license-expression/>`_: This is a library to parse, analyze, compare and normalize SPDX-like license expressions using a boolean logic expression engine. See https://spdx.org/spdx-specification-21-web-version#h.jxpfx0ykyb60 to understand what a license expression is. See https://github.com/nexB/license-expression for the code. The underlying boolean engine is at https://github.com/bastikr/boolean.py . Both are co-maintained by @pombredanne
 
-- `ABCD aka AboutCode Data <https://github.com/nexB/aboutcode/blob/master/aboutcode-data/README.rst>`_: is a simple set of conventions to define data structures that all the AboutCode tools can understand and use to exchange data. The specification lives in this repository. .ABOUT files and ScanCode tooklit data are examples of this approach. Other projects such as https://libraries.io and `OSS Review Toolkit <https://github.com/heremaps/oss-review-toolkit>`_ also use these conventions.
+- `ABCD aka AboutCode Data <https://github.com/AyanSinhaMahapatra/aboutcode/blob/master/docs/source/aboutcode-data/abcd.rst>`_: is a simple set of conventions to define data structures that all the AboutCode tools can understand and use to exchange data. The specification lives in this repository. .ABOUT files and ScanCode tooklit data are examples of this approach. Other projects such as https://libraries.io and `OSS Review Toolkit <https://github.com/heremaps/oss-review-toolkit>`_ also use these conventions.
 
 - `DeltaCode <https://github.com/nexB/deltacode>`_ is a command line tool to compare scans and determine if and where there are material differences that affect licensing. The lead maintainer is @majurg
 

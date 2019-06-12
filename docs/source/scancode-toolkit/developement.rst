@@ -24,6 +24,8 @@ We write tests, a lot of tests, thousands of tests. Several tests are data-drive
 
 When finding bugs or adding new features, we add tests. See existing test code for examples.
 
+.. _scancode_toolkit_developement_running_tests:
+
 Running tests
 -------------
 

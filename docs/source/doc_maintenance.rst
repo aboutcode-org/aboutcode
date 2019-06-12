@@ -71,6 +71,13 @@ Review your work::
     make html
     open build/html/index.html
 
+AboutCode uses Travis-CI to test build status and check links, so run this script at your local system before creating a Pull Request. 
+
+::
+
+    cd docs
+    ./scripts/sphinx_build_link_check.sh
+
 Share AboutCode Document Improvements
 -------------------------------------
 
