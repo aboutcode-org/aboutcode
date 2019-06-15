@@ -29,6 +29,13 @@ How-To Documents
 
 How-To documents explain how to accomplish specific tasks.
 
+.. warning:: How-to articles in this sections are being to be documented. Refrain from using it.
+
+.. toctree::
+   :maxdepth: 1
+
+   scancode-toolkit/how-to/discover_licenses
+   scancode-toolkit/how-to/how_to_take_advantage_of_license_policy_support
 
 Reference Documents
 ===================
