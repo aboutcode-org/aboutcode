@@ -1,0 +1,11 @@
+sudo: false
+language: python
+python:
+    - "3.6"
+install:
+    - pip install Sphinx sphinx_rtd_theme 
+before_install:
+  - chmod +x ./docs/scripts/sphinx_build_link_check.sh
+script:
+  - cd docs 
+  - ./scripts/sphinx_build_link_check.sh

@@ -64,7 +64,7 @@ Core features
 - |white_large_square| scan baselining, delta scan and failure conditions (such as license change, etc) (will be spawned as its own DeltaCode project)
 - |white_large_square| dedupe and similarities to avoid re-scanning. For now only identical files are scanned only once.
 - |white_large_square| Improved logging, tracing and error diagnostics
-- |clock1030| native support for ABC Data (See https://github.com/nexB/aboutcode/blob/master/aboutcode-data/README.rst )
+- |clock1030| native support for ABC Data (See :ref:`aboutcode_data` )
 
 Classification, summarization and deduction
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
