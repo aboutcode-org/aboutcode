@@ -6,46 +6,56 @@ How to Run a Scan
 Quickstart
 ----------
 
+
 ScanCode results are provided as:
 
+1. JSON file (default)
+2. html (static html)
+3. csv
 
-#. JSON file (default)
-#. html (static html)
+The basic usage is::
 
-The basic usage is:
+    ./scancode [OPTIONS] <OUTPUT FORMAT(S)> <input>
 
-::
+  OUTPUT FORMAT(S)::
+    --json FILE             Write scan output as compact JSON to FILE.
+    --json-pp FILE          Write scan output as pretty-printed JSON to FILE.
+    --json-lines FILE       Write scan output as JSON Lines to FILE.
+    --csv FILE              Write scan output as CSV to FILE.
+    --html FILE             Write scan output as HTML to FILE.
+    --custom-output FILE    Write scan output to FILE formatted with the custom
+                            Jinja template file.
+    --custom-template FILE  Use this Jinja template FILE as a custom template.
+    --spdx-rdf FILE         Write scan output as SPDX RDF to FILE.
+    --spdx-tv FILE          Write scan output as SPDX Tag/Value to FILE.
+    --html-app FILE         (DEPRECATED: use the ScanCode Workbench app instead
+                            ) Write scan output as a mini HTML application to
+                            FILE.
 
-   ./scancode [OPTIONS] <input> <output_file>
+The ``<input>`` file or directory is what will be scanned for origin clues. The results will be saved to the ``FILE``.
 
-
-**Note: On Windows use scancode instead of ./scancode**
-
-The ``<input>`` file or directory is what will be scanned for origin clues. The results will be saved to the ``<output_file>``.
-The output file format is set by using the ``-f`` or ``--format`` option. The default output format is JSON.
 
 The following example scans will show you how to run a scan with each of the result formats. For the scans, we will use the ``samples`` directory provided with the ScanCode Toolkit.
 
-JSON file output
-----------------
+**Note: On Windows use scancode instead of ./scancode**
 
-Scan the ``samples`` directory and save the scan to a JSON file:
+**JSON file output**
 
-::
+Scan the ``samples`` directory and save the scan to a sample JSON file::
 
-   ./scancode --format json samples samples.json
+    ./scancode --json samples.json samples
 
 
-.. image:: scancode-toolkit-json-output.png
+.. figure:: scancode-toolkit-json-output.png
+   :width: 700px
 
-Static html output
-------------------
+**Static html output**
 
-Scan the ``samples`` directory for licenses and copyrights and save the scan results to an HTML file.  When the scan is done, open ``samples.html`` in your web browser.
+Scan the ``samples`` directory for licenses and copyrights and save the scan results to an HTML file.  When the scan is done, open ``samples.html`` in your web browser::
 
-::
+    ./scancode --html samples.html samples
 
-   ./scancode --format html samples samples.html
-
-.. image:: scancode-toolkit-static-html1.png
-.. image:: scancode-toolkit-static-html2.png
+.. figure:: scancode-toolkit-static-html1.png
+   :width: 700px
+.. figure:: scancode-toolkit-static-html2.png
+   :width: 700px
