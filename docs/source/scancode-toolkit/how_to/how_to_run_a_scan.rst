@@ -36,6 +36,7 @@ The ``<input>`` file or directory is what will be scanned for origin clues. The 
 
 The following example scans will show you how to run a scan with each of the result formats. For the scans, we will use the ``samples`` directory provided with the ScanCode Toolkit.
 
+**Note: On Windows use scancode instead of ./scancode**
 
 **JSON file output**
 
