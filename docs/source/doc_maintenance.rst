@@ -87,7 +87,7 @@ Follow standard git procedures to upload your new and modified files. The follow
     git add source/index.rst
     git add source/how-to-scan.rst
     git status
-    git commit -m "New how-to document that explains how to scan"
+    git commit -s -m "New how-to document that explains how to scan"(to You need to sign-off every commits)
     git status
     git push
     git status
