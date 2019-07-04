@@ -31,7 +31,7 @@ To scan for licenses, copyrights, urls, emails, package information, and file in
 
 ::
 
-   ./scancode -clip -e -u --format html-app samples samples.html
+   ./scancode -clip -e -u --html samples.html samples
 
 
 
@@ -40,7 +40,7 @@ Scan for license and copyright clues:
 
 ::
 
-   ./scancode -cl --format html-app samples samples.html
+   ./scancode -cl --html samples.html samples
 
 
 Scan for emails and URLs:
@@ -48,7 +48,7 @@ Scan for emails and URLs:
 
 ::
 
-   ./scancode -e -u --format html-app samples samples.html
+   ./scancode -e -u --html samples.html samples
 
 
 Scan for package information:
@@ -56,7 +56,7 @@ Scan for package information:
 
 ::
 
-   ./scancode -p --format html-app samples samples.html
+   ./scancode -p --html samples.html samples
 
 
 Scan for file information:
@@ -64,7 +64,7 @@ Scan for file information:
 
 ::
 
-   ./scancode -i --format html-app samples samples.html
+   ./scancode -i --html samples.html samples
 
 
 To see more example scans:
