@@ -13,7 +13,6 @@ Guide
    aboutcode-docs/home
    deltacode/index
    aboutcode-toolkit/index
-   deltacode/index
    license
    help
    doc_maintenance
