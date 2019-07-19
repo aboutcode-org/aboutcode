@@ -60,3 +60,11 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
 master_doc = 'index'
+
+# To stop docstrings inheritance.
+autodoc_inherit_docstrings = False
+
+# The name of the Pygments (syntax highlighting) style to use.
+pygments_style = 'sphinx'
+
+html_theme = 'classic'
