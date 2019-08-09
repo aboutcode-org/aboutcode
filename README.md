@@ -12,6 +12,13 @@ Our homepage lives at http://aboutcode.org
 
 Our documentation (in progress) lives at https://aboutcode.readthedocs.io/en/latest/ 
 
+AboutCode Group Email Addresses:
+•    Post: AboutCode@groups.io
+•    Join: https://groups.io/g/AboutCode/join
+•    Subscribe: AboutCode+subscribe@groups.io
+•    Unsubscribe: AboutCode+unsubscribe@groups.io
+•    Group Owner: AboutCode+owner@groups.io
+
 Each AboutCode project has its own repository:
 
 - **[ScanCode Toolkit](https://github.com/nexB/scancode-toolkit)**: This is a set of code scanning tools to detect the origin and license of code and dependencies. ScanCode now uses a plug-in architecture to run a series of scan-related tools in one process flow. This is the most popular projects and is used by 100's of software teams. https://github.com/nexB/scancode-toolkit . The lead maintainer is @pombredanne
