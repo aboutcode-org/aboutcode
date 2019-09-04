@@ -31,7 +31,7 @@ That will create an /aboutcode directory in your working directory.
 Now you can install the dependencies in a virtualenv::
 
     cd aboutcode
-    python3.6 -m venv .
+    virtualenv -p /usr/bin/python3.6 docs-venv
     source bin/activate
 
 Now you can install Sphinx and the format theme used by readthedocs::
