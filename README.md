@@ -10,6 +10,10 @@ AboutCode is a suite of tools to uncover data ... about software and code:
 
 These are important questions when there are millions of free and open source software components available on the web.
 
+### Documentation Build Status
+
+[![Build Status](https://travis-ci.org/nexB/aboutcode.svg?branch=master)](https://travis-ci.org/nexB/aboutcode)
+
 ### Important Links 
 
 Our homepage lives at http://aboutcode.org
