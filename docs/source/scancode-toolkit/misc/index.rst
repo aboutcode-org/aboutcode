@@ -5,7 +5,6 @@
    :maxdepth: 2
 
    faq
-   help
    support
    perf_report
    plugin_arch
