@@ -59,10 +59,13 @@ Core features
 - |white_check_mark| scan plugins (e.g. plugins that run a scan to collect data)
 - |clock1030| support Python 3 #295
 - |clock1030| transparent archive extraction (as opposed to on-demand with extractcode)
-- |clock1030| scancode.yml configuration file for exclusions, defaults, scan failure conditions, etc.
+- |clock1030| scancode.yml configuration file for exclusions, defaults, scan failure conditions,
+  etc.
 - |white_large_square| support scan pipelines and rules to organize more complex scans
-- |white_large_square| scan baselining, delta scan and failure conditions (such as license change, etc) (will be spawned as its own DeltaCode project)
-- |white_large_square| dedupe and similarities to avoid re-scanning. For now only identical files are scanned only once.
+- |white_large_square| scan baselining, delta scan and failure conditions (such as license change,
+  etc) (will be spawned as its own DeltaCode project)
+- |white_large_square| dedupe and similarities to avoid re-scanning. For now only identical files
+  are scanned only once.
 - |white_large_square| Improved logging, tracing and error diagnostics
 - |clock1030| native support for ABC Data (See :ref:`aboutcode_data` )
 
@@ -82,7 +85,7 @@ Compiled code support (will be spawned as their own tool)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - |clock1030| ELFs : parsing complete in https://github.com/nexB/scancode-toolkit-contrib/
-- |clock1030| Java byte code : parsing complete in https://github.com/nexB/scancode-toolkit-contrib/
+- |clock1030| Java bytecode : parsing complete in https://github.com/nexB/scancode-toolkit-contrib/
 - |clock1030| Windows PE : parsing complete in https://github.com/nexB/scancode-toolkit-contrib/
 - |clock1030| Mach-O : parsing complete in in https://github.com/nexB/scancode-toolkit-contrib/
 - |white_large_square| Dalvik/dex
@@ -117,15 +120,19 @@ CI integration
 Other work in progress
 ----------------------
 
-- ScanCode server: Spawned as its own project: https://github.com/nexB/scancode-server . Will include Integration / webhooks for Github, Bitbucket.
+- ScanCode server: Spawned as its own project: https://github.com/nexB/scancode-server. Will
+  include Integration / webhooks for Github, Bitbucket.
 - VulnerableCode: NVD and CVE lookups: Spawned as its own project: https://github.com/nexB/vulnerablecode
-- ScanCode Workbench: desktop app for scan review: Spawned as its own project: https://github.com/nexB/scancode-workbench
-- DependentCode: dynamic dependencies resolutions: Spawned as its own project: https://github.com/nexB/dependentcode
+- ScanCode Workbench: desktop app for scan review: Spawned as its own project:
+  https://github.com/nexB/scancode-workbench
+- DependentCode: dynamic dependencies resolutions: Spawned as its own project:
+  https://github.com/nexB/dependentcode
 
 Package mining and matching
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-(Note that this will be spawned in its project) Some code is in https://github.com/nexB/scancode-toolkit-contrib/
+(Note that this will be spawned in its project)
+Some code is in https://github.com/nexB/scancode-toolkit-contrib/
 
 - |clock1030| exact matching
 - |clock1030| attribute-based matching
@@ -155,7 +162,8 @@ Ouputs and UI
 ^^^^^^^^^^^^^
 - |white_check_mark| JSON compact and pretty
 - |white_check_mark| plain HTML tables, also usable in a spreadsheet
-- |white_check_mark| fancy HTML 'app' with a file tree navigation, and scan results filtering, search and sorting
+- |white_check_mark| fancy HTML 'app' with a file tree navigation, and scan results filtering,
+  search and sorting
 - |white_check_mark| improved scans GUI now its own project: https://github.com/nexB/aboutcode-manager
 - |white_check_mark| simple scan summary
 - |white_check_mark| SPDX output
@@ -184,8 +192,8 @@ Other
 - |white_check_mark| improved error handling, verbose and diagnostic output
 
 .. |white_check_mark| image:: data/done.png
-	:scale: 10 %
+    :scale: 10 %
 .. |white_large_square| image:: data/planned.png
-	:scale: 10 %
+    :scale: 10 %
 .. |clock1030| image:: data/clock.png
-	:scale: 10 %
+    :scale: 10 %

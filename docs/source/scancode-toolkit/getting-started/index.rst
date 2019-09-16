@@ -9,9 +9,8 @@
    ide-config
    docs
    whats-new
-   
-..
 
-	[ToAdd]
-	releases
-	Link to Changelog
+..
+    [ToAdd]
+    releases
+    Link to Changelog

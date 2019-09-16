@@ -1,2 +1,2 @@
-Help text 
+Help text
 =========
