@@ -1,10 +1,9 @@
-**How To :**
-=============
+**Basic Tutorials**
+===================
 
 .. toctree::
    :maxdepth: 2
 
-   how_to_add_new_license_rules_for_enhanced_detection
    how_to_extract_archives
    how_to_format_scan_output
    how_to_run_a_scan
