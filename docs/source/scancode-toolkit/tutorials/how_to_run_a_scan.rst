@@ -21,10 +21,12 @@ The basic usage is:
 
 **Note: On Windows use scancode instead of ./scancode**
 
-The ``<input>`` file or directory is what will be scanned for origin clues. The results will be saved to the ``<output_file>``.
-The output file format is set by using the ``-f`` or ``--format`` option. The default output format is JSON.
+The ``<input>`` file or directory is what will be scanned for origin clues. The results will be
+saved to the ``<output_file>``. The output file format is set by using the ``-f`` or ``--format``
+option. The default output format is JSON.
 
-The following example scans will show you how to run a scan with each of the result formats. For the scans, we will use the ``samples`` directory provided with the ScanCode Toolkit.
+The following example scans will show you how to run a scan with each of the result formats. For
+the scans, we will use the ``samples`` directory provided with the ScanCode Toolkit.
 
 JSON file output
 ----------------
@@ -41,7 +43,8 @@ Scan the ``samples`` directory and save the scan to a JSON file:
 Static html output
 ------------------
 
-Scan the ``samples`` directory for licenses and copyrights and save the scan results to an HTML file.  When the scan is done, open ``samples.html`` in your web browser.
+Scan the ``samples`` directory for licenses and copyrights and save the scan results to an HTML
+file. When the scan is done, open ``samples.html`` in your web browser.
 
 ::
 

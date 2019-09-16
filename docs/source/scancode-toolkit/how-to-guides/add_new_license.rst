@@ -4,7 +4,9 @@ How To Add a New License for Detection
 How to add a new license for detection?
 ---------------------------------------
 
-To add new license, you first need to select a new and unique license key (mit and gpl-2.0 are some of the existing license keys). All licenses are stored as plain text files in the src/licensedcode/data/licenses directory using their key as part of the file names.
+To add new license, you first need to select a new and unique license key (mit and gpl-2.0 are
+some of the existing license keys). All licenses are stored as plain text files in the
+src/licensedcode/data/licenses directory using their key as part of the file names.
 
 You need to create a pair of files:
 
@@ -12,8 +14,8 @@ You need to create a pair of files:
 
 - a small text data file (in YAML format) named key.yml that contains license information such as::
 
-	key: my-license
-	name: My License
+    key: my-license
+    name: My License
 
 The key name can contain only these symbols:
 

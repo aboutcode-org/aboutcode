@@ -36,7 +36,7 @@ Now you can install the dependencies in a virtualenv::
 
 Now you can install Sphinx and the format theme used by readthedocs::
 
-    pip install Sphinx sphinx_rtd_theme
+    pip install Sphinx sphinx_rtd_theme doc8
 
 Now you can build the HTML documents locally::
 

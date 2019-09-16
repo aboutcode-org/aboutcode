@@ -7,7 +7,6 @@
    overview
 
 ..
-
    [ToAdd]
    file_collect_classify
    extract
@@ -17,7 +16,6 @@
    report
    integration
 
-.. 
-
-	[ToDo]
-	Each Section to Be Elaborated
+..
+   [ToDo]
+   Each Section to Be Elaborated

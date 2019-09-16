@@ -9,4 +9,3 @@
    contrib_doc
    roadmap
    gsoc_17_final_report
-   
