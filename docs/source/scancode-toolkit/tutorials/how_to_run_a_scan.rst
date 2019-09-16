@@ -36,7 +36,7 @@ Scan the ``samples`` directory and save the scan to a JSON file:
    ./scancode --format json samples samples.json
 
 
-.. image:: scancode-toolkit-json-output.png
+.. image:: data/scancode-toolkit-json-output.png
 
 Static html output
 ------------------
@@ -47,5 +47,5 @@ Scan the ``samples`` directory for licenses and copyrights and save the scan res
 
    ./scancode --format html samples samples.html
 
-.. image:: scancode-toolkit-static-html1.png
-.. image:: scancode-toolkit-static-html2.png
+.. image:: data/scancode-toolkit-static-html1.png
+.. image:: data/scancode-toolkit-static-html2.png
