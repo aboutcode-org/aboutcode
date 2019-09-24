@@ -11,23 +11,23 @@ ScanCode Toolkit:
    * - Syntax Option
      - Clue/Information
    * - -c, --copyright
-     - Scan for copyrights. [default]
+     - Scan for copyrights.
    * - -l, --license
-     - Scan for licenses. [default]
+     - Scan for licenses.
    * - -i, --info
-     - Scan for file information. [default]
+     - Scan for file information.
    * - -p, --package
-     - Scan for packages. [default]
+     - Scan for packages.
    * - -e, --email
      - Scan for emails.
    * - -u, --url
      - Scan for urls.
 
-
 The following examples will use the ``samples`` directory that is provided with the `ScanCode
 Toolkit code <https://github.com/nexB/scancode-toolkit/tree/master/samples>`_. All examples will
-be saved in the html-app format, which is a dynamic, interactive html page. The other formats
-options are a JSON file and a static html file. See :ref:`how_to_run_a_scan` for more information.
+be saved in the json format, which can be loaded into Scancode Workbench for visualization. See
+:ref:`how_to_visualize_scan_results` for more information. Another output formats option is a
+static html file. See :ref:`cli_output_format` for more information.
 
 Scan for all clues:
 -------------------
@@ -36,8 +36,7 @@ To scan for licenses, copyrights, urls, emails, package information, and file in
 
 ::
 
-   ./scancode -clip -e -u --format html-app samples samples.html
-
+   ./scancode -clipeu --json samples.json samples
 
 
 Scan for license and copyright clues:
@@ -45,7 +44,7 @@ Scan for license and copyright clues:
 
 ::
 
-   ./scancode -cl --format html-app samples samples.html
+   ./scancode -cl --json samples.json samples
 
 
 Scan for emails and URLs:
@@ -53,7 +52,7 @@ Scan for emails and URLs:
 
 ::
 
-   ./scancode -e -u --format html-app samples samples.html
+   ./scancode -eu --json samples.json samples
 
 
 Scan for package information:
@@ -61,7 +60,7 @@ Scan for package information:
 
 ::
 
-   ./scancode -p --format html-app samples samples.html
+   ./scancode -p --json samples.json samples
 
 
 Scan for file information:
@@ -69,7 +68,7 @@ Scan for file information:
 
 ::
 
-   ./scancode -i --format html-app samples samples.html
+   ./scancode -i --json samples.json samples
 
 
 To see more example scans:
