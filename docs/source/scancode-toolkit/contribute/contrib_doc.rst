@@ -1,3 +1,5 @@
+.. _contrib_doc_dev:
+
 Contributing to the Documentation
 =================================
 

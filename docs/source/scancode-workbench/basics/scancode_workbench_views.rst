@@ -1,3 +1,5 @@
+.. _workbench_views:
+
 Scancode Workbench Views
 ========================
 

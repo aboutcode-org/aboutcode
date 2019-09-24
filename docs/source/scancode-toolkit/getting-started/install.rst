@@ -17,6 +17,8 @@ System Requirements
     #. Mac: on recent Mac OSX (10.6.8 and up),
     #. Windows: on Windows 7 and up (32- or 64-bit) using a 32-bit Python.
 
+.. _install_prerequisites:
+
 Prerequisites
 -------------
 ScanCode needs a Python 2.7 interpreter.
@@ -52,6 +54,8 @@ ScanCode needs a Python 2.7 interpreter.
 Do not use Unicode, non-ASCII in your installation Path
 -------------------------------------------------------
 There is a bug in underlying libraries that prevent this.
+
+.. _install_scancode:
 
 Installation on Linux and Mac
 -----------------------------

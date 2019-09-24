@@ -1,3 +1,5 @@
+.. _contrib_code_dev:
+
 Contributing to Code Development
 ================================
 
