@@ -18,7 +18,7 @@ by default with Scancode.
     This tutorial is for Linux based systems presently. Additional Help for Windows/MacOS will be
     added.
 
-Setting up a Virtual Environment 
+Setting up a Virtual Environment
 --------------------------------
 
 Scancode Toolkit 3.1.1 and Workbench 3.1.0 is not compatible with python 3.x so we will create a
@@ -35,9 +35,9 @@ The following commands set up and activate the Virtual Environment ``venv-scan3.
 Setting up Scancode Toolkit
 ---------------------------
 
-Get the Scancode Toolkit Version 3.1.1 tarball or .zip archive from the 
+Get the Scancode Toolkit Version 3.1.1 tarball or .zip archive from the
 `Toolkit GitHub Release <https://github.com/nexB/scancode-toolkit/releases/tag/v3.1.1>`_ Page under
-assets options. Download and extract the Archive from command line: 
+assets options. Download and extract the Archive from command line:
 
 For .zip archive::
 
@@ -126,12 +126,12 @@ A Progress report is shown::
     Setup plugins...
     Collect file inventory...
     Scan files for: info, licenses, copyrights, packages, emails, urls with 2 process(es)...
-    [####################] 29                          
+    [####################] 29
     Scanning done.
     Summary:        info, licenses, copyrights, packages, emails, urls with 2 process(es)
     Errors count:   0
     Scan Speed:     1.09 files/sec. 40.67 KB/sec.
-    Initial counts: 49 resource(s): 36 file(s) and 13 directorie(s) 
+    Initial counts: 49 resource(s): 36 file(s) and 13 directorie(s)
     Final counts:   42 resource(s): 29 file(s) and 13 directorie(s) for 1.06 MB
     Timings:
       scan_start: 2019-09-24T203514.573671

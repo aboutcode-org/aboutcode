@@ -4,7 +4,7 @@ Getting Help from the Command Line
 Scancode-Toolkit Command Line Interface can help you to search for specific options or use cases
 from the command line itself. These are two options are ``--help`` and ``--examples``, and are
 very helpful if you need a quick glance of the options or use cases. Or it can be useful when you
-can't access the more elaborate online documentation.   
+can't access the more elaborate online documentation.
 
 .. _cli_help_text:
 
@@ -14,11 +14,11 @@ Help text
 The Scancode-Toolkit Command Line Interface has a Help option displaying all the options. It also
 displays basic usage, and some simple examples. The command line option for this is:
 
-- ``--help`` 
+- ``--help``
 
 .. Tip::
 
-    You can also use the shorter ``-h`` option, which does the same. 
+    You can also use the shorter ``-h`` option, which does the same.
 
 For Linux based systems the full command is::
 
@@ -32,8 +32,8 @@ And for windows, it will be like::
 
     Make sure you are in the Scancode Root Directory before carrying out this command. After
     extracting the ``.zip`` or ``.tar.bz`` file, the folder for Scancode-Toolkit version 3.1.1
-    will be named like "scancode-toolkit-3.1.1". 
- 
+    will be named like "scancode-toolkit-3.1.1".
+
 The Following Help Text is displayed, i.e. this is the help text for Scancode Version 3.1.1 ::
 
     Usage: scancode [OPTIONS] <OUTPUT FORMAT OPTION(s)> <input>...
@@ -221,7 +221,7 @@ The Following Help Text is displayed, i.e. this is the help text for Scancode Ve
 
 Command Examples Text
 ---------------------
- 
+
 The Scancode-Toolkit Command Line Interface has an examples option which displays some basic
 examples (more than the basic synopsis in ``--help``). These examples include the following aspects
 of code scanning:
@@ -235,7 +235,7 @@ of code scanning:
 
 The command line option for displaying these basic examples is:
 
-- ``--examples`` 
+- ``--examples``
 
 For Linux based systems the full command is::
 

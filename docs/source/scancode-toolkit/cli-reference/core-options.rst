@@ -51,7 +51,7 @@ Progress Message with ``--verbose``:
     Indexing time:   2s.
     Saving results.
 
-With the ``--quiet`` option enabled, nothing is printed on the Command Line. 
+With the ``--quiet`` option enabled, nothing is printed on the Command Line.
 
 ``--timeout`` Option
 --------------------
@@ -61,4 +61,4 @@ exceeds the specified timeout, that file isn't scanned anymore and the next file
 starts. This helps avoiding very large/long files, and saves time.
 
 Also the number(timeout in seconds) to be followed by this option can be a
-floating point number, i.e. 1.5467. 
+floating point number, i.e. 1.5467.

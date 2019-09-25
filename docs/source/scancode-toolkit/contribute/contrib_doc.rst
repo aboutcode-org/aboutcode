@@ -26,7 +26,7 @@ In the project root, run the following command::
 
 .. note::
 
-   Only the scancode-toolkit documentation style standards are enforced presently. 
+   Only the scancode-toolkit documentation style standards are enforced presently.
 
 A sample output is::
 

@@ -16,7 +16,7 @@ following options.
 ``--csv FILE``
 --------------
 
-Scancode can publish results in the useful ``.csv`` format. 
+Scancode can publish results in the useful ``.csv`` format.
 
 The following code performs a scan on the samples directory, and publishes the results in
 ``csv`` format.
@@ -100,14 +100,14 @@ earlier.
 
 .. image:: data/output_csv.png
 
-.. _output_html: 
+.. _output_html:
 
 ``--html FILE``
 ---------------
 
 Scancode supports formatting the Output result is a simple ``html`` format, which helps quick
 visualization of the detected licence/copyright and other main information in the form of
-tables. 
+tables.
 
 The following code performs a scan on the samples directory, and publishes the results in
 csv format.
@@ -153,7 +153,7 @@ tabs for the following:
 
 .. note::
 
-    The HTML app also contains a Search option to easily find what you are looking for. 
+    The HTML app also contains a Search option to easily find what you are looking for.
 
 .. WARNING::
 
@@ -173,7 +173,7 @@ tabs for the following:
 ---------------
 
 Among the Scancode Output Formats, ``json`` is the most important one, as Scancode Workbench and
-other applications that use Scancode Result data as input accept ``json``. 
+other applications that use Scancode Result data as input accept ``json``.
 
 .. note::
 
@@ -291,7 +291,7 @@ Default ``--json`` Output:
 
 `SPDX <https://spdx.org/>`_ stands for "Software Package and Data Exchange" and is an open standard
 for communicating software bill of material information (including components, licenses,
-copyrights, and security referances). 
+copyrights, and security referances).
 
 Learn more about SPDX specifications `here <https://spdx.org/specifications>`_ and in this GitHub
 `repository <https://github.com/spdx/spdx-spec>`_.

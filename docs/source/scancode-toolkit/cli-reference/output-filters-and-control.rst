@@ -13,7 +13,7 @@ and ``full-root`` options.
 
 These two changes only the "path" attribute of the file information. For this comparision we
 compare the "path" attributes of the file ``LICENSE`` inside ``JGroups`` directory. The path
-is 
+is:
 
 The default ::
 

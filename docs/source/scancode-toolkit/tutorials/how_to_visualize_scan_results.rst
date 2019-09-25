@@ -4,7 +4,8 @@ How to Visualize Scan results
 =============================
 
 In this simple tutorial example, we import results from a basic scan preformed on the ``samples``
-directory distributed by default with Scancode, and visualize the outputs through Scancode Workbench.
+directory distributed by default with Scancode, and visualize the outputs through
+Scancode Workbench.
 
 .. WARNING::
 
@@ -52,7 +53,7 @@ This opens the Workbench.
 Importing Data into Scancode Workbench
 --------------------------------------
 
-#. Click on the ``File -> Import JSON File`` or Press ``Ctrl + I``. 
+#. Click on the ``File -> Import JSON File`` or Press ``Ctrl + I``.
 
 #. Select the file from the pop-up window.
 
@@ -77,11 +78,11 @@ The dashboard has a general overview.
 
 .. image:: data/workbench_dashboard.png
 
-There are 3 principal views (They appear by the same order in the GIFs): 
+There are 3 principal views (They appear by the same order in the GIFs):
 
 - Chart Summary View,
-- Table View, 
-- Components Summary View. 
+- Table View,
+- Components Summary View.
 
 .. image:: data/views_sample.gif
 
@@ -98,7 +99,7 @@ Componets
 
 Refer :ref:`workbench_components` for more information on Components.
 
-In the table view, 
+In the table view,
 
 #. Apply filters by selecting Files/Directories
 #. Right Click on the Left Panel

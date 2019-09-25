@@ -18,7 +18,7 @@ A sample usage::
 Here, Scancode ignores files ending with `.java`, and continues with other files as usual.
 
 Glob pattern matching is useful for excluding a group of files, by using patterns in their names.
-For more information on Glob pattern matching refer these resources: 
+For more information on Glob pattern matching refer these resources:
 
     - `Linux Manual <http://man7.org/linux/man-pages/man7/glob.7.html>`_
     - `Wildcard Match Documentation <https://facelessuser.github.io/wcmatch/glob/>`_.

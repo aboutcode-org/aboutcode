@@ -13,7 +13,7 @@ The sections are as follows:
 - pre-scan
 - post-scan
 
-The order of the sections and all their options is the same as in the :ref:'cli_help_text', 
+The order of the sections and all their options is the same as in the :ref:'cli_help_text',
 available in the command line.
 
 .. _cli_basic:

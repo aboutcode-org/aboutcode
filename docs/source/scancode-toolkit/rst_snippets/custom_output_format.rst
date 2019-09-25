@@ -4,7 +4,7 @@ Custom Output Format
 While the three built-in output formats are convenient for a verity of use-cases, one may wish to
 create their own output template, using the following arguments::
 
-    ``--custom-output FILE --custom-template TEMP_FILE`` 
+    ``--custom-output FILE --custom-template TEMP_FILE``
 
 Scancode makes this very easy, as it uses the popular Jinja2 template engine. Simply pass the path
 to the custom template to the ``--custom-template`` argument, or drop it in a folder to

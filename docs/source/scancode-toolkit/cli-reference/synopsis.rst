@@ -1,7 +1,7 @@
 Synopsis
 ========
 
-ScanCode detects licenses, copyrights, package manifests and direct dependencies and more both 
+ScanCode detects licenses, copyrights, package manifests and direct dependencies and more both
 in source code and binary files, by scanning the files. This section shows and explains the
 following:
 
@@ -25,7 +25,7 @@ To scan the ``samples`` directory, the command will be::
 
 .. Note::
 
-    On Windows use ``scancode`` instead of ``./scancode`` 
+    On Windows use ``scancode`` instead of ``./scancode``
 
 .. Note::
 
@@ -85,7 +85,7 @@ file. When the scan is done, open ``samples.html`` in your web browser.
 
 ::
 
-   ./scancode -clp --html samples.html samples 
+   ./scancode -clp --html samples.html samples
 
 .. image:: data/scancode-toolkit-static-html1.png
 .. image:: data/scancode-toolkit-static-html2.png

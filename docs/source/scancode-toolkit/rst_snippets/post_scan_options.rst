@@ -34,7 +34,7 @@ Post-Scan Options
 
 --license-policy FILE    Load a License Policy file and apply it to
                          the scan at the Resource level.
- 
+
 --summary                Summarize license, copyright and other scans
                          at the codebase level.
 

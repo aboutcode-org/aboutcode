@@ -29,6 +29,6 @@ For more details on the html output format refer :ref:`output_html`.
 
 .. WARNING::
 
-    The ``--html-app`` option has been deprecated, use Scancode Workbench instead. 
+    The ``--html-app`` option has been deprecated, use Scancode Workbench instead.
 
 .. include::  /scancode-toolkit/rst_snippets/custom_output_format.rst

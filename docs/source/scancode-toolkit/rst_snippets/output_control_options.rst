@@ -3,7 +3,7 @@ Output Control Options
 
 --strip-root           Strip the root directory segment of all paths.
 
---full-root            Report full, absolute paths. 
+--full-root            Report full, absolute paths.
 
 .. note::
 
@@ -13,7 +13,7 @@ Output Control Options
 .. note::
 
     The default is to always include the last directory segment of the scanned path such that all
-    paths have a common root directory. 
+    paths have a common root directory.
 
 --ignore-author <pattern>       Ignore a file (and all its findings)
                                 if an author contains a match to the

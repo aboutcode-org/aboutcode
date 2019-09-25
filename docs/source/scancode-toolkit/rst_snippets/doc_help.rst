@@ -1,7 +1,7 @@
 Documentation/Help Options
 --------------------------
 
--h, --help               Show the :ref:`cli_help_text` and exit. 
+-h, --help               Show the :ref:`cli_help_text` and exit.
 
 --examples               Show the :ref:`cli_examples_text` and exit.
 
