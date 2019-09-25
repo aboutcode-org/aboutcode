@@ -18,6 +18,13 @@ Output Options
 --custom-template FILE  Use this Jinja template FILE as a custom
                         template.
 
+.. note::
+
+    ``--custom-template FILE`` and ``--custom-output FILE`` are used in a single command. As in the
+    command to generate results in a custom format will be:
+    ``./scancode -clpeui --custom-output sample.json --custom-template sample.html samples``
+    (format specified in sample.html using jinja template, and output file is sample.json)
+
 --spdx-rdf FILE         Write scan output as SPDX RDF to FILE.
 
 --spdx-tv FILE          Write scan output as SPDX Tag/Value to FILE.
