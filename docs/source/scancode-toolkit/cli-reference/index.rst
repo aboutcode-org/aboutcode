@@ -1,4 +1,4 @@
-**Command Line Interface Referance**
+**Command Line Interface Reference**
 ====================================
 
 .. toctree::
@@ -10,7 +10,7 @@
    simple-examples
 
 ..
-   [ToAdd]
+   [To-Add]
    core-options
    output-format
    output-filters-and-control

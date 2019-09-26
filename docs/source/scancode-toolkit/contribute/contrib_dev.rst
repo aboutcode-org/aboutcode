@@ -27,7 +27,7 @@ either using a checkout or a download, without needing a compiler and toolchain 
 The corresponding source code for the pre-built binaries are store in a separate repository at
 https://github.com/nexB/scancode-thirdparty-src.
 
-We store bundled thirdparty components and libraries in the ``thirdparty`` directory. Python
+We store bundled third-party components and libraries in the ``thirdparty`` directory. Python
 libraries are stored as wheels, eventually pre-built if the corresponding wheel is not available
 in the Pypi repository. Some of these components may be advanced builds with bug fixes or advanced
 patches.

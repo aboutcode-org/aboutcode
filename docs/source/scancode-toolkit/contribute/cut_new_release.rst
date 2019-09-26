@@ -28,7 +28,7 @@ How to cut a new release:
 - upload the release archives created in the ``dist/`` directory to the GitHub release page.
 
 - save the release as a draft. Use the previous release notes to create notes in the same style.
-  Ensure that the link to thirdparty source code is present.
+  Ensure that the link to third-party source code is present.
 
 - test the downloads.
 

@@ -1,7 +1,7 @@
 Contributing to the Documentation
 =================================
 
-Continious Integration
+Continuous Integration
 ----------------------
 
 The documentations are checked on every new commit through Travis-CI, so that common errors are
@@ -60,13 +60,13 @@ What is checked:
     - lines should not be longer than 100 characters - D001
 
         - RST exception: line with no whitespace except in the beginning
-        - RST exception: lines with http or https urls
+        - RST exception: lines with http or https URLs
         - RST exception: literal blocks
         - RST exception: rst target directives
 
     - no trailing whitespace - D002
     - no tabulation for indentation - D003
-    - no carriage returns (use unix newlines) - D004
+    - no carriage returns (use UNIX newlines) - D004
     - no newline at end of file - D005
 
 Extra Style Checks
@@ -87,7 +87,7 @@ Extra Style Checks
 
     -, for subsections
 
-    ^, for subsubsections
+    ^, for sub-subsections
 
     ", for paragraphs
 
@@ -128,6 +128,15 @@ Extra Style Checks
 
 5. Using ``:ref:`` only when necessary
 
-    Use ``:ref:`` to create internal links only when needed, i.e. it is referanced somewhere.
-    Do not create referances for all the sections and then only referance some of them, because
-    this created unnecessary referances. This also generates ERROR in ``restructuredtext-lint``.
+    Use ``:ref:`` to create internal links only when needed, i.e. it is referenced somewhere.
+    Do not create references for all the sections and then only reference some of them, because
+    this created unnecessary references. This also generates ERROR in ``restructuredtext-lint``.
+
+6. Spelling
+
+    You should check for spelling errors before you push changes. `Aspell <http://aspell.net/>`_
+    is a GNU project Command Line tool you can use for this purpose. Download and install Aspell,
+    then execute ``aspell check <file-name>`` for all the files changed. Be careful about not
+    changing commands or other stuff as Aspell gives prompts for a lot of them. Also delete the
+    temporary ``.bak`` files generated. Refer the `manual <http://aspell.net/man-html/>`_ for more
+    information on how to use.
