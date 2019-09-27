@@ -1,4 +1,6 @@
-# aboutcode
+# AboutCode Documentation
+
+### What is AboutCode
 
 AboutCode is a suite of tools to uncover data ... about software and code:
 
@@ -8,16 +10,27 @@ AboutCode is a suite of tools to uncover data ... about software and code:
 
 These are important questions when there are millions of free and open source software components available on the web.
 
+### Documentation Build Status
+
+[![Build Status](https://travis-ci.org/nexB/aboutcode.svg?branch=master)](https://travis-ci.org/nexB/aboutcode)
+
+### Important Links 
+
 Our homepage lives at http://aboutcode.org
 
 Our documentation (in progress) lives at https://aboutcode.readthedocs.io/en/latest/ 
 
-AboutCode Group Email Addresses:
-•    Post: AboutCode@groups.io
-•    Join: https://groups.io/g/AboutCode/join
-•    Subscribe: AboutCode+subscribe@groups.io
-•    Unsubscribe: AboutCode+unsubscribe@groups.io
-•    Group Owner: AboutCode+owner@groups.io
+AboutCode Documentation Group Email Addresses:
+
+- Join: https://groups.io/g/AboutCode/join
+- Post: AboutCode@groups.io
+- Subscribe: AboutCode+subscribe@groups.io
+- Unsubscribe: AboutCode+unsubscribe@groups.io
+- Group Owner: AboutCode+owner@groups.io
+
+If you want to get in touch with the team with issues other than documentation, head to the gitter channel [here](https://gitter.im/aboutcode-org/discuss).
+
+### Projects
 
 Each AboutCode project has its own repository:
 

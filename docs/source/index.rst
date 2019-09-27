@@ -1,51 +1,67 @@
 AboutCode Documentation
 =======================
 
-Guide
-*****
+Aboutcode Projects
+******************
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    scancode-toolkit/index
    scancode-workbench/index
-   aboutcode-data/abcd
+   deltacode/index
    aboutcode-docs/home
-   deltacode/index
    aboutcode-toolkit/index
-   deltacode/index
-   license
+   aboutcode-data/abcd
+
+Documentation Guide
+*******************
+
+.. toctree::
+   :maxdepth: 2
+   
    help
+   license
    doc_maintenance
 
 
 Tutorial Documents
-==================
+******************
 
-Tutorial documents provide specific instructions to help you get started.
+.. toctree::
+   :maxdepth: 2
+   
+   scancode-toolkit/tutorials/index
 
 
 How-To Documents
-================
+****************
 
-How-To documents explain how to accomplish specific tasks.
+.. toctree::
+   :maxdepth: 2
+   
+   scancode-toolkit/how-to-guides/index
 
 
 Reference Documents
-===================
+*******************
 
-Reference documents describe application concepts in depth.
+.. toctree::
+   :maxdepth: 2
+   
+   scancode-toolkit/cli-reference/index
 
 
 Discussion Documents
-====================
+********************
 
-Discussion documents provide insights into integration of the application into your own software development life cycle.
-
+.. toctree::
+   :maxdepth: 2
+   
+   scancode-toolkit/explanations/index
 
 Indices and Tables
-==================
+******************
 
 * :ref:`genindex`
 * :ref:`modindex`
-* :ref:`search`

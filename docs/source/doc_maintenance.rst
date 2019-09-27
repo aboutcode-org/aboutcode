@@ -31,12 +31,12 @@ That will create an /aboutcode directory in your working directory.
 Now you can install the dependencies in a virtualenv::
 
     cd aboutcode
-    python3.6 -m venv .
+    virtualenv -p /usr/bin/python3.6 docs-venv
     source bin/activate
 
 Now you can install Sphinx and the format theme used by readthedocs::
 
-    pip install Sphinx sphinx_rtd_theme
+    pip install Sphinx sphinx_rtd_theme doc8
 
 Now you can build the HTML documents locally::
 

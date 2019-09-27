@@ -5,7 +5,7 @@ What is good commit message? We want to avoid this: https://xkcd.com/1296/
 
 Read these articles:
 
-- by @cbeams https://chris.beams.io/posts/git-commit/
+- by @cbeams `How to Write a Git Commit Message <https://chris.beams.io/posts/git-commit/>`_
 - this README from Linus Torvalds https://github.com/torvalds/subsurface-for-dirk/blob/0f58510ce0244513521296b75281fcc32f72a931/README#L73
 - from the Git book: https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project
 

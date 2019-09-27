@@ -1,7 +1,9 @@
 How to set what will be detected in Scan
 ========================================
 
-ScanCode allows you to scan a codebase for license, copyright and other interesting information that can be discovered in files. The following options are available for detection when using ScanCode Toolkit:
+ScanCode allows you to scan a codebase for license, copyright and other interesting information
+that can be discovered in files. The following options are available for detection when using
+ScanCode Toolkit:
 
 .. list-table::
    :header-rows: 1
@@ -22,7 +24,10 @@ ScanCode allows you to scan a codebase for license, copyright and other interest
      - Scan for urls.
 
 
-The following examples will use the ``samples`` directory that is provided with the `ScanCode Toolkit code <https://github.com/nexB/scancode-toolkit/tree/master/samples>`_. All examples will be saved in the html-app format, which is a dynamic, interactive html page. The other formats options are a JSON file and a static html file. See :ref:`how_to_run_a_scan` for more information. 
+The following examples will use the ``samples`` directory that is provided with the `ScanCode
+Toolkit code <https://github.com/nexB/scancode-toolkit/tree/master/samples>`_. All examples will
+be saved in the html-app format, which is a dynamic, interactive html page. The other formats
+options are a JSON file and a static html file. See :ref:`how_to_run_a_scan` for more information.
 
 Scan for all clues:
 -------------------
