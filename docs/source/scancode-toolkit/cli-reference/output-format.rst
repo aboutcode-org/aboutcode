@@ -105,12 +105,12 @@ earlier.
 ``--html FILE``
 ---------------
 
-Scancode supports formatting the Output result is a simple ``html`` format, which helps quick
-visualization of the detected licence/copyright and other main information in the form of
-tables.
+Scancode supports formatting the Output result is a simple ``html`` format, to open with your
+favourite browser. This helps quick visualization of the detected licence/copyright and other main
+information in the form of tables.
 
 The following code performs a scan on the samples directory, and publishes the results in
-csv format.
+HTML format.
 
 ::
 
