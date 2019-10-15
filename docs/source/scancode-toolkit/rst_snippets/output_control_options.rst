@@ -5,30 +5,18 @@ Output Control Options
 
 --full-root            Report full, absolute paths.
 
-.. note::
-
-    The options ``--strip-root`` and ``--full-root`` can't be used together, i.e. any one option
-    may be used in a single scan.
-
-.. note::
-
-    The default is to always include the last directory segment of the scanned path such that all
-    paths have a common root directory.
+.. include::  /scancode-toolkit/rst_snippets/note_snippets/control_strip_full_root.rst
 
 --ignore-author <pattern>       Ignore a file (and all its findings)
                                 if an author contains a match to the
-                                <pattern> regular expression. Note
-                                that this will ignore a file even if
-                                it has other findings such as a
-                                license or errors.
+                                <pattern> regular expression.
 
 --ignore-copyright-holder <pattern>
                                 Ignore a file (and all its findings)
                                 if a copyright holder contains a match
                                 to the <pattern> regular expression.
-                                Note that this will ignore a file even
-                                if it has other scanned data such as a
-                                license or errors.
+
+.. include::  /scancode-toolkit/rst_snippets/note_snippets/control_ignore_author_copyright.rst
 
 --only-findings                 Only return files or directories with
                                 findings for the requested scans.

@@ -6,16 +6,14 @@ Post-Scan Options
                  and descendants. Count the number of source files in a
                  directory as a new source_file_counts attribute
 
-.. note::
-
-    The ``--mark-source`` option has no effect unless the ``--info`` scan is requested.
+.. include:: /scancode-toolkit/rst_snippets/note_snippets/post_mark_source.rst
 
 --consolidate            Group resources by Packages or license and
                          copyright holder and return those groupings
                          as a list of consolidated packages and a list
-                         of consolidated components. This requires the
-                         scan to have/be run with the copyright,
-                         license, and package options active
+                         of consolidated components.
+
+.. include:: /scancode-toolkit/rst_snippets/note_snippets/post_consolidate.rst
 
 --filter-clues           Filter redundant duplicated clues already
                          contained in detected license and copyright
@@ -25,12 +23,14 @@ Post-Scan Options
                          files that contain mostly license texts and
                          notices (e.g over 90% of the content).
 
-.. WARNING::
+.. include:: /scancode-toolkit/rst_snippets/note_snippets/post_is_license_text.rst
 
-    ``--is-license-text`` is an experimental Option.
+.. include:: /scancode-toolkit/rst_snippets/warning_snippets/post_is_license_text.rst
 
 --license-clarity-score  Compute a summary license clarity score at
                          the codebase level.
+
+.. include:: /scancode-toolkit/rst_snippets/note_snippets/post_license_clarity_score.rst
 
 --license-policy FILE    Load a License Policy file and apply it to
                          the scan at the Resource level.
