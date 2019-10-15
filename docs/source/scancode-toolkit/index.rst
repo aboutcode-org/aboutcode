@@ -1,4 +1,4 @@
-**Scancode-Toolkit Documentation**
+**ScanCode-Toolkit Documentation**
 ==================================
 
 .. toctree::

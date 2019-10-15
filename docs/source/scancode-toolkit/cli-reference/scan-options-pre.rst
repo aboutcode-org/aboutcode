@@ -173,5 +173,5 @@ facet.
 
 Important Links:
 
-- `Facet <https://github.com/clearlydefined/clearlydefined/blob/master/docs/clearly.md#facets>`_
+- `Facets <https://github.com/clearlydefined/clearlydefined/blob/master/docs/clearly.md>`_
 - `ClearlyDefined <https://clearlydefined.io/about>`_

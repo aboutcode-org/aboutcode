@@ -1,4 +1,4 @@
-**Command Line Interface Referance**
+**Command Line Interface Reference**
 ====================================
 
 .. toctree::

@@ -48,7 +48,7 @@ Copyrights
 - |white_check_mark| speed up copyright detection
 - |white_check_mark| improved detected lines range
 - |white_check_mark| streamline grammar of copyright parser
-- |white_check_mark| normalize holders and authors for summarization
+- |white_check_mark| normalize holders and authors for summarizing
 - |white_check_mark| normalize and streamline results data format
 
 Core features
@@ -158,8 +158,8 @@ Core scans
 - |white_check_mark| file information (size, type, etc.)
 - |white_check_mark| URLs, emails, authors
 
-Ouputs and UI
-^^^^^^^^^^^^^
+Outputs and UI
+^^^^^^^^^^^^^^
 - |white_check_mark| JSON compact and pretty
 - |white_check_mark| plain HTML tables, also usable in a spreadsheet
 - |white_check_mark| fancy HTML 'app' with a file tree navigation, and scan results filtering,
