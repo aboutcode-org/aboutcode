@@ -54,7 +54,8 @@ What is Checked
 ^^^^^^^^^^^^^^^
 
 PyCQA is an Organization for code quality tools (and plugins) for the Python programming language.
-Doc8 is a sub-project of the same Organization. Refer this `README <https://github.com/PyCQA/doc8/blob/master/README.rst>`_ for more details.
+Doc8 is a sub-project of the same Organization. Refer the `pypi page <https://pypi.org/project/doc8/>`_
+and this `README <https://github.com/PyCQA/doc8/blob/master/README.rst>`_ for more details.
 
 What is checked:
 
@@ -128,7 +129,13 @@ Extra Style Checks
     root, so file location can be used accordingly. This enables us to link documents from other
     upstream folders.
 
-5. Using ``:ref:`` only when necessary
+5. Notes and Warning Snippets
+
+    Every ``Note`` and ``Warning`` sections are to be kept in ``rst_snippets/note_snippets/`` and
+    ``rst_snippets/warning_snippets/`` and then included to eliminate redundancy, as these are
+    frequently used in multiple files.
+
+6. Using ``:ref:`` only when necessary
 
     Use ``:ref:`` to create internal links only when needed, i.e. it is referanced somewhere.
     Do not create referances for all the sections and then only referance some of them, because

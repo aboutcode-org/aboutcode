@@ -13,7 +13,3 @@
    output-filters-and-control
    scan-options-pre
    scan-options-post
-
-..
-  [ToDo]
-  1. [output-format] Comparing Different Formats (Advantages/Disadvantages)

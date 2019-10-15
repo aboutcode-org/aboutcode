@@ -21,7 +21,7 @@ The basic usage is::
 
 To scan the ``samples`` directory, the command will be::
 
-   ./scancode -clpiue --html samples.html samples
+   ./scancode -clieu --json-pp sample.json samples
 
 .. Note::
 
@@ -30,8 +30,8 @@ To scan the ``samples`` directory, the command will be::
 .. Note::
 
     The <OUTPUT FORMAT OPTION(s)> includes both the output option and output file name.
-    For example in ``./scancode -clpiue --html samples.html samples``, ``--html samples.html``
-    is <OUTPUT FORMAT OPTION(s)>.
+    For example in ``./scancode -clieu --json-pp sample.json samples``,
+    ``--json-pp sample.json`` is <OUTPUT FORMAT OPTION(s)>.
 
     So obviously there isn't a "Default" output option in Versions 3.x onwards, you have to
     specify <OUTPUT FORMAT OPTION(s)> explicitly.
