@@ -30,6 +30,10 @@ In descending order of importance, the categories are:
 #. ``removed``: A file has been removed from the ``old`` codebase.
 #. ``unmodified``: The file is contained in both the ``new`` and ``old`` codebase and has not been modified or moved.
 
+.. note:: 
+
+    Files are determined to be Moved by looping thru the `added` and `removed` Delta objects and checking their sha1 values.
+
 The score of a Delta object characterized as ``added`` or ``modified`` may be increased based on the detection of license- and/or copyright-related changes. See :ref:`license_additions_and_changes` and :ref:`copyright_holder_additions_and_changes` below.
 
 Delta Object Fields and Values
