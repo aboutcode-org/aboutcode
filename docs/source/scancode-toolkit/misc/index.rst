@@ -7,5 +7,3 @@
    faq
    support
    perf_report
-   plugin_arch
-   licence_policy_plugin

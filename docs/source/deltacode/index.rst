@@ -12,3 +12,4 @@ Welcome to Deltacode Documentation.
    development
    json_to_csv
    release_process
+   gsoc19_final_report

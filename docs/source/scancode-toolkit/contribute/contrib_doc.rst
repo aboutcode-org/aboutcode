@@ -26,7 +26,7 @@ In the project root, run the following command::
 
 .. note::
 
-   Only the scancode-toolkit documentation style standards are enforced presently. 
+   Only the scancode-toolkit documentation style standards are enforced presently.
 
 A sample output is::
 
@@ -143,3 +143,18 @@ Extra Style Checks
     temporary ``.bak`` files generated. Refer the `manual <http://aspell.net/man-html/>`_ for more
     information on how to use.
 
+7. Notes and Warning Snippets
+
+    Every ``Note`` and ``Warning`` sections are to be kept in ``rst_snippets/note_snippets/`` and
+    ``rst_snippets/warning_snippets/`` and then included to eliminate redundancy, as these are
+    frequently used in multiple files.
+
+Converting from Markdown
+------------------------
+
+If you want to convert a ``.md`` file to a ``.rst`` file, this `tool <https://github.com/chrissimpkins/md2rst>`_
+does it pretty well. You'd still have to clean up and check for errors as this contains a lot of
+bugs. But this is definately better than converting everything by yourself. 
+
+This will be helpful in converting GitHub wiki's (Markdown Files) to reStructuredtext files for
+Sphinx/ReadTheDocs hosting.
