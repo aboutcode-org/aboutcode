@@ -3,6 +3,9 @@
 Plugin Architecture
 ===================
 
+Notes: this is the initial design for ScanCode plugins. The actual architecture evolved and is
+different.
+
 Abstract:
 ---------
 
