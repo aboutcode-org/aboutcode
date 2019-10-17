@@ -16,8 +16,8 @@ An example of using ``--generated`` in a scan::
 
     ./scancode -clpieu --json-pp sample_generated.json samples --generated
 
-In the results, for each file the following attribute is added with it's corresponding True/False
-value ::
+In the results, for each file the following attribute is added with it's corresponding
+``true``/``false`` value ::
 
     "is_generated": true
 
@@ -102,8 +102,8 @@ visualized using ScanCode workbench in the License Info Dashboard.
 ``--license-text`` Options
 --------------------------
 
-The ``--license-text`` option includes in the scan result, the matched text for the detected
-license, under the attribute "matched text".
+With the --license-text option, the scan results attribute "matched text" includes the matched text
+for the detected license.
 
 An example matched text included in the results is as follows::
 
@@ -140,23 +140,26 @@ So, by default the license referance URL points to the dejacode page for that li
 
 A scan example using the ``--license-url-template TEXT`` option ::
 
-    ./scancode -clpieu --json-pp sample_lic_url_template.json samples --license-url-template https://opensource.org/licenses/{}
+    ./scancode -clpieu --json-pp sample_lic_url_template.json samples --license-url-template https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/{}
 
 In a normal scan, referance url for "ZLIB License" is as follows::
 
     "reference_url": "https://enterprise.dejacode.com/urn/urn:dje:license:zlib",
 
-After using ``--license-url-template https://opensource.org/licenses/{}`` the referance URL changes to::
+After using ``--license-url-template https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/{}`` the referance URL changes to::
 
-    "reference_url": "https://opensource.org/licenses/zlib",
+    "reference_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/zlib",
 
-The referance URL changes for all detected licenses in the scan, across the scan result file.
+The reference URL changes for all detected licenses in the scan, across the scan result file.
 
 ``--license-text-diagnostics`` Options
 --------------------------------------
 
 In the matched license text, include diagnostic highlights surrounding with square brackets []
 words that are not matched.
+
+In a normal scan, whole lines of text are included in the matched license text, including parts
+that are possibly unmatched. 
 
 Running a scan on the samples directory with ``--license-text --license-text-diagnostics`` options,
 causes the following differance in scan result of the file
