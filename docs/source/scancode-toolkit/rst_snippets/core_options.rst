@@ -1,5 +1,5 @@
-Core Options
-------------
+All "Core" Scan Options
+-----------------------
 
 -n, --processes INTEGER  Scan <input> using n parallel processes.
                          [default: 1]
@@ -23,3 +23,5 @@ Core Options
                          than in memory. Use 0 to use unlimited memory
                          and disable on-disk caching. Use -1 to use
                          only on-disk caching.  [default: 10000]
+
+.. include:: /scancode-toolkit/rst_snippets/note_snippets/core_indep.rst

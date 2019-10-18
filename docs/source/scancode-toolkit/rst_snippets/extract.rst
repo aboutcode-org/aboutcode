@@ -1,5 +1,5 @@
-Extractcode Options
--------------------
+All Extractcode Options
+-----------------------
 
 This is intended to be used as an input preperation step, before running the scan. Archives found
 inside an extracted archive are extracted **recursively** by default. Extraction is done in-place

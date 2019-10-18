@@ -1,18 +1,43 @@
-Basic Scan Type Options
------------------------
+All "Basic" Scan Options
+------------------------
 
 Option lists are two-column lists of command-line options and descriptions,
 documenting a program's options. For example:
 
--c, --copyright              Scan <input> for copyrights. **[default]**
+-c, --copyright              Scan <input> for copyrights.
 
--l, --license                Scan <input> for licenses. **[default]**
+                             Sub-Options:
 
--p, --package                Scan <input> for packages. **[default]**
+                             - ``--consolidate``
+
+-l, --license                Scan <input> for licenses.
+                             
+                             Sub-Options:
+                             
+                             - ``--consolidate``
+                             - ``--license-score INT``
+                             - ``--license-text``
+                             - ``--license-url-template TEXT``
+                             - ``--license-text-diagnostics``
+                             - ``--is-license-text``
+
+-p, --package                Scan <input> for packages.
+
+                             Sub-Options:
+
+                             - ``--consolidate``
 
 -e, --email                  Scan <input> for emails.
+                             
+                             Sub-Options:
+                             
+                             - ``--max-email INT``
 
 -u, --url                    Scan <input> for urls.
+            
+                             Sub-Options:
+
+                             - ``--max-url INT``
 
 -i, --info                   Include information such as:
 
@@ -22,8 +47,13 @@ documenting a program's options. For example:
                              - programming language,
                              - sha1 and md5 hashes,
                              - is/isn't binary/text/archive/media/source/script
+                             - a host of additional options through more CLI options
 
                              etc.
+
+                             Sub-Options:
+
+                             - ``--mark-source``
 
 .. include:: /scancode-toolkit/rst_snippets/note_snippets/basic_clpieu.rst
 
@@ -32,8 +62,12 @@ documenting a program's options. For example:
 --max-email INT              Report only up to INT emails found in a
                              file. Use 0 for no limit.  [default: 50]
 
+                             Sub-Option of - ``--email``
+
 --max-url INT                Report only up to INT urls found in a
                              file. Use 0 for no limit.  [default: 50]
+
+                             Sub-Option of - ``--url``
 
 --license-score INTEGER
 
@@ -42,9 +76,18 @@ documenting a program's options. For example:
           Here, a bigger number means a better match, i.e. setting a higher license score
           translates to a higher threshold (with equal or less number of matches).
 
+          Sub-Option of - ``--license``
+
 --license-text
 
           Include the matched text for the detected licenses with the output report.
+
+          Sub-Option of - ``--license``
+
+          Sub-Options:
+
+          - ``--license-text-diagnostics``
+          - ``--is-license-text``
 
 --license-url-template TEXT
 
@@ -53,9 +96,11 @@ documenting a program's options. For example:
           In a template URL, curly braces ({}) are replaced by the license key.
           [default: https://enterprise.dejacode.com/urn/urn:dje:license:{}]
 
+          Sub-Option of - ``--license``
+
 --license-text-diagnostics
 
           In the matched license text, include diagnostic highlights surrounding with
           square brackets [] words that are not matched.
 
-.. include:: /scancode-toolkit/rst_snippets/note_snippets/basic_license.rst
+          Sub-Option of - ``--license`` and ``--license-text``

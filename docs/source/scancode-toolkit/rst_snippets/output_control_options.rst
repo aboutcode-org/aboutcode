@@ -1,5 +1,5 @@
-Output Control Options
-----------------------
+All "Output Control" Scan Options
+---------------------------------
 
 --strip-root           Strip the root directory segment of all paths.
 
@@ -16,7 +16,7 @@ Output Control Options
                                 if a copyright holder contains a match
                                 to the <pattern> regular expression.
 
-.. include::  /scancode-toolkit/rst_snippets/note_snippets/control_ignore_author_copyright.rst
+.. include::  /scancode-toolkit/rst_snippets/warning_snippets/control_ignore_author_copyright.rst
 
 --only-findings                 Only return files or directories with
                                 findings for the requested scans.

@@ -1,5 +1,5 @@
-Documentation/Help Options
---------------------------
+All Documentation/Help Options
+------------------------------
 
 -h, --help               Show the :ref:`cli_help_text` and exit.
 
