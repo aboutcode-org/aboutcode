@@ -8,6 +8,7 @@
    help-text-options
    list-options
    simple-examples
+   basic-options
    core-options
    output-format
    output-filters-and-control
