@@ -90,3 +90,5 @@ Reusing software components is essential for the efficient delivery of software 
 systems in every industry.
 
 Thank you for giving ScanCode a try!
+
+.. include::  /scancode-toolkit/rst_snippets/other_imp_doc.rst

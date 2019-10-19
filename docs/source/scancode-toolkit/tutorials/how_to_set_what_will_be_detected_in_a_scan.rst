@@ -36,7 +36,7 @@ To scan for licenses, copyrights, urls, emails, package information, and file in
 
 ::
 
-   ./scancode -clipeu --json samples.json samples
+   ./scancode -clipeu --json output.json samples
 
 
 Scan for license and copyright clues:
@@ -44,7 +44,7 @@ Scan for license and copyright clues:
 
 ::
 
-   ./scancode -cl --json samples.json samples
+   ./scancode -cl --json output.json samples
 
 
 Scan for emails and URLs:
@@ -52,7 +52,7 @@ Scan for emails and URLs:
 
 ::
 
-   ./scancode -eu --json samples.json samples
+   ./scancode -eu --json output.json samples
 
 
 Scan for package information:
@@ -60,7 +60,7 @@ Scan for package information:
 
 ::
 
-   ./scancode -p --json samples.json samples
+   ./scancode -p --json output.json samples
 
 
 Scan for file information:
@@ -68,7 +68,7 @@ Scan for file information:
 
 ::
 
-   ./scancode -i --json samples.json samples
+   ./scancode -i --json output.json samples
 
 
 To see more example scans:

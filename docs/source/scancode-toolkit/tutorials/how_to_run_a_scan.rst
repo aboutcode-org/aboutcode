@@ -4,11 +4,6 @@ How to Run a Scan
 In this simple tutorial example, we perform a basic scan on the ``samples`` directory distributed
 by default with Scancode.
 
-.. WARNING::
-
-    This tutorial uses the 3.1.1 version of Scancode Toolkit. If you are using a
-    newer version of Scancode Toolkit, check respective versions of this documentation.
-
 ..
     [ToDo]
     Add Windows/MacOS Support and remove this WARNING.
@@ -141,3 +136,5 @@ A Progress report is shown::
       scan: 26.62s
       total: 31.14s
     Removing temporary files...done.
+
+.. include::  /scancode-toolkit/rst_snippets/other_imp_doc.rst

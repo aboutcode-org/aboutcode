@@ -57,6 +57,12 @@ There is a bug in underlying libraries that prevent this.
 
 .. _install_scancode:
 
+..
+
+  [ToDo]
+  Add "pip isntall" option
+
+
 Installation on Linux and Mac
 -----------------------------
 

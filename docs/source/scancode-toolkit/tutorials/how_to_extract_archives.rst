@@ -15,7 +15,6 @@ Usage:
 
    ./extractcode [OPTIONS] <input>
 
-
 Extraction example:
 -------------------
 
@@ -24,3 +23,7 @@ Extract all archives found in the ``samples`` directory:
 ::
 
    ./extractcode samples
+
+After extracting, the ``samples`` folder will look like the following.
+
+.. image:: data/scancode-toolkit-extract-sample.png

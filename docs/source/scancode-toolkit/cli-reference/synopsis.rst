@@ -1,7 +1,7 @@
 Synopsis
 ========
 
-ScanCode detects licenses, copyrights, package manifests and direct dependencies and more both
+ScanCode detects licenses, copyrights, package manifests and direct dependencies and more, both
 in source code and binary files, by scanning the files. This section shows and explains the
 following:
 
@@ -17,38 +17,44 @@ Quickstart
 
 The basic usage is::
 
-   ./scancode [OPTIONS] <OUTPUT FORMAT OPTION(s)> <input>...
+   path/to/scancode [OPTIONS] <OUTPUT FORMAT OPTION(s)> <input>...
 
 To scan the ``samples`` directory, the command will be::
 
-   ./scancode -clieu --json-pp sample.json samples
-
-.. Note::
-
-    On Windows use ``scancode`` instead of ``./scancode``
+   path/to/scancode -clpieu --json-pp path/to/output.json path/to/samples
 
 .. Note::
 
     The <OUTPUT FORMAT OPTION(s)> includes both the output option and output file name.
-    For example in ``./scancode -clieu --json-pp sample.json samples``,
-    ``--json-pp sample.json`` is <OUTPUT FORMAT OPTION(s)>.
+    For example in ``./scancode -clpieu --json-pp output.json samples``,
+    ``--json-pp output.json`` is <OUTPUT FORMAT OPTION(s)>.
 
-    So obviously there isn't a "Default" output option in Versions 3.x onwards, you have to
-    specify <OUTPUT FORMAT OPTION(s)> explicitly.
+.. include::  /scancode-toolkit/rst_snippets/tip_snippets/synopsis_quickstart.rst
 
-.. Note::
+Alternatively, instead of using ``path/to/scancode`` (the path from root of file system) we can
+go into the scancode directory (like ``scancode-toolkit-3.1.1``) and then use ``./scancode``.
+The same applies for input and output options. To scan a folder ``samples`` inside scancode
+directory, and output to a file ``output.json`` in the same directory, the command will be::
 
-    Options ``--copyright``, ``--license`` and ``--package`` are not default in versions 3.x
-    onwards, you have to explicitely specify them.
+    ./scancode -clpieu --json-pp output.json samples
+
+While a scan using absolute paths from the file system root will look like::
+
+    home/ayansm/software/scancode-toolkit-3.1.1/scancode -clpieu --json-pp home/ayansm/scan_scan_results/output.json home/ayansm/codebases/samples/
+
+Throughout the documentation ``./scancode --clpieu --json-pp output.json samples`` will be used
+as am example when the terminal is at ``scancode-toolkit-3.1.1`` and we are scanning the
+default ``samples`` folder dirstributed with Scancode-Toolkit.
 
 Scans the <input> file or directory for license, origin and packages and saves results to FILE(s)
 using one or more output format option. Error and progress are printed to stdout.
 
+.. _scancode_cli_options:
 
 Type of Options
 ---------------
 
-Scancode Toolit Command Line options can be divided into these major section:
+Scancode Toolit Command Line options can be divided into these major sections:
 
 - :ref:`cli_basic`
 - :ref:`Extractcode Options <cli_extract>`
@@ -60,7 +66,7 @@ Scancode Toolit Command Line options can be divided into these major section:
 Output Formats
 --------------
 
-The output file format is set by using the varios output options. The default output format
+The output file format is set by using the various output options. The default output format
 is JSON, the entire file being in one line, without whitespace characters.
 
 The following example scans will show you how to run a scan with each of the result formats. For
@@ -69,13 +75,186 @@ the scans, we will use the ``samples`` directory provided with the ScanCode Tool
 JSON file output
 ^^^^^^^^^^^^^^^^
 
-Scan the ``samples`` directory and save the scan to a JSON file:
+Scan the ``samples`` directory and save the scan to a JSON file:::
 
-::
+    ./scancode -clpieu --json-pp output.json samples
 
-   ./scancode -clp --json samples.json samples
+A sample JSON output file structure will look like::
 
-.. image:: data/scancode-toolkit-json-output.png
+    {
+      "headers": [
+        {
+          "tool_name": "scancode-toolkit",
+          "tool_version": "3.1.1",
+          "options": {
+            "input": [
+              "samples/"
+            ],
+            "--copyright": true,
+            "--email": true,
+            "--info": true,
+            "--json-pp": "output.json",
+            "--license": true,
+            "--package": true,
+            "--url": true
+          },
+          "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",
+          "start_timestamp": "2019-10-19T191117.292858",
+          "end_timestamp": "2019-10-19T191219.743133",
+          "message": null,
+          "errors": [],
+          "extra_data": {
+            "files_count": 36
+          }
+        }
+      ],
+      "files": [
+        {
+          "path": "samples",
+          "type": "directory",
+          ...
+          ...
+          ...
+          "scan_errors": []
+        },
+        {
+          "path": "samples/README",
+          "type": "file",
+          "name": "README",
+          "base_name": "README",
+          "extension": "",
+          "size": 236,
+          "date": "2019-02-12",
+          "sha1": "2e07e32c52d607204fad196052d70e3d18fb8636",
+          "md5": "effc6856ef85a9250fb1a470792b3f38",
+          "mime_type": "text/plain",
+          "file_type": "ASCII text",
+          "programming_language": null,
+          "is_binary": false,
+          "is_text": true,
+          "is_archive": false,
+          "is_media": false,
+          "is_source": false,
+          "is_script": false,
+          "licenses": [],
+          "license_expressions": [],
+          "copyrights": [],
+          "holders": [],
+          "authors": [],
+          "packages": [],
+          "emails": [],
+          "urls": [],
+          "files_count": 0,
+          "dirs_count": 0,
+          "size_count": 0,
+          "scan_errors": []
+        },
+        ...
+        ...
+        ...
+        {
+          "path": "samples/zlib/iostream2/zstream_test.cpp",
+          "type": "file",
+          "name": "zstream_test.cpp",
+          "base_name": "zstream_test",
+          "extension": ".cpp",
+          "size": 711,
+          "date": "2019-02-12",
+          ...
+          ...
+          ...
+          "scan_errors": []
+        }
+      ]
+    }
+
+A sample JSON output for an individual file will look like::
+
+    {
+      "path": "samples/zlib/iostream2/zstream.h",
+      "type": "file",
+      "name": "zstream.h",
+      "base_name": "zstream",
+      "extension": ".h",
+      "size": 9283,
+      "date": "2019-02-12",
+      "sha1": "fca4540d490fff36bb90fd801cf9cd8fc695bb17",
+      "md5": "a980b61c1e8be68d5cdb1236ba6b43e7",
+      "mime_type": "text/x-c++",
+      "file_type": "C++ source, ASCII text",
+      "programming_language": "C++",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "licenses": [
+        {
+          "key": "mit-old-style",
+          "score": 100.0,
+          "name": "MIT Old Style",
+          "short_name": "MIT Old Style",
+          "category": "Permissive",
+          "is_exception": false,
+          "owner": "MIT",
+          "homepage_url": "http://fedoraproject.org/wiki/Licensing:MIT#Old_Style",
+          "text_url": "http://fedoraproject.org/wiki/Licensing:MIT#Old_Style",
+          "reference_url": "https://enterprise.dejacode.com/urn/urn:dje:license:mit-old-style",
+          "spdx_license_key": null,
+          "spdx_url": "",
+          "start_line": 9,
+          "end_line": 15,
+          "matched_rule": {
+            "identifier": "mit-old-style_cmr-no_1.RULE",
+            "license_expression": "mit-old-style",
+            "licenses": [
+              "mit-old-style"
+            ],
+            "is_license_text": true,
+            "is_license_notice": false,
+            "is_license_reference": false,
+            "is_license_tag": false,
+            "matcher": "2-aho",
+            "rule_length": 71,
+            "matched_length": 71,
+            "match_coverage": 100.0,
+            "rule_relevance": 100
+          }
+        }
+      ],
+      "license_expressions": [
+        "mit-old-style"
+      ],
+      "copyrights": [
+        {
+          "value": "Copyright (c) 1997 Christian Michelsen Research AS Advanced Computing",
+          "start_line": 3,
+          "end_line": 5
+        }
+      ],
+      "holders": [
+        {
+          "value": "Christian Michelsen Research AS Advanced Computing",
+          "start_line": 3,
+          "end_line": 5
+        }
+      ],
+      "authors": [],
+      "packages": [],
+      "emails": [],
+      "urls": [
+        {
+          "url": "http://www.cmr.no/",
+          "start_line": 7,
+          "end_line": 7
+        }
+      ],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
 
 Static html output
 ^^^^^^^^^^^^^^^^^^
@@ -85,21 +264,9 @@ file. When the scan is done, open ``samples.html`` in your web browser.
 
 ::
 
-   ./scancode -clp --html samples.html samples
+   ./scancode -clpieu --html output.html samples
 
 .. image:: data/scancode-toolkit-static-html1.png
 .. image:: data/scancode-toolkit-static-html2.png
 
-
-Other Important Documentation
------------------------------
-
-#. :ref:`how_to_run_a_scan`
-#. :ref:`tutorials`
-#. :ref:`how_to_guides`
-#. :ref:`how_it_works`
-#. :ref:`contrib_code_dev`
-#. :ref:`contrib_doc_dev`
-#. :ref:`plugin_arch`
-#. :ref:`faq`
-#. :ref:`support`
+.. include::  /scancode-toolkit/rst_snippets/other_imp_doc.rst

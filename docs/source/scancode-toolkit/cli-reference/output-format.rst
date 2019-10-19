@@ -10,7 +10,7 @@ following options.
 
 .. include::  /scancode-toolkit/rst_snippets/note_snippets/output_samples.rst
 
----
+----
 
 ``--json FILE``
 ---------------
@@ -34,26 +34,90 @@ following options.
     ::
 
         {
-          "scancode_notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",
-          "scancode_version": "2.2.1",
-          "scancode_options": {
-            "--copyright": true,
-            "--package": true,
-            "--info": true,
-            "--license-score": 10,
-            "--license-text": true,
-            "--format": "json-pp"
-          },
-          "files_count": 43,
+          "headers": [
+            {
+              "tool_name": "scancode-toolkit",
+              "tool_version": "3.1.1",
+              "options": {
+                "input": [
+                  "samples/"
+                ],
+                "--copyright": true,
+                "--email": true,
+                "--info": true,
+                "--json-pp": "output.json",
+                "--license": true,
+                "--package": true,
+                "--url": true
+              },
+              "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",
+              "start_timestamp": "2019-10-19T191117.292858",
+              "end_timestamp": "2019-10-19T191219.743133",
+              "message": null,
+              "errors": [],
+              "extra_data": {
+                "files_count": 36
+              }
+            }
+          ],
           "files": [
             {
-              "file_path_1": "samples/JGroups/licenses/apache-1.1.txt",
-              "file_type_1": "file",
+              "path": "samples",
+              "type": "directory",
+              ...
+              ...
+              ...
+              "scan_errors": []
             },
             {
-              "file_path_1": "samples/JGroups/licenses/apache-1.2.txt",
-              "type_type_2": "file",
+              "path": "samples/README",
+              "type": "file",
+              "name": "README",
+              "base_name": "README",
+              "extension": "",
+              "size": 236,
+              "date": "2019-02-12",
+              "sha1": "2e07e32c52d607204fad196052d70e3d18fb8636",
+              "md5": "effc6856ef85a9250fb1a470792b3f38",
+              "mime_type": "text/plain",
+              "file_type": "ASCII text",
+              "programming_language": null,
+              "is_binary": false,
+              "is_text": true,
+              "is_archive": false,
+              "is_media": false,
+              "is_source": false,
+              "is_script": false,
+              "licenses": [],
+              "license_expressions": [],
+              "copyrights": [],
+              "holders": [],
+              "authors": [],
+              "packages": [],
+              "emails": [],
+              "urls": [],
+              "files_count": 0,
+              "dirs_count": 0,
+              "size_count": 0,
+              "scan_errors": []
             },
+            ...
+            ...
+            ...
+            {
+              "path": "samples/zlib/iostream2/zstream_test.cpp",
+              "type": "file",
+              "name": "zstream_test.cpp",
+              "base_name": "zstream_test",
+              "extension": ".cpp",
+              "size": 711,
+              "date": "2019-02-12",
+              ...
+              ...
+              ...
+              "scan_errors": []
+            }
+          ]
         }
 
     .. include::  /scancode-toolkit/rst_snippets/note_snippets/output_json_ugly.rst
@@ -73,45 +137,103 @@ following options.
 
         ./scancode -clpieu --json-pp output.json samples
 
-    Here's a sample JSON output for one file ::
+    A sample JSON output for an individual file will look like::
 
         {
-          "path": "samples/JGroups/licenses/apache-1.1.txt",
+          "path": "samples/zlib/iostream2/zstream.h",
           "type": "file",
-          "name": "apache-1.1.txt",
-          "base_name": "apache-1.1",
-          "extension": ".txt",
-          "date": "2019-09-18",
-          "size": 2937,
-          "sha1": "186d9195787fcbf2e5401b966159395640e06d11",
-          "md5": "8c909d7735f28f4fdb0128ee57fb430e",
-          "files_count": null,
-          "mime_type": "text/plain",
-          "file_type": "ASCII text, with CRLF line terminators",
-          "programming_language": null,
+          "name": "zstream.h",
+          "base_name": "zstream",
+          "extension": ".h",
+          "size": 9283,
+          "date": "2019-02-12",
+          "sha1": "fca4540d490fff36bb90fd801cf9cd8fc695bb17",
+          "md5": "a980b61c1e8be68d5cdb1236ba6b43e7",
+          "mime_type": "text/x-c++",
+          "file_type": "C++ source, ASCII text",
+          "programming_language": "C++",
+          "is_binary": false,
+          "is_text": true,
+          "is_archive": false,
+          "is_media": false,
+          "is_source": true,
+          "is_script": false,
+          "licenses": [
+            {
+              "key": "mit-old-style",
+              "score": 100.0,
+              "name": "MIT Old Style",
+              "short_name": "MIT Old Style",
+              "category": "Permissive",
+              "is_exception": false,
+              "owner": "MIT",
+              "homepage_url": "http://fedoraproject.org/wiki/Licensing:MIT#Old_Style",
+              "text_url": "http://fedoraproject.org/wiki/Licensing:MIT#Old_Style",
+              "reference_url": "https://enterprise.dejacode.com/urn/urn:dje:license:mit-old-style",
+              "spdx_license_key": null,
+              "spdx_url": "",
+              "start_line": 9,
+              "end_line": 15,
+              "matched_rule": {
+                "identifier": "mit-old-style_cmr-no_1.RULE",
+                "license_expression": "mit-old-style",
+                "licenses": [
+                  "mit-old-style"
+                ],
+                "is_license_text": true,
+                "is_license_notice": false,
+                "is_license_reference": false,
+                "is_license_tag": false,
+                "matcher": "2-aho",
+                "rule_length": 71,
+                "matched_length": 71,
+                "match_coverage": 100.0,
+                "rule_relevance": 100
+              }
+            }
+          ],
+          "license_expressions": [
+            "mit-old-style"
+          ],
           "copyrights": [
             {
-              "statements": [
-                "Copyright (c) 2000 The Apache Software Foundation."
-              ],
-              "holders": [
-                "The Apache Software Foundation."
-              ],
-              "authors": [],
-              "start_line": 4,
+              "value": "Copyright (c) 1997 Christian Michelsen Research AS Advanced Computing",
+              "start_line": 3,
               "end_line": 5
             }
           ],
-          "packages": []
+          "holders": [
+            {
+              "value": "Christian Michelsen Research AS Advanced Computing",
+              "start_line": 3,
+              "end_line": 5
+            }
+          ],
+          "authors": [],
+          "packages": [],
+          "emails": [],
+          "urls": [
+            {
+              "url": "http://www.cmr.no/",
+              "start_line": 7,
+              "end_line": 7
+            }
+          ],
+          "files_count": 0,
+          "dirs_count": 0,
+          "size_count": 0,
+          "scan_errors": []
         },
+
+    This is the recommended Output option for Scancode Toolkit.
 
 ----
 
 ``--json-lines FILE``
 ---------------------
 
-    Scancode also has a ``jsonlines`` format option, where each report of a file scanned is formatted
-    in one line.
+    Scancode also has a ``--json-lines`` format option, where each report of a file scanned is
+    formatted in one line.
 
     The following code performs a scan on the samples directory, and publishes the results in
     ``json-lines`` format::
@@ -123,6 +245,60 @@ following options.
         {"files":[{"path":"samples/zlib/ada",licenses":[],"copyrights":[],"packages":[]}]}
 
     The header information is also formatted in one line (i.e. The first Line of the file).
+
+    The whole Output file looks like::
+
+        {"headers":[{"tool_name":"scancode-toolkit","tool_version":"3.1.1","options":{"input":["samples/"],"--copyright":true,"--email":true,"--info":true,"--json-lines":"output.json","--license":true,"--package":true,"--url":true},"notice":"Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.","start_timestamp":"2019-10-19T210920.143831","end_timestamp":"2019-10-19T211052.048182","message":null,"errors":[],"extra_data":{"files_count":36}}]}
+        {"files":[{"path":"samples" ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/README", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/screenshot.png", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/arch", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/arch/zlib.tar.gz", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/arch/zlib.tar.gz-extract", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/arch/zlib.tar.gz-extract/zlib-1.2.8", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/arch/zlib.tar.gz-extract/zlib-1.2.8/adler32.c", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/arch/zlib.tar.gz-extract/zlib-1.2.8/zlib.h", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/arch/zlib.tar.gz-extract/zlib-1.2.8/zutil.h", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/JGroups", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/JGroups/EULA", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/JGroups/LICENSE", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/JGroups/licenses", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/JGroups/licenses/apache-1.1.txt", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/JGroups/licenses/apache-2.0.txt", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/JGroups/licenses/bouncycastle.txt", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/JGroups/licenses/cpl-1.0.txt", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/JGroups/licenses/lgpl.txt", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/JGroups/src", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/JGroups/src/FixedMembershipToken.java", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/JGroups/src/GuardedBy.java", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/JGroups/src/ImmutableReference.java", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/JGroups/src/RATE_LIMITER.java", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/JGroups/src/RouterStub.java", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/JGroups/src/RouterStubManager.java", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/JGroups/src/S3_PING.java", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/zlib", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/zlib/adler32.c", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/zlib/deflate.c", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/zlib/deflate.h", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/zlib/zlib.h", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/zlib/zutil.c", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/zlib/zutil.h", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/zlib/ada", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/zlib/ada/zlib.ads", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/zlib/dotzlib", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/zlib/dotzlib/AssemblyInfo.cs", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/zlib/dotzlib/ChecksumImpl.cs", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/zlib/dotzlib/LICENSE_1_0.txt", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/zlib/dotzlib/readme.txt", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/zlib/gcc_gvmat64" ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/zlib/gcc_gvmat64/gvmat64.S" ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/zlib/infback9", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/zlib/infback9/infback9.c", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/zlib/infback9/infback9.h", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/zlib/iostream2", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/zlib/iostream2/zstream.h", ... "scan_errors":[]}]}
+        {"files":[{"path":"samples/zlib/iostream2/zstream_test.cpp", ... "scan_errors":[]}]}
+
 
     .. include::  /scancode-toolkit/rst_snippets/note_snippets/output_jsonlines.rst
 
