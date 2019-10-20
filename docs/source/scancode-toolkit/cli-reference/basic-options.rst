@@ -208,7 +208,7 @@
     words that are not matched.
 
     In a normal scan, whole lines of text are included in the matched license text, including parts
-    that are possibly unmatched. 
+    that are possibly unmatched.
 
     An example Scan::
 

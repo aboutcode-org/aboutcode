@@ -65,4 +65,4 @@ To see more example scans:
 
    ./scancode --examples
 
-For more information, refer :ref:`cli_list_options`. 
+For more information, refer :ref:`cli_list_options`.

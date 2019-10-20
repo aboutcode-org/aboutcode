@@ -137,7 +137,7 @@ To see all plugins available via command line help, use ``--plugins``.
     .. admonition:: Dependency
 
         The option ``--is-license-text`` is a sub-option of and requires the options
-        ``--info`` and ``--license-text``. 
+        ``--info`` and ``--license-text``.
         Also, the option ``--license-text`` is a sub-option of and requires the options
         ``--license``.
 
@@ -237,7 +237,7 @@ To see all plugins available via command line help, use ``--plugins``.
             label: Approved License
             color_code: '#008000'
             icon: icon-ok-circle
-    
+
 
     .. include::  /scancode-toolkit/rst_snippets/note_snippets/post_lic_pol_key.rst
 
@@ -658,10 +658,10 @@ To see all plugins available via command line help, use ``--plugins``.
 ``--summary-with-details`` Option
 ---------------------------------
 
-    The ``--summary`` plugin summarizes license, copyright and other scan information at the codebase
-    level. Now running the scan with the ``--summary-with-details`` plugin instead creates summaries
-    at individual file/directories with the same license, copyright and other scan information, but
-    at a file/directory level (in addition to the the codebase level summary).
+    The ``--summary`` plugin summarizes license, copyright and other scan information at the
+    codebase level. Now running the scan with the ``--summary-with-details`` plugin instead creates
+    summaries at individual file/directories with the same license, copyright and other scan
+    information, but at a file/directory level (in addition to the the codebase level summary).
 
     An example Scan::
 

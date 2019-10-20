@@ -22,7 +22,7 @@ Talk to the Developers
 ----------------------
 
 Join our `Gitter Channel <https://gitter.im/aboutcode-org/discuss>`_ to talk with the developers of
-ScanCode Toolkit. 
+ScanCode Toolkit.
 
 Documentation
 -------------

@@ -19,13 +19,15 @@ This is the first 3.1 release with the best, fastest and most efficient ScanCode
 
 This release contains many improvements, fixes and new features including breaking API changes (when compared to 2.2.x). See the `CHANGELOG <https://github.com/nexB/scancode-toolkit/blob/master/CHANGELOG.rst>`_ for details.
 
-This release also comes with a Full Documentation hosted at aboutcode.readthedocs.io/en/latest/scancode-toolkit/.
+This release also comes with a Full Documentation hosted at
+aboutcode.readthedocs.io/en/latest/scancode-toolkit/.
 
 To install, download scancode-toolkit-3.1.1.zip or scancode-toolkit-3.1.1.tar.bz2 from the Downloads section below and follow installation instructions in the `README <https://github.com/nexB/scancode-toolkit/blob/master/README.rst>`_.
 
 This is also available as a Python library from Pypi with ``pip install scancode-toolkit``.
 
-You can also download the corresponding source code for bundled pre-built third-party binaries from these locations:
+You can also download the corresponding source code for bundled pre-built third-party binaries from
+these locations:
 
 - https://github.com/nexB/scancode-thirdparty-src/archive/v1.0.0.tar.gz
 - https://github.com/nexB/scancode-thirdparty-src/archive/v1.0.0.zip

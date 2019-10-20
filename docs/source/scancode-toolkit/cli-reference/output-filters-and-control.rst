@@ -10,8 +10,8 @@ Controlling Scancode Output and Filters
 ``--strip-root`` Vs. ``--full-root``
 ------------------------------------
 
-    For a default scan of the "samples" folder, this a comparison between the default, ``strip-root``
-    and ``full-root`` options.
+    For a default scan of the "samples" folder, this a comparison between the default,
+    ``strip-root`` and ``full-root`` options.
 
     An example Scan
 
@@ -66,8 +66,8 @@ Controlling Scancode Output and Filters
 
     In a normal scan, all files inside the directory specified as an input argument is scanned and
     subsequently included in the scan report. But if you want to run the scan on only some selective
-    files, with some specific **common copyright holder** then ``--ignore-copyright-holder`` option can
-    be used to do the same.
+    files, with some specific **common copyright holder** then ``--ignore-copyright-holder`` option
+    can be used to do the same.
 
     This scan ignores all files with Copyright Holders matching the string "Free Software Foundation"::
 
@@ -80,9 +80,9 @@ Controlling Scancode Output and Filters
 ``--only-findings`` Plugin
 --------------------------
 
-    This option removes from the scan results, the files where nothing significant has been detected,
-    like files which doesn't contain any licenses, copyrights, emails or urls(if requested in the
-    scan options), and isn't a package.
+    This option removes from the scan results, the files where nothing significant has been
+    detected, like files which doesn't contain any licenses, copyrights, emails or urls (if
+    requested in the scan options), and isn't a package.
 
     An example Scan::
 

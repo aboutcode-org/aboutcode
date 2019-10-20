@@ -68,8 +68,8 @@ Comparing Progress Message Options
 ``--reindex-licenses`` Option
 -----------------------------
 
-    ScanCode maintains a license index to search for and detect licenses. When Scancode is configured
-    for the first time, a license index is built and used in every scan thereafter.
+    ScanCode maintains a license index to search for and detect licenses. When Scancode is
+    configured for the first time, a license index is built and used in every scan thereafter.
 
     This ``--reindex-licenses`` option rebuilds the license index. Running a scan with this option
     displays the following message to the terminal in addition to what it normally shows::
@@ -84,8 +84,8 @@ Comparing Progress Message Options
 ``--from-json`` Option
 ----------------------
 
-    If you want to input scan results from a .json file, and run a scan again on those same files, with
-    some other options/output format, you can do so using the ``--from-json`` option.
+    If you want to input scan results from a .json file, and run a scan again on those same files,
+    with some other options/output format, you can do so using the ``--from-json`` option.
 
     An example scan command using ``--from-json``::
 
@@ -99,12 +99,12 @@ Comparing Progress Message Options
 ``--max-in-memory`` Option
 ----------------------------------
 
-    During a scan, as individual files are scanned, the scan details for those files are kept on memory
-    till the scan is completed. Then after the scan is completed, they are written in the specified
-    output format.
+    During a scan, as individual files are scanned, the scan details for those files are kept on
+    memory till the scan is completed. Then after the scan is completed, they are written in the
+    specified output format.
 
-    Now, if the scan involves a very large number of files, they might not fit in the memory during the
-    scan. For this reason, disk-caching can be used for some/all of the files.
+    Now, if the scan involves a very large number of files, they might not fit in the memory during
+    the scan. For this reason, disk-caching can be used for some/all of the files.
 
     Some important INTEGER values of the ``--max-in-memory INTEGER`` option:
 

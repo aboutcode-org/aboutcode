@@ -11,9 +11,9 @@ documenting a program's options. For example:
                              - ``--consolidate``
 
 -l, --license                Scan ``<input>`` for licenses.
-                             
+
                              Sub-Options:
-                             
+
                              - ``--consolidate``
                              - ``--license-score INT``
                              - ``--license-text``
@@ -28,13 +28,13 @@ documenting a program's options. For example:
                              - ``--consolidate``
 
 -e, --email                  Scan ``<input>`` for emails.
-                             
+
                              Sub-Options:
-                             
+
                              - ``--max-email INT``
 
 -u, --url                    Scan ``<input>`` for urls.
-            
+
                              Sub-Options:
 
                              - ``--max-url INT``

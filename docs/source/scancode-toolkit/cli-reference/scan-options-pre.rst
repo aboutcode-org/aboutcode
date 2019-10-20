@@ -10,8 +10,9 @@ Pre-Scan Options
 ``--ignore`` Option
 -------------------
 
-    In a scan, all files inside the directory specified as an input argument is scanned. But if there
-    are some files which you don't want to scan, the ``--ignore`` option can be used to do the same.
+    In a scan, all files inside the directory specified as an input argument is scanned. But if
+    there are some files which you don't want to scan, the ``--ignore`` option can be used to do
+    the same.
 
     A sample usage::
 
@@ -26,9 +27,9 @@ Pre-Scan Options
 ``--include`` Option
 --------------------
 
-    In a normal scan, all files inside the directory specified as an input argument is scanned. But if
-    you want to run the scan on only some selective files, then ``--include`` option can be used to do
-    the same.
+    In a normal scan, all files inside the directory specified as an input argument is scanned. But
+    if you want to run the scan on only some selective files, then ``--include`` option can be used
+    to do the same.
 
     A sample usage::
 
@@ -127,18 +128,18 @@ Pre-Scan Options
 Glob Pattern Matching
 ---------------------
 
-    All the Pre-Scan options use pattern matching, so the basics of Glob Pattern Matching is discussed
-    briefly below.
+    All the Pre-Scan options use pattern matching, so the basics of Glob Pattern Matching is
+    discussed briefly below.
 
-    Glob pattern matching is useful for matching a group of files, by using patterns in their names.
-    Then using these patterns, files are grouped and treated differently as required.
+    Glob pattern matching is useful for matching a group of files, by using patterns in their
+    names. Then using these patterns, files are grouped and treated differently as required.
 
-    Here are some rules from the `Linux Manual <http://man7.org/linux/man-pages/man7/glob.7.html>`_ on
-    glob patterns. Refer the same for more detailed information.
+    Here are some rules from the `Linux Manual <http://man7.org/linux/man-pages/man7/glob.7.html>`_
+    on glob patterns. Refer the same for more detailed information.
 
-    A string is a wildcard pattern if it contains one of the characters '?', '*' or '['.  Globbing is
-    the operation that expands a wildcard pattern into the list of pathnames matching the pattern.
-    Matching is defined by:
+    A string is a wildcard pattern if it contains one of the characters '?', '*' or '['.  Globbing
+    is the operation that expands a wildcard pattern into the list of pathnames matching the
+    pattern. Matching is defined by:
 
     - A '?' (not between brackets) matches any single character.
 
@@ -149,8 +150,8 @@ Glob Pattern Matching
 
     - There is one special convention: two characters separated by '-' denote a range.
 
-    - An expression "[!...]" matches a single character, namely any character that is not matched by
-      the expression obtained by removing the first '!' from it.
+    - An expression "[!...]" matches a single character, namely any character that is not matched
+      by the expression obtained by removing the first '!' from it.
 
     - A '/' in a pathname cannot be matched by a '?' or '*' wildcard, or by a range like "[.-0]".
 
@@ -179,19 +180,20 @@ What is a Facet?
     grouping that helps us understand the shape of the project. Each facet is described by a set of
     glob expressions, essentially wildcard patterns that are matched against file names.
 
-    Each facet definition can have zero or more glob expressions. A file can be captured by more than
-    one facet. Any file found but not captured by a defined facet is automatically assigned to the core
-    facet.
+    Each facet definition can have zero or more glob expressions. A file can be captured by more
+    than one facet. Any file found but not captured by a defined facet is automatically assigned to
+    the core facet.
 
-    - ``core`` - The files that go into making the release of the component. Note that the core facet is
-      not explicitly defined. Rather, it is made up of whatever is not in any other facet. So, by
-      default, all files are in the core facet unless otherwise specified.
+    - ``core`` - The files that go into making the release of the component. Note that the core
+      facet is not explicitly defined. Rather, it is made up of whatever is not in any other facet.
+      So, by default, all files are in the core facet unless otherwise specified.
     - ``data`` - The files included in any data distribution of the component.
-    - ``dev`` - Files primarily used at development time (e.g., build utilities) and not distributed
-      with the component
-    - ``docs`` - Documentation files. Docs may be included with the executable component or separately
-      or not at all.
-    - ``examples`` -- Like docs, examples may be included in the main component release or separately.
+    - ``dev`` - Files primarily used at development time (e.g., build utilities) and not
+      distributed with the component
+    - ``docs`` - Documentation files. Docs may be included with the executable component or
+      separately or not at all.
+    - ``examples`` -- Like docs, examples may be included in the main component release or
+      separately.
     - ``tests`` -- Test files may include code, data and other artifacts.
 
     Important Links:

@@ -130,10 +130,10 @@ following options.
 ``--json-pp FILE``
 ------------------
 
-    ``json-pp`` stands for JSON Pretty-Print format. In the previous format, i.e. Simple ``json``, the
-    whole output is printed in one line, which isn't well suited for getting information if you're
-    looking at the file itself (or printing at stdout). So this option formats the output results in
-    json but in a properly spaced and indented manner, and is easy to look at.
+    ``json-pp`` stands for JSON Pretty-Print format. In the previous format, i.e. Simple ``json``,
+    the whole output is printed in one line, which isn't well suited for getting information if
+    you're looking at the file itself (or printing at stdout). So this option formats the output
+    results in json but in a properly spaced and indented manner, and is easy to look at.
 
     The following code performs a scan on the samples directory, and publishes the results in
     ``json-pp`` format::
@@ -351,7 +351,8 @@ Comparing Different ``json`` Output Formats
 ``--spdx-tv FILE``
 ------------------
 
-    This format is another SPDX variant, with the output file being structured in the following manner:
+    This format is another SPDX variant, with the output file being structured in the following
+    manner:
 
     The following code performs a scan on the samples directory, and publishes the results in
     ``spdx-tv`` format::
@@ -418,8 +419,8 @@ Comparing Different ``json`` Output Formats
 ---------------
 
     ScanCode supports formatting the Output result is a simple ``html`` format, to open with your
-    favorite browser. This helps quick visualization of the detected license/copyright and other main
-    information in the form of tables.
+    favorite browser. This helps quick visualization of the detected license/copyright and other
+    main information in the form of tables.
 
     The following code performs a scan on the samples directory, and publishes the results in
     HTML format::

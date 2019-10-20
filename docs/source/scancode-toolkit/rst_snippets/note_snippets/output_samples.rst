@@ -1,5 +1,5 @@
 .. note::
-    
+
     You can Output Scan Results in two different file formats simultaniously in one Scan. An
     example - ``./scancode -clpieu --json-pp output.json --html output.html samples``.
 

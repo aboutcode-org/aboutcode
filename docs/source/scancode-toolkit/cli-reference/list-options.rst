@@ -8,7 +8,7 @@ The sections are as follows:
 
 - Basic Scan Options
 - Core Scan Options
-- Output Formats 
+- Output Formats
 - Controlling Output and Filters
 - Pre-Scan Options
 - Post-Scan Options
