@@ -89,16 +89,16 @@ according to your requirements.
 
 #. The Basic Scan options, i.e. ``-c``, ``-l``, ``-p``, ``-e``, ``-u``, and ``-i`` are to be
    decided, according to your requirements. If you do not need one specific type of information
-   (say, licences), consider removing it, because more things you scan for, longer it will take
+   (say, licenses), consider removing it, because the more things you scan for, longer it will take
    for the scan to complete.
 
 .. Note::
 
-    You have to select these options expilicitly, as they are not default anymore from
+    You have to select these options explicitly, as they are not default anymore from
     versions 3.x, unlike earlier versions having ``-clp`` as default.
 
-#. ``--license-score INTEGER`` is to be set if licence matching accuracy is desired (Default is 0,
-   and increasing this means a more accurate match). Also using ``--license-text`` includes the
+#. ``--license-score INTEGER`` is to be set if license matching accuracy is desired (Default is 0,
+   and increasing this means a more accurate match). Also, using ``--license-text`` includes the
    matched text to the result.
 
 #. ``-n INTEGER`` option can be used to speed up the scan using multiple parallel processes.
@@ -108,7 +108,7 @@ according to your requirements.
 #. ``--ignore <pattern>`` can be used to skip certain group of files.
 
 #. ``<OUTPUT FORMAT OPTION(s)>`` is also a very important decision when you want to use the output
-   for specific tasks/have requirements. Here we are using ``json`` as scancode workbench imports
+   for specific tasks/have requirements. Here we are using ``json`` as ScanCode Workbench imports
    ``json`` files only.
 
 For the complete list of options, refer :ref:`cli_list_options`.

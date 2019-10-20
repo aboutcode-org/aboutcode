@@ -19,7 +19,7 @@
 
         "is_generated": true
 
-    For the samples folder, the following files have a true value for their is_generated attribute::
+    In the samples folder, the following files have a true value for their is_generated attribute::
 
         "samples/zlib/dotzlib/LICENSE_1_0.txt"
         "samples/JGroups/licenses/apache-2.0.txt"
@@ -37,19 +37,19 @@
         The option ``--max-email`` is a sub-option of and requires the option ``--email``.
 
     If in the files that are scanned, in individual files, there are a lot of emails (i.e lists) which
-    are unneccesary and clutter the scan results, ``--max-email`` option can be used to report emails
+    are unnecessary and clutter the scan results, ``--max-email`` option can be used to report emails
     only up to a limit in individual files.
 
     Some important INTEGER values of the ``--max-email INTEGER`` option:
 
-    - 0  - No limit, inlcude all emails.
+    - 0  - No limit, include all emails.
     - 50 - Default.
 
     An example usage::
 
         ./scancode -clpieu --json-pp output.json samples --max-email 5
 
-    This only reports 5 email adresses per file and ignores the rest.
+    This only reports 5 email addresses per file and ignores the rest.
 
 ----
 
@@ -61,12 +61,12 @@
         The option ``--max-url`` is a sub-option of and requires the option ``--url``.
 
     If in the files that are scanned, in individual files, there are a lot of links to other websites
-    (i.e url lists) which are unneccesary and clutter the scan results, ``--max-url`` option can be
+    (i.e url lists) which are unnecessary and clutter the scan results, ``--max-url`` option can be
     used to report urls only up to a limit in individual files.
 
     Some important INTEGER values of the ``--max-url INTEGER`` option:
 
-    - 0  - No limit, inlcude all urls.
+    - 0  - No limit, include all urls.
     - 50 - Default.
 
     An example usage::
@@ -87,22 +87,22 @@
     ..
         [ToDo] Research and Write License Matching Better
 
-    License matching strictness, i.e. how closely matched licenses are detected in a scan, can be
+    License matching strictness, i.e. How closely matched licenses are detected in a scan, can be
     modified by using this ``--license-score`` option.
 
     Some important INTEGER values of the ``--license-score INTEGER`` option:
 
     - **0**     - Default and Lowest Value, All matches are reported.
-    - **100**    - Highest Value, Only licences with a much better match are reported
+    - **100**    - Highest Value, Only licenses with a much better match are reported
 
-    Here, a bigger number means a better match, i.e. setting a higher license score translates to a
+    Here, a bigger number means a better match, i.e. Setting a higher license score translates to a
     higher threshold for matching licenses (with equal or less number of license matches).
 
     An example usage::
 
         ./scancode -clpieu --json-pp output.json samples --license-score 70
 
-    Here's the license results on setting the integer value to 100, vs the default value 0. This is
+    Here's the license results on setting the integer value to 100, Vs. the default value 0. This is
     visualized using ScanCode workbench in the License Info Dashboard.
 
     .. list-table:: License scan results of Samples Directory.
@@ -174,13 +174,13 @@
     The default template URL is : [https://enterprise.dejacode.com/urn/urn:dje:license:{}]
     In a template URL, curly braces ({}) are replaced by the license key.
 
-    So, by default the license referance URL points to the dejacode page for that license.
+    So, by default the license reference URL points to the dejacode page for that license.
 
     A scan example using the ``--license-url-template TEXT`` option ::
 
         ./scancode -clpieu --json-pp output.json samples --license-url-template https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/{}.yml
 
-    In a normal scan, referance url for "ZLIB License" is as follows::
+    In a normal scan, reference url for "ZLIB License" is as follows::
 
         "reference_url": "https://enterprise.dejacode.com/urn/urn:dje:license:zlib",
 
@@ -188,7 +188,7 @@
 
         ``--license-url-template https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/{}``
 
-    the referance URL changes to this `zlib.yml file <https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib.yml>`_::
+    the reference URL changes to this `zlib.yml file <https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib.yml>`_::
 
         "reference_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/zlib.yml",
 
@@ -215,7 +215,7 @@
         ./scancode -cplieu --json-pp output.json samples --license-text --license-text-diagnostics
 
     Running a scan on the samples directory with ``--license-text --license-text-diagnostics`` options,
-    causes the following differance in scan result of the file
+    causes the following difference in the scan result of the file
     ``samples/JGroups/licenses/bouncycastle.txt``.
 
     Without Diagnostics::

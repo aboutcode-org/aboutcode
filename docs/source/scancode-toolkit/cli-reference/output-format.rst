@@ -15,7 +15,7 @@ following options.
 ``--json FILE``
 ---------------
 
-    Among the Scancode Output Formats, ``json`` is the most important one, and is recommended over
+    Among the ScanCode Output Formats, ``json`` is the most important one, and is recommended over
     others. Scancode Workbench and other applications that use Scancode Result data as input accept
     only the ``json`` format.
 
@@ -33,7 +33,7 @@ following options.
 
     The entire JSON file is structured in the following manner:
 
-    At first some general information on the scan, what options were used, number of files etc.
+    At first some general information on the scan, what options were used, the number of files etc.
     And then all the files follow.
 
     ::
@@ -130,7 +130,7 @@ following options.
 ``--json-pp FILE``
 ------------------
 
-    ``json-pp`` stands for JSON Pretty-Print format. In the previous format, i.e. simple ``json``, the
+    ``json-pp`` stands for JSON Pretty-Print format. In the previous format, i.e. Simple ``json``, the
     whole output is printed in one line, which isn't well suited for getting information if you're
     looking at the file itself (or printing at stdout). So this option formats the output results in
     json but in a properly spaced and indented manner, and is easy to look at.
@@ -235,7 +235,7 @@ following options.
 ``--json-lines FILE``
 ---------------------
 
-    Scancode also has a ``--json-lines`` format option, where each report of a file scanned is
+    ScanCode also has a ``--json-lines`` format option, where each report of a file scanned is
     formatted in one line.
 
     The following code performs a scan on the samples directory, and publishes the results in
@@ -247,7 +247,7 @@ following options.
 
         {"files":[{"path":"samples/zlib/ada",licenses":[],"copyrights":[],"packages":[]}]}
 
-    The header information is also formatted in one line (i.e. The first Line of the file).
+    The header information is also formatted in one line (i.e. The First Line of the file).
 
     The whole Output file looks like::
 
@@ -331,7 +331,7 @@ Comparing Different ``json`` Output Formats
 
     `SPDX <https://spdx.org/>`_ stands for "Software Package and Data Exchange" and is an open standard
     for communicating software bill of material information (including components, licenses,
-    copyrights, and security referances).
+    copyrights, and security references).
 
     The following code performs a scan on the samples directory, and publishes the results in
     ``spdx-rdf`` format::
@@ -396,8 +396,8 @@ Comparing Different ``json`` Output Formats
 
     .. figure:: data/output_spdx_tv_file.png
 
-    After the files section, there's a section for licences under a ``#Licences`` title, with the
-    following information for each licence:
+    After the files section, there's a section for licenses under a ``#Licences`` title, with the
+    following information for each license:
 
     .. hlist::
         :columns: 3
@@ -417,8 +417,8 @@ Comparing Different ``json`` Output Formats
 ``--html FILE``
 ---------------
 
-    Scancode supports formatting the Output result is a simple ``html`` format, to open with your
-    favourite browser. This helps quick visualization of the detected licence/copyright and other main
+    ScanCode supports formatting the Output result is a simple ``html`` format, to open with your
+    favorite browser. This helps quick visualization of the detected license/copyright and other main
     information in the form of tables.
 
     The following code performs a scan on the samples directory, and publishes the results in
@@ -447,7 +447,7 @@ Comparing Different ``json`` Output Formats
 ``--html-app FILE``
 -------------------
 
-    Scancode also supports formatting the output in a HTML visualization tool, which is more
+    ScanCode also supports formatting the output in a HTML visualization tool, which is more
     helpful than the standard HTML format.
 
     The following code performs a scan on the samples directory, and publishes the results in
@@ -455,7 +455,7 @@ Comparing Different ``json`` Output Formats
 
         ./scancode -clpieu --csv output.html samples
 
-    The Files scanned are shown in the left sidebar, and the section on the right contains seperate
+    The Files scanned are shown in the left sidebar, and the section on the right contains separate
     tabs for the following:
 
     .. hlist::
@@ -482,7 +482,7 @@ Comparing Different ``json`` Output Formats
 ``--csv FILE``
 --------------
 
-    Scancode can publish results in the useful ``.csv`` format.
+    ScanCode can publish results in the useful ``.csv`` format.
 
     The following code performs a scan on the samples directory, and publishes the results in
     ``csv`` format::
@@ -548,7 +548,7 @@ Comparing Different ``json`` Output Formats
         - package__vcs_repository,
         - package__copyright_top_level
 
-    Each subsequent line represents one element, i.e. can be any of the follwoing:
+    Each subsequent line represents one element, i.e. can be any of the following:
 
     .. hlist::
         :columns: 5

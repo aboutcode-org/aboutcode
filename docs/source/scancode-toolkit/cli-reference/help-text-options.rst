@@ -1,10 +1,10 @@
 Getting Help from the Command Line
 ==================================
 
-Scancode-Toolkit Command Line Interface can help you to search for specific options or use cases
+ScanCode-Toolkit Command Line Interface can help you to search for specific options or use cases
 from the command line itself. These are two options are ``--help`` and ``--examples``, and are
 very helpful if you need a quick glance of the options or use cases. Or it can be useful when you
-can't access the more elaborate online documentation.
+can't access, the more elaborate online documentation.
 
 .. include::  /scancode-toolkit/rst_snippets/doc_help.rst
 
@@ -34,7 +34,7 @@ And for windows, it will be like::
     extracting the ``.zip`` or ``.tar.bz`` file, the folder for Scancode-Toolkit version 3.1.1
     will be named like "scancode-toolkit-3.1.1".
 
-The Following Help Text is displayed, i.e. this is the help text for Scancode Version 3.1.1 ::
+The Following Help Text is displayed, i.e. This is the help text for Scancode Version 3.1.1 ::
 
     Usage: scancode [OPTIONS] <OUTPUT FORMAT OPTION(s)> <input>...
 
@@ -222,12 +222,12 @@ The Following Help Text is displayed, i.e. this is the help text for Scancode Ve
 Command Examples Text
 ---------------------
 
-The Scancode-Toolkit Command Line Interface has an examples option which displays some basic
+The Scancode-Toolkit Command Line Interface has an ``--examples`` option which displays some basic
 examples (more than the basic synopsis in ``--help``). These examples include the following aspects
 of code scanning:
 
 - Scanning Single File/Directory
-- Output Scan results to stdout(as JSON) or HTML/JSON file
+- Output Scan results to stdout (as JSON) or HTML/JSON file
 - Scanning for only Copyrights/Licenses
 - Ignoring Files
 - Using GLOB Patterns to Scan Multiple Files
@@ -243,7 +243,7 @@ And for windows, it will be like::
 
     $ scancode --examples
 
-The Following Text is displayed, i.e. this is the examples for Scancode Version 3.1.1 ::
+The Following Text is displayed, i.e. This is the examples for Scancode Version 3.1.1 ::
 
     Scancode command lines examples:
 
@@ -321,7 +321,7 @@ And for windows, it will be like::
 
 .. note::
 
-    Plugins that are shown by using ``--plugins`` inlcude the following:
+    Plugins that are shown by using ``--plugins`` include the following:
 
     #. Post-Scan Plugins
     #. Pre-Scan Plugins
@@ -329,7 +329,7 @@ And for windows, it will be like::
     #. Output Control
     #. Basic Scan Options
 
-The Following Text is displayed, i.e. this is the available plugins for Scancode Version 3.1.1 ::
+The Following Text is displayed, i.e. This is the available plugins for Scancode Version 3.1.1 ::
 
     --------------------------------------------
     Plugin: scancode_output:csv  class: formattedcode.output_csv:CsvOutput
@@ -759,7 +759,7 @@ The Following Text is displayed, i.e. this is the available plugins for Scancode
 --------------------------
 
 This shows all the types of packages that can be scanned using Scancode.
-These are located in packagedcode i.e. code used to parse various package formats.
+These are located in packagedcode i.e. Code used to parse various package formats.
 
 ..
     [ToDo]
@@ -768,7 +768,7 @@ These are located in packagedcode i.e. code used to parse various package format
 ``--print-options`` Option
 --------------------------
 
-This options prints the options selected for one specific scan command.
+This option prints the options selected for one specific scan command.
 
 If we run this command::
 

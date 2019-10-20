@@ -34,8 +34,8 @@ Pre-Scan Options
 
         ./scancode --include "*.java" samples samples.json
 
-    Here, Scancode selectively scans files that ends with `.java`, and ignores all other files. This
-    is basically complementary in behaviour to the ``--ignore`` option.
+    Here, Scancode selectively scans files that has names ending with `.java`, and ignores all other files. This
+    is basically complementary in behavior to the ``--ignore`` option.
 
     More information on :ref:`glob_pattern_matching`.
 
@@ -50,7 +50,7 @@ Pre-Scan Options
         ``--classify``. ``--license-clarity-score`` and ``--summary-key-files`` are Post-Scan
         Options.
 
-    This option makes scancode further classify scanned files/directories, to determine whether they
+    This option makes ScanCode further classify scanned files/directories, to determine whether they
     fall in these following categories
 
     - legal
@@ -64,7 +64,7 @@ Pre-Scan Options
     - key-file
 
         A KEY file is a generic file extension used by various programs when registering legal copies
-        of the software. It may be saved in a plain text format but generally contains some form of
+        of the software. It may be saved in a plain text format, but generally contains some form of
         encrypted key string that authenticates the purchase and registers the software.
 
     As in, to the JSON object of each file scanned, these extra attributes are added::
@@ -127,11 +127,11 @@ Pre-Scan Options
 Glob Pattern Matching
 ---------------------
 
-    All the Pre-Scan options use pattern matching, so basics of Glob Pattern Matching is discussed
+    All the Pre-Scan options use pattern matching, so the basics of Glob Pattern Matching is discussed
     briefly below.
 
     Glob pattern matching is useful for matching a group of files, by using patterns in their names.
-    Then using these patterns files are grouped and treated differently as required.
+    Then using these patterns, files are grouped and treated differently as required.
 
     Here are some rules from the `Linux Manual <http://man7.org/linux/man-pages/man7/glob.7.html>`_ on
     glob patterns. Refer the same for more detailed information.
@@ -170,14 +170,14 @@ Glob Pattern Matching
 
 .. _what_is_a_facet:
 
-What is a Facet
----------------
+What is a Facet?
+----------------
 
-    A facet is defined as following (by ClearlyDefined):
+    A facet is defined as follows (by ClearlyDefined):
 
     A facet of a component is a subset of the files related to the component. It's really just a
     grouping that helps us understand the shape of the project. Each facet is described by a set of
-    glob expressions, essentially wildcart patterns that are matched against filenames.
+    glob expressions, essentially wildcard patterns that are matched against file names.
 
     Each facet definition can have zero or more glob expressions. A file can be captured by more than
     one facet. Any file found but not captured by a defined facet is automatically assigned to the core

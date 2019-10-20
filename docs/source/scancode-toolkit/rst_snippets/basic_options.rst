@@ -41,13 +41,13 @@ documenting a program's options. For example:
 
 -i, --info                   Include information such as:
 
-                             - size,
-                             - type,
-                             - date,
-                             - programming language,
+                             - Size,
+                             - Type,
+                             - Date,
+                             - Programming language,
                              - sha1 and md5 hashes,
                              - binary/text/archive/media/source/script flags
-                             - additional options through more CLI options
+                             - Additional options through more CLI options
 
                              Sub-Options:
 
@@ -71,14 +71,14 @@ documenting a program's options. For example:
 
           Do not return license matches with scores lower than this score.
           A number between 0 and 100.  [Default: 0]
-          Here, a bigger number means a better match, i.e. setting a higher license score
+          Here, a bigger number means a better match, i.e. Setting a higher license score
           translates to a higher threshold (with equal or less number of matches).
 
           Sub-Option of - ``--license``
 
 --license-text
 
-          Include the matched text for the detected licenses with the output report.
+          Include the matched text for the detected licenses in the output report.
 
           Sub-Option of - ``--license``
 

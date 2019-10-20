@@ -10,7 +10,7 @@ Controlling Scancode Output and Filters
 ``--strip-root`` Vs. ``--full-root``
 ------------------------------------
 
-    For a default scan of the "samples" folder, this a comparision between the default, ``strip-root``
+    For a default scan of the "samples" folder, this a comparison between the default, ``strip-root``
     and ``full-root`` options.
 
     An example Scan
@@ -19,7 +19,7 @@ Controlling Scancode Output and Filters
 
         ./scancode -cplieu --json-pp output.json samples --full-root
 
-    These two changes only the "path" attribute of the file information. For this comparision we
+    These two changes only the "path" attribute of the file information. For this comparison we
     compare the "path" attributes of the file ``LICENSE`` inside ``JGroups`` directory.
 
     The default path::
@@ -81,7 +81,7 @@ Controlling Scancode Output and Filters
 --------------------------
 
     This option removes from the scan results, the files where nothing significant has been detected,
-    like files which doesn't contain any licences, copyrights, emails or urls(if requested in the
+    like files which doesn't contain any licenses, copyrights, emails or urls(if requested in the
     scan options), and isn't a package.
 
     An example Scan::

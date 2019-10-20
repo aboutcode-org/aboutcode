@@ -17,12 +17,12 @@ All "Post-Scan" Options
                          ``--packages``.
 
 --filter-clues           Filter redundant duplicated clues already
-                         contained in detected license and copyright
+                         contained in detected licenses, copyright
                          texts and notices.
 
 --is-license-text        Set the "is_license_text" flag to true for
                          files that contain mostly license texts and
-                         notices (e.g over 90% of the content).
+                         notices (e.g. over 90% of the content).
 
                          Sub-Option of - ``--info`` and ``--license-text``.
 

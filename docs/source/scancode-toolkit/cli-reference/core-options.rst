@@ -60,7 +60,7 @@ Comparing Progress Message Options
     exceeds the specified timeout, that file isn't scanned anymore and the next file scanning
     starts. This helps avoiding very large/long files, and saves time.
 
-    Also the number(timeout in seconds) to be followed by this option can be a
+    Also the number (timeout in seconds) to be followed by this option can be a
     floating point number, i.e. 1.5467.
 
 ----
@@ -68,7 +68,7 @@ Comparing Progress Message Options
 ``--reindex-licenses`` Option
 -----------------------------
 
-    Scancode maintains a license index to search for and detect licenses. When Scancode is configured
+    ScanCode maintains a license index to search for and detect licenses. When Scancode is configured
     for the first time, a license index is built and used in every scan thereafter.
 
     This ``--reindex-licenses`` option rebuilds the license index. Running a scan with this option
@@ -99,7 +99,7 @@ Comparing Progress Message Options
 ``--max-in-memory`` Option
 ----------------------------------
 
-    During a scan, as idividual files are scanned, the scan details for those files are kept on memory
+    During a scan, as individual files are scanned, the scan details for those files are kept on memory
     till the scan is completed. Then after the scan is completed, they are written in the specified
     output format.
 

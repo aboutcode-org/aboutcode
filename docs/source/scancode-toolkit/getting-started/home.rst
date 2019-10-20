@@ -28,9 +28,9 @@ ScanCode tries to address this issue by offering:
 What does ScanCode Toolkit do?
 ------------------------------
 
-ScanCode finds the provenance information that is in your codebase with a focus on:
+ScanCode finds the origin history information that is in your codebase with a focus on:
 
-- Copyright and other origin clues (emails, urls, authors,etc)
+- Copyright and other origin clues (emails, urls, authors etc)
 - License notices and license text with reference information about detected licenses.
 
 Using this data you can:
@@ -52,7 +52,7 @@ Given a codebase in a directory, ScanCode will:
 - Use an extensible rules engine to detect open source license text and notices
 - Use a specialized parser to capture copyright statements
 - Identify packaged code and collect metadata from packages
-- Report the results in the formats of you choice (JSON, SPDX, etc.) for integration with
+- Report the results in the formats of your choice (JSON, SPDX, etc.) for integration with
   other tools
 - Browse the results using the `ScanCode Workbench <https://github.com/nexB/scancode-workbench>`_
   companion app to assist your analysis.
@@ -66,16 +66,16 @@ ScanCode is written in Python and also uses other open source packages.
 Alternatives?
 --------------
 
-There are several utilities that do some of what ScanCode does - e.g. you can grep files for
+There are several utilities that do some of what ScanCode does - e.g. You can grep files for
 copyright and license text. This may work well for simple cases - e.g. at the single file level,
 but we created ScanCode for ourselves because this approach does not help you to see the
-recurring patterns of licenses and other provenance clues.
+recurring patterns of licenses and other origin history clues.
 
 Or you can consider other tools such as:
 
 - FOSSology (open source, written in C, Linux only, GPL-licensed)
 - Ninka (open source, written in Perl, GPL-licensed)
-- Commercially-licensed tools, most written in Java
+- Commercially-licensed tools, most of them written in Java
 
 History
 -------

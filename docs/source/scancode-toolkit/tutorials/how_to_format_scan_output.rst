@@ -8,7 +8,7 @@ More information on :ref:`cli_output_format`.
 JSON
 ----
 
-If you want JSON output of scancode results, you can pass the ``--json`` argument to scancode.
+If you want JSON output of ScanCode results, you can pass the ``--json`` argument to ScanCode.
 The following commands will output scan results in a formatted json file:
 
 * ``./scancode --json /path/to/output.json /path/to/target/dir``
@@ -32,14 +32,14 @@ The following command will output the scan results in JSON format to ``stdout`` 
 HTML
 ----
 
-If you want HTML output of scancode results, you can pass the ``--html`` argument to scancode.
-The following commands will output scan results in a formatted html page or simple web application:
+If you want HTML output of ScanCode results, you can pass the ``--html`` argument to ScanCode.
+The following commands will output scan results in a formatted HTML page or simple web application:
 
 * ``./scancode --html /path/to/output.html /path/to/target/dir``
 
 * ``./scancode --html-app /path/to/output.html /path/to/target/dir``
 
-For more details on the html output format refer :ref:`output_html`.
+For more details on the HTML output format refer :ref:`output_html`.
 
 .. WARNING::
 

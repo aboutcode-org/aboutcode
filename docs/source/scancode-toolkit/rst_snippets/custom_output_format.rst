@@ -6,7 +6,7 @@ create their own output template, using the following arguments::
 
     ``--custom-output FILE --custom-template TEMP_FILE``
 
-Scancode makes this very easy, as it uses the popular Jinja2 template engine. Simply pass the path
+ScanCode makes this very easy, as it uses the popular Jinja2 template engine. Simply pass the path
 to the custom template to the ``--custom-template`` argument, or drop it in a folder to
 ``src/scancode/templates`` directory.
 
@@ -32,7 +32,7 @@ data for this particular scan.
 
        File name and extension does not matter for the template file.
 
-Now I can run scancode using my newly created template:
+Now I can run ScanCode using my newly created template:
 
 ::
 

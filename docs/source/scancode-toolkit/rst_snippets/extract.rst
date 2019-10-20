@@ -1,11 +1,11 @@
 All Extractcode Options
 -----------------------
 
-This is intended to be used as an input preperation step, before running the scan. Archives found
-inside an extracted archive are extracted **recursively** by default. Extraction is done in-place
+This is intended to be used as an input preparation step, before running the scan. Archives found
+in an extracted archive are extracted **recursively** by default. Extraction is done in-place
 in a directory named '-extract' side-by-side with an archive.
 
-To extract the packages inside ``samples`` directory
+To extract the packages in the ``samples`` directory
 
 ::
 
@@ -17,7 +17,7 @@ This extracts the zlib.tar.gz package:
 
 .. _cli_extract:
 
---shallow   Do not extract recursively nested archives (e.g. not
+--shallow   Do not extract recursively nested archives (e.g. Not
             archives in archives).
 
 --verbose   Print verbose file-by-file progress messages.

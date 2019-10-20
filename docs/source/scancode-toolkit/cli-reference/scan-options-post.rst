@@ -21,14 +21,14 @@ To see all plugins available via command line help, use ``--plugins``.
         The option ``--mark-source`` is a sub-option of and **requires** the option ``--info``.
 
     The ``mark-source`` option marks the "is_source" attribute of a directory to be "True", if more
-    than 90% of the files under that directory is source files, i.e. their "is_source" attribute is
+    than 90% of the files under that directory is source files, i.e. Their "is_source" attribute is
     "True".
 
     When the following command is executed to scan the ``samples`` directory with this option enabled::
 
         ./scancode -clpieu --json-pp output.json samples --mark-source
 
-    Then, the following directories are marked as "Source", i.e. their "is_source" attribute is changed
+    Then, the following directories are marked as "Source", i.e. Their "is_source" attribute is changed
     from "false" to "True".
 
     - ``samples/JGroups/src``
@@ -48,7 +48,7 @@ To see all plugins available via command line help, use ``--plugins``.
         , ``--copyright`` and ``--package``.
 
     The JSON file containing scan results after using the ``--consolidate`` Plugin is structured as
-    following: (note: "..." in image conatins more data)
+    follows: (note: "..." in the image contains more data)
 
     An example Scan::
 
@@ -107,7 +107,7 @@ To see all plugins available via command line help, use ``--plugins``.
           "files_count": 1
         },
 
-    In addition to this, in every file/directory where the consolidated part (i.e. license information)
+    In addition to this, in every file/directory where the consolidated part (i.e. License information)
     was present, a "consolidated_to" attribute is added pointing to the "identifier" of
     "consolidated_components"::
 
@@ -123,7 +123,7 @@ To see all plugins available via command line help, use ``--plugins``.
 -------------------------
 
     The ``--filter-clues`` Plugin filters redundant duplicated clues already contained in detected
-    license and copyright texts and notices.
+    licenses, copyright texts and notices.
 
     ..
         [ToDo] Resolve Error and then Add content
@@ -141,7 +141,7 @@ To see all plugins available via command line help, use ``--plugins``.
         Also, the option ``--license-text`` is a sub-option of and requires the options
         ``--license``.
 
-    If the ``--is-license-text`` is used then set the “is_license_text” flag to true for files that
+    If the ``--is-license-text`` is used, then the “is_license_text” flag is set to true for files that
     contain mostly license texts and notices. Here mostly means over 90% of the content of the file.
 
     An example Scan::
@@ -164,8 +164,8 @@ To see all plugins available via command line help, use ``--plugins``.
         samples/JGroups/licenses/lgpl.txt
         samples/zlib/dotzlib/LICENSE_1_0.txt
 
-    Note that the license objects for each detected license in files already has "is_license_text"
-    attributes by default, but not the file objects only has this attribute if the plugin is used.
+    Note that the license objects for each detected license in the files already has "is_license_text"
+    attributes by default, but not the file objects. They only have this attribute if the plugin is used.
 
     .. include:: /scancode-toolkit/rst_snippets/warning_snippets/post_is_license_text.rst
 
@@ -186,7 +186,7 @@ To see all plugins available via command line help, use ``--plugins``.
 
         ./scancode -clpieu --json-pp output.json samples --classify --license-clarity-score
 
-    The "license_clarity_score" will have the following atrributes:
+    The "license_clarity_score" will have the following attributes:
 
     .. hlist::
         :columns: 3
@@ -226,7 +226,7 @@ To see all plugins available via command line help, use ``--plugins``.
 ``--license-policy FILE`` Option
 --------------------------------
 
-    The Policy file is a YAML (.yml) document with the following struture::
+    The Policy file is a YAML (.yml) document with the following structure::
 
         license_policies:
         -   license_key: mit
@@ -241,7 +241,7 @@ To see all plugins available via command line help, use ``--plugins``.
 
     .. include::  /scancode-toolkit/rst_snippets/note_snippets/post_lic_pol_key.rst
 
-    Apllying License Policies during a ScanCode scan, using the ``--license-policy`` Plugin::
+    Applying License Policies during a ScanCode scan, using the ``--license-policy`` Plugin::
 
         ./scancode -clipeu --json-pp output.json samples --license-policy policy-file.yml
 
@@ -346,7 +346,7 @@ To see all plugins available via command line help, use ``--plugins``.
         - "programming_language"
         - "packages"
 
-    Each attibute has multiple entries each containing "value" and "count", with their values having
+    Each attribute has multiple entries each containing "value" and "count", with their values having
     the summary information inside them.
 
     A sample summary object generated::
@@ -432,7 +432,7 @@ To see all plugins available via command line help, use ``--plugins``.
         and ``--summary``.
 
     Running the scan with ``--summary --summary-by-facet`` Plugins creates individual summaries for
-    all the facets with the same license, copyright and other scan informations, at a codebase level
+    all the facets with the same license, copyright and other scan information, at a codebase level
     (in addition to the codebase level general summary generated by ``--summary`` Plugin)
 
     An example scan using the ``--summary-by-facet`` Plugin::
@@ -587,7 +587,7 @@ To see all plugins available via command line help, use ``--plugins``.
         ./scancode -clpieu --json-pp output.json samples --classify --summary --summary-key-files
 
     Running the scan with ``--summary --summary-key-files`` Plugins creates summaries for key files
-    with the same license, copyright and other scan informations, at a codebase level (in addition
+    with the same license, copyright and other scan information, at a codebase level (in addition
     to the codebase level general summary generated by ``--summary`` Plugin)
 
     The resulting JSON file containing the scan results is structured as follows::
@@ -660,7 +660,7 @@ To see all plugins available via command line help, use ``--plugins``.
 
     The ``--summary`` plugin summarizes license, copyright and other scan information at the codebase
     level. Now running the scan with the ``--summary-with-details`` plugin instead creates summaries
-    at individual file/directories with the same license, copyright and other scan informations, but
+    at individual file/directories with the same license, copyright and other scan information, but
     at a file/directory level (in addition to the the codebase level summary).
 
     An example Scan::

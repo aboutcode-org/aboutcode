@@ -1,5 +1,5 @@
-What's New in This Release
-==========================
+What's New in This Release?
+===========================
 
 A new release of Scancode-Toolkit is here!
 
@@ -17,7 +17,7 @@ Main New Features
 
 This is the first 3.1 release with the best, fastest and most efficient ScanCode ever released.
 
-This releases contains many improvements, fixes and new features including breaking API changes (when compared to 2.2.x). See the `CHANGELOG <https://github.com/nexB/scancode-toolkit/blob/master/CHANGELOG.rst>`_ for details.
+This release contains many improvements, fixes and new features including breaking API changes (when compared to 2.2.x). See the `CHANGELOG <https://github.com/nexB/scancode-toolkit/blob/master/CHANGELOG.rst>`_ for details.
 
 This release also comes with a Full Documentation hosted at aboutcode.readthedocs.io/en/latest/scancode-toolkit/.
 

@@ -39,12 +39,12 @@ ScanCode needs a Python 2.7 interpreter.
 
 - **On Windows**:
 
-    Use the Python 2.7 32-bit (e.g. the Windows x86 MSI installer) for X86 regardless of whether
+    Use the Python 2.7 32-bit (e.g. The Windows x86 MSI installer) for X86 regardless of whether
     you run Windows on 32-bit or 64-bit. DO NOT USE Python X86_64 installer even if you run 64 bit
     Windows. Download Python from this url:
     https://www.python.org/ftp/python/2.7.13/python-2.7.13.msi
 
-    Install Python on the c: drive and use all default installer options(scancode will try to find
+    Install Python on the c: drive and use all default installer options (scancode will try to find
     python just in c:\python27\python.exe). See the Windows installation section for more
     installation details.
 
@@ -123,7 +123,7 @@ Installation on Windows
 - Press Enter.
 
 - This will change the current location of your command prompt to the root directory where
-  scancode is installed.
+  ScanCode is installed.
 
 - Then type::
 
@@ -139,4 +139,4 @@ Un-installation
 ---------------
 
 - Delete the directory in which you extracted ScanCode.
-- Delete any temporary files created in your system temp directory under a scancode directory.
+- Delete any temporary files created in your system temp directory under a ScanCode directory.

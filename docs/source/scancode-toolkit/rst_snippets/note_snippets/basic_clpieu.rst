@@ -1,7 +1,7 @@
 .. note::
 
     Unlike previous 2.x versions, -c, -l, and -p are not default. If any of combination of these
-    options are used, scancode only performs that specific task, and not the others.
+    options are used, ScanCode only performs that specific task, and not the others.
     ``./scancode -e`` only scans for emails, and doesn't scan for copyright/license/packages/general
     information.
 

@@ -18,12 +18,12 @@ A license detection rule is a pair of files:
 - a small text data file (in YAML format) documenting which license(s) should be detected for the
   rule text.
 
-To add new rule, you need to pick a unique base file name. As a convention we like to include the
+To add a new rule, you need to pick a unique base file name. As a convention, we like to include the
 license key(s) that should be detected in that name to make it more descriptive. For example:
 mit_and_gpl-2.0 is a good base name. Add a suffix to make it unique if there is already a rule
 with this base name. Do not use spaces or special characters in that name.
 
-Then create the rule file in the src/licensedcode/data/rules/ directory using this name replacing
+Then create the rule file in the src/licensedcode/data/rules/ directory using this name, replacing
 selected_base_name with the base name you selected::
 
     selected_base_name.RULE
@@ -41,7 +41,7 @@ this YAML snippet::
         - mit
         - gpl-2.0
 
-Save these two files in the ``src/licensedcode/data/licenses/`` directory and your are done!
+Save these two files in the ``src/licensedcode/data/licenses/`` directory and you are done!
 
 See the ``src/licensedcode/data/rules/`` directory for examples.
 

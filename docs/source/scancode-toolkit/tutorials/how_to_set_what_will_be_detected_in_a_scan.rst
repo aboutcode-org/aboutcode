@@ -12,8 +12,8 @@ Different Scans
 
 The following examples will use the ``samples`` directory that is provided with the `ScanCode
 Toolkit code <https://github.com/nexB/scancode-toolkit/tree/master/samples>`_. All examples will
-be saved in the json format, which can be loaded into Scancode Workbench for visualization. See
-:ref:`how_to_visualize_scan_results` for more information. Another output formats option is a
+be saved in the JSON format, which can be loaded into Scancode Workbench for visualization. See
+:ref:`how_to_visualize_scan_results` for more information. Another output format option is a
 static html file. See :ref:`cli_output_format` for more information.
 
 Scan for all clues:
@@ -65,4 +65,4 @@ To see more example scans:
 
    ./scancode --examples
 
-For more information refer :ref:`cli_list_options`. 
+For more information, refer :ref:`cli_list_options`. 

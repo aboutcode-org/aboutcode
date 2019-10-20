@@ -3,7 +3,7 @@
 How to Visualize Scan results
 =============================
 
-In this simple tutorial example, we import results from a basic scan preformed on the ``samples``
+In this simple tutorial example, we import results from a basic scan performed on the ``samples``
 directory distributed by default with Scancode, and visualize the outputs through
 Scancode Workbench.
 
@@ -11,9 +11,9 @@ Scancode Workbench.
 
     This tutorial uses the 3.1.1 version of Scancode Toolkit, and Scancode Workbench 3.1.0 (This
     beta version of ScanCode Workbench is compatible with scans from any ScanCode Toolkit develop
-    version/branch at or after v3.0.2). If you are using a older version of Scancode Toolkit, check
+    version/branch at or after v3.0.2). If you are using an older version of Scancode Toolkit, check
     respective versions of this documentation. Also refer the Scancode Workbench
-    `release highlights <https://github.com/nexB/scancode-workbench/releases/>`_ .
+    `release highlights <https://github.com/nexB/scancode-workbench/releases/>`_.
 
 ..
     [ToDo]
@@ -67,7 +67,7 @@ Importing Data into Scancode Workbench
 
     You can also import a .sqlite file you've saved in the past to load scan results. As it is much
     faster, once you've imported the JSON file and a corresponding SQLite file has been created,
-    you shouldn't repeat this. Instead import the SQLite file next time you want to visualize the
+    you shouldn't repeat this. Instead, import the SQLite file next time you want to visualize the
     same scan result.
 
 Visualization
@@ -82,7 +82,7 @@ The dashboard has a general overview.
 
 .. image:: /scancode-toolkit/tutorials/data/workbench_dashboard.png
 
-There are 3 principal views (They appear by the same order in the GIFs):
+There are 3 principal views (They appear in the same order in the GIFs):
 
 - Chart Summary View,
 - Table View,
@@ -93,7 +93,7 @@ There are 3 principal views (They appear by the same order in the GIFs):
 Filters
 ^^^^^^^
 
-You can also click any file/directory on the file list located at the right, to filter the results
+You can also click any file/directory on the file list located on the right, to filter the results
 such that it only contains results from that File/Directory.
 
 .. image:: /scancode-toolkit/tutorials/data/filter_sample.gif

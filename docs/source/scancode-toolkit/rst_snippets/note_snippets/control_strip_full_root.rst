@@ -1,6 +1,6 @@
 .. note::
 
-    The options ``--strip-root`` and ``--full-root`` can't be used together, i.e. any one option
+    The options ``--strip-root`` and ``--full-root`` can't be used together, i.e. Any one option
     may be used in a single scan.
 
 .. note::

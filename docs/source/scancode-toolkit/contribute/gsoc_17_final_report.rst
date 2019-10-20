@@ -120,7 +120,7 @@ belong to.
 `Add a Resource class to hold all scanned info <https://github.com/nexB/scancode-toolkit/issues/738>`_
 * ``Ongoing`` *
 
-Here, the goal was to create a ``Resource`` class such that it holds all the scanned data for a
+Here, the goal was to create a ``Resource`` class, such that it holds all the scanned data for a
 resource (i.e a file or a directory). This class would go on to eventually encapsulate the caching
 logic entirely. For now, it just holds the ``info`` and ``path`` of a resource.
 
@@ -132,4 +132,4 @@ logic entirely. For now, it just holds the ``info`` and ``path`` of a resource.
 - More complex post-scan plugins
 - Support plugins written in languages other than python
 
-**Additionally, all my commits can be found** `here <https://github.com/nexB/scancode-toolkit/commits/develop?author=yashdsaraf>`_ .
+**Additionally, all my commits can be found** `here <https://github.com/nexB/scancode-toolkit/commits/develop?author=yashdsaraf>`_.

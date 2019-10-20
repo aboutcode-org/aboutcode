@@ -31,7 +31,7 @@ To scan the ``samples`` directory, the command will be::
 
 Alternatively, instead of using ``path/to/scancode`` (the path from root of file system) we can
 go into the scancode directory (like ``scancode-toolkit-3.1.1``) and then use ``./scancode``.
-The same applies for input and output options. To scan a folder ``samples`` inside scancode
+The same applies for input and output options. To scan a folder ``samples`` inside ScanCode
 directory, and output to a file ``output.json`` in the same directory, the command will be::
 
     ./scancode -clpieu --json-pp output.json samples
@@ -42,7 +42,7 @@ While a scan using absolute paths from the file system root will look like::
 
 Throughout the documentation ``./scancode --clpieu --json-pp output.json samples`` will be used
 as am example when the terminal is at ``scancode-toolkit-3.1.1`` and we are scanning the
-default ``samples`` folder dirstributed with Scancode-Toolkit.
+default ``samples`` folder distributed with Scancode-Toolkit.
 
 Scans the <SCAN INPUT> file or directory for license, origin and packages and saves results to
 FILE(s) using one or more output format option. Error and progress are printed to stdout.
@@ -52,7 +52,7 @@ FILE(s) using one or more output format option. Error and progress are printed t
 Type of Options
 ---------------
 
-Scancode Toolit Command Line options can be divided into these major sections:
+ScanCode Toolkit Command Line options can be divided into these major sections:
 
 - :ref:`cli_basic`
 - :ref:`Extractcode Options <cli_extract>`
@@ -254,7 +254,7 @@ A sample JSON output for an individual file will look like::
       "scan_errors": []
     },
 
-Static html output
+Static HTML output
 ^^^^^^^^^^^^^^^^^^
 
 Scan the ``samples`` directory for licenses and copyrights and save the scan results to an HTML
