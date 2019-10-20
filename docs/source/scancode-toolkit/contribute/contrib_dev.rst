@@ -43,6 +43,19 @@ https://ci.appveyor.com/project/nexB/scancode-toolkit.
 
 When finding bugs or adding new features, we add tests. See existing test code for examples.
 
+More info:
+
+- Source code and license datasets are in the /src/ directory.
+- Test code and test data are in the /tests/ directory.
+- Datasets and test data are in /data/ sub-directories.
+- Third-party components are vendored in the /thirdparty/ directory. ScanCode is self contained
+  and should not require network access for installation or configuration of third-part libraries.
+- Additional pre-compiled vendored binaries are stored in bin/ sub-directories of the /src/
+  directory with their sources in this repo: https://github.com/nexB/scancode-thirdparty-src/
+- Porting ScanCode to other OS (FreeBSD, etc.) is possible. Enter an issue for help.
+- Bugs and pull requests are welcomed.
+- See the wiki and CONTRIBUTING.rst for more info.
+
 .. _scancode_toolkit_developement_running_tests:
 
 Running tests

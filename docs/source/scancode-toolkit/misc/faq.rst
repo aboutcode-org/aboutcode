@@ -13,55 +13,6 @@ We could not find an existing tool (open source or commercial) meeting our needs
 - written in a higher level language such as Python
 - easy to extend and evolve
 
-
-.. _scancode_toolkit_faq_how_to_get_started_with_developement:
-
-How to get started with development?
-------------------------------------
-
-ScanCode is primarily developed in Python with Python 2.7.
-
-Source code is at:
-
-- https://github.com/nexB/scancode-toolkit.git
-- https://github.com/nexB/scancode-thirdparty-src.git
-
-Open a terminal, clone the scancode-toolkit repository, cd to the clone directory and run::
-
-    source configure
-
-On Windows open a command prompt, cd to the clone directory and run instead::
-
-    configure
-
-The configure script creates an isolated Python virtual environment ready for development usage.
-Rerun ``configure`` or ``source bin/activate`` when opening a new terminal. Rerun ``configure``
-after a pull or a branch merge.
-
-To run the all tests run this command. Be patient: there are several thousand tests!::
-
-    py.test
-
-To run the tests faster on four processors in parallel run::
-
-    py.test -n 4
-
-See also :ref:`scancode_toolkit_developement_running_tests` for more details
-
-More info:
-
-- Source code and license datasets are in the /src/ directory.
-- Test code and test data are in the /tests/ directory.
-- Datasets and test data are in /data/ sub-directories.
-- Third-party components are vendored in the /thirdparty/ directory. ScanCode is self contained
-  and should not require network access for installation or configuration of third-part libraries.
-- Additional pre-compiled vendored binaries are stored in bin/ sub-directories of the /src/
-  directory with their sources in this repo: https://github.com/nexB/scancode-thirdparty-src/
-- Porting ScanCode to other OS (FreeBSD, etc.) is possible. Enter an issue for help.
-- Bugs and pull requests are welcomed.
-- See the wiki and CONTRIBUTING.rst for more info.
-
-
 Can licenses be synchronized with the DejaCode license library?
 ---------------------------------------------------------------
 
@@ -112,6 +63,9 @@ Can I install ScanCode in a Unicode path?
 Not for now. See https://github.com/nexB/scancode-toolkit/issues/867 There is a bug in virtualenv
 on Python2 https://github.com/pypa/virtualenv/issues/457 At this stage and until we completed the
 migration to Python 3 there is no way out but to use a path that contains only ASCII characters.
+
+..
+  [ToDo] Update from Python 2.x to Python 3.x
 
 The line numbers for a copyright found in a binary are weird. What do they mean?
 --------------------------------------------------------------------------------

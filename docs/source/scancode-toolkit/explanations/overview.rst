@@ -12,6 +12,17 @@ For copyright detection, ScanCode uses a grammar that defines the most common an
 forms of copyright statements. When scanning, the target file text is extracted and 'parsed'
 with this grammar to extract copyright statements.
 
+Scancode-Toolkit performs the scan on a codebase in the following steps :
+
+1. Collect an inventory of the code files and classify the code using file types,
+2. Extract files from any archive using a general purpose extractor
+3. Extract texts from binary files if needed
+4. Use an extensible rules engine to detect open source license text and notices
+5. Use a specialized parser to capture copyright statements
+6. Identify packaged code and collect metadata from packages
+7. Report the results in the formats of you choice (JSON, CSV, etc.) for integration
+   with other tools
+
 Scan results are provided in various formats:
 
 - a JSON file simple or pretty-printed,

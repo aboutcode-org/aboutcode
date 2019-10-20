@@ -1,6 +1,10 @@
 How to specify Scancode Output Format
 =====================================
 
+A basic overview of formatting Scancode Output is presented here.
+
+More information on :ref:`cli_output_format`.
+
 JSON
 ----
 
@@ -42,5 +46,3 @@ For more details on the html output format refer :ref:`output_html`.
     The ``--html-app`` option has been deprecated, use Scancode Workbench instead.
 
 .. include::  /scancode-toolkit/rst_snippets/custom_output_format.rst
-
-More information on :ref:`cli_output_format`.

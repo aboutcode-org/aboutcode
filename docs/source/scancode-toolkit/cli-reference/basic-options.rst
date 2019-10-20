@@ -129,7 +129,7 @@
         The option ``--license-text-diagnostics`` and ``--is-license-text`` are sub-options of
         ``--license-text``. ``--is-license-text`` is a Post-Scan Option.
 
-    With the --license-text option, the scan results attribute "matched text" includes the matched text
+    With the ``--license-text`` option, the scan results attribute "matched text" includes the matched text
     for the detected license.
 
     An example Scan::
@@ -156,8 +156,8 @@
          Jean-loup Gailly        Mark Adler
          jloup@gzip.org          madler@alumni.caltech.edu"
 
-    The file in which this license was detected: ``samples/arch/zlib.tar.gz-extract/zlib-1.2.8/zlib.h``
-    License name: "ZLIB License"
+    - The file in which this license was detected: ``samples/arch/zlib.tar.gz-extract/zlib-1.2.8/zlib.h``
+    - License name: "ZLIB License"
 
 ----
 
@@ -178,7 +178,7 @@
 
     A scan example using the ``--license-url-template TEXT`` option ::
 
-        ./scancode -clpieu --json-pp output.json samples --license-url-template https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/{}
+        ./scancode -clpieu --json-pp output.json samples --license-url-template https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/{}.yml
 
     In a normal scan, referance url for "ZLIB License" is as follows::
 
@@ -188,9 +188,9 @@
 
         ``--license-url-template https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/{}``
 
-    the referance URL changes to::
+    the referance URL changes to this `zlib.yml file <https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib.yml>`_::
 
-        "reference_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/zlib",
+        "reference_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/zlib.yml",
 
     The reference URL changes for all detected licenses in the scan, across the scan result file.
 

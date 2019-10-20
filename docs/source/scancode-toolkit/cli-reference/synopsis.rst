@@ -2,22 +2,20 @@ Synopsis
 ========
 
 ScanCode detects licenses, copyrights, package manifests and direct dependencies and more, both
-in source code and binary files, by scanning the files. This section shows and explains the
-following:
+in source code and binary files, by scanning the files. This page introduces you to the ScanCode
+Toolkit Command Line Interface in the following sections:
 
 - Quickstart
 - Type of Options
 - Output Formats
 - Other Important Documentation
 
-This is a synopsis of the whole section that follows, the ScanCode Command Line Referance.
-
 Quickstart
 ----------
 
 The basic usage is::
 
-   path/to/scancode [OPTIONS] <OUTPUT FORMAT OPTION(s)> <input>...
+   path/to/scancode [OPTIONS] <OUTPUT FORMAT OPTION(s)> <SCAN INPUT>
 
 To scan the ``samples`` directory, the command will be::
 
@@ -46,8 +44,8 @@ Throughout the documentation ``./scancode --clpieu --json-pp output.json samples
 as am example when the terminal is at ``scancode-toolkit-3.1.1`` and we are scanning the
 default ``samples`` folder dirstributed with Scancode-Toolkit.
 
-Scans the <input> file or directory for license, origin and packages and saves results to FILE(s)
-using one or more output format option. Error and progress are printed to stdout.
+Scans the <SCAN INPUT> file or directory for license, origin and packages and saves results to
+FILE(s) using one or more output format option. Error and progress are printed to stdout.
 
 .. _scancode_cli_options:
 

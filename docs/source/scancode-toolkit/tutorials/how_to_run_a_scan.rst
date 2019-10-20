@@ -27,6 +27,10 @@ The following commands set up and activate the Virtual Environment ``venv-scan3.
     virtualenv -p /usr/bin/python2.7 venv-scan3.1.1
     source venv-scan3.1.1/bin/activate
 
+..
+  [ToDo]
+  Update from Python 2.7 to Python 3.6
+
 Setting up Scancode Toolkit
 ---------------------------
 

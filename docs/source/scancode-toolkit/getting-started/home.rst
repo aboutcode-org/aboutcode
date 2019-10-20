@@ -17,9 +17,13 @@ ScanCode tries to address this issue by offering:
 
 - A comprehensive code scanner that can detect origin or license information inside codebase files
 - A simple command line approach that runs on Windows, Linux, and Mac
-- Your choice of JSON or other output formats (HTML, CSV) for integration with other tools
+- Your choice of JSON or other output formats (SPDX, HTML, CSV) for integration with other tools
+- ScanCode workbench for Visualization
 - Well-tested, easy to hack, and well-documented code
 - Release of the code and reference data under attribution licenses (Apache 2.0 and CC-BY-1.0)
+- Plugin System for easily adding new Functionality to Scans.
+- Python 3 Unicode Capabilities for better supporting users from 100+ languages.
+- Extensive Documentation Support.
 
 What does ScanCode Toolkit do?
 ------------------------------
@@ -48,10 +52,10 @@ Given a codebase in a directory, ScanCode will:
 - Use an extensible rules engine to detect open source license text and notices
 - Use a specialized parser to capture copyright statements
 - Identify packaged code and collect metadata from packages
-- Report the results in the formats of you choice (JSON, CSV, etc.) for integration with
+- Report the results in the formats of you choice (JSON, SPDX, etc.) for integration with
   other tools
-- Browse the results using the AboutCode Manager companion app from
-  https://github.com/nexB/aboutcode-manager to assist your analysis.
+- Browse the results using the `ScanCode Workbench <https://github.com/nexB/scancode-workbench>`_
+  companion app to assist your analysis.
 
 ScanCode should enable you to identify the “easy” cases on your own, but a software development
 team will probably need to build internal expertise or use outside experts (like nexB) in

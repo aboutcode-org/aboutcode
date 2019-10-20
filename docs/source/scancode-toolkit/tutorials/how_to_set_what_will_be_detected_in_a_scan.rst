@@ -5,23 +5,10 @@ ScanCode allows you to scan a codebase for license, copyright and other interest
 that can be discovered in files. The following options are available for detection when using
 ScanCode Toolkit:
 
-.. list-table::
-   :header-rows: 1
+.. include::  /scancode-toolkit/rst_snippets/basic_options.rst
 
-   * - Syntax Option
-     - Clue/Information
-   * - -c, --copyright
-     - Scan for copyrights.
-   * - -l, --license
-     - Scan for licenses.
-   * - -i, --info
-     - Scan for file information.
-   * - -p, --package
-     - Scan for packages.
-   * - -e, --email
-     - Scan for emails.
-   * - -u, --url
-     - Scan for urls.
+Different Scans
+---------------
 
 The following examples will use the ``samples`` directory that is provided with the `ScanCode
 Toolkit code <https://github.com/nexB/scancode-toolkit/tree/master/samples>`_. All examples will
@@ -30,7 +17,7 @@ be saved in the json format, which can be loaded into Scancode Workbench for vis
 static html file. See :ref:`cli_output_format` for more information.
 
 Scan for all clues:
--------------------
+^^^^^^^^^^^^^^^^^^^
 
 To scan for licenses, copyrights, urls, emails, package information, and file information
 
@@ -40,40 +27,42 @@ To scan for licenses, copyrights, urls, emails, package information, and file in
 
 
 Scan for license and copyright clues:
--------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
-   ./scancode -cl --json output.json samples
+   ./scancode -cl --json-pp output.json samples
 
 
 Scan for emails and URLs:
--------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
-   ./scancode -eu --json output.json samples
+   ./scancode -eu --json-pp output.json samples
 
 
 Scan for package information:
------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
-   ./scancode -p --json output.json samples
+   ./scancode -p --json-pp output.json samples
 
 
 Scan for file information:
---------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
-   ./scancode -i --json output.json samples
+   ./scancode -i --json-pp output.json samples
 
 
 To see more example scans:
---------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
    ./scancode --examples
+
+For more information refer :ref:`cli_list_options`. 

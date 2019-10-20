@@ -6,12 +6,12 @@ All Available Options
 This section contains an exhaustive list of all Scancode options, arranged in various sections.
 The sections are as follows:
 
-- basic
-- core
-- output-format
-- ouput-control
-- pre-scan
-- post-scan
+- Basic Scan Options
+- Core Scan Options
+- Output Formats 
+- Controlling Output and Filters
+- Pre-Scan Options
+- Post-Scan Options
 
 There's also another section for ``extractcode`` options.
 

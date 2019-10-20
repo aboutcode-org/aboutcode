@@ -9,12 +9,12 @@ All "Output Control" Scan Options
 
 --ignore-author <pattern>       Ignore a file (and all its findings)
                                 if an author contains a match to the
-                                <pattern> regular expression.
+                                ``<pattern>`` regular expression.
 
 --ignore-copyright-holder <pattern>
                                 Ignore a file (and all its findings)
                                 if a copyright holder contains a match
-                                to the <pattern> regular expression.
+                                to the ``<pattern>`` regular expression.
 
 .. include::  /scancode-toolkit/rst_snippets/warning_snippets/control_ignore_author_copyright.rst
 

@@ -26,9 +26,14 @@ following options.
 
         ./scancode -clpieu --json output.json samples
 
+    .. include::  /scancode-toolkit/rst_snippets/note_snippets/output_json_ugly.rst
+
+    .. figure:: data/json_ugly.png
+
+
     The entire JSON file is structured in the following manner:
 
-    At first some general information on the scan, what options were used, nnumber of files etc.
+    At first some general information on the scan, what options were used, number of files etc.
     And then all the files follow.
 
     ::
@@ -119,8 +124,6 @@ following options.
             }
           ]
         }
-
-    .. include::  /scancode-toolkit/rst_snippets/note_snippets/output_json_ugly.rst
 
 ----
 
@@ -311,15 +314,15 @@ Comparing Different ``json`` Output Formats
 
     Default ``--json`` Output:
 
-    .. image:: data/output_json.png
+    .. figure:: data/output_json.png
 
     ``--json-pp`` Output:
 
-    .. image:: data/output_jsonpp.png
+    .. figure:: data/output_jsonpp.png
 
     ``--json-lines`` Output:
 
-    .. image:: data/output_jsonlines.png
+    .. figure:: data/output_jsonlines.png
 
 ----
 
@@ -341,7 +344,7 @@ Comparing Different ``json`` Output Formats
     Here the file is structured as a dictionary of named properties and classes using W3C's
     `RDF Technology <https://www.w3.org/RDF/>`_.
 
-    .. image:: data/output_spdx_rdf1.png
+    ... figure:: data/output_spdx_rdf1.png
 
 ----
 
@@ -376,7 +379,7 @@ Comparing Different ``json`` Output Formats
 
     After a section titled ``#Packages``, a list follows.
 
-    .. image:: data/output_spdx_tv_package.png
+    .. figure:: data/output_spdx_tv_package.png
 
     Each File information is listed under a ``#File`` title, for each of the files.
 
@@ -391,7 +394,7 @@ Comparing Different ``json`` Output Formats
 
     An example goes as follows:
 
-    .. image:: data/output_spdx_tv_file.png
+    .. figure:: data/output_spdx_tv_file.png
 
     After the files section, there's a section for licences under a ``#Licences`` title, with the
     following information for each licence:
@@ -405,7 +408,7 @@ Comparing Different ``json`` Output Formats
 
     Here's an example:
 
-    .. image:: data/output_spdx_tv_licenses.png
+    .. figure:: data/output_spdx_tv_licenses.png
 
 ----
 
@@ -433,11 +436,11 @@ Comparing Different ``json`` Output Formats
         - Package Information
         - Licenses (Links to Dejacode/License Homepage)
 
-    .. image:: data/output_html1.png
+    .. figure:: data/output_html1.png
 
-    .. image:: data/output_html2.png
+    .. figure:: data/output_html2.png
 
-    .. image:: data/output_html3.png
+    .. figure:: data/output_html3.png
 
 ----
 
@@ -468,11 +471,11 @@ Comparing Different ``json`` Output Formats
 
     .. include::  /scancode-toolkit/rst_snippets/warning_snippets/output_htmlapp_dep.rst
 
-    .. image:: data/output_html_app1.png
+    .. figure:: data/output_html_app1.png
 
-    .. image:: data/output_html_app2.png
+    .. figure:: data/output_html_app2.png
 
-    .. image:: data/output_html_app3.png
+    .. figure:: data/output_html_app3.png
 
 ----
 
@@ -559,7 +562,7 @@ Comparing Different ``json`` Output Formats
     So if there's multiple elements in a file, they are each given an entry with the details mentioned
     earlier.
 
-    .. image:: data/output_csv.png
+    .. figure:: data/output_csv.png
 
 ----
 

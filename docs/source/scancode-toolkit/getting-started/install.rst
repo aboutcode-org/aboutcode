@@ -58,16 +58,15 @@ There is a bug in underlying libraries that prevent this.
 .. _install_scancode:
 
 ..
-
   [ToDo]
   Add "pip isntall" option
-
+  Update to Python 3.6
 
 Installation on Linux and Mac
 -----------------------------
 
 Download and extract the latest ScanCode release from:
-https://github.com/nexB/scancode-toolkit/releases/latest
+https://github.com/nexB/scancode-toolkit/releases/
 
 Open a terminal in the extracted directory and run::
 
@@ -79,7 +78,7 @@ Installation on Windows
 -----------------------
 
 - Download the latest ScanCode release zip file from
-  https://github.com/nexB/scancode-toolkit/releases/latest
+  https://github.com/nexB/scancode-toolkit/releases/
 
 - In Windows Explorer (called File Explorer on Windows 10), select the downloaded ScanCode zip
   and right-click.

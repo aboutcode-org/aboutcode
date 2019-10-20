@@ -4,7 +4,7 @@ All "Post-Scan" Options
 --mark-source            Set the "is_source" flag to true for directories that
                          contain over 90% of source files as direct children
                          and descendants. Count the number of source files in a
-                         directory as a new source_file_counts attribute
+                         directory as a new "source_file_counts" attribute
 
                          Sub-Option of - ``--url``
 
@@ -54,7 +54,7 @@ All "Post-Scan" Options
                          for key, top-level files. Key files are top-
                          level codebase files such as COPYING, README
                          and package manifests as reported by the
-                         --classify option "is_legal", "is_readme",
+                         ``--classify`` option "is_legal", "is_readme",
                          "is_manifest" and "is_top_level" flags.
 
                          Sub-Option of - ``--classify`` and ``--summary``.

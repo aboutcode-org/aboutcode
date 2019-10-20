@@ -50,6 +50,10 @@ This opens the Workbench.
     the build instructions. You'll also have to create a Python 2.7 Virtual Environment, or use the
     same venv-3.1.1 created here at :ref:`how_to_run_a_scan`.
 
+..
+  [ToDo]
+  Update from Python 2.x to 3.x
+
 Importing Data into Scancode Workbench
 --------------------------------------
 
@@ -76,7 +80,7 @@ Refer :ref:`workbench_views` for more information on Visualization.
 
 The dashboard has a general overview.
 
-.. image:: data/workbench_dashboard.png
+.. image:: /scancode-toolkit/tutorials/data/workbench_dashboard.png
 
 There are 3 principal views (They appear by the same order in the GIFs):
 
@@ -84,7 +88,7 @@ There are 3 principal views (They appear by the same order in the GIFs):
 - Table View,
 - Components Summary View.
 
-.. image:: data/views_sample.gif
+.. image:: /scancode-toolkit/tutorials/data/views_sample.gif
 
 Filters
 ^^^^^^^
@@ -92,10 +96,10 @@ Filters
 You can also click any file/directory on the file list located at the right, to filter the results
 such that it only contains results from that File/Directory.
 
-.. image:: data/filter_sample.gif
+.. image:: /scancode-toolkit/tutorials/data/filter_sample.gif
 
-Componets
-^^^^^^^^^
+Components
+^^^^^^^^^^
 
 Refer :ref:`workbench_components` for more information on Components.
 
@@ -107,4 +111,4 @@ In the table view,
 #. A pop-up opens with fields, make necessary edits and Save.
 #. Go to the Component Summary View to see the Component.
 
-.. image:: data/components_sample.gif
+.. image:: /scancode-toolkit/tutorials/data/components_sample.gif
