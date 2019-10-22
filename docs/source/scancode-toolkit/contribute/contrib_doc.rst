@@ -22,7 +22,7 @@ How To Run Style Tests
 
 In the project root, run the following command::
 
-    $ doc8 --max-line-length 100 docs/source/scancode-toolkit
+    $ doc8 --max-line-length 100 docs/source/scancode-toolkit --ignore D000
 
 .. note::
 
