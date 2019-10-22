@@ -1,3 +1,5 @@
+.. _contrib_doc_dev:
+
 Contributing to the Documentation
 =================================
 
@@ -140,3 +142,4 @@ Extra Style Checks
     changing commands or other stuff as Aspell gives prompts for a lot of them. Also delete the
     temporary ``.bak`` files generated. Refer the `manual <http://aspell.net/man-html/>`_ for more
     information on how to use.
+

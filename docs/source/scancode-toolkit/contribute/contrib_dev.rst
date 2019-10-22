@@ -1,3 +1,5 @@
+.. _contrib_code_dev:
+
 Contributing to Code Development
 ================================
 
@@ -22,12 +24,12 @@ We use PEP8 conventions with a relaxed line length that can be up to 90'ish char
 needed to keep the code clear and readable.
 
 We store pre-built bundled native binaries in ``bin/`` sub-directories of each ``src/`` packages.
-These binaries are organized by OS and architecture. This ensure that ScanCode works out of the box
+These binaries are organized by OS and architecture. This ensures that ScanCode works out of the box
 either using a checkout or a download, without needing a compiler and toolchain to be installed.
-The corresponding source code for the pre-built binaries are store in a separate repository at
+The corresponding source code for the pre-built binaries are stored in a separate repository at
 https://github.com/nexB/scancode-thirdparty-src.
 
-We store bundled third-party components and libraries in the ``thirdparty`` directory. Python
+We store bundled thirdparty components and libraries in the ``thirdparty`` directory. Python
 libraries are stored as wheels, eventually pre-built if the corresponding wheel is not available
 in the Pypi repository. Some of these components may be advanced builds with bug fixes or advanced
 patches.
@@ -41,6 +43,19 @@ https://ci.appveyor.com/project/nexB/scancode-toolkit.
 
 When finding bugs or adding new features, we add tests. See existing test code for examples.
 
+More info:
+
+- Source code and license datasets are in the /src/ directory.
+- Test code and test data are in the /tests/ directory.
+- Datasets and test data are in /data/ sub-directories.
+- Third-party components are vendored in the /thirdparty/ directory. ScanCode is self contained
+  and should not require network access for installation or configuration of third-party libraries.
+- Additional pre-compiled vendored binaries are stored in bin/ sub-directories of the /src/
+  directory with their sources in this repo: https://github.com/nexB/scancode-thirdparty-src/
+- Porting ScanCode to other OS (FreeBSD, etc.) is possible. Enter an issue for help.
+- Bugs and pull requests are welcomed.
+- See the wiki and CONTRIBUTING.rst for more info.
+
 .. _scancode_toolkit_developement_running_tests:
 
 Running tests
@@ -50,13 +65,13 @@ ScanCode comes with over 13,000 unit tests to ensure detection accuracy and stab
 Windows and macOS OSes: we kinda love tests, do we?
 
 We use pytest to run the tests: call the ``py.test`` script to run the whole test suite. This is
-installed by ``pytest`` which is bundled with a ScanCode checkout and installed when you
+installed by ``pytest``, which is bundled with a ScanCode checkout and installed when you
 run ``./configure``).
 
 If you are running from a fresh git clone and you run ``./configure`` and then
 ``source bin/activate`` the ``py.test`` command will be available in your path.
 
-Alternatively if you have already configured but are not in an activated "virtualenv" the
+Alternatively, if you have already configured but are not in an activated "virtualenv" the
 ``py.test`` command is available under ``<root of your checkout>/bin/py.test``
 
 (Note: paths here are for POSIX, but mostly the same applies to Windows)
@@ -67,18 +82,18 @@ verbose mode with ``py.test -vvs -n4``.
 
 You can also run a subset of the test suite as shown in the CI configs
 https://github.com/nexB/scancode-toolkit/blob/develop/appveyor.yml#L6 e,g,
-``py.test -n 2 -vvs tests/scancode`` runs only the tests scripts present in the ``tests/scancode``
+``py.test -n 2 -vvs tests/scancode`` runs only the test scripts present in the ``tests/scancode``
 directory. (You can pass a path to a specific test script file there too).
 
 See also https://docs.pytest.org for details or use the ``py.test -h`` command to show the many
 other options available.
 
 One useful option is to run a select subset of the test functions matching a pattern with the
-``-k`` option for instance: ``py.test -vvs -k tcpdump`` would only run test functions that contain
+``-k`` option, for instance: ``py.test -vvs -k tcpdump`` would only run test functions that contain
 the string "tcpdump" in their name or their class name or module name .
 
 Another useful option after a test run with some failures is to re-run only the failed tests with
-the ``--lf`` option for instance: ``py.test -vvs --lf`` would only run only test functions that
+the ``--lf`` option, for instance: ``py.test -vvs --lf`` would only run only test functions that
 failed in the previous run.
 
 pip requirements and the configure script
@@ -100,9 +115,9 @@ that are operating system-specific.
 ScanCode requirements and third-party Python libraries
 ------------------------------------------------------
 
-In a somewhat unconventional way, all the required libraries are bundled aka. copied in the repo
+In a somewhat unconventional way, all the required libraries are bundled aka. Copied in the repo
 itself in the thirdparty/ directory. If ScanCode were only a library it would not make sense. But
-its is first an application and having a well defined frozen set of dependent packages is important
+it is first an application and having a well defined frozen set of dependent packages is important
 for an app. The benefit of this approach (combined with the ``configure`` script) means that a mere
 checkout of the repository contains everything needed to run ScanCode except for a
 Python interpreter.

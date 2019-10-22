@@ -1,70 +1,48 @@
 How to specify Scancode Output Format
 =====================================
 
-JSON
-^^^^
+A basic overview of formatting Scancode Output is presented here.
 
-Currently, scancode's default behavior is output scan results in ``.json`` format. For example,
-running the command ``scancode /path/to/target/dir`` will output scan results in json format to
-stdout. A command in this format: ``scancode /path/to/target/dir /path/to/output.json`` will save
-the scancode results to the specified ``json`` file.
+More information on :ref:`cli_output_format`.
+
+JSON
+----
+
+If you want JSON output of ScanCode results, you can pass the ``--json`` argument to ScanCode.
+The following commands will output scan results in a formatted json file:
+
+* ``./scancode --json /path/to/output.json /path/to/target/dir``
+
+* ``./scancode --json-pp /path/to/output.json /path/to/target/dir``
+
+* ``./scancode --json-lines /path/to/output.json /path/to/target/dir``
+
+To compare the JSON output in different formats refer :ref:`comparing_json`.
+
+Print to ``stdout`` (Terminal)
+------------------------------
+
+If you want to format the output in JSON and print it at stdout, you can replace the JSON filename
+with a "-", like ``--json-pp -`` instead of ``--json-pp output.json``.
+
+The following command will output the scan results in JSON format to ``stdout`` (In the Terminal)::
+
+    ./scancode -clpieu --jsonlines - samples/
 
 HTML
-^^^^
+----
 
-If you want HTML output of scancode results, you can pass either the ``--format`` or the
-``--html`` argument to scancode depending on version. Newer versions of scancode us --html.
-The following commands will output scan results in a formatted html page or simple web application:
+If you want HTML output of ScanCode results, you can pass the ``--html`` argument to ScanCode.
+The following commands will output scan results in a formatted HTML page or simple web application:
 
+* ``./scancode --html /path/to/output.html /path/to/target/dir``
 
-* ``scancode --format html /path/to/target/dir /path/to/output.html``
-* ``scancode --format html-app /path/to/target/dir /path/to/output.html``
-* ``scancode --html /path/to/target/dir /path/to/output.html``
+* ``./scancode --html-app /path/to/output.html /path/to/target/dir``
 
-Custom format
-^^^^^^^^^^^^^
+For more details on the HTML output format refer :ref:`output_html`.
 
-While the three built-in output formats are convenient for a verity of use-cases, one may wish to
-create their own output template which can be passed to the ``--format`` argument. Scancode makes
-this very easy, as it uses the popular Jinja2 template engine. Simply pass the path to the custom
-template to the ``--format`` argument, or drop it in a folder to ``src/scancode/templates``
-directory.
+.. WARNING::
 
-For example, if I wanted a simple CLI output I would create a ``template2.html`` (file name and
-extension does not matter) with the particular data I wish to see. In this case, I am only
-interested in the license and copyright data for this particular scan.
+    The ``--html-app`` option has been deprecated, use Scancode Workbench instead.
 
-::
-
-   ## template2.html:
-   [
-       {% if results.license_copyright %}
-           {% for location, data in results.license_copyright.items() %}
-               {% for row in data %}
-     location:"{{ location }}",
-     {% if row.what == 'copyright' %}copyright:"{{ row.value|escape }}",{% endif %}
-                {% endfor %}
-            {% endfor %}
-       {% endif %}
-   ]
-
-Now I can run scancode using my newly created template:
-
-::
-
-   $ ./scancode -f template2.html -c samples/ t.json
-   Scanning files...
-     [####################################]  46
-   Scanning done.
-
-Now are results are saved in ``t.json`` and we can easily view them with ``head t.json``\ :
-
-::
-
-   [
-     location:"samples/JGroups/LICENSE",
-     copyright:"Copyright (c) 1991, 1999 Free Software Foundation, Inc.",
-
-     location:"samples/JGroups/LICENSE",
-     copyright:"copyrighted by the Free Software Foundation",
-   ]
+.. include::  /scancode-toolkit/rst_snippets/custom_output_format.rst

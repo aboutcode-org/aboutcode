@@ -121,7 +121,7 @@ Other work in progress
 ----------------------
 
 - ScanCode server: Spawned as its own project: https://github.com/nexB/scancode-server. Will
-  include Integration / webhooks for GitHub, Bitbucket.
+  include Integration / webhooks for Github, Bitbucket.
 - VulnerableCode: NVD and CVE lookups: Spawned as its own project: https://github.com/nexB/vulnerablecode
 - ScanCode Workbench: desktop app for scan review: Spawned as its own project:
   https://github.com/nexB/scancode-workbench

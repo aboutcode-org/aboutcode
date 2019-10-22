@@ -1,8 +1,8 @@
 IDE Configuration
 =================
 
-The instructions below assume that you followed the
-:ref:`scancode_toolkit_faq_how_to_get_started_with_developement` including a python virtualenv.
+The instructions below assume that you followed the :ref:`contrib_code_dev` including a python
+virtualenv.
 
 PyCharm
 -------

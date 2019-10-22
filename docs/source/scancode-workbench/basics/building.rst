@@ -1,3 +1,5 @@
+.. _workbench_requirements:
+
 Building Requirements
 =====================
 
@@ -5,7 +7,7 @@ Linux
 -----
 
 - Python 2.7
-- `Node.js <https://nodejs.org/en/>`_ 6.x or later
+- `Node.js version <https://nodejs.org/en/download/package-manager/>`_ 6.x or later
 - npm 3.10.x or later but <= 5.2.0 (run ``npm install npm@5.2.0 -g``)
 
 MacOS

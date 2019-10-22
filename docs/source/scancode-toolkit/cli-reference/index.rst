@@ -8,9 +8,7 @@
    help-text-options
    list-options
    simple-examples
-
-..
-   [To-Add]
+   basic-options
    core-options
    output-format
    output-filters-and-control

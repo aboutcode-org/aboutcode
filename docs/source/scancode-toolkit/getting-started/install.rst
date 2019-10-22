@@ -17,6 +17,8 @@ System Requirements
     #. Mac: on recent Mac OSX (10.6.8 and up),
     #. Windows: on Windows 7 and up (32- or 64-bit) using a 32-bit Python.
 
+.. _install_prerequisites:
+
 Prerequisites
 -------------
 ScanCode needs a Python 2.7 interpreter.
@@ -37,12 +39,12 @@ ScanCode needs a Python 2.7 interpreter.
 
 - **On Windows**:
 
-    Use the Python 2.7 32-bit (e.g. the Windows x86 MSI installer) for X86 regardless of whether
+    Use the Python 2.7 32-bit (e.g. The Windows x86 MSI installer) for X86 regardless of whether
     you run Windows on 32-bit or 64-bit. DO NOT USE Python X86_64 installer even if you run 64 bit
     Windows. Download Python from this url:
     https://www.python.org/ftp/python/2.7.13/python-2.7.13.msi
 
-    Install Python on the c: drive and use all default installer options(scancode will try to find
+    Install Python on the c: drive and use all default installer options (scancode will try to find
     python just in c:\python27\python.exe). See the Windows installation section for more
     installation details.
 
@@ -53,11 +55,18 @@ Do not use Unicode, non-ASCII in your installation Path
 -------------------------------------------------------
 There is a bug in underlying libraries that prevent this.
 
+.. _install_scancode:
+
+..
+  [ToDo]
+  Add "pip isntall" option
+  Update to Python 3.6
+
 Installation on Linux and Mac
 -----------------------------
 
 Download and extract the latest ScanCode release from:
-https://github.com/nexB/scancode-toolkit/releases/latest
+https://github.com/nexB/scancode-toolkit/releases/
 
 Open a terminal in the extracted directory and run::
 
@@ -69,7 +78,7 @@ Installation on Windows
 -----------------------
 
 - Download the latest ScanCode release zip file from
-  https://github.com/nexB/scancode-toolkit/releases/latest
+  https://github.com/nexB/scancode-toolkit/releases/
 
 - In Windows Explorer (called File Explorer on Windows 10), select the downloaded ScanCode zip
   and right-click.
@@ -114,7 +123,7 @@ Installation on Windows
 - Press Enter.
 
 - This will change the current location of your command prompt to the root directory where
-  scancode is installed.
+  ScanCode is installed.
 
 - Then type::
 
@@ -130,4 +139,4 @@ Un-installation
 ---------------
 
 - Delete the directory in which you extracted ScanCode.
-- Delete any temporary files created in your system temp directory under a scancode directory.
+- Delete any temporary files created in your system temp directory under a ScanCode directory.

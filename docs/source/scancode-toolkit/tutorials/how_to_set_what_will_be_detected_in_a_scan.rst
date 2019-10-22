@@ -5,76 +5,64 @@ ScanCode allows you to scan a codebase for license, copyright and other interest
 that can be discovered in files. The following options are available for detection when using
 ScanCode Toolkit:
 
-.. list-table::
-   :header-rows: 1
+.. include::  /scancode-toolkit/rst_snippets/basic_options.rst
 
-   * - Syntax Option
-     - Clue/Information
-   * - -c, --copyright
-     - Scan for copyrights. [default]
-   * - -l, --license
-     - Scan for licenses. [default]
-   * - -i, --info
-     - Scan for file information. [default]
-   * - -p, --package
-     - Scan for packages. [default]
-   * - -e, --email
-     - Scan for emails.
-   * - -u, --url
-     - Scan for urls.
-
+Different Scans
+---------------
 
 The following examples will use the ``samples`` directory that is provided with the `ScanCode
 Toolkit code <https://github.com/nexB/scancode-toolkit/tree/master/samples>`_. All examples will
-be saved in the html-app format, which is a dynamic, interactive html page. The other formats
-options are a JSON file and a static html file. See :ref:`how_to_run_a_scan` for more information.
+be saved in the JSON format, which can be loaded into Scancode Workbench for visualization. See
+:ref:`how_to_visualize_scan_results` for more information. Another output format option is a
+static html file. See :ref:`cli_output_format` for more information.
 
 Scan for all clues:
--------------------
+^^^^^^^^^^^^^^^^^^^
 
 To scan for licenses, copyrights, urls, emails, package information, and file information
 
 ::
 
-   ./scancode -clip -e -u --format html-app samples samples.html
-
+   ./scancode -clipeu --json output.json samples
 
 
 Scan for license and copyright clues:
--------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
-   ./scancode -cl --format html-app samples samples.html
+   ./scancode -cl --json-pp output.json samples
 
 
 Scan for emails and URLs:
--------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
-   ./scancode -e -u --format html-app samples samples.html
+   ./scancode -eu --json-pp output.json samples
 
 
 Scan for package information:
------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
-   ./scancode -p --format html-app samples samples.html
+   ./scancode -p --json-pp output.json samples
 
 
 Scan for file information:
---------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
-   ./scancode -i --format html-app samples samples.html
+   ./scancode -i --json-pp output.json samples
 
 
 To see more example scans:
---------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
    ./scancode --examples
+
+For more information, refer :ref:`cli_list_options`.

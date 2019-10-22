@@ -1,3 +1,5 @@
+.. _workbench_components:
+
 Creating Conclusions
 ====================
 

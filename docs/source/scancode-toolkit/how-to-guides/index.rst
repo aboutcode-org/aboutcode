@@ -1,5 +1,7 @@
-**"How To" Guides**
-====================
+.. _how_to_guides:
+
+**How-To Guides**
+=================
 
 .. toctree::
    :maxdepth: 2

@@ -1,3 +1,5 @@
+.. _how_it_works:
+
 **How it all Works**
 ====================
 
@@ -7,7 +9,7 @@
    overview
 
 ..
-   [To-Add]
+   [ToAdd]
    file_collect_classify
    extract
    rules_engine
