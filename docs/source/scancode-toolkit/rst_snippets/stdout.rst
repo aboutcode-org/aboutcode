@@ -6,4 +6,4 @@ with a "-", like ``--json-pp -`` instead of ``--json-pp output.json``.
 
 The following command will output the scan results in JSON format to ``stdout`` (In the Terminal)::
 
-    ./scancode -clpieu --jsonlines - samples/
+    ./scancode -clpieu --json-pp - samples/
