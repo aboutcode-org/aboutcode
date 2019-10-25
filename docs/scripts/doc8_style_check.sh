@@ -6,4 +6,4 @@ set -e
 # not in the same source folder as the include statement.)
 # [ToDo 1. Expand Scan to All Docs (source/) 2. Fix this D000 workaround if possible]
 # Doc Contribution Guide is at scancode-toolkit/contribute/contrib_doc.rst
-doc8 --max-line-length 100 source/scancode-toolkit --ignore D000 --quiet
+doc8 --max-line-length 100 source/ --ignore D000 --quiet
