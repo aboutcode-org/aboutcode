@@ -3,11 +3,11 @@
 Add A Post-Scan Plugin
 ======================
 
-Automatic vs. Manual Installation
----------------------------------
+Built-In vs. Optional Installation
+----------------------------------
 
-Automatic
-^^^^^^^^^
+Built-In
+^^^^^^^^
 
 Some post-scan plugins are installed when ScanCode itself is installed, e.g., the
 :ref:`license_policy_plugin`, whose code is located here::
@@ -17,15 +17,15 @@ Some post-scan plugins are installed when ScanCode itself is installed, e.g., th
 These plugins do not require any additional installation steps and can be used as soon as ScanCode
 is up and running.
 
-Manual
-^^^^^^
+Optional
+^^^^^^^^
 
 ScanCode is also designed to use post-scan plugins that must be installed separately from the
 installation of ScanCode. The code for this sort of plugin is located here::
 
     https://github.com/nexB/scancode-toolkit/tree/develop/plugins/
 
-This wiki page will focus on manually-installed post-scan plugins.
+This wiki page will focus on optional post-scan plugins.
 
 Example Post-Scan Plugin: Hello ScanCode
 ----------------------------------------
