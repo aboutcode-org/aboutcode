@@ -1,4 +1,4 @@
-Google Summer of Code 2017 - Final report
+Google Summer of Code 2019 - Final report
 =========================================
 
 Project: **scancode-toolkit** to Python 3
