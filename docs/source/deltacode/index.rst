@@ -1,7 +1,7 @@
 **Deltacode Documentation**
-==================================
+===========================
 
-Welcome to Deltacode Documentation. 
+Welcome to Deltacode Documentation.
 
 .. toctree::
    :maxdepth: 2

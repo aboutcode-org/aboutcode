@@ -110,7 +110,7 @@ Options
 
         Users can use the following in the template to get the vartext:
         {{ vartext_dict['title'] }}
-        {{ vartext_dict['header'] }} 
+        {{ vartext_dict['header'] }}
 
     --verbose
 
@@ -121,9 +121,12 @@ Options
 The following data are passed to jinja2 and, therefore, can be used for a custom template:
  * about object: the about objects
  * common_licenses: a common license keys list in licenses.py
- * license_key_and_context: a dictionary list with license_key as a key and license text as the value
- * license_file_name_and_key: a dictionary list with license file name as a key and license key as the value
- * license_key_to_license_name: a dictionary list with license key as a key and license file name as the value
+ * license_key_and_context: a dictionary list with license_key as a key and license text as the
+   value
+ * license_file_name_and_key: a dictionary list with license file name as a key and license key
+   as the value
+ * license_key_to_license_name: a dictionary list with license key as a key and license file name
+   as the value
 
 
 check
@@ -225,7 +228,7 @@ Options
 
     --license-notice-text-location
 
-        Copy the license files and notice files to the generated location based on the 
+        Copy the license files and notice files to the generated location based on the
         'license_file' and 'notice_file' value in the input from the directory
 
         For instance,
@@ -288,7 +291,7 @@ Options
 ::
 
     -filter TEXT
- 
+
         Filter for the output inventory.
 
     $ about inventory --filter "license_expression=gpl-2.0" LOCATION OUTPUT
@@ -296,7 +299,7 @@ Options
     The above command will only inventory the ABOUT files which have the "license_expression: gpl-2.0"
 
     -f, --format [json|csv]
- 
+
         Set OUTPUT file format.  [default: csv]
 
     $ about inventory -f json LOCATION OUTPUT
@@ -317,7 +320,7 @@ Options
         In the custom mapping file, the left side is the custom key name where
         the right side is the ABOUT field name. For instance,
         Component: name
-        
+
         The "Component" is a custom field name for the output
         The "name" is one of the defaul ABOUT field name that user want to convert
 
