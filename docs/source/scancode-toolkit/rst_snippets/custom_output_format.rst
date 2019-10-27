@@ -36,12 +36,12 @@ Now I can run ScanCode using my newly created template:
 
 ::
 
-   $ ./scancode -clpeui --custom-output sample.json --custom-template sample.html samples
+   $ ./scancode -clpeui --custom-output output.json --custom-template template.html samples
    Scanning files...
      [####################################]  46
    Scanning done.
 
-Now are results are saved in ``t.json`` and we can easily view them with ``head t.json``\ :
+Now are results are saved in ``output.json`` and we can easily view them with ``head output.json``\ :
 
 ::
 
