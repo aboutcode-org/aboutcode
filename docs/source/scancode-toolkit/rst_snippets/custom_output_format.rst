@@ -18,8 +18,8 @@ data for this particular scan.
 
    ## template.html:
    [
-       {% if results.license_copyright %}
-           {% for location, data in results.license_copyright.items() %}
+       {% if files.license_copyright %}
+           {% for location, data in files.license_copyright.items() %}
                {% for row in data %}
      location:"{{ location }}",
      {% if row.what == 'copyright' %}copyright:"{{ row.value|escape }}",{% endif %}
@@ -41,7 +41,7 @@ Now I can run ScanCode using my newly created template:
      [####################################]  46
    Scanning done.
 
-Now are results are saved in ``output.json`` and we can easily view them with ``head output.json``\ :
+Now are results are saved in ``output.json`` and we can easily view them with ``head output.json``:
 
 ::
 
@@ -53,8 +53,7 @@ Now are results are saved in ``output.json`` and we can easily view them with ``
      copyright:"copyrighted by the Free Software Foundation",
    ]
 
-..
-  [ToDo]
-  There is an error in the template.html file:
-  "UndefinedError: 'results' is undefined"
-  Will be solved in a later commit.
+For a more elaborate template, refer this `default template <https://github.com/nexB/scancode-toolkit/blob/develop/src/formattedcode/templates/html/template.html>`_
+given with Scancode, to generate HTML output with the ``--html`` output format option.
+
+Documentation on `Jinja templates <https://jinja.palletsprojects.com/en/2.10.x/>`_.
