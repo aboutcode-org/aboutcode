@@ -32,27 +32,24 @@ Body:
 
 Other comments:
 
-We like to suffix the subject line with an issue number. If this was a trivial change it may not have one though. If it had one a you would use ``#156`` as a suffix to the first line.
+We like to suffix the subject line with an issue number. If this was a trivial change it may not
+have one though. If it had one a you would use ``#156`` as a suffix to the first line.
 
-We like to tell why the commit is there and use an imperative style, like if you were giving an order to the codebase with your commit:
+We like to tell why the commit is there and use an imperative style, like if you were giving an
+order to the codebase with your commit:
 
 e.g rather than : ``Minor fix for unnecessary operations.``
 may be ``Remove unnecessary operations #123``
-or 
+or::
 
-::
+    Remove unnecessary operations #123
 
-	Remove unnecessary operations #123 
+        * If the ts timestamp does not exist, do not compare with old one.
 
-		* If the ts timestamp does not exist, do not compare with old one.
+You need to add a signoff to your commit. So the final message would have looked like this::
 
+    Remove unnecessary operations #123
 
-You need to add a signoff to your commit. So the final message would have looked like this:
+        * If the ts timestamp does not exist, do not compare with old one.
 
-::
-
-	Remove unnecessary operations #123 
-
-		* If the ts timestamp does not exist, do not compare with old one.
-
-	Signed-off-by: Philippe Ombredanne <pombredanne@nexb.com>
+    Signed-off-by: Philippe Ombredanne <pombredanne@nexb.com>

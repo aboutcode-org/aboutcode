@@ -10,7 +10,7 @@ attribute: ``license_policy``.
 
 Policy File Specification
 -------------------------
-The Policy file is a YAML (``.yml``) document with the following struture::
+The Policy file is a YAML (``.yml``) document with the following structure::
 
   license_policies:
   -   license_key: mit
@@ -26,7 +26,7 @@ The Policy file is a YAML (``.yml``) document with the following struture::
       color_code: '#FFcc33'
       icon: icon-warning-sign
 
-The only required key is ``license_key``, which represents the scancode license key to match
+The only required key is ``license_key``, which represents the ScanCode license key to match
 against the detected licenses in the scan results.
 
 In the above example, a descriptive label is added along with a color code and CSS ``id`` name

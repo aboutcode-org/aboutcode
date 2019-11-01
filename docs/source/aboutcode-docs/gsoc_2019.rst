@@ -3,7 +3,8 @@
 Google Summer of Code 2019
 ==========================
 
-AboutCode is participating in the Google Summer of Code in 2019 as a mentoring org. This page contain all the information for students and anyone else interested in helping.
+AboutCode is participating in the Google Summer of Code in 2019 as a mentoring org. This page
+contain all the information for students and anyone else interested in helping.
 
 AboutCode is a family of FOSS projects to uncover data ... about software code:
 
@@ -54,21 +55,21 @@ Table of Contents
 AboutCode projects are...
 -------------------------
 
-- `ScanCode Toolkit <https://github.com/nexB/scancode-toolkit>`_ is a popular 
+- `ScanCode Toolkit <https://github.com/nexB/scancode-toolkit>`_ is a popular
   command line tool to scan code for licenses, copyrights and packages, used by
   many organizations and FOSS projects, small and large.
 
-- `Scancode Workbench <https://github.com/nexB/scancode-workbench>`_ 
+- `Scancode Workbench <https://github.com/nexB/scancode-workbench>`_
   (formerly AboutCode Manager) is a JavaScript, Electron-based desktop
-  application to review scan results and document your origin and license 
+  application to review scan results and document your origin and license
   conclusions.
 
-- `AboutCode Toolkit <https://github.com/nexB/aboutcode-toolkit>`_ is a 
+- `AboutCode Toolkit <https://github.com/nexB/aboutcode-toolkit>`_ is a
   command line tool to document and inventory known packages and licenses
   and generate attribution docs, typically using the results of analyzed
   and reviewed scans.
 
-- `TraceCode Toolkit <https://github.com/nexB/tracecode-toolkit>`_ is 
+- `TraceCode Toolkit <https://github.com/nexB/tracecode-toolkit>`_ is
   a command line tool to find which source code file is used to create a
   compiled binary and trace and graph builds.
 
@@ -80,24 +81,24 @@ AboutCode projects are...
   the code in Docker and container images
 
 - `VulnerableCode <https://github.com/nexB/vulnerablecode>`_ : an emerging
-  server-side application to collect and track known package vulnerabilities. 
-  
+  server-side application to collect and track known package vulnerabilities.
+
 - `license-expression <https://github.com/nexB/license-expression/>`_ : a library
   to parse, analyze, simplify and render boolean license expression (such as SPDX)
 
 We also work closely, contribute and co-started several other orgs and projects:
 
 
--  
+-
   `Package URL <https://github.com/package-url>`_  which is an emerging
   standard to reference software packages of all types with simple, readable and
   concise URLs.
 
--  
+-
   `SPDX <http://SPDX.org>`_ aka. Software Package Data Exchange, a spec to
   document the origin and licensing of packages.
 
--  
+-
   `ClearlyDefined <ClearlyDefined.io>`_ to review and help FOSS projects
   improve their licensing and documentation clarity.
 
@@ -138,12 +139,14 @@ Skills
 Incoming students will need the following skills:
 
 
-- Intermediate to strong Python programming. For some projects, strong C/C++ and/or Rust is needed too. 
+- Intermediate to strong Python programming. For some projects, strong C/C++ and/or Rust is needed
+  too.
 - Familiarity with git as a version control system
 - Ability to set up your own development environment
 - An interest in FOSS licensing and software code and origin analysis
 
-We are happy to help you get up to speed, but the more you are able to demonstrate ability and skills in advance, the more likely we are to choose your application! 
+We are happy to help you get up to speed, but the more you are able to demonstrate ability and
+skills in advance, the more likely we are to choose your application!
 
 .. _about_your_project_application_gsoc19:
 
@@ -165,7 +168,7 @@ following information, plus anything you think is relevant:
 
 
   * hint: explain your data structures and you planned main processing flows in
-    details. 
+    details.
 
 - Description of previous work, existing solutions (links to prototypes,
   bibliography are more than welcome)
@@ -212,8 +215,8 @@ ScanCode ideas
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Copyright detection is reasonably good by the slowest scanner in ScanCode.
-It is based on NLTK part of speech (PoS) tagging and a copyright grammar. 
-The exact start and end lines where a copyright is found are approximate. 
+It is based on NLTK part of speech (PoS) tagging and a copyright grammar.
+The exact start and end lines where a copyright is found are approximate.
 
 The goal of this project is to refactor Copyright detection for speed and
 simplicity possibly implementing a new parser (PEG?, etc.) or re-implementing
@@ -221,10 +224,10 @@ core elements in Rust with a Python binding for speed or using a fork of NLTK
 or any other tool to be faster and more accurate.
 
 This would include also keeping track of line numbers and offsets where
-copyrights are found. 
+copyrights are found.
 
 Also we detect copyrights that are part of a standard license text (e.g. FSF
-copyright in a GPL text) and we should be able to filter these out. 
+copyright in a GPL text) and we should be able to filter these out.
 
 
 - **Level**
@@ -264,7 +267,7 @@ ScanCode to support both Python 2 and Python 3.
 
   * https://github.com/nexB/scancode-toolkit/issues/295
 
-- **Mentors** 
+- **Mentors**
 
   * @majurg https://github.com/majurg
 
@@ -275,7 +278,7 @@ ScanCode to support both Python 2 and Python 3.
 
 ScanCode programming language detection is not as accurate as it could be and
 this is important to get this right to drive further automation. We also need to
-automatically classify each file in facets when possible. 
+automatically classify each file in facets when possible.
 
 The goal of this project is to improve the quality of programming language
 detection (which is using only Pygments today and could use another tool, e.g.
@@ -298,7 +301,7 @@ which could use some machine learning and classifier.
   * https://github.com/nexB/scancode-toolkit/issues/1012
   * https://github.com/nexB/scancode-toolkit/issues/1036
 
-- **Mentors** 
+- **Mentors**
 
   * @pombredanne https://github.com/pombredanne
 
@@ -314,7 +317,7 @@ notices). Other improvements would be welcomed to ensure the proper detected
 license text is collected in an improved way. Dealing with large files sometimes
 trigger a timeout and handling these cases would be needed too (by breaking files
 in chunks). The detection speed could also be improved possibly by porting
-some critical code sections to C or Rust and that would need extensive profiling. 
+some critical code sections to C or Rust and that would need extensive profiling.
 
 
 - **Level**
@@ -325,9 +328,9 @@ some critical code sections to C or Rust and that would need extensive profiling
 
   * Python, C/C++, Rust, Go
 
-- **Mentors** 
+- **Mentors**
 
-  * @mjherzog https://github.com/mjherzog 
+  * @mjherzog https://github.com/mjherzog
   * @pombredanne https://github.com/pombredanne
 
 .. _improve_scancode_scan_summarization_and_deduction:
@@ -340,7 +343,7 @@ summaries and perform some deduction of license and origin at a higher level,
 such as the licensing or origin of a whole directory tree. The ultimate goal is
 to automate the conclusion of a license and origin based on scans.
 This could include using statistics and machine learning techniques such as
-classifiers where relevant and efficient. 
+classifiers where relevant and efficient.
 
 This should be implemented as a set of ScanCode plugins and further the
 summarycode module plugins.
@@ -359,7 +362,7 @@ summarycode module plugins.
   * https://github.com/nexB/scancode-toolkit/issues/426
   * https://github.com/nexB/scancode-toolkit/issues/377
 
-- **Mentors** 
+- **Mentors**
 
   * @pombredanne https://github.com/pombredanne
   * @JonoYang https://github.com/JonoYang
@@ -402,7 +405,7 @@ This requires a good understanding of packaging and Python.
   * https://github.com/nexB/scancode-toolkit/issues/487
   * https://github.com/nexB/scancode-toolkit/issues/469
 
-- **Mentor** 
+- **Mentor**
 
   * @pombredanne https://github.com/pombredanne
 
@@ -415,7 +418,7 @@ DeltaCode projects
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 DeltaCode is a tool to compare and report scan differences.
-When comparing files, it only uses exact comparison. 
+When comparing files, it only uses exact comparison.
 The goal of this project is to improve the usefulness of the delta by also
 finding files that are mostly the same (e.g. quasi or nrea duplicates) vs. files
 that are completely different. Then the DeltaCode comparison core should be
@@ -436,7 +439,7 @@ meterial in the code files (e.g. such that small changes may be ignored)
 
   * https://github.com/nexB/deltacode/
 
-- **Mentors** 
+- **Mentors**
 
   * @majurg https://github.com/majurg
   * @johnmhoran https://github.com/johnmhoran
@@ -454,7 +457,7 @@ is to create a tool that provides the same results as the strace-based tracing
 but would be using using ELF symbols, DWARF debug symbols, signatures or string
 matching to  determine when and how a source code file is built in a binary
 using only a static analysis. The primary target should be Linux executables,
-though the code should be designed to be extensible to Windows PE and macOS Dylib and exes. 
+though the code should be designed to be extensible to Windows PE and macOS Dylib and exes.
 
 
 - **Level**
@@ -468,9 +471,10 @@ though the code should be designed to be extensible to Windows PE and macOS Dyli
 - **URLS**
 
   * https://github.com/nexB/tracecode-toolkit for the existing non-static tool
-  * https://github.com/nexB/scancode-toolkit-contrib for some work in progress on binaries/symbols parsers/extractors
+  * https://github.com/nexB/scancode-toolkit-contrib for some work in progress on binaries/symbols
+    parsers/extractors
 
-- **Mentor** 
+- **Mentor**
 
   * @pombredanne https://github.com/pombredanne
 
@@ -501,9 +505,10 @@ line toolkit (like for ScanCode).
 - **URLS**
 
   * https://github.com/nexB/tracecode-toolkit for the existing non-static tool
-  * https://github.com/nexB/scancode-toolkit-contrib for the work in progress on binaries/symbols parsers/extractors
+  * https://github.com/nexB/scancode-toolkit-contrib for the work in progress on binaries/symbols
+    parsers/extractors
 
-- **Mentor** 
+- **Mentor**
 
   * @pombredanne https://github.com/pombredanne
 
@@ -534,9 +539,9 @@ the integration with ScanCode.
 
 - **URLS**
 
-  * https://github.com/nexB/conan 
+  * https://github.com/nexB/conan
 
-- **Mentor** 
+- **Mentor**
 
   * @JonoYang https://github.com/JonoYang
 
@@ -585,23 +590,18 @@ relate to packages as they are detected by ScanCode or else.
 The features and TODO for this updated server would be:
 
 
-- 
-  Aggregate more and new packages vulnerabilities feeds,
+- Aggregate more and new packages vulnerabilities feeds,
 
-- 
-  Automating correlation: add smart relationship detection to infer new
+- Automating correlation: add smart relationship detection to infer new
   relatiosnhips between available packages and vulnerabilities from mining the
   graph of existing relations.
 
-- 
-  Create a ScanCode plugin to report vulnerabilities with detected packages
+- Create a ScanCode plugin to report vulnerabilities with detected packages
   using this data.
 
-- 
-  Integrate API lookup on the server withe the AboutCode Manager UI
+- Integrate API lookup on the server withe the AboutCode Manager UI
 
-- 
-  Create a UI and model for community curation of vulnerability to package
+- Create a UI and model for community curation of vulnerability to package
   mappings, correlations and enhancements.
 
 
@@ -654,23 +654,20 @@ bindings.
 There are several areas to research and prototype such as:
 
 
-- 
-  A data structure to match efficiently a batch of fix-width checksums (e.g.
+- A data structure to match efficiently a batch of fix-width checksums (e.g.
   SHA1) against a large index of such checksums, where each checksum points to
   one or more files or packages. A possible direction is to use finite state
   transducers, specialized B-tree indexes, blomm-like filters. Since when a
   codebase is being matched there can be millions of lookups to do, the batch
   matching is preferred.
 
-- 
-  A data structure to match efficiently a batch of fix-width byte strings (e.g.
+- A data structure to match efficiently a batch of fix-width byte strings (e.g.
   LSH) against a large index of such LSH within a fixed hamming distance, where
   each points to one or more files or packages. A possible direction is to use
   finite state transducers (possibly weighted), specialized B-tree indexes or
   multiple hash-like on-disk tables.
 
-- 
-  A memory-mapped Aho-Corasick automaton to build large batch tree matchers.
+- A memory-mapped Aho-Corasick automaton to build large batch tree matchers.
   Available Aho-Corasick automatons may not have a Python binding or may not allow
   memory-mapping (like pyahocorasick we use in ScanCode). The volume of files we
   want to handle requires to reuse, extend or create specialized tree/paths
@@ -678,8 +675,7 @@ There are several areas to research and prototype such as:
   than the available memory. A possible direction is to use finite state
   transducers (possibly weighted).
 
-- 
-  Feature hashing research: we deal with many "features" and hashing to limit
+- Feature hashing research: we deal with many "features" and hashing to limit
   the number and size of the each features seems to be a valuable thing. The goal
   is to research the validaty of feature hashing with short hashes (15, 16 and
   32 bits) and evaluate if this leads to acceptable false-positive and loss of
@@ -712,4 +708,5 @@ This is a green field project.
 Mentoring
 ---------
 
-We welcome new mentors to help with the program and require some good unerstanding of the project codebase and domain to join as a mentor. Contact the team on Gitter.
+We welcome new mentors to help with the program and require some good unerstanding of the project
+codebase and domain to join as a mentor. Contact the team on Gitter.

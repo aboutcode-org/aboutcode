@@ -228,7 +228,7 @@ Referencing the file or directory documented by an ABOUT file
 
 An ABOUT file documents one file or directory. The mandatory "about_resource"
 field reference the documented file or directory. The value of the
-"about_resource" field is the name or path of the referenced file or directory. 
+"about_resource" field is the name or path of the referenced file or directory.
 
 A tool processing an ABOUT file must report an error if this field is missing.
 
@@ -402,7 +402,7 @@ These fields support checksums (such as SHA1 and MD5)commonly provided with
 downloaded archives to verify their integrity. A tool can optionally use these
 to verify the integrity of a file documented by an ABOUT file.
 
-- checksum_md5: MD5 for the file documented by this ABOUT file in the 
+- checksum_md5: MD5 for the file documented by this ABOUT file in the
   "about_resource" field.
 
 - checksum_sha1: SHA1 for the file documented by this ABOUT file in the

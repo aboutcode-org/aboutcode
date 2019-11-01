@@ -70,6 +70,8 @@ is JSON, the entire file being in one line, without whitespace characters.
 The following example scans will show you how to run a scan with each of the result formats. For
 the scans, we will use the ``samples`` directory provided with the ScanCode Toolkit.
 
+.. include::  /scancode-toolkit/rst_snippets/tip_snippets/stdout.rst
+
 JSON file output
 ^^^^^^^^^^^^^^^^
 

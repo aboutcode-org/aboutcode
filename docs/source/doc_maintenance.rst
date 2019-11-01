@@ -43,11 +43,13 @@ Now you can build the HTML documents locally::
     cd docs
     make html
 
-Assuming that your Sphinx installation was successful, Sphinx should build a local instance of the documentation .html files::
+Assuming that your Sphinx installation was successful, Sphinx should build a local instance of the
+documentation .html files::
 
     open build/html/index.html
 
-In case this command did not work, for example on Ubuntu 18.04 you may get a message like “Couldn’t get a file descriptor referring to the console”, try: ::
+In case this command did not work, for example on Ubuntu 18.04 you may get a message like “Couldn’t
+get a file descriptor referring to the console”, try: ::
 
     see build/html/index.html
 
@@ -56,14 +58,17 @@ You now have a local build of the AboutCode documents.
 Improve AboutCode Documents
 ---------------------------
 
-Before you begin creating and modifying AboutCode documents, be sure that you understand the basics of reStructuredText as explained at http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
+Before you begin creating and modifying AboutCode documents, be sure that you understand the basics
+of reStructuredText as explained at
+http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
 
 Ensure that you have the latest AboutCode files::
 
     git pull
     git status
 
-Use your favorite text editor to create and modify .rst files to make your documentation improvements.
+Use your favorite text editor to create and modify .rst files to make your documentation
+improvements.
 
 Review your work::
 
@@ -71,7 +76,8 @@ Review your work::
     make html
     open build/html/index.html
 
-AboutCode uses Travis-CI to test build status and check links, so run this script at your local system before creating a Pull Request. 
+AboutCode uses Travis-CI to test build status and check links, so run this script at your local
+system before creating a Pull Request.
 
 ::
 
@@ -81,7 +87,8 @@ AboutCode uses Travis-CI to test build status and check links, so run this scrip
 Share AboutCode Document Improvements
 -------------------------------------
 
-Follow standard git procedures to upload your new and modified files. The following commands are examples::
+Follow standard git procedures to upload your new and modified files. The following commands are
+examples::
 
     git status
     git add source/index.rst
@@ -92,4 +99,5 @@ Follow standard git procedures to upload your new and modified files. The follow
     git push
     git status
 
-The AboutCode webhook with ReadTheDocs should rebuild the documentation. You can review your results online.
+The AboutCode webhook with ReadTheDocs should rebuild the documentation. You can review your
+results online.

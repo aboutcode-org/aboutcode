@@ -12,6 +12,12 @@ following options.
 
 ----
 
+.. _output_to_stdout:
+
+.. include::  /scancode-toolkit/rst_snippets/stdout.rst
+
+----
+
 ``--json FILE``
 ---------------
 

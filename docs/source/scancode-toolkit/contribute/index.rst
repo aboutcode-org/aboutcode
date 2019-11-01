@@ -8,4 +8,5 @@
    cut_new_release
    contrib_doc
    roadmap
-   gsoc_17_final_report
+   gsoc17_final_report
+   gsoc19_final_report

@@ -1,45 +1,52 @@
 Comprehensive Installation
 ==========================
 
-DeltaCode requires Python 2.7.x and is tested on Linux, Mac, and Windows. Make sure Python 2.7 is installed first.
+DeltaCode requires Python 2.7.x and is tested on Linux, Mac, and Windows. Make sure Python 2.7 is
+installed first.
 
 System Requirements
 -------------------
 
-- Hardware : DeltaCode will run best with a modern X86 processor and at least 1GB of RAM and 250MB of disk.
+- Hardware : DeltaCode will run best with a modern X86 processor and at least 1GB of RAM and 250MB
+  of disk.
 
 - Supported operating systems : DeltaCode should run on these OSes:
 
-	#. Linux: on most recent 64-bit Linux distributions (32-bit distros are only partially supported),
-	#. Mac: on recent Mac OSX (10.6.8 and up),
-	#. Windows: on Windows 7 and up (32- or 64-bit) using a 32-bit Python.
+    #. Linux: on most recent 64-bit Linux distributions (32-bit distros are only partially
+       supported),
+    #. Mac: on recent Mac OSX (10.6.8 and up),
+    #. Windows: on Windows 7 and up (32- or 64-bit) using a 32-bit Python.
 
 Prerequisites
 -------------
 
 DeltaCode needs a Python 2.7 interpreter.
 
-- **On Linux**: 
-	
-	Use your package manager to install ``python2.7``. If Python 2.7 is not available from your package manager, you must compile it from sources. 
-	
-	For instance, visit https://github.com/dejacode/about-code-tool/wiki/BuildingPython27OnCentos6 for instructions to compile Python from sources on Centos.
+- **On Linux**:
 
-- **On Windows**: 
-	
-	Use the Python 2.7 32-bit (e.g. the Windows x86 MSI installer) for X86 regardless of whether you run Windows on 32-bit or 64-bit. **DO NOT USE Python X86_64 installer** even if you run 64 bit Windows.
+    Use your package manager to install ``python2.7``. If Python 2.7 is not available from your
+    package manager, you must compile it from sources.
 
-	Download Python from this url:
-	https://www.python.org/ftp/python/2.7.14/python-2.7.14.msi
+    For instance, visit https://github.com/dejacode/about-code-tool/wiki/BuildingPython27OnCentos6
+    for instructions to compile Python from sources on Centos.
 
-	Install Python on the c: drive and use all default installer options.
-	See the Windows installation section for more installation details.
+- **On Windows**:
 
-- **On Mac**: 
+    Use the Python 2.7 32-bit (e.g. the Windows x86 MSI installer) for X86 regardless of whether
+    you run Windows on 32-bit or 64-bit. **DO NOT USE Python X86_64 installer** even if you run
+    64 bit Windows.
 
-	Download and install Python from this url: 
+    Download Python from this url:
+    https://www.python.org/ftp/python/2.7.14/python-2.7.14.msi
 
-	https://www.python.org/ftp/python/2.7.14/python-2.7.14-macosx10.6.pkg
+    Install Python on the c: drive and use all default installer options.
+    See the Windows installation section for more installation details.
+
+- **On Mac**:
+
+    Download and install Python from this url:
+
+    https://www.python.org/ftp/python/2.7.14/python-2.7.14-macosx10.6.pkg
 
 Installation on Linux and Mac
 -----------------------------
@@ -49,7 +56,7 @@ https://github.com/nexB/deltacode/releases/latest
 
 Open a terminal in the extracted directory and run::
 
-	./deltacode --help       
+    ./deltacode --help
 
 This will configure DeltaCode and display the command line help.
 
@@ -79,7 +86,7 @@ https://github.com/nexB/deltacode/releases/latest
 
 ::
 
-  cmd                                                                               
+  cmd
 
 - Select 'cmd.exe' listed in the search results.
 
@@ -89,19 +96,21 @@ https://github.com/nexB/deltacode/releases/latest
 
 ::
 
- cd                                                                                 
+ cd
 
-- then right-click in this window and select Paste. This will paste the path where you extracted DeltaCode.
+- then right-click in this window and select Paste. This will paste the path where you extracted
+  DeltaCode.
 
 - Press Enter.
 
-- This will change the current location of your command prompt to the root directory where DeltaCode is installed.
+- This will change the current location of your command prompt to the root directory where
+  DeltaCode is installed.
 
 - Then type
 
 ::
 
-  deltacode --help                                                                       
+  deltacode --help
 
 - Press enter. This will configure your DeltaCode installation.
 

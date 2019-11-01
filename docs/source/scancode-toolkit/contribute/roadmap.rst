@@ -23,9 +23,9 @@ Packages manifests and dependencies parsers
 - |clock1030| Windows PE #652
 - |white_large_square| RPMs dependencies #649
 - |white_large_square| Windows Nuget dependencies #648
-- |white_large_square| Bower packages #654
-- |white_large_square| Python dependencies #653
-- |white_large_square| CRAN
+- |white_check_mark| Bower packages #654
+- |clock1030| Python dependencies #653
+- |white_check_mark| CRAN
 - |white_check_mark| Plain packages
 - |white_large_square| other Java-related meta files (SBT, Ivy, Gradle, etc.)
 - |white_large_square| Debian debs
@@ -57,22 +57,22 @@ Core features
 - |white_check_mark| pre scan filtering (ignore binaries, etc)
 - |white_check_mark| pre/post/ouput plugins! (worked as part of the GSoC by @yadsharaf )
 - |white_check_mark| scan plugins (e.g. plugins that run a scan to collect data)
-- |clock1030| support Python 3 #295
+- |white_check_mark| support Python 3 #295
 - |clock1030| transparent archive extraction (as opposed to on-demand with extractcode)
 - |clock1030| scancode.yml configuration file for exclusions, defaults, scan failure conditions,
   etc.
 - |white_large_square| support scan pipelines and rules to organize more complex scans
-- |white_large_square| scan baselining, delta scan and failure conditions (such as license change,
-  etc) (will be spawned as its own DeltaCode project)
+- |white_check_mark| scan baselining, delta scan and failure conditions (such as license change,
+  etc) ( spawned as its the `DeltaCode <https://github.com/nexB/deltacode/>`_ project)
 - |white_large_square| dedupe and similarities to avoid re-scanning. For now only identical files
   are scanned only once.
-- |white_large_square| Improved logging, tracing and error diagnostics
-- |clock1030| native support for ABC Data (See :ref:`aboutcode_data` )
+- |clock1030| Improved logging, tracing and error diagnostics
+- |white_check_mark| native support for ABC Data (See :ref:`aboutcode_data` )
 
 Classification, summarization and deduction
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- |white_check_mark| File classification #426
+- |clock1030| File classification #426
 - |white_check_mark| summarize and aggregate data #377 at the top level
 
 Source code support (some will be spawned as their own tool)
@@ -100,7 +100,7 @@ Packaging
 
 - |white_large_square| simpler installation, automated installer
 - |white_check_mark| distro-friendly packaging
-- |white_large_square| unbundle and package as multiple libaries (commoncode, extractcode, etc)
+- |clock1030| unbundle and package as multiple libaries (commoncode, extractcode, etc)
 
 Documentation
 ^^^^^^^^^^^^^
@@ -120,12 +120,13 @@ CI integration
 Other work in progress
 ----------------------
 
-- ScanCode server: Spawned as its own project: https://github.com/nexB/scancode-server. Will
-  include Integration / webhooks for Github, Bitbucket.
-- VulnerableCode: NVD and CVE lookups: Spawned as its own project: https://github.com/nexB/vulnerablecode
-- ScanCode Workbench: desktop app for scan review: Spawned as its own project:
+- |clock1030| ScanCode server: Spawned as its own project: https://github.com/nexB/scancode-server.
+  Will include Integration / webhooks for Github, Bitbucket.
+- |clock1030| VulnerableCode: NVD and CVE lookups: Spawned as its own project:
+  https://github.com/nexB/vulnerablecode
+- |white_check_mark| ScanCode Workbench: desktop app for scan review: Spawned as its own project:
   https://github.com/nexB/scancode-workbench
-- DependentCode: dynamic dependencies resolutions: Spawned as its own project:
+- |white_large_square| DependentCode: dynamic dependencies resolutions: Spawned as its own project:
   https://github.com/nexB/dependentcode
 
 Package mining and matching

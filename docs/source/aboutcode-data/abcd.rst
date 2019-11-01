@@ -1,6 +1,6 @@
 .. _aboutcode_data:
 
-AboutCode Data : ABCD 
+AboutCode Data : ABCD
 =====================
 
 Summary
@@ -57,7 +57,7 @@ technology-specific.
 Recently there have been efforts to collect and expose more data such
 as:
 
--  libraries.io (a catalog of packages, AGPL-licensed) 
+-  libraries.io (a catalog of packages, AGPL-licensed)
    and dependencyci.com its companion commercial service,
 -  versioneye.com (a catalog of package versions updates, now
    MIT-licensed),
@@ -76,9 +76,9 @@ consistently exchange data about code in a user-centric and
 technology-neutral, normalized way.
 
 Why does this matter? Software and code are everywhere. FLOSS code is
-exploding with millions of components and packages.  The data about this
-code is out there somewhere but getting it is harder than needed. This a
-problem of data normalization, aggregation and exchange.  
+exploding with millions of components and packages. The data about this
+code is out there somewhere but getting it is often too difficult. This
+is a problem of data normalization, aggregation and exchange.
 
 Whether you consume or produce software, accessing and creating
 normalized data about your code and the code you use should be made
@@ -291,12 +291,12 @@ Name conventions
        {"http://someurl.com": "this is the home URL"}
 
 -  Use rather this form to specify a name for the URL attribute::
-    
+
        {"url": "http://someurl.com", "note": "this is the home URL"}
 
 -  But this would be correct when using a list of plain values where
    "urls" is plural::
-    
+
        {"urls": ["http://someurl.com", "http://someurl2.com"]}
 
 -  An attribute names without a value is not needed. Only names with
@@ -319,7 +319,7 @@ Name conventions
     -  urn: uniform resource name
     -  vcs: version control system
     -  uuid: universally unique identifier, used for uuid4 string
-       `https://tools.ietf.org/html/rfc4122.html <https://tools.ietf.org/html/rfc4122.html&sa=D&ust=1487355496775000&usg=AFQjCNFPvpqA_MFbGaOmykUF8a5GGUKRSw>`__ 
+       `https://tools.ietf.org/html/rfc4122.html <https://tools.ietf.org/html/rfc4122.html&sa=D&ust=1487355496775000&usg=AFQjCNFPvpqA_MFbGaOmykUF8a5GGUKRSw>`__
     -  id: identifier
     -  info: information
     -  os: operating system
@@ -351,7 +351,7 @@ Well known attribute names include:
    other objects. For instance a Party may be the
    "owner" or "author" of a Component or Package.
 -  uuid: a uuid4 string
-   `https://tools.ietf.org/html/rfc4122.html <https://tools.ietf.org/html/rfc4122.html>`__ 
+   `https://tools.ietf.org/html/rfc4122.html <https://tools.ietf.org/html/rfc4122.html>`_
 -  algorithms for checksums: to store checksums we use a name/value
    pairs where the name is an algorithm such as sha1 and the value is a
    checksum in hexadecimal such as "sha1": "asasa231212" . The value is
@@ -441,10 +441,10 @@ Hence each object may need several attributes to be fully identifiable.
 
 For example, public package managers ensure that a name is unique within
 the confines of a source. "logging" is the unique name of a single
-Sourceforge project at 
-`https://sourceforge.net/projects/logging/ <https://sourceforge.net/projects/logging/>`__ .
+Sourceforge project at
+`https://sourceforge.net/projects/logging/ <https://sourceforge.net/projects/logging/>`_.
 "logging" is the unique name of an Apache project at the Apache
-Foundation `http://logging.apache.org/ <http://logging.apache.org/>`__ .
+Foundation `http://logging.apache.org/ <http://logging.apache.org/>`_.
 
 Yet, these two names point to completely different software. In most
 cases, providing information about the "source" where an identifier is
@@ -535,7 +535,7 @@ lists. When embedding, you include not only the reference but also the
 related object details in another object data. This could include all
 data about an object or a subset as needed.
 
-For example, this components list embeds a list of two packages. 
+For example, this components list embeds a list of two packages.
 
 Note: "components" is always a list, *even when it has a single component*::
 
@@ -544,19 +544,19 @@ Note: "components" is always a list, *even when it has a single component*::
         "name": "Apache httpd",
         "version": "2.3",
         "packages": [
-            {"name": "httpd", 
-             "version": "2.3.4", 
+            {"name": "httpd",
+             "version": "2.3.4",
              "download_url": "http://apache.org/dist/httpd/httpd-2.3.4.zip",
-             "sha1": "acbf23256361abcdf", 
-             "size": 3267, 
+             "sha1": "acbf23256361abcdf",
+             "size": 3267,
              "filename": "httpd-2.3.4.zip"
-            },        
-    
-            {"name": "httpd", 
+            },
+
+            {"name": "httpd",
              "version": "2.3.5",
              "download_url": "http://apache.org/dist/httpd/httpd-2.3.5.tar.gz",
-             "sha1": "ac8823256361adfcdf", 
-             "size": 33267, 
+             "sha1": "ac8823256361adfcdf",
+             "size": 33267,
              "filename": "httpd-2.3.5.tar.gz"
             }
         ]
@@ -579,14 +579,14 @@ organized differently::
             {"sha1": "ac8823256361adfcdf"}
         ]
     }],
-    
+
     "packages": [
-        {"name": "httpd", "version": "2.3.4",  
+        {"name": "httpd", "version": "2.3.4",
          "download_url":
          "http://apache.org/dist/httpd/httpd-2.3.4.zip",
          "sha1": "acbf23256361abcdf", "size": 23267, "filename": "httpd-2.3.4.zip"},
-    
-        {"name": "httpd", "version": "2.3.5", 
+
+        {"name": "httpd", "version": "2.3.5",
          "download_url": "http://apache.org/dist/httpd/httpd-2.3.5.tar.gz",
          "sha1": "ac8823256361adfcdf", "size": 33267, "filename": "httpd-2.3.5.tar.gz"}
     ]}
@@ -597,15 +597,15 @@ component detail data is not provided. The details may be available
 elsewhere in a tool that tracks components::
 
     "packages": [
-        {"name": "httpd", "version": "2.3.4", 
+        {"name": "httpd", "version": "2.3.4",
          "download_url": "http://apache.org/dist/httpd/httpd-2.3.4.zip",
          "sha1": "acbf23256361abcdf", "size": 23267, "filename": "httpd-2.3.4.zip",
          "components": [
             {"source": "http://apache.org", "name": "Apache httpd", "version": "2.3"}
          ]
         },
-    
-        {"name": "httpd", "version": "2.3.5", 
+
+        {"name": "httpd", "version": "2.3.5",
          "download_url":"http://apache.org/dist/httpd/httpd-2.3.5.tar.gz",
          "sha1": "ac8823256361adfcdf", "size": 33267, "filename": "httpd-2.3.5.tar.gz",
          "components": [
@@ -833,8 +833,8 @@ writing primarily by humans.
 -  Multi-document YAML documents should be avoided (when using the ---
    separators).
 
--  Beware of parser shenanigans:  Most YAML parsers recognize and convert 
-   automatically certain data types such as numbers, booleans or dates. 
+-  Beware of parser shenanigans:  Most YAML parsers recognize and convert
+   automatically certain data types such as numbers, booleans or dates.
    You should be aware of this because the ABC Data strings may contain
    date stamps. You may want to configure a YAML parser to deactivate some
    of these automated format conversions to avoid unwanted conversions.
@@ -973,17 +973,17 @@ in YAML::
             - path: bitarray-0.8.1-cp27-cp27mu-manylinux1_x86_64.whl
             - path: bitarray-0.8.1-cp27-none-macosx_10_6_intel.whl
             - path: bitarray-0.8.1.tar.gz
-    
+
         parties:
           - role: owner
             name: Ilan Schnell
-    
+
         packages:
           - download_url: http://pypi.python.org/packages/source/b/bitarray/bitarray-0.8.1.tar.gz
             sha1: 468456384529abcdef342
-    
+
         license_expression: psf
-    
+
         licenses:
           - source: scancode.com
             key: psf
@@ -1003,7 +1003,7 @@ And here would be similar data in JSON::
                                 "sha1": "468456384529abcdef342"
                     }],
                    "parties": [{"name": "Ilan Schnell", "role": "owner"}],
-    
+
                    "files": [{"path": "some/directory/", "type": "dir"},
                              {"path": "bitarray-0.8.1-cp27-cp27m-macosx_10_9_intel.whl"},
                              {"path": "bitarray-0.8.1-cp27-cp27m-manylinux1_i686.whl"},
@@ -1015,7 +1015,7 @@ And here would be similar data in JSON::
                              {"path": "bitarray-0.8.1-cp27-none-macosx_10_6_intel.whl"},
                              {"path": "bitarray-0.8.1.tar.gz"}],
                    }],
-    
+
      aboutcode_version: "4.0"}
 
 
@@ -1116,7 +1116,7 @@ format::
           }],
           "licenses": [
             { "detected": true,
-              "key": "lgpl-2.1-plus",  
+              "key": "lgpl-2.1-plus",
               "category": "Copyleft Limited",
               "homepage_url": "http://www.gnu.org/licenses/old-licenses/lgpl-2.1-standalone.html",
               "start_line": 7,
@@ -1178,7 +1178,7 @@ AboutCode Manager
 
 As a primary GUI for data review and integration, AboutCode Manager
 will need to be fluent in ABC Data to read/write ABC Data locally and
-remotely through API from several sources. 
+remotely through API from several sources.
 
 The short term changes would include:
 

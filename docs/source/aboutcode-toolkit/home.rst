@@ -101,7 +101,7 @@ The AboutCode Toolkit is available through GitHub. For the latest version visit:
 HACKING
 -------
 We accept pull requests provided under the same license as this tool.
-You agree to the http://developercertificate.org/ 
+You agree to the http://developercertificate.org/
 
 
 LICENSE

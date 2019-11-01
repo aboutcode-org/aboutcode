@@ -2,7 +2,7 @@ AboutCode Docs
 ==============
 
 Welcome to the AboutCode wiki!
- 
+
 If you are interested in the Google Summer of Code 2019, check out this page. :ref:`GSoC2019`
 
 If you are interested in the Google Season of Documents 2019, go through this page. :ref:`GSoD2019`

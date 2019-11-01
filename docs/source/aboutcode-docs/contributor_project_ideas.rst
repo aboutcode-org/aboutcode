@@ -43,7 +43,7 @@ Table of Contents
 
   * :ref:`aboutcode_data_server`
   * :ref:`vulnerablecode_package_security_vulnerability_data_feed_and_scanner`
-  * :ref:`integrate_the_license_expression_library_in_scancode_python_and_aboutcode_manager_javascript`
+  * :ref:`integrate_the_license_expression_library_in_scancode_python_and_aboutcode_manager_jscript`
   * :ref:`high_volume_matching_automatons_and_data_structures`
   * :ref:`scancode_scan_deduction`
   * :ref:`license_and_copyright_detection_benchmark`
@@ -61,20 +61,25 @@ Table of Contents
 AboutCode projects are...
 -------------------------
 
-- **ScanCode Toolkit** a popular command line tool to scan code for licenses, copyrights and packages, used by many organizations and FOSS projects, small and large.
+- **ScanCode Toolkit** a popular command line tool to scan code for licenses, copyrights and
+  packages, used by many organizations and FOSS projects, small and large.
 
-- **AboutCode Manager** a JavaScript, Electron-based desktop application to review scan results and document your conclusions
+- **AboutCode Manager** a JavaScript, Electron-based desktop application to review scan results
+  and document your conclusions
 
 - **AboutCode Toolkit** a set of command line tools to document and inventory known
   packages and licenses and generate attribution docs
 
-- TraceCode Toolkit: a set of command line tools to find which source code is used to create a compiled binary
+- TraceCode Toolkit: a set of command line tools to find which source code is used to create a
+  compiled binary
 
-- DeltaCode Toolkit: a new command line tool to compare codebases based on scan and determine if and where there are material differences that affect licensing
+- DeltaCode Toolkit: a new command line tool to compare codebases based on scan and determine if
+  and where there are material differences that affect licensing
 
 - VulnerableCode Server: a new server-side application to track package vulnerabilities
 
-- AboutCode Server: a new server-side application to run and organize scans and ABC data (formerly ScanCode server)
+- AboutCode Server: a new server-side application to run and organize scans and ABC data
+  (formerly ScanCode server)
 
 - ConAn: a command line tool to analyze the code in Docker and container images
 
@@ -86,9 +91,11 @@ AboutCode projects are...
 We also work closely with other orgs and projects:
 
 
-- purl aka. Package URLs https://github.com/package-url which is an emerging standard to reference software packages of all types.
+- purl aka. Package URLs https://github.com/package-url which is an emerging standard to reference
+  software packages of all types.
 
-- SPDX.org aka. Software Package Data Exchange, a spec to document the origin and licensing of packages
+- SPDX.org aka. Software Package Data Exchange, a spec to document the origin and licensing of
+  packages
 
 .. _contact:
 
@@ -139,7 +146,7 @@ following information, plus anything you think is relevant:
   innovative and what it will contribute
 
 
-- hint: explain your data structures and the main processing flows in details. 
+- hint: explain your data structures and the main processing flows in details.
 
 - Description of previous work, existing solutions (links to prototypes,
   bibliography are more than welcome)
@@ -163,7 +170,7 @@ introduce yourself and start the discussion!
 You need to understand something about open source licensing or package managers
 or code and binaries static analysis or low level data structures. The best way
 to demonstrate your capability would be to submit a small patch ahead of the
-project selection for an existing issue or a new issue. 
+project selection for an existing issue or a new issue.
 
 We will **always** consider and prefer a project submissions where you have
 submitted a patch over any otherr submission without a patch.
@@ -198,7 +205,7 @@ The features of this updated server would be:
 - Integrate the storage and retrieval of scans and ABC data with the AboutCode
   Manager app through the JSON API.
 
-- Add a Github integration to scan/run an ABC tool on commit with webhooks. 
+- Add a Github integration to scan/run an ABC tool on commit with webhooks.
 
 
   * Bonus feature is to scan based on a received tweet of similar IRC or IM integration.
@@ -239,25 +246,19 @@ relate to packages as they are detected by ScanCode or else.
 The features and TODO for this updated server would be:
 
 
-* 
-  Aggregate more and new packages vulnerabilities feeds,
+* Aggregate more and new packages vulnerabilities feeds,
 
-* 
-  Automating correlation: add smart relationship detection to infer new
+* Automating correlation: add smart relationship detection to infer new
   relatiosnhips between available packages and vulnerabilities from mining the
   graph of existing relations.
 
-* 
-  Create a ScanCode plugin to report vulnerabilities with detected packages
+* Create a ScanCode plugin to report vulnerabilities with detected packages
   using this data.
 
-* 
-  Integrate API lookup on the server withe the AboutCode Manager UI
+* Integrate API lookup on the server withe the AboutCode Manager UI
 
-* 
-  Create a UI and model for community curation of vulnerability to package
+* Create a UI and model for community curation of vulnerability to package
   mappings, correlations and enhancements.
-
 
 - **Tech**
 
@@ -287,10 +288,10 @@ The features and TODO for this updated server would be:
     * @JonoYang https://github.com/JonoYang
     * @pombredanne https://github.com/pombredanne
 
-.. _integrate_the_license_expression_library_in_scancode_python_and_aboutcode_manager_javascript:
+.. _integrate_the_license_expression_library_in_scancode_python_and_aboutcode_manager_jscript:
 
-**Integrate the license expression library in ScanCode (Python) and AboutCode Manager (JavaScript)**
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Integrate the license expression library in ScanCode (Python) and AboutCode Manager (JScript)**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In GSoC 2017, this Python library was ported to JavaScript using Transcrypt.
 
@@ -298,10 +299,10 @@ The goal of this project is to add support for license expressions in multiple
 projects and evolve the license expression library as needed:
 
 
-- in Python: 
+- in Python:
 
   * the SPDX Python library
-  * the ScanCode toolkit. This also include the proper detection of license 
+  * the ScanCode toolkit. This also include the proper detection of license
     expressions in SPDX-License-Identifier tags.
   * the AboutCode toolkit
 
@@ -309,7 +310,7 @@ projects and evolve the license expression library as needed:
 
   * the AboutCode Manager
 
-- in both languages in the core license expression proper, add support for a 
+- in both languages in the core license expression proper, add support for a
   built-in mode for strict SPDX expressions
 
 
@@ -319,14 +320,14 @@ projects and evolve the license expression library as needed:
 
 - **URLS**
 
-    * https://github.com/nexB/license-expression 
+    * https://github.com/nexB/license-expression
     * https://github.com/bastikr/boolean.py
     * https://github.com/nexB/aboutcode-manager
     * https://github.com/nexB/aboutcode-toolkit
     * https://github.com/nexB/scancode-toolkit
     * https://github.com/spdx/tools-python
 
-- **Mentors** 
+- **Mentors**
 
     * @JonoYang https://github.com/JonoYang
     * @majurg https://github.com/majurg
@@ -415,7 +416,7 @@ whole directory tree. This should be implemented as a set of ScanCode plugins
   * https://github.com/nexB/scancode-toolkit/issues/426
   * https://github.com/nexB/scancode-toolkit/issues/377
 
-- **Mentors** 
+- **Mentors**
 
   * @pombredanne https://github.com/pombredanne
   * @JonoYang https://github.com/JonoYang
@@ -458,9 +459,9 @@ adding more as needed.
 
   * Python
 
-- **Mentors** 
+- **Mentors**
 
-  * @mjherzog https://github.com/mjherzog 
+  * @mjherzog https://github.com/mjherzog
   * @pombredanne https://github.com/pombredanne
 
 .. _improved_copyright_parsing_and_speed_in_scancode:
@@ -475,7 +476,7 @@ The goal of this project is to refactor Copyright detection for speed and
 simplicity possibly implementaing a new parser (PEG?, etc) or reimplementing
 core elements in Rust with a Python binding.
 
-This would include also keeping track of line numbers and offsets where copyrights are found. 
+This would include also keeping track of line numbers and offsets where copyrights are found.
 
 This would likely require either replacing or enhancing NLTK which is used as a
 natural language parser.
@@ -489,7 +490,7 @@ natural language parser.
 
   * https://github.com/nexB/scancode-toolkit/tree/develop/src/cluecode
 
-- **Mentor** 
+- **Mentor**
 
   * @JonoYang https://github.com/JonoYang
 
@@ -510,9 +511,9 @@ architecture.
 
 - **URLS**
 
-  * https://github.com/nexB/scancode-toolkit/issues/14 
+  * https://github.com/nexB/scancode-toolkit/issues/14
 
-- **Mentor** 
+- **Mentor**
 
   * @pombredanne https://github.com/pombredanne
 
@@ -533,7 +534,7 @@ ScanCode to support both Python 2 and Python 3.
 
   * https://github.com/nexB/scancode-toolkit/issues/295
 
-- **Mentor** 
+- **Mentor**
 
   * @pombredanne https://github.com/pombredanne
 
@@ -557,10 +558,10 @@ of ScanCode.
 
 - **URLS**
 
-  * https://github.com/pombredanne/conan 
+  * https://github.com/pombredanne/conan
   * https://github.com/nexB/scancode-toolkit
 
-- **Mentor** 
+- **Mentor**
 
   * @pombredanne https://github.com/pombredanne
 
@@ -569,7 +570,7 @@ of ScanCode.
 **Static analysis of binaries for build tracing in TraceCode**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-TraceCode does system call tracing only today. 
+TraceCode does system call tracing only today.
 
 
 - The primary goal of this project is to do the same using symbol, debug symbol
@@ -591,9 +592,10 @@ TraceCode does system call tracing only today.
 - **URLS**
 
     * https://github.com/nexB/tracecode-toolkit for the existing non-static tool
-    * https://github.com/nexB/scancode-toolkit-contrib for the work in progress on binaries/symbols parsers/extractors
+    * https://github.com/nexB/scancode-toolkit-contrib for the work in progress on binaries/symbols
+      parsers/extractors
 
-- **Mentor** 
+- **Mentor**
 
     * @pombredanne https://github.com/pombredanne
 
@@ -609,7 +611,8 @@ The first step is to debundle pre-built binaries that exist in ScanCode such
 that they come either from system-packages or pre-built Python wheels. This
 covers libarchive, libmagic and a few other native libraries.
 
-The next step is to ensure that all the dependencies from ScanCode are also available as distro packages.
+The next step is to ensure that all the dependencies from ScanCode are also available as distro
+packages.
 
 The last step is to create proper distro packages for RPM, Debian, Nix and GUIX,
 Alpine, Arch and Gentoo and also an AppImage.org package as well as a proper
@@ -629,7 +632,7 @@ This requires a good understanding of packaging and Python.
   * https://github.com/nexB/scancode-toolkit/issues/487
   * https://github.com/nexB/scancode-toolkit/issues/469
 
-- **Mentor** 
+- **Mentor**
 
   * @pombredanne https://github.com/pombredanne
 
