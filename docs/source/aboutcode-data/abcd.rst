@@ -76,9 +76,9 @@ consistently exchange data about code in a user-centric and
 technology-neutral, normalized way.
 
 Why does this matter? Software and code are everywhere. FLOSS code is
-exploding with millions of components and packages.  The data about this
-code is out there somewhere but getting it is harder than needed. This a
-problem of data normalization, aggregation and exchange.
+exploding with millions of components and packages. The data about this
+code is out there somewhere but getting it is often too difficult. This
+is a problem of data normalization, aggregation and exchange.
 
 Whether you consume or produce software, accessing and creating
 normalized data about your code and the code you use should be made
