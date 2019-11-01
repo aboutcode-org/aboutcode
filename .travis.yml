@@ -3,12 +3,14 @@ language: python
 python:
 - '3.6'
 install:
-- pip install Sphinx sphinx_rtd_theme
+- pip install Sphinx sphinx_rtd_theme doc8
 before_install:
 - chmod +x ./docs/scripts/sphinx_build_link_check.sh
+- chmod +x ./docs/scripts/doc8_style_check.sh
 script:
 - cd docs
 - "./scripts/sphinx_build_link_check.sh"
+- "./scripts/doc8_style_check.sh"
 notifications:
   slack:
     secure: i2YByZfJB5RDtM+51eR3Bs2C8Sj00pljlllpZdMsbap/2uKepN+2qvuU+xhkfU64+sSqwE/VgknCO1v7SdB9PmtuZX+7LFUnWzoCSLLsqoDBFROTCb/siTR5OhxEMOWhKTXjsNsAb0jsx+fbfhohUdh5xDHxKxloAqa07Sg3W083yyd02VRAlsyw5a0iJo0Xq35z/FSsPH7y2rIVTQjj15M24qoQS9R4mqIF/HLGO21p527T0w+U7sZegCMayBgc0+fW8b/IbzfPWHNQ6pKv/zTIGQUDTkxmxdVOVokJ6KWVnLTgRjMNv3/mV6t/8r8HYuO9i9le3jVFX7BE7jxS1kQATR27UjKj1p3IA6xRIggxeH8apq22/GpCoCJZzlA/LRWX06IMhFu9MzB2OQeI2opn7FekIINjJIcmwL8Azsws14xD84H8rdbBD23kCWlzq/38u9wdHitLv7lEHAvdLlZbJAoF9vb1Ui0m5OylhQ4auW3ZqiXKfYshgdcLmMStQGiIsDvB4RORBDTHAig+XbBzP3YuAvQE/JvrJO7C7392rSqkZgClIs5a0+ZqJdvLcX3F8+WXkqFoQ7vQ01STTzhGBxA/deizvk7MvX4uMY2T4xxU6OPai1px608q34pDiuEchBpasU1sHJagO8rrWOEfjlbT7RuS7t5PIhwR648=
