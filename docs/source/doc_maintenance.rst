@@ -102,8 +102,10 @@ examples::
 The AboutCode webhook with ReadTheDocs should rebuild the documentation. You can review your
 results online.
 
+.. _doc_style_guide:
+
 Documentation Style Guides
 --------------------------
 
 The ``scancode-toolkit`` documentation is compliant to our doc style standards, enforced using
-``doc8``. For more details refer :ref:`contrib_doc_dev`.
+``doc8``. For more details refer :ref:`scancode-toolkit:contrib_doc_dev`.
