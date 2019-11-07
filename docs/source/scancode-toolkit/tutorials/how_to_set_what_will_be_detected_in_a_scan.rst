@@ -16,6 +16,8 @@ be saved in the JSON format, which can be loaded into Scancode Workbench for vis
 :ref:`how_to_visualize_scan_results` for more information. Another output format option is a
 static html file. See :ref:`cli_output_format` for more information.
 
+.. include::  /scancode-toolkit/rst_snippets/note_snippets/synopsis_install_quickstart.rst
+
 Scan for all clues:
 ^^^^^^^^^^^^^^^^^^^
 
@@ -23,7 +25,7 @@ To scan for licenses, copyrights, urls, emails, package information, and file in
 
 ::
 
-   ./scancode -clipeu --json output.json samples
+   scancode -clipeu --json output.json samples
 
 
 Scan for license and copyright clues:
@@ -31,7 +33,7 @@ Scan for license and copyright clues:
 
 ::
 
-   ./scancode -cl --json-pp output.json samples
+   scancode -cl --json-pp output.json samples
 
 
 Scan for emails and URLs:
@@ -39,7 +41,7 @@ Scan for emails and URLs:
 
 ::
 
-   ./scancode -eu --json-pp output.json samples
+   scancode -eu --json-pp output.json samples
 
 
 Scan for package information:
@@ -47,7 +49,7 @@ Scan for package information:
 
 ::
 
-   ./scancode -p --json-pp output.json samples
+   scancode -p --json-pp output.json samples
 
 
 Scan for file information:
@@ -55,7 +57,7 @@ Scan for file information:
 
 ::
 
-   ./scancode -i --json-pp output.json samples
+   scancode -i --json-pp output.json samples
 
 
 To see more example scans:
@@ -63,6 +65,6 @@ To see more example scans:
 
 ::
 
-   ./scancode --examples
+   scancode --examples
 
 For more information, refer :ref:`cli_list_options`.

@@ -7,6 +7,10 @@
 
 ----
 
+.. include::  /scancode-toolkit/rst_snippets/note_snippets/synopsis_install_quickstart.rst
+
+----
+
 Comparing Progress Message Options
 ----------------------------------
 
@@ -89,7 +93,7 @@ Comparing Progress Message Options
 
     An example scan command using ``--from-json``::
 
-        ./scancode --from-json sample.json --json-pp sample_2.json --classify
+        scancode --from-json sample.json --json-pp sample_2.json --classify
 
     This inputs the scan results from ``sample.json``, runs the post-scan plugin ``--classify`` and
     outputs the results for this scan to ``sample_2.json``.
@@ -114,4 +118,4 @@ Comparing Progress Message Options
 
     An example usage::
 
-        ./scancode -clieu --json-pp sample.json samples --max-in-memory -1
+        scancode -clieu --json-pp sample.json samples --max-in-memory -1

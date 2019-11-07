@@ -13,6 +13,6 @@ Usage:
 
 ::
 
-   ./extractcode [OPTIONS] <input>
+   extractcode [OPTIONS] <input>
 
 .. include::  /scancode-toolkit/rst_snippets/extract.rst

@@ -5,6 +5,10 @@
 
 ----
 
+.. include::  /scancode-toolkit/rst_snippets/note_snippets/synopsis_install_quickstart.rst
+
+----
+
 ``--generated`` Options
 -----------------------
 
@@ -12,7 +16,7 @@
 
     An example of using ``--generated`` in a scan::
 
-        ./scancode -clpieu --json-pp output.json samples --generated
+        scancode -clpieu --json-pp output.json samples --generated
 
     In the results, for each file the following attribute is added with it's corresponding
     ``true``/``false`` value ::
@@ -47,7 +51,7 @@
 
     An example usage::
 
-        ./scancode -clpieu --json-pp output.json samples --max-email 5
+        scancode -clpieu --json-pp output.json samples --max-email 5
 
     This only reports 5 email addresses per file and ignores the rest.
 
@@ -71,7 +75,7 @@
 
     An example usage::
 
-        ./scancode -clpieu --json-pp output.json samples --max-url 10
+        scancode -clpieu --json-pp output.json samples --max-url 10
 
     This only reports 10 urls per file and ignores the rest.
 
@@ -100,7 +104,7 @@
 
     An example usage::
 
-        ./scancode -clpieu --json-pp output.json samples --license-score 70
+        scancode -clpieu --json-pp output.json samples --license-score 70
 
     Here's the license results on setting the integer value to 100, Vs. the default value 0. This is
     visualized using ScanCode workbench in the License Info Dashboard.
@@ -134,7 +138,7 @@
 
     An example Scan::
 
-        ./scancode -cplieu --json-pp output.json samples --license-text
+        scancode -cplieu --json-pp output.json samples --license-text
 
     An example matched text included in the results is as follows::
 
@@ -178,7 +182,7 @@
 
     A scan example using the ``--license-url-template TEXT`` option ::
 
-        ./scancode -clpieu --json-pp output.json samples --license-url-template https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/{}.yml
+        scancode -clpieu --json-pp output.json samples --license-url-template https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/{}.yml
 
     In a normal scan, reference url for "ZLIB License" is as follows::
 
@@ -212,7 +216,7 @@
 
     An example Scan::
 
-        ./scancode -cplieu --json-pp output.json samples --license-text --license-text-diagnostics
+        scancode -cplieu --json-pp output.json samples --license-text --license-text-diagnostics
 
     Running a scan on the samples directory with ``--license-text --license-text-diagnostics`` options,
     causes the following difference in the scan result of the file
