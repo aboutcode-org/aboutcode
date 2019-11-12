@@ -7,10 +7,9 @@
    home
    install
    ide-config
-   docs
    whats-new
+   newcomer
 
 ..
     [ToAdd]
-    releases
     Link to Changelog
