@@ -38,19 +38,32 @@ Brief Summary Of Changes
 Documentation Support
 ^^^^^^^^^^^^^^^^^^^^^
 
+From Scancode 3.1.1 Scancode comes with improved and comprehensive Documentation Support.
+
+The documentation is available both offline (distributed with Scancode) and online,
+at ``scancode-toolkit.readthedocs.io/en/latest/``. The documentation in GitHub wiki's will be
+deprecated hereafter. The new documentation has improved support in terms of:
+
+#. Consistent with the Latest Version
+#. Command Line Interface Referance
+#. Getting Started Support for Newcomers
+#. Restructured to fit into the recommended `4 Category Doc Format <https://www.divio.com/blog/documentation/>`_
+#. Updated Tutorials/How To's
+#. Updated Plugin Support
+
+This results in a much better documentation experience to Users and even contributors.
+
 ``pip install`` Support
 ^^^^^^^^^^^^^^^^^^^^^^^
+
+Now, ``pip install`` is the recommended install method, across all platforms. This greatly
+simplifies the install process, and is much faster and easier than the Download and Configure
+method, for non-developer users.  
 
 Python 3 Support
 ^^^^^^^^^^^^^^^^
 
-Explanations
-------------
+Python 3 is now officially supported by Scancode-Toolkit.
 
-..
-    [ToDo]
-    The above sub-sections will have to be structured and elaborated in the following manner:-
-
-    1. Main new feature upgrades from the last release (Identical to changelog)
-    2. A brief summary of the changes (Explaining previous changes, links to other material)
-    3. "If your work includes *this* function you should upgrade to this release"
+This also means improved unicode support, so it's easy to translate strings from unicode to
+other languages. And as Scancode has users in more than 100 languages, this is a major improvement.
