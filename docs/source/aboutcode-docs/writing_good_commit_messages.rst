@@ -1,3 +1,5 @@
+.. _good_commit_messages:
+
 Writing good Commit Messages
 ============================
 

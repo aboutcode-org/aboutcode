@@ -1,3 +1,5 @@
+.. _how_to_extract_archives:
+
 How To Extract Archives
 =======================
 

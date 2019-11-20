@@ -1,3 +1,5 @@
+.. _how_to_specify_output_format:
+
 How to specify Scancode Output Format
 =====================================
 

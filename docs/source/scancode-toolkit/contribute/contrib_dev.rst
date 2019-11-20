@@ -6,6 +6,8 @@ Contributing to Code Development
 See `CONTRIBUTING.rst <https://github.com/nexB/scancode-toolkit/blob/master/CONTRIBUTING.rst>`_
 for details.
 
+.. _contrib_code_conven:
+
 Code layout and conventions
 ---------------------------
 
@@ -95,6 +97,8 @@ the string "tcpdump" in their name or their class name or module name .
 Another useful option after a test run with some failures is to re-run only the failed tests with
 the ``--lf`` option, for instance: ``py.test -vvs --lf`` would only run only test functions that
 failed in the previous run.
+
+.. _contrib_dev_pip_and_configure:
 
 pip requirements and the configure script
 -----------------------------------------

@@ -1,3 +1,5 @@
+.. _whats_new_this_release:
+
 What's New in This Release?
 ===========================
 
@@ -45,25 +47,25 @@ at ``scancode-toolkit.readthedocs.io/en/latest/``. The documentation in GitHub w
 deprecated hereafter. The new documentation has improved support in terms of:
 
 #. Consistent with the Latest Version
-#. Command Line Interface Referance
+#. Command Line Interface Reference
 #. Getting Started Support for Newcomers
 #. Restructured to fit into the recommended `4 Category Doc Format <https://www.divio.com/blog/documentation/>`_
 #. Updated Tutorials/How To's
 #. Updated Plugin Support
 
-This results in a much better documentation experience to Users and even contributors.
+This results in a much better documentation experience in Users and even contributors.
 
 ``pip install`` Support
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Now, ``pip install`` is the recommended install method, across all platforms. This greatly
 simplifies the install process, and is much faster and easier than the Download and Configure
-method, for non-developer users.  
+method, for non-developer users.
 
 Python 3 Support
 ^^^^^^^^^^^^^^^^
 
 Python 3 is now officially supported by Scancode-Toolkit.
 
-This also means improved unicode support, so it's easy to translate strings from unicode to
+This also means improved Unicode support, so it's easy to translate strings from Unicode to
 other languages. And as Scancode has users in more than 100 languages, this is a major improvement.

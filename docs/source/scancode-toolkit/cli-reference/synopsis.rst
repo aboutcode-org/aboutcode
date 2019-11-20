@@ -1,3 +1,5 @@
+.. _cli_synopsis:
+
 Synopsis
 ========
 
@@ -11,7 +13,7 @@ Toolkit Command Line Interface in the following sections:
 - Output Formats
 - Other Important Documentation
 
-.. _syn_install_quickstart:
+.. _syn_install:
 
 Installation
 ------------
@@ -23,6 +25,8 @@ detailed Instructions on the each of the Installation Methods.
 - :ref:`pip_install`
 - :ref:`latest_release_download_install`
 - :ref:`source_configure_install`
+
+.. _synopsis_quickstart:
 
 Quickstart
 ----------
@@ -81,6 +85,8 @@ ScanCode Toolkit Command Line options can be divided into these major sections:
 
 Refer the individual pages which are linked to above, for detailed discussions on the Command
 Line Options listed under each section.
+
+.. _synopsis_output:
 
 Output Formats
 --------------

@@ -3,6 +3,8 @@
 Contributing to the Documentation
 =================================
 
+.. _contrib_doc_setup_local:
+
 Setup Local Build
 -----------------
 
@@ -49,6 +51,8 @@ documentation .html files::
         see build/html/index.html
 
 You now have a local build of the AboutCode documents.
+
+.. _contrib_doc_share_improvements:
 
 Share Document Improvements
 ---------------------------
@@ -97,6 +101,8 @@ So run these scripts at your local system before creating a Pull Request::
     cd docs
     ./scripts/sphinx_build_link_check.sh
     ./scripts/doc8_style_check.sh
+
+.. _doc_style_docs8:
 
 Style Checks Using ``Doc8``
 ---------------------------
@@ -150,6 +156,8 @@ What is checked:
     - no tabulation for indentation - D003
     - no carriage returns (use UNIX newlines) - D004
     - no newline at end of file - D005
+
+.. _doc_interspinx:
 
 Interspinx
 ----------
@@ -208,8 +216,10 @@ Intersphinx, and you link to that label, it will create a link to the local labe
 For more information, refer this tutorial named
 `Using Intersphinx <https://my-favorite-documentation-test.readthedocs.io/en/latest/using_intersphinx.html>`_.
 
-Extra Style Checks
-------------------
+.. _doc_style_conv:
+
+Style Conventions for the Documentaion
+--------------------------------------
 
 1. Headings
 

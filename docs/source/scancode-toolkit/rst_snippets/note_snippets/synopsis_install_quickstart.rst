@@ -1,4 +1,4 @@
 .. note::
 
     For more information on the Scan Command for Various Installation Methods/Operating Systems,
-    refer :ref:`syn_install_quickstart`.
+    refer :ref:`syn_install`.

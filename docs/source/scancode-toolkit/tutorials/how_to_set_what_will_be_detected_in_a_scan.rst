@@ -1,3 +1,5 @@
+.. _how_to_set_what_scan_detects:
+
 How to set what will be detected in Scan
 ========================================
 

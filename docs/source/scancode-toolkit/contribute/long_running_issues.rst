@@ -39,12 +39,16 @@ solve a ``Good First Issue``.
 
 Manitainers of ScanCode Toolkit label small bugs as good first issues for new contributors.
 
+.. _good_1st_issue_links:
+
 Important Links
 ^^^^^^^^^^^^^^^
 
 - Issues labeled `good first issue <https://github.com/nexB/scancode-toolkit/labels/good%20first%20issue>`_
 - The status `list of good first issue <https://github.com/nexB/scancode-toolkit/issues/1825>`_
 - opening a `Solving Good First Issue <https://github.com/nexB/scancode-toolkit/issues/new?assignees=&labels=first+issue+solving&template=--good-first-issue.md&title=>`_
+
+.. _good_1st_issue_understand_b4_solving:
 
 What you should understand before Solving a Good First Issue
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -62,6 +66,8 @@ What you should understand before Solving a Good First Issue
   so maintainers can Track their Progress on that Issue.
 - The task list in the new issue opened (labeled ``Solving Good First Issue``) has to be updated by
   the Contributor.
+
+.. _good_1st_issue_workflow:
 
 Step by Step Workflow : Contributor's Tasks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
