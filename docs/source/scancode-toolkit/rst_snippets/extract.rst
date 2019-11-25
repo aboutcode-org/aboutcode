@@ -9,7 +9,7 @@ To extract the packages in the ``samples`` directory
 
 ::
 
-    ./extractcode samples
+    extractcode samples
 
 This extracts the zlib.tar.gz package:
 

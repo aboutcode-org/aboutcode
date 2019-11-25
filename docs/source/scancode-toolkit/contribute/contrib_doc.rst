@@ -3,6 +3,88 @@
 Contributing to the Documentation
 =================================
 
+.. _contrib_doc_setup_local:
+
+Setup Local Build
+-----------------
+
+To get started, create or identify a working directory on your local machine.
+
+Open that directory and execute the following command in a terminal session::
+
+    git clone https://github.com/nexB/scancode-toolkit.git
+
+That will create an ``/scancode-toolkit`` directory in your working directory.
+Now you can install the dependencies in a virtualenv::
+
+    cd scancode-toolkit
+    virtualenv -p /usr/bin/python3.6 docs-venv
+    source docs-venv/bin/activate
+
+Now, the following prerequisites are installed
+
+- Sphinx
+- sphinx_rtd_theme (the format theme used by ReadTheDocs)
+- docs8 (style linter)
+
+::
+
+    pip install Sphinx sphinx_rtd_theme doc8
+
+Now you can build the HTML documents locally::
+
+    cd docs
+    make html
+
+Assuming that your Sphinx installation was successful, Sphinx should build a local instance of the
+documentation .html files::
+
+    open build/html/index.html
+
+.. note::
+
+    In case this command did not work, for example on Ubuntu 18.04 you may get a message like “Couldn’t
+    get a file descriptor referring to the console”, try:
+
+    ::
+
+        see build/html/index.html
+
+You now have a local build of the AboutCode documents.
+
+.. _contrib_doc_share_improvements:
+
+Share Document Improvements
+---------------------------
+
+Ensure that you have the latest files::
+
+    git pull
+    git status
+
+Before commiting changes run Continious Integration Scripts locally to run tests. Refer
+:ref:`doc_ci` for instructions on the same.
+
+Follow standard git procedures to upload your new and modified files. The following commands are
+examples::
+
+    git status
+    git add source/index.rst
+    git add source/how-to-scan.rst
+    git status
+    git commit -m "New how-to document that explains how to scan"
+    git status
+    git push
+    git status
+
+The Scancode-Toolkit webhook with ReadTheDocs should rebuild the documentation after your
+Pull Request is Merged.
+
+Refer the `Pro Git Book <https://git-scm.com/book/en/v2/>`_ available online for Git tutorials
+covering more complex topics on Branching, Merging, Rebasing etc.
+
+.. _doc_ci:
+
 Continuous Integration
 ----------------------
 
@@ -14,6 +96,14 @@ of the documentation :
 2. No Broken Links   (By Using ``link-check``)
 3. Linting Errors    (By Using ``Doc8``)
 
+So run these scripts at your local system before creating a Pull Request::
+
+    cd docs
+    ./scripts/sphinx_build_link_check.sh
+    ./scripts/doc8_style_check.sh
+
+.. _doc_style_docs8:
+
 Style Checks Using ``Doc8``
 ---------------------------
 
@@ -22,20 +112,16 @@ How To Run Style Tests
 
 In the project root, run the following command::
 
-    $ doc8 --max-line-length 100 docs/source/scancode-toolkit --ignore D000
-
-.. note::
-
-   Only the scancode-toolkit documentation style standards are enforced presently.
+    $ doc8 --max-line-length 100 docs/source/ --ignore D000
 
 A sample output is::
 
     Scanning...
     Validating...
-    docs/source/scancode-toolkit/misc/licence_policy_plugin.rst:37: D002 Trailing whitespace
-    docs/source/scancode-toolkit/misc/faq.rst:45: D003 Tabulation used for indentation
-    docs/source/scancode-toolkit/misc/faq.rst:9: D001 Line too long
-    docs/source/scancode-toolkit/misc/support.rst:6: D005 No newline at end of file
+    docs/source/misc/licence_policy_plugin.rst:37: D002 Trailing whitespace
+    docs/source/misc/faq.rst:45: D003 Tabulation used for indentation
+    docs/source/misc/faq.rst:9: D001 Line too long
+    docs/source/misc/support.rst:6: D005 No newline at end of file
     ========
     Total files scanned = 34
     Total files ignored = 0
@@ -71,8 +157,69 @@ What is checked:
     - no carriage returns (use UNIX newlines) - D004
     - no newline at end of file - D005
 
-Extra Style Checks
-------------------
+.. _doc_interspinx:
+
+Interspinx
+----------
+
+ScanCode toolkit documentation uses `Intersphinx <http://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html>`_
+to link to other Sphinx Documentations, to maintain links to other Aboutcode Projects.
+
+To link sections in the same documentation, standart reST labels are used. Refer
+`Cross-Referencing <http://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html#ref-role>`_ for more information.
+
+For example::
+
+    .. _my-reference-label:
+
+    Section to cross-reference
+    --------------------------
+
+    This is the text of the section.
+
+    It refers to the section itself, see :ref:`my-reference-label`.
+
+Now, using Intersphinx, you can create these labels in one Sphinx Documentation and then referance
+these labels from another Sphinx Documentation, hosted in different locations.
+
+You just have to add the following in the ``conf.py`` file for your Sphinx Documentation, where you
+want to add the links::
+
+    extensions = [
+    'sphinx.ext.intersphinx'
+    ]
+
+    intersphinx_mapping = {'aboutcode': ('https://aboutcode.readthedocs.io/en/latest/', None)}
+
+To show all Intersphinx links and their targets of an Intersphinx mapping file, run::
+
+    python -msphinx.ext.intersphinx https://aboutcode.readthedocs.io/en/latest/objects.inv
+
+.. WARNING::
+
+    ``python -msphinx.ext.intersphinx https://aboutcode.readthedocs.io/objects.inv`` will give
+    error.
+
+This enables you to create links to the ``aboutcode`` Documentation in your own Documentation,
+where you modified the configuration file. Links can be added like this::
+
+    For more details refer :ref:`aboutcode:doc_style_guide`.
+
+You can also not use the ``aboutcode`` label assigned to all links from aboutcode.readthedocs.io,
+if you don't have a label having the same name in your Sphinx Documentation. Example::
+
+    For more details refer :ref:`doc_style_guide`.
+
+If you have a label in your documentation which is also present in the documentation linked by
+Intersphinx, and you link to that label, it will create a link to the local label.
+
+For more information, refer this tutorial named
+`Using Intersphinx <https://my-favorite-documentation-test.readthedocs.io/en/latest/using_intersphinx.html>`_.
+
+.. _doc_style_conv:
+
+Style Conventions for the Documentaion
+--------------------------------------
 
 1. Headings
 
@@ -97,17 +244,17 @@ Extra Style Checks
 
     Do not use underlines that are longer/shorter than the title headline itself. As in:
 
-::
+    ::
 
-    Correct :
+        Correct :
 
-    Extra Style Checks
-    ------------------
+        Extra Style Checks
+        ------------------
 
-    Incorrect :
+        Incorrect :
 
-    Extra Style Checks
-    ------------------------
+        Extra Style Checks
+        ------------------------
 
 .. note::
 

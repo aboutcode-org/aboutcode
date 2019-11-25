@@ -1,3 +1,5 @@
+.. _how_to_extract_archives:
+
 How To Extract Archives
 =======================
 
@@ -13,6 +15,6 @@ Usage:
 
 ::
 
-   ./extractcode [OPTIONS] <input>
+   extractcode [OPTIONS] <input>
 
 .. include::  /scancode-toolkit/rst_snippets/extract.rst

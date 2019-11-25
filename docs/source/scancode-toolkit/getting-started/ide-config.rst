@@ -1,3 +1,5 @@
+.. _ide_config:
+
 IDE Configuration
 =================
 

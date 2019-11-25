@@ -7,6 +7,10 @@ Pre-Scan Options
 
 ----
 
+.. include::  /scancode-toolkit/rst_snippets/note_snippets/synopsis_install_quickstart.rst
+
+----
+
 ``--ignore`` Option
 -------------------
 
@@ -16,7 +20,7 @@ Pre-Scan Options
 
     A sample usage::
 
-        ./scancode --ignore "*.java" samples samples.json
+        scancode --ignore "*.java" samples samples.json
 
     Here, Scancode ignores files ending with `.java`, and continues with other files as usual.
 
@@ -33,7 +37,7 @@ Pre-Scan Options
 
     A sample usage::
 
-        ./scancode --include "*.java" samples samples.json
+        scancode --include "*.java" samples samples.json
 
     Here, Scancode selectively scans files that has names ending with `.java`, and ignores all other files. This
     is basically complementary in behavior to the ``--ignore`` option.
@@ -50,6 +54,10 @@ Pre-Scan Options
         The options ``--license-clarity-score`` and ``--summary-key-files`` are sub-options of
         ``--classify``. ``--license-clarity-score`` and ``--summary-key-files`` are Post-Scan
         Options.
+
+    The ``--classify`` option can be used like::
+
+        scancode -clpieu --json-pp sample_facet.json samples --classify
 
     This option makes ScanCode further classify scanned files/directories, to determine whether they
     fall in these following categories
@@ -97,7 +105,7 @@ Pre-Scan Options
 
     You can use the ``--facet`` option in the following manner::
 
-        ./scancode -clpieu --json-pp sample_facet.json samples --facet dev="*.java" --facet dev="*.c"
+        scancode -clpieu --json-pp sample_facet.json samples --facet dev="*.java" --facet dev="*.c"
 
     This adds to the header object, the following attribute::
 

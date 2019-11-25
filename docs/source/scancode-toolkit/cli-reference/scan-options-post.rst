@@ -7,6 +7,10 @@ Post-Scan options activate their respective post-scan plugins which execute the 
 
 .. include:: /scancode-toolkit/rst_snippets/post_scan_options.rst
 
+----
+
+.. include::  /scancode-toolkit/rst_snippets/note_snippets/synopsis_install_quickstart.rst
+
 To see all plugins available via command line help, use ``--plugins``.
 
 .. include:: /scancode-toolkit/rst_snippets/note_snippets/post_scan_plugins.rst
@@ -26,7 +30,7 @@ To see all plugins available via command line help, use ``--plugins``.
 
     When the following command is executed to scan the ``samples`` directory with this option enabled::
 
-        ./scancode -clpieu --json-pp output.json samples --mark-source
+        scancode -clpieu --json-pp output.json samples --mark-source
 
     Then, the following directories are marked as "Source", i.e. Their "is_source" attribute is changed
     from "false" to "True".
@@ -52,7 +56,7 @@ To see all plugins available via command line help, use ``--plugins``.
 
     An example Scan::
 
-        ./scancode -clpieu --json-pp output.json samples --consolidate
+        scancode -clpieu --json-pp output.json samples --consolidate
 
     The JSON output file is structured as follows::
 
@@ -129,6 +133,12 @@ To see all plugins available via command line help, use ``--plugins``.
         [ToDo] Resolve Error and then Add content
         [ERROR] Check https://github.com/nexB/scancode-toolkit/issues/1758
 
+    .. WARNING::
+
+        Running the following scan generates an error::
+
+            ./scancode -clp --json-pp sample_filter_clues.json samples --filter-clues
+
 ----
 
 ``--is-license-text`` Option
@@ -146,7 +156,7 @@ To see all plugins available via command line help, use ``--plugins``.
 
     An example Scan::
 
-        ./scancode -clpieu --json-pp output.json samples --license-text --is-license-text
+        scancode -clpieu --json-pp output.json samples --license-text --is-license-text
 
     If the samples directory is scanned with this plugin, the files containing mostly license texts
     will have the following attribute set to 'true'::
@@ -184,7 +194,7 @@ To see all plugins available via command line help, use ``--plugins``.
 
     An example Scan::
 
-        ./scancode -clpieu --json-pp output.json samples --classify --license-clarity-score
+        scancode -clpieu --json-pp output.json samples --classify --license-clarity-score
 
     The "license_clarity_score" will have the following attributes:
 
@@ -243,7 +253,7 @@ To see all plugins available via command line help, use ``--plugins``.
 
     Applying License Policies during a ScanCode scan, using the ``--license-policy`` Plugin::
 
-        ./scancode -clipeu --json-pp output.json samples --license-policy policy-file.yml
+        scancode -clipeu --json-pp output.json samples --license-policy policy-file.yml
 
     .. include::  /scancode-toolkit/rst_snippets/note_snippets/post_lic_pol_notsub.rst
 
@@ -307,7 +317,7 @@ To see all plugins available via command line help, use ``--plugins``.
 
     An example Scan::
 
-        ./scancode -clpieu --json-pp output.json samples --summary
+        scancode -clpieu --json-pp output.json samples --summary
 
     The whole JSON file is structured as follows, when the ``--summary`` plugin is applied::
 
@@ -437,7 +447,7 @@ To see all plugins available via command line help, use ``--plugins``.
 
     An example scan using the ``--summary-by-facet`` Plugin::
 
-        ./scancode -clieu --json-pp output.json samples --summary --facet dev="*.java" --facet dev="*.c" --summary-by-facet
+        scancode -clieu --json-pp output.json samples --summary --facet dev="*.java" --facet dev="*.c" --summary-by-facet
 
     .. include::  /scancode-toolkit/rst_snippets/note_snippets/pre_facet_core.rst
 
@@ -584,7 +594,7 @@ To see all plugins available via command line help, use ``--plugins``.
 
     An example Scan::
 
-        ./scancode -clpieu --json-pp output.json samples --classify --summary --summary-key-files
+        scancode -clpieu --json-pp output.json samples --classify --summary --summary-key-files
 
     Running the scan with ``--summary --summary-key-files`` Plugins creates summaries for key files
     with the same license, copyright and other scan information, at a codebase level (in addition
@@ -665,7 +675,7 @@ To see all plugins available via command line help, use ``--plugins``.
 
     An example Scan::
 
-        ./scancode -clpieu --json-pp output.json samples --summary-with-details
+        scancode -clpieu --json-pp output.json samples --summary-with-details
 
     .. include::  /scancode-toolkit/rst_snippets/note_snippets/post_summary_details.rst
 

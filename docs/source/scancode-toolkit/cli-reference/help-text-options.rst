@@ -20,19 +20,11 @@ displays basic usage, and some simple examples. The command line option for this
 
     You can also use the shorter ``-h`` option, which does the same.
 
-For Linux based systems the full command is::
-
-    $ ./scancode --help
-
-And for windows, it will be like::
+To see the help text from the Terminal, execute the following command::
 
     $ scancode --help
 
-.. note::
-
-    Make sure you are in the Scancode Root Directory before carrying out this command. After
-    extracting the ``.zip`` or ``.tar.bz`` file, the folder for Scancode-Toolkit version 3.1.1
-    will be named like "scancode-toolkit-3.1.1".
+.. include::  /scancode-toolkit/rst_snippets/note_snippets/synopsis_install_quickstart.rst
 
 The Following Help Text is displayed, i.e. This is the help text for Scancode Version 3.1.1 ::
 
@@ -235,13 +227,11 @@ of code scanning:
 
 The command line option for displaying these basic examples is ``--examples``.
 
-For Linux based systems the full command is::
-
-    $ ./scancode --examples
-
-And for windows, it will be like::
+To see the help text from the Terminal, execute the following command::
 
     $ scancode --examples
+
+.. include::  /scancode-toolkit/rst_snippets/note_snippets/synopsis_install_quickstart.rst
 
 The Following Text is displayed, i.e. This is the examples for Scancode Version 3.1.1 ::
 
@@ -311,13 +301,11 @@ The command line option for displaying all the plugins is:
 
 - ``--plugins``
 
-For Linux based systems the full command is::
-
-    $ ./scancode --plugins
-
-And for windows, it will be like::
+To see the help text from the Terminal, execute the following command::
 
     $ scancode --plugins
+
+.. include::  /scancode-toolkit/rst_snippets/note_snippets/synopsis_install_quickstart.rst
 
 .. note::
 
@@ -772,7 +760,7 @@ This option prints the options selected for one specific scan command.
 
 If we run this command::
 
-    ./scancode -clpieu --json-pp sample.json samples --classify --summary --summary-with-details --print-options
+    scancode -clpieu --json-pp sample.json samples --classify --summary --summary-with-details --print-options
 
 The output will be::
 

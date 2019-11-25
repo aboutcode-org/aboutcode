@@ -4,56 +4,43 @@ How to Run a Scan
 In this simple tutorial example, we perform a basic scan on the ``samples`` directory distributed
 by default with Scancode.
 
-..
-    [ToDo]
-    Add Windows/MacOS Support and remove this WARNING.
+Prerequisites
+-------------
 
-.. WARNING::
-
-    This tutorial is for Linux based systems presently. Additional Help for Windows/MacOS will be
-    added.
+Refer :ref:`install_prerequisites` to make sure the correct Python Interpreters and other
+prerequisites are satisfied.
 
 Setting up a Virtual Environment
 --------------------------------
 
-Scancode Toolkit 3.1.1 and Workbench 3.1.0 is not compatible with python 3.x so we will create a
-`virtual environment <https://docs.python-guide.org/dev/virtualenvs/>`_ using the ``Virtualenv``
-tool with a python 2.7 interpreter.
+ScanCode Toolkit supports Python 3 in 3.2.x and later versions, so if you are using 3.2.x or later
+versions, you should create a `virtual environment <https://docs.python-guide.org/dev/virtualenvs/>`_
+using the ``Virtualenv`` tool with a python 3.6 interpreter.
 
-The following commands set up and activate the Virtual Environment ``venv-scan3.1.1``:
+The following commands set up and activate the Virtual Environment ``venv-scancode-py3``:
 
 ::
 
-    virtualenv -p /usr/bin/python2.7 venv-scan3.1.1
-    source venv-scan3.1.1/bin/activate
+    virtualenv -p /usr/bin/python3.6 venv-scancode-py3
+    source venv-scancode-py3/bin/activate
 
-..
-  [ToDo]
-  Update from Python 2.7 to Python 3.6
+
+If you are using Scancode Toolkit 3.1.0 and earlier versions, they are not compatible with
+Python 3.x so you should create the virtual environment with a python 2.7 interpreter::
+
+    virtualenv -p /usr/bin/python2.7 venv-scancode-py2
+    source venv-scancode-py2/bin/activate
 
 Setting up Scancode Toolkit
 ---------------------------
 
-Get the Scancode Toolkit Version 3.1.1 tarball or .zip archive from the
-`Toolkit GitHub Release <https://github.com/nexB/scancode-toolkit/releases/tag/v3.1.1>`_ Page under
-assets options. Download and extract the Archive from command line:
+Get ScanCode Toolkit from ``pip``::
 
-For .zip archive::
+    pip install scancode-toolkit
 
-    unzip scancode-toolkit-3.1.1.zip
+.. Note::
 
-For .tar.bz2 archive::
-
-    tar -xvf scancode-toolkit-3.1.1.tar.bz2
-
-Or Right Click and select "Extract Here".
-
-Check whether the :ref:`install_prerequisites` are installed. Open a terminal in the extracted
-directory and run::
-
-    ./scancode --help
-
-This will configure ScanCode and display the command line :ref:`cli_help_text`.
+    You can install a specific version of Scancode Toolkit like ``scancode-toolkit==3.1.1``.
 
 Looking into Files
 ------------------
@@ -71,7 +58,7 @@ Performing Extraction
 
 To extract the packages inside ``samples`` directory::
 
-    ./extractcode samples
+    extractcode samples
 
 This extracts the zlib.tar.gz package:
 
@@ -118,7 +105,7 @@ Running The Scan
 
 Now, run the scan with the options decided::
 
-    ./scancode -clpeui -n 2 --ignore "*.java" --json-pp sample.json samples
+    scancode -clpeui -n 2 --ignore "*.java" --json-pp sample.json samples
 
 A Progress report is shown::
 

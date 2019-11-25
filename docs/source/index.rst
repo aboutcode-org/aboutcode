@@ -25,6 +25,14 @@ Documentation Guide
    doc_maintenance
 
 
+Getting Started
+***************
+
+.. toctree::
+   :maxdepth: 2
+
+   scancode-toolkit/getting-started/newcomer
+
 Tutorial Documents
 ******************
 
@@ -65,3 +73,7 @@ Indices and Tables
 
 * :ref:`genindex`
 * :ref:`modindex`
+
+.. _improve_docs:
+
+.. include::  /scancode-toolkit/rst_snippets/improve_docs.rst

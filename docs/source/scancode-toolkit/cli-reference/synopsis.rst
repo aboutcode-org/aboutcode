@@ -1,3 +1,5 @@
+.. _cli_synopsis:
+
 Synopsis
 ========
 
@@ -5,34 +7,55 @@ ScanCode detects licenses, copyrights, package manifests and direct dependencies
 in source code and binary files, by scanning the files. This page introduces you to the ScanCode
 Toolkit Command Line Interface in the following sections:
 
+- Installation
 - Quickstart
 - Type of Options
 - Output Formats
 - Other Important Documentation
 
+.. _syn_install:
+
+Installation
+------------
+
+Scancode-Toolkit installation can be installed from ``pip``, the default Python Package Manager.
+However, there are more ways to perform an installation, and refer the following sections for
+detailed Instructions on the each of the Installation Methods.
+
+- :ref:`pip_install`
+- :ref:`latest_release_download_install`
+- :ref:`source_configure_install`
+
+.. _synopsis_quickstart:
+
 Quickstart
 ----------
 
-The basic usage is::
+The basic command to perform a scan, if Scancode is installed from ``pip``::
 
-   path/to/scancode [OPTIONS] <OUTPUT FORMAT OPTION(s)> <SCAN INPUT>
+    scancode [OPTIONS] <OUTPUT FORMAT OPTION(s)> <SCAN INPUT>
 
-To scan the ``samples`` directory, the command will be::
+The basic usage in case of a download and configure installation (on Linux/MacOS) is::
 
-   path/to/scancode -clpieu --json-pp path/to/output.json path/to/samples
-
-.. Note::
-
-    The <OUTPUT FORMAT OPTION(s)> includes both the output option and output file name.
-    For example in ``./scancode -clpieu --json-pp output.json samples``,
-    ``--json-pp output.json`` is <OUTPUT FORMAT OPTION(s)>.
+    path/to/scancode [OPTIONS] <OUTPUT FORMAT OPTION(s)> <SCAN INPUT>
 
 .. include::  /scancode-toolkit/rst_snippets/tip_snippets/synopsis_quickstart.rst
 
-Alternatively, instead of using ``path/to/scancode`` (the path from root of file system) we can
-go into the scancode directory (like ``scancode-toolkit-3.1.1``) and then use ``./scancode``.
-The same applies for input and output options. To scan a folder ``samples`` inside ScanCode
-directory, and output to a file ``output.json`` in the same directory, the command will be::
+Here Scancode scans the <SCAN INPUT> file or directory for license, origin and packages and saves
+results to FILE(s) using one or more output format option. Error and progress are printed to
+stdout.
+
+To scan the ``samples`` directory distributed with ScanCode-Toolkit, the command will be::
+
+   scancode -clpieu --json-pp path/to/output.json path/to/samples
+
+.. include::  /scancode-toolkit/rst_snippets/note_snippets/synopsis_output_format.rst
+
+Alternatively, in case of download and configure installations, where ``path/to/scancode`` is used
+(the path from root of file system) we can go into the scancode directory
+(like ``scancode-toolkit-3.1.1``) and then use ``./scancode``. The same applies for input and
+output options. To scan a folder ``samples`` inside ScanCode directory, and output to a file
+``output.json`` in the same directory, the command will be::
 
     ./scancode -clpieu --json-pp output.json samples
 
@@ -40,12 +63,11 @@ While a scan using absolute paths from the file system root will look like::
 
     home/ayansm/software/scancode-toolkit-3.1.1/scancode -clpieu --json-pp home/ayansm/scan_scan_results/output.json home/ayansm/codebases/samples/
 
-Throughout the documentation ``./scancode --clpieu --json-pp output.json samples`` will be used
-as am example when the terminal is at ``scancode-toolkit-3.1.1`` and we are scanning the
-default ``samples`` folder distributed with Scancode-Toolkit.
+Commands similar to ``scancode --clpi --json-pp output.json samples`` will be used as examples
+throughout the documentation. Here we are inside the ``virtualenv`` where Scancode-Toolkit was
+installed by ``pip``, and the default ``samples`` folder is being scanned, which is distributed
+by default with Scancode-Toolkit.
 
-Scans the <SCAN INPUT> file or directory for license, origin and packages and saves results to
-FILE(s) using one or more output format option. Error and progress are printed to stdout.
 
 .. _scancode_cli_options:
 
@@ -61,11 +83,16 @@ ScanCode Toolkit Command Line options can be divided into these major sections:
 - :ref:`cli_pre_scan`
 - :ref:`cli_post_scan`
 
+Refer the individual pages which are linked to above, for detailed discussions on the Command
+Line Options listed under each section.
+
+.. _synopsis_output:
+
 Output Formats
 --------------
 
-The output file format is set by using the various output options. The default output format
-is JSON, the entire file being in one line, without whitespace characters.
+The output file format is set by using the various output options. The recommended output format
+is JSON. If ``--json`` is used, the entire file being in one line, without whitespace characters.
 
 The following example scans will show you how to run a scan with each of the result formats. For
 the scans, we will use the ``samples`` directory provided with the ScanCode Toolkit.
@@ -75,9 +102,9 @@ the scans, we will use the ``samples`` directory provided with the ScanCode Tool
 JSON file output
 ^^^^^^^^^^^^^^^^
 
-Scan the ``samples`` directory and save the scan to a JSON file:::
+Scan the ``samples`` directory and save the scan to a JSON file (pretty-printed):::
 
-    ./scancode -clpieu --json-pp output.json samples
+    scancode -clpieu --json-pp output.json samples
 
 A sample JSON output file structure will look like::
 
@@ -264,7 +291,7 @@ file. When the scan is done, open ``samples.html`` in your web browser.
 
 ::
 
-   ./scancode -clpieu --html output.html samples
+   scancode -clpieu --html output.html samples
 
 .. image:: data/scancode-toolkit-static-html1.png
 .. image:: data/scancode-toolkit-static-html2.png

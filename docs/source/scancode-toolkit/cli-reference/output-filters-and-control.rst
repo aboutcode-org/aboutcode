@@ -7,6 +7,10 @@ Controlling Scancode Output and Filters
 
 ----
 
+.. include::  /scancode-toolkit/rst_snippets/note_snippets/synopsis_install_quickstart.rst
+
+----
+
 ``--strip-root`` Vs. ``--full-root``
 ------------------------------------
 
@@ -17,7 +21,7 @@ Controlling Scancode Output and Filters
 
     ::
 
-        ./scancode -cplieu --json-pp output.json samples --full-root
+        scancode -cplieu --json-pp output.json samples --full-root
 
     These two changes only the "path" attribute of the file information. For this comparison we
     compare the "path" attributes of the file ``LICENSE`` inside ``JGroups`` directory.
@@ -53,7 +57,7 @@ Controlling Scancode Output and Filters
 
     This scan ignores all files with authors matching the string "Apache Software Foundation"::
 
-        ./scancode -cplieu --json-pp output.json samples --ignore-author "Apache Software Foundation"
+        scancode -cplieu --json-pp output.json samples --ignore-author "Apache Software Foundation"
 
     More information on :ref:`glob_pattern_matching`.
 
@@ -71,7 +75,7 @@ Controlling Scancode Output and Filters
 
     This scan ignores all files with Copyright Holders matching the string "Free Software Foundation"::
 
-        ./scancode -cplieu --json-pp output.json samples --ignore-copyright-holder "Free Software Foundation"
+        scancode -cplieu --json-pp output.json samples --ignore-copyright-holder "Free Software Foundation"
 
     More information on :ref:`glob_pattern_matching`.
 
@@ -86,7 +90,7 @@ Controlling Scancode Output and Filters
 
     An example Scan::
 
-        ./scancode -cplieu --json-pp output.json samples --only-findings
+        scancode -cplieu --json-pp output.json samples --only-findings
 
     .. note::
 

@@ -1,6 +1,8 @@
 Overview
 ========
 
+.. _explain_how_scancode_works:
+
 How does ScanCode work?
 -----------------------
 
