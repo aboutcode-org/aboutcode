@@ -11,6 +11,7 @@ If you are interested in the Google Season of Documents 2019, go through this pa
    :maxdepth: 2
 
    contributor_project_ideas
+   gsod_2019_report
    gsod_2019
    gsoc_2017
    gsoc_2018
