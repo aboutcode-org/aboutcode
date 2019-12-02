@@ -1,6 +1,6 @@
 ---
 name: "Documentation Improvement"
-about: Your suggestions for improving the Documentation.
+about: Reporting errors or suggestions for improving the Documentation.
 title: ''
 labels: 'documentation'
 assignees: ''
