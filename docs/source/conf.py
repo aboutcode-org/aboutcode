@@ -39,8 +39,10 @@ extensions = [
 'sphinx.ext.intersphinx'
 ]
 
-# Temporary Mapping, Once scancode-toolkit.readthedocs.io has the migrated docs, this can be changed to the same.
-intersphinx_mapping = {'scancode-toolkit': ('https://sphinx-test-ayan.readthedocs.io/en/scancode-toolkit/', None)}
+# This points to scancode-toolkit.readthedocs.io
+# In case of "undefined label" ERRORS check docs on intersphinx to troubleshoot
+# Link was created at commit - https://github.com/nexB/scancode-toolkit/commit/3a71e44a403e0da18217f327f2362f6031f53d4b
+intersphinx_mapping = {'scancode-toolkit': ('https://scancode-toolkit.readthedocs.io/en/latest/', None)}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
