@@ -4,13 +4,13 @@ AboutCode Documentation
 Aboutcode Documentation Websites
 --------------------------------
 
-Scancode-Toolkit has it's documentation website at ``scancode-toolkit.readthedocs.io``.
-`Click here <scancode-toolkit.readthedocs.io>`_ to visit the Scancode Documentation.
+| **Scancode-Toolkit** has its documentation website at ``scancode-toolkit.readthedocs.io``.
+| `Click here <https://scancode-toolkit.readthedocs.io>`_ to visit the Scancode Documentation.
 
 Other Aboutcode Projects
 ------------------------
 
-These are the Projects which doesn't have a seperate documentation website currently.
+These are the Projects that don’t have a seperate documentation website currently.
 Note that these might be outdated, as these documentations are updated in their wiki's primarily.
 
 .. toctree::
