@@ -5,7 +5,10 @@ Aboutcode Documentation Websites
 --------------------------------
 
 | **Scancode-Toolkit** has its documentation website at ``scancode-toolkit.readthedocs.io``.
-| `Click here <https://scancode-toolkit.readthedocs.io>`_ to visit the Scancode Documentation.
+| `Click here <https://scancode-toolkit.readthedocs.io>`__ to visit the Scancode Documentation.
+
+| **Scancode-Workbench** has its documentation website at ``scancode-workbench.readthedocs.io``.
+| `Click here <https://scancode-workbench.readthedocs.io>`__ to visit the Workbench Documentation.
 
 Other Aboutcode Projects
 ------------------------
@@ -16,7 +19,6 @@ Note that these might be outdated, as these documentations are updated in their 
 .. toctree::
    :maxdepth: 1
 
-   scancode-workbench/index
    deltacode/index
    aboutcode-docs/home
    aboutcode-toolkit/index
