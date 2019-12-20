@@ -42,7 +42,8 @@ extensions = [
 # This points to scancode-toolkit.readthedocs.io
 # In case of "undefined label" ERRORS check docs on intersphinx to troubleshoot
 # Link was created at commit - https://github.com/nexB/scancode-toolkit/commit/3a71e44a403e0da18217f327f2362f6031f53d4b
-intersphinx_mapping = {'scancode-toolkit': ('https://scancode-toolkit.readthedocs.io/en/latest/', None)}
+intersphinx_mapping = {'scancode-toolkit': ('https://scancode-toolkit.readthedocs.io/en/latest/', None),
+                       'scancode-workbench': ('https://scancode-workbench.readthedocs.io/en/develop/', None)}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
