@@ -31,33 +31,33 @@ Table of Contents
 -----------------
 
 
-- :ref:`list_projects_aboutcode`
-- :ref:`contact_gsod`
-- :ref:`tech_gsod`
-- :ref:`writing_skills_gsod`
-- :ref:`application_gsod`
-- :ref:`doc_project_ideas_gsod`
-- :ref:`tutorial_ideas_gsod`
+- :ref:`list_projects_aboutcode-2020`
+- :ref:`contact_gsod-2020`
+- :ref:`tech_gsod-2020`
+- :ref:`writing_skills_gsod-2020`
+- :ref:`application_gsod-2020`
+- :ref:`doc_project_ideas_gsod-2020`
+- :ref:`tutorial_ideas_gsod-2020`
 
-  * :ref:`scan_a_codebase_and_analyze_the_results`
+  * :ref:`scan_a_codebase_and_analyze_the_results-2020`
 
-- :ref:`how_to_ideas_gsod`
+- :ref:`how_to_ideas_gsod-2020`
 
-  * :ref:`how_to_get_the_license_clarity_score_of_a_package`
-  * :ref:`how_to_discover_licensing_issues_in_a_software_project`
+  * :ref:`how_to_get_the_license_clarity_score_of_a_package-2020`
+  * :ref:`how_to_discover_licensing_issues_in_a_software_project-2020`
 
-- :ref:`referance_ideas_gsod`
+- :ref:`referance_ideas_gsod-2020`
 
-  * :ref:`scancode_output_formats`
+  * :ref:`scancode_output_formats-2020`
 
-- :ref:`discussion_ideas_gsod`
+- :ref:`discussion_ideas_gsod-2020`
 
-  * :ref:`integrating_scancode_into_a_software_development_lifecycle`
+  * :ref:`integrating_scancode_into_a_software_development_lifecycle-2020`
 
-- :ref:`your_documentation_project_ideas`
-- :ref:`mentoring_gsod`
+- :ref:`your_documentation_project_ideas-2020`
+- :ref:`mentoring_gsod-2020`
 
-.. _list_projects_aboutcode:
+.. _list_projects_aboutcode-2020:
 
 List of AboutCode projects
 --------------------------
@@ -88,7 +88,7 @@ although proposals to improve the documents of other AboutCode projects are welc
 - `ClearlyDefined <ClearlyDefined.io>`_ is a project to review FOSS software and help FOSS projects
   to improve their licensing and documentation clarity.
 
-.. _contact_gsod:
+.. _contact_gsod-2020:
 
 Contact
 -------
@@ -103,7 +103,7 @@ or the GSOD coordinator directly at dmclark@nexb.com
 
 Please ask questions the smart way: http://www.catb.org/~esr/faqs/smart-questions.html
 
-.. _tech_gsod:
+.. _tech_gsod-2020:
 
 Technology
 ----------
@@ -119,7 +119,7 @@ matching (such as Aho-Corasick and other automata).
 Our documentation is provided in text files that support the help function of our command line
 tools. We also have begun to provide documentation in the Wiki section of some AboutCode projects.
 
-.. _writing_skills_gsod:
+.. _writing_skills_gsod-2020:
 
 Technical Writing Skills Needed
 -------------------------------
@@ -137,7 +137,7 @@ Incoming technical writers will need the following skills:
 We are happy to help you get up to speed, and the more you are able to demonstrate ability and
 skills in advance, the more likely we are to choose your application!
 
-.. _application_gsod:
+.. _application_gsod-2020:
 
 About your project application
 ------------------------------
@@ -175,7 +175,7 @@ improvement to an AboutCode project, especially to ScanCode Toolkit or ScanCode 
 You can pick any project idea from the list below. You can also submit
 `Your Documentation Project ideas <#your-documentation-project-ideas>`_.
 
-.. _doc_project_ideas_gsod:
+.. _doc_project_ideas_gsod-2020:
 
 Our Documentation Project ideas
 -------------------------------
@@ -189,12 +189,12 @@ although proposals to improve the documents of other AboutCode projects are welc
 `Your Documentation Project ideas <#your-documentation-project-ideas>`_ are welcome too! Please
 chat about them to increase your chances of success!
 
-.. _tutorial_ideas_gsod:
+.. _tutorial_ideas_gsod-2020:
 
 Tutorial ideas
 --------------
 
-.. _scan_a_codebase_and_analyze_the_results:
+.. _scan_a_codebase_and_analyze_the_results-2020:
 
 **Scan a Codebase and Analyze the Results**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -226,12 +226,12 @@ Provide specific instructions to guide a new user to:
 
     * https://github.com/DennisClark
 
-.. _how_to_ideas_gsod:
+.. _how_to_ideas_gsod-2020:
 
 How-To ideas
 ------------
 
-.. _how_to_get_the_license_clarity_score_of_a_package:
+.. _how_to_get_the_license_clarity_score_of_a_package-2020:
 
 **How To Get the License Clarity Score of a Package**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -258,7 +258,7 @@ Explain the recommended scancode-toolkit options to get a license clarity score.
 
   * https://github.com/DennisClark
 
-.. _how_to_discover_licensing_issues_in_a_software_project:
+.. _how_to_discover_licensing_issues_in_a_software_project-2020:
 
 **How To Discover Licensing Issues in a Software Project**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -286,12 +286,12 @@ Explain the recommended scancode-toolkit options to get a license clarity score.
 
     * https://github.com/DennisClark
 
-.. _referance_ideas_gsod:
+.. _referance_ideas_gsod-2020:
 
 Reference ideas
 ---------------
 
-.. _scancode_output_formats:
+.. _scancode_output_formats-2020:
 
 **ScanCode Output Formats**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -318,12 +318,12 @@ Explain the various ScanCode output formats and their business purposes.
 
   * https://github.com/DennisClark
 
-.. _discussion_ideas_gsod:
+.. _discussion_ideas_gsod-2020:
 
 Discussion ideas
 ----------------
 
-.. _integrating_scancode_into_a_software_development_lifecycle:
+.. _integrating_scancode_into_a_software_development_lifecycle-2020:
 
 **Integrating ScanCode into a Software Development Lifecycle**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -356,7 +356,7 @@ workflow:
 
     * https://github.com/DennisClark
 
-.. _your_documentation_project_ideas:
+.. _your_documentation_project_ideas-2020:
 
 Your Documentation Project ideas
 --------------------------------
@@ -376,7 +376,7 @@ What are the documentation weak points?
 
 Feel free to propose and describe your own documentation ideas.
 
-.. _mentoring_gsod:
+.. _mentoring_gsod-2020:
 
 Mentoring
 ---------
