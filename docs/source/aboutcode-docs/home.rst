@@ -13,6 +13,7 @@ If you are interested in the Google Season of Documents 2019, go through this pa
    contributor_project_ideas
    gsod_2019_report
    gsod_2019
+   gsod-2020
    gsoc_2017
    gsoc_2018
    gsoc_2019

@@ -27,3 +27,14 @@ pip-selfcheck.json
 pyvenv.cfg
 geckodriver.log
 .DS_Store
+
+# virtualenv and other misc bits
+.venv/
+/build
+build/
+
+# IDEs
+.vscode
+
+# Sphinx
+docs/_build

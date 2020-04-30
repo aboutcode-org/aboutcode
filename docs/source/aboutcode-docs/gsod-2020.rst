@@ -1,0 +1,385 @@
+.. _GSoD2020:
+
+Google Season of Docs 2020
+===========================
+
+.. warning:: This is a clone of the 2019 doc -- not yet updated for 2020.
+
+AboutCode has been accepted as a participant in the Google Season of Documents in 2019 as a
+mentoring org, and is looking for people with technical writing skills. This page contains
+information for technical writers and anyone else interested in helping.
+
+AboutCode is a family of FOSS projects to uncover data about software code:
+
+
+* Where does the code come from? which software package?
+* What is its license? copyright?
+* Is the code secure, maintained, well coded?
+
+All these questions are important, and are relevant to millions of free and open source software
+components available on the web for reuse. The answers are critical to ensure that everyone can
+safely consume free and open source software.
+
+*Join us to make it so!*
+
+Our tools are used to help detect and report the origin and license of source code, packages and
+binaries as well as to discover software and package dependencies, and in the future track security
+vulnerabilities, bugs and other important software package attributes. This is a suite of command
+line tools, web-based and API servers and desktop applications.
+
+Table of Contents
+-----------------
+
+
+- :ref:`list_projects_aboutcode-2020`
+- :ref:`contact_gsod-2020`
+- :ref:`tech_gsod-2020`
+- :ref:`writing_skills_gsod-2020`
+- :ref:`application_gsod-2020`
+- :ref:`doc_project_ideas_gsod-2020`
+- :ref:`tutorial_ideas_gsod-2020`
+
+  * :ref:`scan_a_codebase_and_analyze_the_results-2020`
+
+- :ref:`how_to_ideas_gsod-2020`
+
+  * :ref:`how_to_get_the_license_clarity_score_of_a_package-2020`
+  * :ref:`how_to_discover_licensing_issues_in_a_software_project-2020`
+
+- :ref:`referance_ideas_gsod-2020`
+
+  * :ref:`scancode_output_formats-2020`
+
+- :ref:`discussion_ideas_gsod-2020`
+
+  * :ref:`integrating_scancode_into_a_software_development_lifecycle-2020`
+
+- :ref:`your_documentation_project_ideas-2020`
+- :ref:`mentoring_gsod-2020`
+
+.. _list_projects_aboutcode-2020:
+
+List of AboutCode projects
+--------------------------
+
+Note that the AboutCode focus for GSOD 2019 is on **ScanCode Toolkit** and **ScanCode Workbench**\,
+although proposals to improve the documents of other AboutCode projects are welcome.
+
+
+- `ScanCode Toolkit <https://github.com/nexB/scancode-toolkit>`_ is a popular command line tool to
+  scan code for licenses, copyrights and packages, used by many organizations and FOSS projects,
+  small and large.
+
+- `Scancode Workbench <https://github.com/nexB/scancode-workbench>`_ (formerly AboutCode Manager)
+  is a JavaScript, Electron-based desktop application to review scan results and document your
+  origin and license conclusions.
+
+- Other AboutCode projects are described at https://www.aboutcode.org and
+  https://github.com/nexB/aboutcode
+
+  We also work closely with, contribute to and have co-started several other orgs and projects:
+
+- `Package URL <https://github.com/package-url>`_ is an emerging standard to reference software
+  packages of all types with simple, readable and concise URLs.
+
+- `SPDX <http://SPDX.org>`_ is the Software Package Data Exchange, a specification to document
+  the origin and licensing of software packages.
+
+- `ClearlyDefined <ClearlyDefined.io>`_ is a project to review FOSS software and help FOSS projects
+  to improve their licensing and documentation clarity.
+
+.. _contact_gsod-2020:
+
+Contact
+-------
+
+Join the chat online or by IRC at https://gitter.im/aboutcode-org/discuss
+Introduce yourself and start the discussion!
+
+For personal issues, you can contact the primary org admin directly:
+@pombredanne and pombredanne@gmail.com
+
+or the GSOD coordinator directly at dmclark@nexb.com
+
+Please ask questions the smart way: http://www.catb.org/~esr/faqs/smart-questions.html
+
+.. _tech_gsod-2020:
+
+Technology
+----------
+
+We primarily use Python (and some C/C++) for code analysis. We use Electron/JavaScript for GUI.
+
+Our domain includes text analysis and processing (for instance for copyright and license
+detection), parsing (for package manifest formats), binary analysis (to detect the origin and
+license of binaries, which source code they come from, etc.) as well as web based tools and APIs
+(to expose the tools and libraries as web services) and low-level data structures for efficient
+matching (such as Aho-Corasick and other automata).
+
+Our documentation is provided in text files that support the help function of our command line
+tools. We also have begun to provide documentation in the Wiki section of some AboutCode projects.
+
+.. _writing_skills_gsod-2020:
+
+Technical Writing Skills Needed
+-------------------------------
+
+Incoming technical writers will need the following skills:
+
+
+* Ability to install and configure open source code from GitHub.
+* Ability to understand and run programs from the command line in a terminal window.
+* Familiarity with the four document functions described at
+  https://www.divio.com/blog/documentation/
+* Ability to create and edit wiki pages with multiple markdown languages.
+* An interest in FOSS licensing and software code and origin analysis.
+
+We are happy to help you get up to speed, and the more you are able to demonstrate ability and
+skills in advance, the more likely we are to choose your application!
+
+.. _application_gsod-2020:
+
+About your project application
+------------------------------
+
+Your application should be in the range of 1000 words, and should contain the following
+information, plus anything else that you think is relevant:
+
+
+- Your name and contact details
+
+- Title of your proposal
+
+- Abstract of your proposal
+
+- Description of your idea including an explanation of what it will contribute to the project,
+  such as the software development life cycle requirements that you expect to help with the
+  documentation improvements.
+
+- Description of previous work, existing solutions, open-source projects, preferably with links.
+
+- Details of your academic studies and any previous internships.
+
+- Descriptions of your relevant skills.
+
+- Do you plan to have any other commitments during GSOD that may affect your work? Any
+  vacations/holidays? Will you be available full time to work on your project? Please apply
+  only if this is a serious full time commitment during the GSOD time frame.
+
+Join the chat online or by IRC at https://gitter.im/aboutcode-org/discuss
+Introduce yourself and start the discussion!
+
+An excellent, competitive way to demonstrate your capability would be to submit a documentation
+improvement to an AboutCode project, especially to ScanCode Toolkit or ScanCode Workbench.
+
+You can pick any project idea from the list below. You can also submit
+`Your Documentation Project ideas <#your-documentation-project-ideas>`_.
+
+.. _doc_project_ideas_gsod-2020:
+
+Our Documentation Project ideas
+-------------------------------
+
+Here is a list of candidate project ideas for your consideration, organized by documentation
+function: **Tutorial** , **How-To** , **Reference** , **Discussion**.
+
+Note that the AboutCode focus for GSOD 2019 is on ScanCode Toolkit and ScanCode Workbench,
+although proposals to improve the documents of other AboutCode projects are welcome.
+
+`Your Documentation Project ideas <#your-documentation-project-ideas>`_ are welcome too! Please
+chat about them to increase your chances of success!
+
+.. _tutorial_ideas_gsod-2020:
+
+Tutorial ideas
+--------------
+
+.. _scan_a_codebase_and_analyze_the_results-2020:
+
+**Scan a Codebase and Analyze the Results**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Provide specific instructions to guide a new user to:
+
+
+* Scan a somewhat complex sample codebase using scancode-toolkit.
+* Import the results into ScanCode Workbench.
+* Analyze the scan results.
+
+
+  * **Level**
+
+    * Intermediate
+
+  * **Tech**
+
+    * Command line processing in a Linux-compatible terminal window
+
+  * **URLS**
+
+    * https://github.com/nexB/scancode-toolkit/blob/develop/README.rst
+    * https://github.com/nexB/scancode-toolkit/wiki
+    * https://github.com/nexB/scancode-workbench/blob/develop/README.md
+    * https://github.com/nexB/scancode-workbench/wiki
+
+  * **Mentors**
+
+    * https://github.com/DennisClark
+
+.. _how_to_ideas_gsod-2020:
+
+How-To ideas
+------------
+
+.. _how_to_get_the_license_clarity_score_of_a_package-2020:
+
+**How To Get the License Clarity Score of a Package**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Explain the recommended scancode-toolkit options to get a license clarity score.
+
+
+* **Level**
+
+  * Intermediate
+
+* **Tech**
+
+  * Command line processing in a Linux-compatible terminal window
+
+* **URLS**
+
+  * https://github.com/nexB/scancode-toolkit/blob/develop/README.rst
+  * https://github.com/nexB/scancode-toolkit/wiki
+  * https://github.com/nexB/scancode-workbench/blob/develop/README.md
+  * https://github.com/nexB/scancode-workbench/wiki
+
+* **Mentors**
+
+  * https://github.com/DennisClark
+
+.. _how_to_discover_licensing_issues_in_a_software_project-2020:
+
+**How To Discover Licensing Issues in a Software Project**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+* Explain the recommended scancode-toolkit options to discover licenses.
+* Explain how to take advantage of license policy support.
+
+  * **Level**
+
+    * Intermediate
+
+  * **Tech**
+
+    * Command line processing in a Linux-compatible terminal window
+
+  * **URLS**
+
+    * https://github.com/nexB/scancode-toolkit/blob/develop/README.rst
+    * https://github.com/nexB/scancode-toolkit/wiki
+    * https://github.com/nexB/scancode-workbench/blob/develop/README.md
+    * https://github.com/nexB/scancode-workbench/wiki
+
+  * **Mentors**
+
+    * https://github.com/DennisClark
+
+.. _referance_ideas_gsod-2020:
+
+Reference ideas
+---------------
+
+.. _scancode_output_formats-2020:
+
+**ScanCode Output Formats**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Explain the various ScanCode output formats and their business purposes.
+
+
+* **Level**
+
+  * Intermediate
+
+* **Tech**
+
+  * Command line processing in a Linux-compatible terminal window
+
+* **URLS**
+
+  * https://github.com/nexB/scancode-toolkit/blob/develop/README.rst
+  * https://github.com/nexB/scancode-toolkit/wiki
+  * https://github.com/nexB/scancode-workbench/blob/develop/README.md
+  * https://github.com/nexB/scancode-workbench/wiki
+
+* **Mentors**
+
+  * https://github.com/DennisClark
+
+.. _discussion_ideas_gsod-2020:
+
+Discussion ideas
+----------------
+
+.. _integrating_scancode_into_a_software_development_lifecycle-2020:
+
+**Integrating ScanCode into a Software Development Lifecycle**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Discuss options and techniques to integrate ScanCode into a software development lifecycle
+workflow:
+
+
+* During software creation and maintenance.
+* During software check-out/check-in.
+* During sofware build and test.
+
+
+  * **Level**
+
+    * Intermediate
+
+  * **Tech**
+
+    * Command line processing in a Linux-compatible terminal window
+
+  * **URLS**
+
+    * https://github.com/nexB/scancode-toolkit/blob/develop/README.rst
+    * https://github.com/nexB/scancode-toolkit/wiki
+    * https://github.com/nexB/scancode-workbench/blob/develop/README.md
+    * https://github.com/nexB/scancode-workbench/wiki
+
+  * **Mentors**
+
+    * https://github.com/DennisClark
+
+.. _your_documentation_project_ideas-2020:
+
+Your Documentation Project ideas
+--------------------------------
+
+Download and install ScanCode Toolkit and ScanCode Workbench and try them out. For example, you
+may try scanning an open source software package in a technology with which you are familiar.
+What are the documentation weak points?
+
+
+* Is it difficult to get started? A **Tutorial** document opportunity.
+* Is it difficult to accomplish a specific objective? A **How-To** document opportunity.
+* Are the capabilities of the tool too mysterious? Do you want to know more about what you can do
+  with it? A **Reference** document opportunity.
+* Do you feel that you need to understand its concepts better in order to use it and trust it? Do
+  you want to know more about how the code scanning actually works? A **Discussion** document
+  opportunity.
+
+Feel free to propose and describe your own documentation ideas.
+
+.. _mentoring_gsod-2020:
+
+Mentoring
+---------
+
+We welcome new mentors to help with the program. We require some understanding of the project
+domain to join as a mentor. Contact the team on Gitter at https://gitter.im/aboutcode-org/discuss
