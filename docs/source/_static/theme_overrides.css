@@ -1,0 +1,363 @@
+body {
+    color: #000000;
+    /* this is the font-family used in the SPATS wiki */
+    /* font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; */
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* ul, ul.simple {
+    margin-bottom: 10px;
+} */
+
+.wy-plain-list-disc, .rst-content .section ul, .rst-content .toctree-wrapper ul, article ul {
+    margin-bottom: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 10px;
+}
+
+h2, h3, h4, h5, h6 {
+    margin-top: 20px;
+    margin-top: 30px;
+}
+
+h5 {
+    font-size: 17px;
+    font-size: 18px;
+    color: #666666;
+    color: #000000;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+h6 {
+    font-size: 16px;
+    color: #666666;
+    color: #999999;
+    color: #778899;
+    color: #009999;
+    color: #006666;
+    color: #996633;
+    color: #009933;
+    color: #661aff;
+    /* color: #666699; */
+
+    /* font-style: italic; */
+    /* font-weight: normal; */
+    margin-bottom: 10px;
+}
+
+/* custom admonitions */
+/* success */
+.custom-admonition-success  .admonition-title {
+    color: #ffffff;
+    color: #000000;
+    background: #009900;
+    background: #00b33c;
+    background: #ccffcc;
+    border-radius: 5px 5px 0px 0px;
+}
+div.custom-admonition-success.admonition {
+    color: #000000;
+    background: #f5f5f5;
+    background: #ffffff;
+    border: solid 1px #e8e8e8;
+    border: solid 1px #cccccc;
+    border-radius: 5px;
+    /* box-shadow: 5px 5px 18px #d8d8d8; */
+    box-shadow: 1px 1px 5px 3px #d8d8d8;
+    margin: 20px 0px 30px 0px;
+}
+
+/* important */
+.custom-admonition-important  .admonition-title {
+    color: #ffffff;
+    color: #000000;
+    background: #009900;
+    background: #00b33c;
+    background: #ccffcc;
+    border-radius: 5px 5px 0px 0px;
+}
+div.custom-admonition-important.admonition {
+    color: #000000;
+    background: #f5f5f5;
+    background: #ffffff;
+    border: solid 1px #e8e8e8;
+    border: solid 1px #cccccc;
+    border-radius: 5px;
+    /* box-shadow: 5px 5px 18px #d8d8d8; */
+    box-shadow: 1px 1px 5px 3px #d8d8d8;
+    margin: 20px 0px 30px 0px;
+}
+
+/* caution */
+.custom-admonition-caution  .admonition-title {
+    color: #000000;
+    background: #ffff66;
+    background: #ffff99;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: solid 1px #e8e8e8;
+}
+div.custom-admonition-caution.admonition {
+    color: #000000;
+    background: #f5f5f5;
+    background: #ffffff;
+    border: solid 1px #e8e8e8;
+    border: solid 1px #cccccc;
+    border-radius: 5px;
+    /* box-shadow: 5px 5px 18px #d8d8d8; */
+    box-shadow: 1px 1px 5px 3px #d8d8d8;
+    margin: 20px 0px 30px 0px;
+}
+
+/* note */
+.custom-admonition-note  .admonition-title {
+    color: #ffffff;
+    background: #3399ff;
+    background: #006bb3;
+    border-radius: 5px 5px 0px 0px;
+}
+div.custom-admonition-note.admonition {
+    color: #000000;
+    background: #f5f5f5;
+    background: #ffffff;
+    border: solid 1px #e8e8e8;
+    border: solid 1px #cccccc;
+    border-radius: 5px;
+    /* box-shadow: 5px 5px 18px #d8d8d8; */
+    box-shadow: 1px 1px 5px 3px #d8d8d8;
+    margin: 20px 0px 30px 0px;
+}
+
+/* todo */
+.custom-admonition-todo  .admonition-title {
+    color: #000000;
+    background: #cce6ff;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: solid 1px #99ccff;
+}
+div.custom-admonition-todo.admonition {
+    color: #000000;
+    background: #f5f5f5;
+    background: #ffffff;
+    border: solid 1px #e8e8e8;
+    border: solid 1px #cccccc;
+    border: solid 1px #99ccff;
+    border-radius: 5px;
+    /* box-shadow: 5px 5px 18px #d8d8d8; */
+    box-shadow: 1px 1px 5px 3px #d8d8d8;
+    margin: 20px 0px 30px 0px;
+}
+
+/* examples */
+.custom-admonition-examples  .admonition-title {
+    color: #000000;
+    /* color: #ffffff; */
+    background: #f5f5f5;
+    background: #e8e8e8;
+    background: #ffe6cc;
+    /* background: #606060; */
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: solid 1px #d8d8d8;
+}
+div.custom-admonition-examples.admonition {
+    color: #000000;
+    background: #f5f5f5;
+    background: #ffffff;
+    border: solid 1px #cccccc;
+    border-radius: 5px;
+    /* box-shadow: 5px 5px 18px #d8d8d8; */
+    box-shadow: 1px 1px 5px 3px #d8d8d8;
+    margin: 20px 0px 30px 0px;
+}
+
+.wy-nav-content {
+    /* max-width: 800px; */
+    /* max-width: 1200px; */
+    max-width: 100%;
+    padding-right: 100px;
+    padding-left: 100px;
+    background-color: #f2f2f2;
+}
+
+div.rst-content {
+    background-color: #ffffff;
+    border: solid 1px #e5e5e5;
+    padding: 20px;
+    padding: 20px 40px 20px 40px;
+}
+
+.rst-content .guilabel {
+    /* border: 1px solid #7fbbe3; */
+    /* border: 1px solid #e7f2fa; */
+    border: 1px solid #ffff99;
+    /* border: 1px solid #ccffcc; */
+    /* border: 1px solid #f2f2f2; */
+    /* border: 1px solid #e6f2ff; */
+
+    /* background: #e7f2fa; */
+    /* background: #e6ffff; */
+    background: #ffff99;
+    /* background: #ccffcc; */
+    /* background-color: #f2f2f2; */
+    /* background: #e6f2ff; */
+
+    /* font-size: 80%; */
+    font-size: 100%;
+    /* font-size: 12px; */
+    /* font-size: 14px; */
+    /* font-size: 16px; */
+    font-weight: 700;
+    font-weight: normal;
+    border-radius: 4px;
+    padding: 2.4px 6px;
+    padding: 4px 6px;
+    padding: 2px 0px;
+    margin: auto 2px;
+
+    vertical-align: middle;
+}
+
+.rst-content kbd {
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",Courier,monospace;
+    border: solid 1px #d8d8d8;
+    background-color: #f5f5f5;
+    padding: 0px 3px;
+    border-radius: 3px;
+}
+
+.wy-nav-content-wrap a {
+    color: #0066cc;
+    text-decoration: none;
+}
+.wy-nav-content-wrap a:hover {
+    color: #0099cc;
+    text-decoration: underline;
+}
+
+.wy-nav-top a {
+    color: #ffffff;
+}
+
+/* Based on numerous similar approaches e.g., https://github.com/readthedocs/sphinx_rtd_theme/issues/117 and https://rackerlabs.github.io/docs-rackspace/tools/rtd-tables.html -- but remove form-factor limits to enable table wrap on full-size and smallest-size form factors */
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+/* .wy-table-responsive {
+    overflow: visible !important;
+} */
+
+.rst-content table.docutils td,
+.rst-content table.docutils th {
+    padding: 5px;
+    padding: 5px 10px 5px 10px;
+}
+.rst-content table.docutils td p,
+.rst-content table.docutils th p {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.rst-content table.docutils td p cite,
+.rst-content table.docutils th p cite {
+    font-size: 14px;
+    background-color: transparent;
+}
+
+.colwidths-given th {
+    /* border: solid 1px #e8e8e8 !important; */
+    border: solid 1px #d8d8d8 !important;
+}
+.colwidths-given td {
+    /* border: solid 1px #e8e8e8 !important; */
+    border: solid 1px #d8d8d8 !important;
+}
+
+/*handles single-tick inline code*/
+.wy-body-for-nav cite {
+    color: #000000;
+    background-color: transparent;
+    font-style: normal;
+    font-family: "Courier New";
+    font-size: 12px;
+    font-size: 13px;
+    padding: 3px 3px 3px 3px;
+}
+
+.rst-content pre.literal-block, .rst-content div[class^="highlight"] pre, .rst-content .linenodiv pre {
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",Courier,monospace;
+    font-size: 13px;
+    /* line-height: 1.5; */
+    overflow: visible;
+    white-space: pre-wrap;
+    /* color: #e74c3c; */
+}
+
+.rst-content pre.literal-block, .rst-content div[class^='highlight'] {
+    border: 1px solid #e1e4e5;
+    border: 0;
+    background-color: #f6f8fa;
+    background-color: #f8f8f8;
+    /* background-color: #f2f2f2; */
+    border: solid 1px #e5e5e5;
+    border: solid 1px #e8e8e8;
+}
+
+/* This enables inline code to wrap. */
+code, .rst-content tt, .rst-content code {
+    white-space: pre-wrap;
+    padding: 2px 3px 1px;
+    border-radius: 3px;
+    font-size: 13px;
+    background-color: #f8f8f8;
+}
+
+/* use this added class for code blocks attached to bulleted list items */
+.highlight-top-margin {
+    margin-top: 20px !important;
+}
+
+/* change color of inline code block */
+/* span.pre {
+    color: #e74c3c;
+    color: #e01e5a;
+} */
+
+.wy-body-for-nav blockquote {
+    margin: 1em 0;
+    padding-left: 1em;
+    border-left: 4px solid #ddd;
+    color: #6a6a6a;
+    color: #000000;
+}
+
+/* Fix the unwanted top and bottom padding inside a nested bulleted/numbered list */
+.rst-content .section ol p, .rst-content .section ul p {
+    margin-bottom: 0px;
+}
+
+/* add spacing between bullets for legibility */
+.rst-content .section ol li, .rst-content .section ul li {
+    margin-bottom: 5px;
+}
+
+.rst-content .section ol li:first-child, .rst-content .section ul li:first-child {
+    margin-top: 5px;
+}
+
+/* but exclude the toctree bullets */
+.rst-content .toctree-wrapper ul li, .rst-content .toctree-wrapper ul li:first-child {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* remove extra space at bottom of multine list-table cell */
+.rst-content .line-block {
+    margin-left: 0px;
+    margin-bottom: 24px;
+    margin-bottom: 0px;
+    line-height: 24px;
+}
