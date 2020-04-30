@@ -3,7 +3,10 @@
 Google Season of Docs 2020
 ===========================
 
-.. warning:: This is a clone of the 2019 doc -- not yet updated for 2020.
+.. admonition:: Caution
+   :class: custom-admonition-caution
+
+   This is a clone of the 2019 doc -- not yet updated for 2020.
 
 AboutCode has been accepted as a participant in the Google Season of Documents in 2019 as a
 mentoring org, and is looking for people with technical writing skills. This page contains
