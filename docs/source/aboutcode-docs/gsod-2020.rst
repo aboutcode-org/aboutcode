@@ -6,7 +6,33 @@ Google Season of Docs 2020
 .. admonition:: Caution
    :class: custom-admonition-caution
 
-   This is a clone of the 2019 doc -- not yet updated for 2020.
+   This WIP began as a clone of our GSoD 2019 page -- :ref:`GSoD2019` -- and is being updated for 2020.  Please share your ideas (in writing) for GSoD 2020 projects, using the structure we used for our GSoD 2019 application, i.e.,
+
+   - Four categories (aka "functions") drawn from https://documentation.divio.com/ and `this related PyCon Australia 2017 YouTube video <https://www.youtube.com/watch?v=t4vKPhjcMZg>`_:
+
+     - Tutorial ideas
+     - How-To ideas
+     - Reference ideas
+     - Discussion ideas
+
+   - Each project "idea" has the following structure:
+
+     - Concise descriptive title followed by equally concise description.
+     - Level
+     - Tech
+     - URLs
+     - Mentors
+
+.. admonition:: Note
+   :class: custom-admonition-note
+
+   For some reason the 2019 ``.rst`` includes a detailed, hand-written TOC, which I expect we'll replace with a Sphinx TOC using ``h1`` et al. headers.
+
+AboutCode.org is applying to be a mentoring organization for the `Google Season of Docs (GSoD) 2020 <https://developers.google.com/season-of-docs>`_.
+
+----
+
+:guilabel:`[The text below comes from the 2019 page and has not yet been modified.]`
 
 AboutCode has been accepted as a participant in the Google Season of Documents in 2019 as a
 mentoring org, and is looking for people with technical writing skills. This page contains

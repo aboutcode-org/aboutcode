@@ -99,6 +99,7 @@ div.custom-admonition-important.admonition {
     color: #000000;
     background: #ffff66;
     background: #ffff99;
+    background: #fff3cd;
     border-radius: 5px 5px 0px 0px;
     border-bottom: solid 1px #e8e8e8;
 }
@@ -198,6 +199,7 @@ div.rst-content {
     /* border: 1px solid #ccffcc; */
     /* border: 1px solid #f2f2f2; */
     /* border: 1px solid #e6f2ff; */
+    border: 1px solid #fff3cd;
 
     /* background: #e7f2fa; */
     /* background: #e6ffff; */
@@ -205,6 +207,7 @@ div.rst-content {
     /* background: #ccffcc; */
     /* background-color: #f2f2f2; */
     /* background: #e6f2ff; */
+    background: #fff3cd;
 
     /* font-size: 80%; */
     font-size: 100%;
