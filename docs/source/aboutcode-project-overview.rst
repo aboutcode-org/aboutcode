@@ -1,3 +1,5 @@
+.. _aboutcode-project-overview:
+
 ==========================
 AboutCode Project Overview
 ==========================

@@ -26,8 +26,8 @@ StandaloneHTMLBuilder.supported_image_types = [
 # -- Project information -----------------------------------------------------
 
 project = 'AboutCode'
-copyright = '2019 AboutCode.org'
-author = 'AboutCode.org'
+copyright = 'AboutCode Authors'
+author = 'AboutCode Authors'
 
 
 # -- General configuration ---------------------------------------------------

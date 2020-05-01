@@ -28,7 +28,7 @@ Welcome to the AboutCode documentation!
 
    aboutcode-toolkit/index
 
-----
+
 
 .. toctree::
    :maxdepth: 2
