@@ -24,23 +24,24 @@
      - URLs
      - Mentors
 
-.. admonition:: ToDo
-   :class: custom-admonition-todo
-
-   For some reason the 2019 ``.rst`` includes a detailed, hand-written TOC, which I expect we'll replace with a Sphinx TOC using ``h1`` et al. headers.
-
 AboutCode.org is applying to be a mentoring organization for the `Google Season of Docs (GSoD) 2020 <https://developers.google.com/season-of-docs>`_.
+
+In the event that our application is accepted, we'll be looking for fellow members of the FOSS community with technical writing skills and an interest in helping.  If you're interested, keep reading to get a sense of what we have in mind for GSoD 2020.
 
 ----
 
-:guilabel:`[The text below comes from the 2019 page and has not yet been modified.]`
+.. contents:: Contents
+   :local:
+   :depth: 2
 
-AboutCode has been accepted as a participant in the Google Season of Documents in 2019 as a
-mentoring org, and is looking for people with technical writing skills. This page contains
-information for technical writers and anyone else interested in helping.
+----
+
+.. admonition:: ToDo
+   :class: custom-admonition-todo
+
+   The text below comes from the 2019 page.  Other than replacing the manually-created TOC with ``.. contents:: :local:`` (the new TOC just above), removing unneeded labels and some other dated content and adding a set of project templates, this text has not yet been modified.
 
 AboutCode is a family of FOSS projects to uncover data about software code:
-
 
 * Where does the code come from? which software package?
 * What is its license? copyright?
@@ -56,38 +57,6 @@ Our tools are used to help detect and report the origin and license of source co
 binaries as well as to discover software and package dependencies, and in the future track security
 vulnerabilities, bugs and other important software package attributes. This is a suite of command
 line tools, web-based and API servers and desktop applications.
-
-Table of Contents
------------------
-
-
-- :ref:`list_projects_aboutcode-2020`
-- :ref:`contact_gsod-2020`
-- :ref:`tech_gsod-2020`
-- :ref:`writing_skills_gsod-2020`
-- :ref:`application_gsod-2020`
-- :ref:`doc_project_ideas_gsod-2020`
-- :ref:`tutorial_ideas_gsod-2020`
-
-  * :ref:`scan_a_codebase_and_analyze_the_results-2020`
-
-- :ref:`how_to_ideas_gsod-2020`
-
-  * :ref:`how_to_get_the_license_clarity_score_of_a_package-2020`
-  * :ref:`how_to_discover_licensing_issues_in_a_software_project-2020`
-
-- :ref:`referance_ideas_gsod-2020`
-
-  * :ref:`scancode_output_formats-2020`
-
-- :ref:`discussion_ideas_gsod-2020`
-
-  * :ref:`integrating_scancode_into_a_software_development_lifecycle-2020`
-
-- :ref:`your_documentation_project_ideas-2020`
-- :ref:`mentoring_gsod-2020`
-
-.. _list_projects_aboutcode-2020:
 
 List of AboutCode projects
 --------------------------
@@ -118,22 +87,16 @@ although proposals to improve the documents of other AboutCode projects are welc
 - `ClearlyDefined <ClearlyDefined.io>`_ is a project to review FOSS software and help FOSS projects
   to improve their licensing and documentation clarity.
 
-.. _contact_gsod-2020:
-
 Contact
 -------
 
 Join the chat online or by IRC at https://gitter.im/aboutcode-org/discuss
 Introduce yourself and start the discussion!
 
-For personal issues, you can contact the primary org admin directly:
-@pombredanne and pombredanne@gmail.com
+For personal issues, you can contact
 
-or the GSOD coordinator directly at dmclark@nexb.com
-
-Please ask questions the smart way: http://www.catb.org/~esr/faqs/smart-questions.html
-
-.. _tech_gsod-2020:
+- the primary org admin directly: @pombredanne and pombredanne@gmail.com
+- the GSOD coordinator directly: dmclark@nexb.com
 
 Technology
 ----------
@@ -148,8 +111,6 @@ matching (such as Aho-Corasick and other automata).
 
 Our documentation is provided in text files that support the help function of our command line
 tools. We also have begun to provide documentation in the Wiki section of some AboutCode projects.
-
-.. _writing_skills_gsod-2020:
 
 Technical Writing Skills Needed
 -------------------------------
@@ -167,14 +128,11 @@ Incoming technical writers will need the following skills:
 We are happy to help you get up to speed, and the more you are able to demonstrate ability and
 skills in advance, the more likely we are to choose your application!
 
-.. _application_gsod-2020:
-
 About your project application
 ------------------------------
 
 Your application should be in the range of 1000 words, and should contain the following
 information, plus anything else that you think is relevant:
-
 
 - Your name and contact details
 
@@ -203,9 +161,7 @@ An excellent, competitive way to demonstrate your capability would be to submit 
 improvement to an AboutCode project, especially to ScanCode Toolkit or ScanCode Workbench.
 
 You can pick any project idea from the list below. You can also submit
-`Your Documentation Project ideas <#your-documentation-project-ideas>`_.
-
-.. _doc_project_ideas_gsod-2020:
+`Your Documentation Project ideas <#your-documentation-project-ideas-2020>`_.
 
 Our Documentation Project ideas
 -------------------------------
@@ -216,175 +172,114 @@ function: **Tutorial** , **How-To** , **Reference** , **Discussion**.
 Note that the AboutCode focus for GSOD 2019 is on ScanCode Toolkit and ScanCode Workbench,
 although proposals to improve the documents of other AboutCode projects are welcome.
 
-`Your Documentation Project ideas <#your-documentation-project-ideas>`_ are welcome too! Please
+`Your Documentation Project ideas <#your-documentation-project-ideas-2020>`_ are welcome too! Please
 chat about them to increase your chances of success!
 
-.. _tutorial_ideas_gsod-2020:
+----
 
 Tutorial ideas
---------------
+^^^^^^^^^^^^^^
 
-.. _scan_a_codebase_and_analyze_the_results-2020:
+[Title]
+~~~~~~~
 
-**Scan a Codebase and Analyze the Results**
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Description]
 
-Provide specific instructions to guide a new user to:
+- **Level**
 
+  - [e.g., Intermediate]
 
-* Scan a somewhat complex sample codebase using scancode-toolkit.
-* Import the results into ScanCode Workbench.
-* Analyze the scan results.
+- **Tech**
 
+  - [e.g., Command line processing in a Linux-compatible terminal window]
 
-  * **Level**
+- **URLs**
 
-    * Intermediate
+  - [links to relevant READMEs, wikis, RTDs etc.]
 
-  * **Tech**
+- **Mentors**
 
-    * Command line processing in a Linux-compatible terminal window
+  - [GitHub and other relevant links]
 
-  * **URLS**
-
-    * https://github.com/nexB/scancode-toolkit/blob/develop/README.rst
-    * https://github.com/nexB/scancode-toolkit/wiki
-    * https://github.com/nexB/scancode-workbench/blob/develop/README.md
-    * https://github.com/nexB/scancode-workbench/wiki
-
-  * **Mentors**
-
-    * https://github.com/DennisClark
-
-.. _how_to_ideas_gsod-2020:
+----
 
 How-To ideas
-------------
+^^^^^^^^^^^^
 
-.. _how_to_get_the_license_clarity_score_of_a_package-2020:
+[Title]
+~~~~~~~
 
-**How To Get the License Clarity Score of a Package**
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Description]
 
-Explain the recommended scancode-toolkit options to get a license clarity score.
+- **Level**
 
+  - [e.g., Intermediate]
 
-* **Level**
+- **Tech**
 
-  * Intermediate
+  - [e.g., Command line processing in a Linux-compatible terminal window]
 
-* **Tech**
+- **URLs**
 
-  * Command line processing in a Linux-compatible terminal window
+  - [links to relevant READMEs, wikis, RTDs etc.]
 
-* **URLS**
+- **Mentors**
 
-  * https://github.com/nexB/scancode-toolkit/blob/develop/README.rst
-  * https://github.com/nexB/scancode-toolkit/wiki
-  * https://github.com/nexB/scancode-workbench/blob/develop/README.md
-  * https://github.com/nexB/scancode-workbench/wiki
+  - [GitHub and other relevant links]
 
-* **Mentors**
-
-  * https://github.com/DennisClark
-
-.. _how_to_discover_licensing_issues_in_a_software_project-2020:
-
-**How To Discover Licensing Issues in a Software Project**
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-* Explain the recommended scancode-toolkit options to discover licenses.
-* Explain how to take advantage of license policy support.
-
-  * **Level**
-
-    * Intermediate
-
-  * **Tech**
-
-    * Command line processing in a Linux-compatible terminal window
-
-  * **URLS**
-
-    * https://github.com/nexB/scancode-toolkit/blob/develop/README.rst
-    * https://github.com/nexB/scancode-toolkit/wiki
-    * https://github.com/nexB/scancode-workbench/blob/develop/README.md
-    * https://github.com/nexB/scancode-workbench/wiki
-
-  * **Mentors**
-
-    * https://github.com/DennisClark
-
-.. _referance_ideas_gsod-2020:
+----
 
 Reference ideas
----------------
+^^^^^^^^^^^^^^^
 
-.. _scancode_output_formats-2020:
+[Title]
+~~~~~~~
 
-**ScanCode Output Formats**
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Description]
 
-Explain the various ScanCode output formats and their business purposes.
+- **Level**
 
+  - [e.g., Intermediate]
 
-* **Level**
+- **Tech**
 
-  * Intermediate
+  - [e.g., Command line processing in a Linux-compatible terminal window]
 
-* **Tech**
+- **URLs**
 
-  * Command line processing in a Linux-compatible terminal window
+  - [links to relevant READMEs, wikis, RTDs etc.]
 
-* **URLS**
+- **Mentors**
 
-  * https://github.com/nexB/scancode-toolkit/blob/develop/README.rst
-  * https://github.com/nexB/scancode-toolkit/wiki
-  * https://github.com/nexB/scancode-workbench/blob/develop/README.md
-  * https://github.com/nexB/scancode-workbench/wiki
+  - [GitHub and other relevant links]
 
-* **Mentors**
-
-  * https://github.com/DennisClark
-
-.. _discussion_ideas_gsod-2020:
+----
 
 Discussion ideas
-----------------
+^^^^^^^^^^^^^^^^
 
-.. _integrating_scancode_into_a_software_development_lifecycle-2020:
+[Title]
+~~~~~~~
 
-**Integrating ScanCode into a Software Development Lifecycle**
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Description]
 
-Discuss options and techniques to integrate ScanCode into a software development lifecycle
-workflow:
+- **Level**
 
+  - [e.g., Intermediate]
 
-* During software creation and maintenance.
-* During software check-out/check-in.
-* During sofware build and test.
+- **Tech**
 
+  - [e.g., Command line processing in a Linux-compatible terminal window]
 
-  * **Level**
+- **URLs**
 
-    * Intermediate
+  - [links to relevant READMEs, wikis, RTDs etc.]
 
-  * **Tech**
+- **Mentors**
 
-    * Command line processing in a Linux-compatible terminal window
+  - [GitHub and other relevant links]
 
-  * **URLS**
-
-    * https://github.com/nexB/scancode-toolkit/blob/develop/README.rst
-    * https://github.com/nexB/scancode-toolkit/wiki
-    * https://github.com/nexB/scancode-workbench/blob/develop/README.md
-    * https://github.com/nexB/scancode-workbench/wiki
-
-  * **Mentors**
-
-    * https://github.com/DennisClark
+----
 
 .. _your_documentation_project_ideas-2020:
 
@@ -405,8 +300,6 @@ What are the documentation weak points?
   opportunity.
 
 Feel free to propose and describe your own documentation ideas.
-
-.. _mentoring_gsod-2020:
 
 Mentoring
 ---------

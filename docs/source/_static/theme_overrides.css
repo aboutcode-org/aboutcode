@@ -216,19 +216,21 @@ div.rst-content {
 .rst-content .guilabel {
     /* border: 1px solid #7fbbe3; */
     /* border: 1px solid #e7f2fa; */
-    border: 1px solid #ffff99;
+    /* border: 1px solid #ffff99; */
     /* border: 1px solid #ccffcc; */
     /* border: 1px solid #f2f2f2; */
     /* border: 1px solid #e6f2ff; */
-    border: 1px solid #fff3cd;
+    /* border: 1px solid #fff3cd; */
+    border: 1px solid #ccffff;
 
     /* background: #e7f2fa; */
     /* background: #e6ffff; */
-    background: #ffff99;
+    /* background: #ffff99; */
     /* background: #ccffcc; */
     /* background-color: #f2f2f2; */
     /* background: #e6f2ff; */
-    background: #fff3cd;
+    /* background: #fff3cd; */
+    background: #ccffff;
 
     /* font-size: 80%; */
     font-size: 100%;
