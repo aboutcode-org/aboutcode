@@ -26,7 +26,9 @@
 
 AboutCode.org is applying to be a mentoring organization for the `Google Season of Docs (GSoD) 2020 <https://developers.google.com/season-of-docs>`_.
 
-In the event that our application is accepted, we'll be looking for fellow members of the FOSS community with technical writing skills and an interest in helping.  If you're interested, keep reading to get a sense of what we have in mind for GSoD 2020.
+In the event that our application is accepted, we'll be looking for fellow members of the FOSS
+community with technical writing skills and an interest in helping.  If you're interested, keep
+reading to get a sense of what we have in mind for GSoD 2020.
 
 ----
 
