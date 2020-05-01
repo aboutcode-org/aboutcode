@@ -18,6 +18,9 @@ reading to get a sense of what we have in mind for GSoD 2020.
 
 ----
 
+AboutCode Overview
+------------------
+
 AboutCode is a family of FOSS projects for Software Composition Analysis (SCA) and FOSS Compliance:
 
 * Where does code come from?
@@ -35,8 +38,8 @@ Our tools are used to detect and report the origin and license of source code, p
 binaries as well as to discover software and package dependencies. We are also working on projects
 to track security vulnerabilities, bugs and other important software package attributes.
 
-List of AboutCode projects
---------------------------
+AboutCode Projects
+~~~~~~~~~~~~~~~~~~
 
 Our focus for GSoD 2020 is on `ScanCode Toolkit <https://github.com/nexB/scancode-toolkit>`_
 and `Scancode Workbench <https://github.com/nexB/scancode-workbench>`_,
@@ -44,19 +47,8 @@ but proposals to improve the documentation for other AboutCode projects are welc
 
 See :ref:`aboutcode-project-overview` for a complete list of AboutCode projects.
 
-Contact Info
-------------
-
-Join the chat online or by IRC at https://gitter.im/aboutcode-org/gsod-season-of-docs.
-Introduce yourself and start the discussion!
-
-You can also contact:
-
-- the primary org admin directly: @pombredanne and pombredanne@gmail.com
-- the GSoD coordinator directly: jmhoran@nexb.com
-
 Technology
-----------
+~~~~~~~~~~
 
 We primarily use Python for AboutCode software. There is also some code in C/C++ or other
 languages. We use Electron/JavaScript for the ScanCode Workbench desktop application.
@@ -73,6 +65,17 @@ There is still some project documentation in project wikis, but our goal is to m
 that to ReadTheDocs.
 For each project there will also be a README and a few other files in the corresponding
 GitHub repository.
+
+Contact Info
+~~~~~~~~~~~~
+
+Join the chat online or by IRC at https://gitter.im/aboutcode-org/gsod-season-of-docs.
+Introduce yourself and start the discussion!
+
+You can also contact:
+
+- the primary org admin directly: @pombredanne and pombredanne@gmail.com
+- the GSoD coordinator directly: jmhoran@nexb.com
 
 Technical Writing Skills Needed
 -------------------------------
@@ -140,26 +143,94 @@ chat about them to increase your chances of success!
 
 ----
 
-[Title]
-~~~~~~~
+Improve ScanCode Toolkit (SCTK) Documentation 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-[Description]
+* Upgrade the ScanCode Toolkit documentation on ReadTheDocs by streamlining and re-organizing it.
+* Apply the Tutorial, HowTo, Reference and Discussions framework (or propose alternative).
+* Implement process to sync documentation changes with releases.
+Note: Filter current SCTK GitHub Issues by Label 'documentation' to see many examples of specific
+areas for improvement.
 
 - **Level**
 
-  - [e.g., Intermediate]
+  - Intermediate
 
 - **Tech**
 
-  - [e.g., Command line processing in a Linux-compatible terminal window]
+  - Command line processing in a Linux-compatible terminal window
+  - GitHub, reStructured Text and Sphinx
 
 - **URLs**
 
-  - [links to relevant READMEs, wikis, RTDs etc.]
+  - https://scancode-toolkit.readthedocs.io/en/latest/index.html
+  - https://github.com/nexB/scancode-toolkit
+  - https://gitter.im/aboutcode-org/scancode
 
 - **Mentors**
 
-  - [GitHub and other relevant links]
+  - https://github.com/johnmhoran
+  - https://github.com/mjherzog
+  
+  
+Improve ScanCode Workbench (SCWB) Documentation 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Upgrade the ScanCode Workbench documentation on ReadTheDocs with a focus on Tutorials and
+HowTo Guides because this is a GUI application.
+* Apply the Tutorial, HowTo, Reference and Discussions framework (or propose alternative).
+* Implement process to sync documentation changes with releases.
+Note: Filter current SCWB GitHub Issues by Label 'documentation' to see many examples of specific
+areas for improvement.
+
+- **Level**
+
+  - Intermediate
+
+- **Tech**
+
+  - GUI design
+  - GitHub, reStructured Text and Sphinx
+
+- **URLs**
+
+  - https://scancode-workbench.readthedocs.io/en/latest/index.html
+  - https://github.com/nexB/scancode-workbench
+  - https://gitter.im/aboutcode-org/scancode-workbench
+
+- **Mentors**
+
+  - https://github.com/johnmhoran
+  - https://github.com/majurg
+ 
+Automate Code Documentation 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Identify tools to generate code documentation from Python files.
+* Define coding standards necessary to support automated generation of code
+documentation across AboutCode projects.
+* Implement process and tools to automate publication of code documentation
+for ScanCode Toolkit to ReadTheDocs using Sphinx and related extensions
+
+- **Level**
+
+  - Intermediate
+
+- **Tech**
+
+  - Python programming
+  - GitHub, reStructured Text and Sphinx
+
+- **URLs**
+
+  - https://scancode-workbench.readthedocs.io/en/latest/index.html
+  - https://github.com/nexB/scancode-workbench
+  - https://gitter.im/aboutcode-org/scancode-workbench
+
+- **Mentors**
+
+  - https://github.com/johnmhoran
+  - https://github.com/majurg
 
 ----
 
