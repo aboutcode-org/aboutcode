@@ -7,14 +7,7 @@
 .. admonition:: ToDo
    :class: custom-admonition-todo
 
-   This WIP began as a clone of our GSoD 2019 page -- :ref:`GSoD2019` -- and is being updated for 2020.  Please share your ideas (in writing) for GSoD 2020 projects, using the structure we used for our GSoD 2019 application, i.e.,
-
-   - Four categories (aka "functions") drawn from https://documentation.divio.com/ and `this related PyCon Australia 2017 YouTube video <https://www.youtube.com/watch?v=t4vKPhjcMZg>`_:
-
-     - Tutorial ideas
-     - How-To ideas
-     - Reference ideas
-     - Discussion ideas
+   This WIP began as a clone of our GSoD 2019 page -- :ref:`GSoD2019` -- and is being updated for 2020.  
 
    - Each project "idea" has the following structure:
 
@@ -43,76 +36,61 @@ reading to get a sense of what we have in mind for GSoD 2020.
 
    The text below comes from the 2019 page.  Other than replacing the manually-created TOC with ``.. contents:: :local:`` (the new TOC just above), removing unneeded labels and some other dated content and adding a set of project templates, this text has not yet been modified.
 
-AboutCode is a family of FOSS projects to uncover data about software code:
+AboutCode is a family of FOSS projects for Software Composition Analysis (SCA) and FOSS Compliance:
 
-* Where does the code come from? which software package?
-* What is its license? copyright?
+* Where does code come from?
+* What is its license?
+* What is its origin and copyright?
 * Is the code secure, maintained, well coded?
 
-All these questions are important, and are relevant to millions of free and open source software
-components available on the web for reuse. The answers are critical to ensure that everyone can
-safely consume free and open source software.
+All of these questions are important, and are relevant to millions of free and open source software
+components available on the web for reuse. The answers are critical to ensure that anyone and 
+everyone can safely consume free and open source software.
 
 *Join us to make it so!*
 
-Our tools are used to help detect and report the origin and license of source code, packages and
-binaries as well as to discover software and package dependencies, and in the future track security
-vulnerabilities, bugs and other important software package attributes. This is a suite of command
-line tools, web-based and API servers and desktop applications.
+Our tools are used to detect and report the origin and license of source code, packages and
+binaries as well as to discover software and package dependencies. We are also working on projects 
+to track security vulnerabilities, bugs and other important software package attributes. 
 
 List of AboutCode projects
 --------------------------
 
-Note that the AboutCode focus for GSOD 2019 is on **ScanCode Toolkit** and **ScanCode Workbench**\,
-although proposals to improve the documents of other AboutCode projects are welcome.
+Our focus for GSOD 2020 is on **ScanCode Toolkit** and **ScanCode Workbench**\,
+but proposals to improve the documentation for other AboutCode projects are welcome.
 
+See https://aboutcode.readthedocs.io/en/latest/aboutcode-project-overview.html for
+a complete list of AboutCode projects.
 
-- `ScanCode Toolkit <https://github.com/nexB/scancode-toolkit>`_ is a popular command line tool to
-  scan code for licenses, copyrights and packages, used by many organizations and FOSS projects,
-  small and large.
+Contact Info
+------------
 
-- `Scancode Workbench <https://github.com/nexB/scancode-workbench>`_ (formerly AboutCode Manager)
-  is a JavaScript, Electron-based desktop application to review scan results and document your
-  origin and license conclusions.
-
-- Other AboutCode projects are described at https://www.aboutcode.org and
-  https://github.com/nexB/aboutcode
-
-  We also work closely with, contribute to and have co-started several other orgs and projects:
-
-- `Package URL <https://github.com/package-url>`_ is an emerging standard to reference software
-  packages of all types with simple, readable and concise URLs.
-
-- `SPDX <http://SPDX.org>`_ is the Software Package Data Exchange, a specification to document
-  the origin and licensing of software packages.
-
-- `ClearlyDefined <ClearlyDefined.io>`_ is a project to review FOSS software and help FOSS projects
-  to improve their licensing and documentation clarity.
-
-Contact
--------
-
-Join the chat online or by IRC at https://gitter.im/aboutcode-org/discuss
+Join the chat online or by IRC at https://gitter.im/aboutcode-org/gsod-season-of-docs
 Introduce yourself and start the discussion!
 
-For personal issues, you can contact
+You can also contact:
 
 - the primary org admin directly: @pombredanne and pombredanne@gmail.com
-- the GSOD coordinator directly: dmclark@nexb.com
+- the GSOD coordinator directly: jmhoran@nexb.com
 
 Technology
 ----------
 
-We primarily use Python (and some C/C++) for code analysis. We use Electron/JavaScript for GUI.
+We primarily use Python for AboutCode software. There is also some code in C/C++ or other
+languages. We use Electron/JavaScript for the ScanCode Workbench desktop application.
 
-Our domain includes text analysis and processing (for instance for copyright and license
+Our domain includes text analysis and processing (e.g. for copyright and license
 detection), parsing (for package manifest formats), binary analysis (to detect the origin and
-license of binaries, which source code they come from, etc.) as well as web based tools and APIs
-(to expose the tools and libraries as web services) and low-level data structures for efficient
-matching (such as Aho-Corasick and other automata).
+license of binaries), web based tools and APIs (to expose the tools and libraries as web 
+services) and low-level data structures for efficient matching (such as Aho-Corasick and 
+other automata).
 
-Our documentation is provided in text files that support the help function of our command line
-tools. We also have begun to provide documentation in the Wiki section of some AboutCode projects.
+For documentation we primarily use reStructured Text files with Sphinx and ReadTheDocs.
+For command line tools we use text files for help documentation.
+There is still some project documentation in project wikis, but our goal is to migrate
+that to ReadTheDocs.
+For each project there will also be a README and a few other files in the corresponding
+GitHub repository.
 
 Technical Writing Skills Needed
 -------------------------------
@@ -122,12 +100,18 @@ Incoming technical writers will need the following skills:
 
 * Ability to install and configure open source code from GitHub.
 * Ability to understand and run programs from the command line in a terminal window.
-* Familiarity with the four document functions described at
-  https://www.divio.com/blog/documentation/
-* Ability to create and edit wiki pages with multiple markdown languages.
 * An interest in FOSS licensing and software code and origin analysis.
 
-We are happy to help you get up to speed, and the more you are able to demonstrate ability and
+During the application process and during a GSoD project with us you will learn how to:
+
+
+* Design and create documentation as Tutorials, HowTo Guides, Reference or Discussions.
+See https://documentation.divio.com/introduction/ for more information about this approach.
+* Create and edit documentation files in reStructured Text.
+* Manage documentation files with Sphinx.
+* Publish documentation to ReadTheDocs.
+
+We are happy to help you get up to speed. The more you are able to demonstrate ability and
 skills in advance, the more likely we are to choose your application!
 
 About your project application
@@ -142,9 +126,7 @@ information, plus anything else that you think is relevant:
 
 - Abstract of your proposal
 
-- Description of your idea including an explanation of what it will contribute to the project,
-  such as the software development life cycle requirements that you expect to help with the
-  documentation improvements.
+- Description of your idea including an explanation of what it will contribute to the project.
 
 - Description of previous work, existing solutions, open-source projects, preferably with links.
 
@@ -156,109 +138,25 @@ information, plus anything else that you think is relevant:
   vacations/holidays? Will you be available full time to work on your project? Please apply
   only if this is a serious full time commitment during the GSOD time frame.
 
-Join the chat online or by IRC at https://gitter.im/aboutcode-org/discuss
-Introduce yourself and start the discussion!
+Join the chat online or by IRC at https://gitter.im/aboutcode-org/gsod-season-of-docs.
+Introduce yourself and start a discussion!
 
 An excellent, competitive way to demonstrate your capability would be to submit a documentation
 improvement to an AboutCode project, especially to ScanCode Toolkit or ScanCode Workbench.
 
-You can pick any project idea from the list below. You can also submit
+You can pick an project idea from the list below. You can also submit
 `Your Documentation Project ideas <#your-documentation-project-ideas-2020>`_.
 
 Our Documentation Project ideas
 -------------------------------
 
-Here is a list of candidate project ideas for your consideration, organized by documentation
-function: **Tutorial** , **How-To** , **Reference** , **Discussion**.
-
-Note that the AboutCode focus for GSOD 2019 is on ScanCode Toolkit and ScanCode Workbench,
-although proposals to improve the documents of other AboutCode projects are welcome.
+Note that the AboutCode focus for GSOD 2020 is on ScanCode Toolkit and ScanCode Workbench,
+although proposals to improve the documentation for other AboutCode projects are welcome.
 
 `Your Documentation Project ideas <#your-documentation-project-ideas-2020>`_ are welcome too! Please
 chat about them to increase your chances of success!
 
 ----
-
-Tutorial ideas
-^^^^^^^^^^^^^^
-
-[Title]
-~~~~~~~
-
-[Description]
-
-- **Level**
-
-  - [e.g., Intermediate]
-
-- **Tech**
-
-  - [e.g., Command line processing in a Linux-compatible terminal window]
-
-- **URLs**
-
-  - [links to relevant READMEs, wikis, RTDs etc.]
-
-- **Mentors**
-
-  - [GitHub and other relevant links]
-
-----
-
-How-To ideas
-^^^^^^^^^^^^
-
-[Title]
-~~~~~~~
-
-[Description]
-
-- **Level**
-
-  - [e.g., Intermediate]
-
-- **Tech**
-
-  - [e.g., Command line processing in a Linux-compatible terminal window]
-
-- **URLs**
-
-  - [links to relevant READMEs, wikis, RTDs etc.]
-
-- **Mentors**
-
-  - [GitHub and other relevant links]
-
-----
-
-Reference ideas
-^^^^^^^^^^^^^^^
-
-[Title]
-~~~~~~~
-
-[Description]
-
-- **Level**
-
-  - [e.g., Intermediate]
-
-- **Tech**
-
-  - [e.g., Command line processing in a Linux-compatible terminal window]
-
-- **URLs**
-
-  - [links to relevant READMEs, wikis, RTDs etc.]
-
-- **Mentors**
-
-  - [GitHub and other relevant links]
-
-----
-
-Discussion ideas
-^^^^^^^^^^^^^^^^
 
 [Title]
 ~~~~~~~
@@ -293,12 +191,12 @@ may try scanning an open source software package in a technology with which you 
 What are the documentation weak points?
 
 
-* Is it difficult to get started? A **Tutorial** document opportunity.
-* Is it difficult to accomplish a specific objective? A **How-To** document opportunity.
+* Is it difficult to get started? A **Tutorial** documentation opportunity.
+* Is it difficult to accomplish a specific objective? A **How-To** documentation opportunity.
 * Are the capabilities of the tool too mysterious? Do you want to know more about what you can do
-  with it? A **Reference** document opportunity.
+  with it? A **Reference** documentation opportunity.
 * Do you feel that you need to understand its concepts better in order to use it and trust it? Do
-  you want to know more about how the code scanning actually works? A **Discussion** document
+  you want to know more about how the code scanning actually works? A **Discussion** documentation
   opportunity.
 
 Feel free to propose and describe your own documentation ideas.
@@ -307,4 +205,4 @@ Mentoring
 ---------
 
 We welcome new mentors to help with the program. We require some understanding of the project
-domain to join as a mentor. Contact the team on Gitter at https://gitter.im/aboutcode-org/discuss
+domain to join as a mentor. Contact the team on Gitter at https://gitter.im/aboutcode-org/gsod-season-of-docs
