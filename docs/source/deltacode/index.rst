@@ -1,7 +1,8 @@
-**Deltacode Documentation**
-===========================
+=======================
+DeltaCode Documentation
+=======================
 
-Welcome to Deltacode Documentation.
+Welcome to the DeltaCode Documentation.
 
 .. toctree::
    :maxdepth: 2
@@ -12,4 +13,3 @@ Welcome to Deltacode Documentation.
    development
    json_to_csv
    release_process
-   gsoc19_final_report

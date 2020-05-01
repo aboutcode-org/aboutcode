@@ -118,8 +118,12 @@ div.custom-admonition-caution.admonition {
 /* note */
 .custom-admonition-note  .admonition-title {
     color: #ffffff;
+    /* color: #000000; */
     background: #3399ff;
     background: #006bb3;
+    background: #cce5ff;
+    background: #b3d7ff;
+    background: #2196f3;
     border-radius: 5px 5px 0px 0px;
 }
 div.custom-admonition-note.admonition {
@@ -128,6 +132,8 @@ div.custom-admonition-note.admonition {
     background: #ffffff;
     border: solid 1px #e8e8e8;
     border: solid 1px #cccccc;
+    /* border: solid 1px #80bdff; */
+    /* border: solid 1px #2196f3; */
     border-radius: 5px;
     /* box-shadow: 5px 5px 18px #d8d8d8; */
     box-shadow: 1px 1px 5px 3px #d8d8d8;
@@ -137,9 +143,20 @@ div.custom-admonition-note.admonition {
 /* todo */
 .custom-admonition-todo  .admonition-title {
     color: #000000;
+    color: #cc0000;
     background: #cce6ff;
+    background: #ffcc00;
+    background: #ffeb99;
+    background: #ccffff;
+    background: #ffd9b3;
+    background: #ffffff;
     border-radius: 5px 5px 0px 0px;
     border-bottom: solid 1px #99ccff;
+    border-bottom: solid 1px #ffcc00;
+    border-bottom: solid 1px #ffeb99;
+    border-bottom: solid 1px #e8e8e8;
+    border-bottom: solid 1px #ffd9b3;
+    border-bottom: solid 1px #d8d8d8;
 }
 div.custom-admonition-todo.admonition {
     color: #000000;
@@ -148,6 +165,10 @@ div.custom-admonition-todo.admonition {
     border: solid 1px #e8e8e8;
     border: solid 1px #cccccc;
     border: solid 1px #99ccff;
+    border: solid 1px #ffcc00;
+    border: solid 1px #ffeb99;
+    border: solid 1px #ffd9b3;
+    border: solid 1px #cc0000;
     border-radius: 5px;
     /* box-shadow: 5px 5px 18px #d8d8d8; */
     box-shadow: 1px 1px 5px 3px #d8d8d8;
@@ -363,4 +384,32 @@ code, .rst-content tt, .rst-content code {
     margin-bottom: 24px;
     margin-bottom: 0px;
     line-height: 24px;
+}
+
+/* === */
+
+/* this is used by the genindex added via layout.html (see source/_templates/) to sidebar toc */
+.reference.internal.toc-index {
+    color: #d9d9d9;
+}
+
+.reference.internal.toc-index.current {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+}
+
+.toc-index-div {
+    border-top: solid 1px #666666;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+/* The next 2 fix the poor vertical spacing in genindex.html (the alphabetized index) */
+.indextable.genindextable {
+    margin-bottom: 20px;
+}
+
+div.genindex-jumpbox {
+    margin-bottom: 20px;
 }

@@ -1,5 +1,6 @@
-**AboutCode-Toolkit Documentation**
-===================================
+===============================
+AboutCode-Toolkit Documentation
+===============================
 
 .. toctree::
    :maxdepth: 2

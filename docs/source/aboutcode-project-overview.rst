@@ -1,5 +1,6 @@
-Help
-====
+==========================
+AboutCode Project Overview
+==========================
 
 AboutCode is a suite of open source projects.
 
