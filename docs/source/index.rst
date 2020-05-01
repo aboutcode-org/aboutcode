@@ -13,7 +13,6 @@ Welcome to the AboutCode documentation!
 
    aboutcode-project-overview
    aboutcode-data/abcd
-   aboutcode-toolkit/index
    coding-toc
    doc_guidelines
    gsoc-toc
@@ -21,6 +20,13 @@ Welcome to the AboutCode documentation!
    license
 
 ..    aboutcode-docs/home
+
+----
+
+.. toctree::
+   :maxdepth: 2
+
+   aboutcode-toolkit/index
 
 ----
 
