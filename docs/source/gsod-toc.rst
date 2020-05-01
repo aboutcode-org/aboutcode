@@ -10,6 +10,6 @@ GSoD -- Google Season of Docs
 .. toctree::
    :maxdepth: 2
 
-   gsod/gsod_2019
-   gsod/gsod_2019_report
    gsod/gsod-2020
+   gsod/gsod_2019_report
+   gsod/gsod_2019

@@ -1,8 +1,8 @@
 Google Summer of Code 2019 - Final report
 =========================================
 
-**Project: Approximately similar file detection in DeltaCode**
---------------------------------------------------------------
+Project: Approximately similar file detection in DeltaCode
+----------------------------------------------------------
 
 **Arnav Mandal <arnav.mandal1234@gmail.com>**
 

@@ -10,7 +10,7 @@ GSoC -- Google Summer of Code
 .. toctree::
    :maxdepth: 2
 
-   gsoc/gsoc_2017
-   gsoc/gsoc_2018
-   gsoc/gsoc_2019
    gsoc/gsoc19_final_report
+   gsoc/gsoc_2019
+   gsoc/gsoc_2018
+   gsoc/gsoc_2017
