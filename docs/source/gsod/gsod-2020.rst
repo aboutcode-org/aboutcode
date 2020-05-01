@@ -1,10 +1,11 @@
 .. _GSoD2020:
 
-Google Season of Docs 2020
-===========================
+===================================
+:index:`Google Season of Docs 2020`
+===================================
 
-.. admonition:: Caution
-   :class: custom-admonition-caution
+.. admonition:: ToDo
+   :class: custom-admonition-todo
 
    This WIP began as a clone of our GSoD 2019 page -- :ref:`GSoD2019` -- and is being updated for 2020.  Please share your ideas (in writing) for GSoD 2020 projects, using the structure we used for our GSoD 2019 application, i.e.,
 
@@ -23,8 +24,8 @@ Google Season of Docs 2020
      - URLs
      - Mentors
 
-.. admonition:: Note
-   :class: custom-admonition-note
+.. admonition:: ToDo
+   :class: custom-admonition-todo
 
    For some reason the 2019 ``.rst`` includes a detailed, hand-written TOC, which I expect we'll replace with a Sphinx TOC using ``h1`` et al. headers.
 

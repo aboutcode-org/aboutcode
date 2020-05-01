@@ -1,7 +1,8 @@
 .. _contributor_project_ideas:
 
-Contributor Project Ideas
-=========================
+===============================
+Contributor Project Ideas (old)
+===============================
 
 .. _welcome_to_aboutcode:
 

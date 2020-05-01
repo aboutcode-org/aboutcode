@@ -1,5 +1,6 @@
-Document Maintenance
-====================
+========================
+Documentation Guidelines
+========================
 
 Document Software Setup
 -----------------------
@@ -182,8 +183,8 @@ What is checked:
     - no carriage returns (use UNIX newlines) - D004
     - no newline at end of file - D005
 
-Interspinx
-----------
+Intersphinx
+-----------
 
 Aboutcode documentation uses `Intersphinx <http://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html>`_
 to create links to other Sphinx Documentations, to maintain links to other Aboutcode Projects.
