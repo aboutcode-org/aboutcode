@@ -143,12 +143,13 @@ chat about them to increase your chances of success!
 
 ----
 
-Improve ScanCode Toolkit (SCTK) Documentation 
+Improve ScanCode Toolkit (SCTK) Documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Upgrade the ScanCode Toolkit documentation on ReadTheDocs by streamlining and re-organizing it.
 * Apply the Tutorial, HowTo, Reference and Discussions framework (or propose alternative).
 * Implement process to sync documentation changes with releases.
+
 Note: Filter current SCTK GitHub Issues by Label 'documentation' to see many examples of specific
 areas for improvement.
 
@@ -171,15 +172,16 @@ areas for improvement.
 
   - https://github.com/johnmhoran
   - https://github.com/mjherzog
-  
-  
-Improve ScanCode Workbench (SCWB) Documentation 
+
+
+Improve ScanCode Workbench (SCWB) Documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Upgrade the ScanCode Workbench documentation on ReadTheDocs with a focus on Tutorials and
-HowTo Guides because this is a GUI application.
+  HowTo Guides because this is a GUI application.
 * Apply the Tutorial, HowTo, Reference and Discussions framework (or propose alternative).
 * Implement process to sync documentation changes with releases.
+
 Note: Filter current SCWB GitHub Issues by Label 'documentation' to see many examples of specific
 areas for improvement.
 
@@ -202,15 +204,15 @@ areas for improvement.
 
   - https://github.com/johnmhoran
   - https://github.com/majurg
- 
-Automate Code Documentation 
+
+Automate Code Documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Identify tools to generate code documentation from Python files.
 * Define coding standards necessary to support automated generation of code
-documentation across AboutCode projects.
+  documentation across AboutCode projects.
 * Implement process and tools to automate publication of code documentation
-for ScanCode Toolkit to ReadTheDocs using Sphinx and related extensions
+  for ScanCode Toolkit to ReadTheDocs using Sphinx and related extensions.
 
 - **Level**
 
