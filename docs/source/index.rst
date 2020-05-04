@@ -1,12 +1,16 @@
 AboutCode Documentation
 =======================
 
-.. admonition:: ToDo
-   :class: custom-admonition-todo
+Welcome to the AboutCode documentation.
 
-   We need a short intro that ties together everything we cover in this RTD and describes in general terms the connection between this RTD and the informal (i.e., not a legal entity) ``AboutCode.org`` (https://www.aboutcode.org), which is applying as ``AboutCode.org`` to participate in `GSoD 2020 <https://developers.google.com/season-of-docs>`_.
+This set of documents provides an overview of the AboutCode Projects sponsored by
+AboutCode.org (https://www.aboutcode.org), as well as references to the various GitHub project
+sites that maintain the actual projects and their documentation.
 
-Welcome to the AboutCode documentation!
+All community contributions are welcome. Note that AboutCode.org is applying to participate in
+the 2020 Google Season of Docs (`GSoD 2020 <https://developers.google.com/season-of-docs>`_).
+
+----
 
 .. toctree::
    :maxdepth: 2
