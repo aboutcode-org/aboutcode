@@ -131,7 +131,7 @@ For instance::
 
 
 When a field value contains more than one line of text, a 'literal block'
-(using |) is need.
+(using \|) is need.
 
 For instance::
 
