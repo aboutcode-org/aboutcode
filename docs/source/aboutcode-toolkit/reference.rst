@@ -14,8 +14,8 @@ about
 
 ::
 
-    --version    Show the version and exit.
-    --help       Show this message and exit.
+    --version        Show the version and exit.
+    -h, --help       Show this message and exit.
 
 **Commands:**
 
@@ -25,6 +25,7 @@ about
   check      LOCATION: directory
   gen        LOCATION: input file, OUTPUT: directory
   inventory  LOCATION: directory, OUTPUT: csv file
+  transform  LOCATION: csv file, OUTPUT: csv file
 
 
 attrib
@@ -43,13 +44,8 @@ attrib
 
 ::
 
-    --inventory PATH            Path to an inventory file.
-    --mapping                   Use for mapping between the input keys and the ABOUT field.
-                                names - mapping.config
-    --mapping-file              Use a custom mapping file with mapping between input
-                                keys and ABOUT field names.
     --template PATH             Path to a custom attribution template.
-    --vartext TEXT              Variable texts to the attribution template
+    --vartext <key>=<value>     Variable text as key=value for use in a custom attribution template.
     --verbose                   Show all the errors and warning.
     -q, --quiet                 Do not print any error/warning.
     -h, --help                  Show this message and exit.
@@ -65,7 +61,6 @@ Assume the following:
 
     '/home/about_files/'** contains all the ABOUT files [LOCATION]
     '/home/attribution/attribution.html' is the user's output path [OUTPUT]
-    '/home/project/component_list.csv' is the inventory that user want to be generated
 
 ::
 
@@ -75,24 +70,6 @@ Options
 ^^^^^^^
 
 ::
-
-    --inventory
-
-        This option allows you to define which ABOUT files should be used for attribution generation.
-        For instance,
-        '/home/project/component_list.csv' is the inventory that user want to be generated
-
-    $ about attrib --inventory /home/project/component_list.csv LOCATION OUTPUT
-
-    --mapping
-
-        See mapping.config for details
-
-    --mapping-file
-
-        Same behavior as `--mapping` but with custom mapping file
-
-    $ about attrib --mapping-file CUSTOM_MAPPING_FILE_PATH LOCATION OUTPUT
 
     --template
 
@@ -109,8 +86,8 @@ Options
     $ about attrib --vartext "title=Attribution Notice" --vartext "header=Product 101" LOCATION OUTPUT
 
         Users can use the following in the template to get the vartext:
-        {{ vartext_dict['title'] }}
-        {{ vartext_dict['header'] }}
+        {{ variables['title'] }}
+        {{ variables['header'] }} 
 
     --verbose
 
@@ -121,12 +98,9 @@ Options
 The following data are passed to jinja2 and, therefore, can be used for a custom template:
  * about object: the about objects
  * common_licenses: a common license keys list in licenses.py
- * license_key_and_context: a dictionary list with license_key as a key and license text as the
-   value
- * license_file_name_and_key: a dictionary list with license file name as a key and license key
-   as the value
- * license_key_to_license_name: a dictionary list with license key as a key and license file name
-   as the value
+ * license_key_and_context: a dictionary list with license_key as a key and license text as the value
+ * license_file_name_and_key: a dictionary list with license file name as a key and license key as the value
+ * license_key_to_license_name: a dictionary list with license key as a key and license file name as the value
 
 
 check
@@ -180,11 +154,14 @@ gen
 
 ::
 
-    --fetch-license KEY                 Fetch licenses text from a DejaCode API. and
-                                        create <license>.LICENSE side-by-side
-                                        with the generated .ABOUT file using data
-                                        fetched from a DejaCode License Library. The
-                                        following additional options are required:
+    --android                           Generate MODULE_LICENSE_XXX (XXX will be
+                                        replaced by license key) and NOTICE as the same
+                                        design as from Android.
+
+    --fetch-license api_url api_key     Fetch licenses data from DejaCode License
+                                        Library and create <license>.LICENSE
+                                        side-by-side with the generated .ABOUT file.
+                                        The following additional options are required:
 
                                         api_url - URL to the DejaCode License Library
                                         API endpoint
@@ -193,12 +170,8 @@ gen
                                         Example syntax:
 
                                         about gen --fetch-license 'api_url' 'api_key'
-    --license-notice-text-location PATH Copy the 'license_file' from the directory to
-                                        the generated location.
-    --mapping                           Use for mapping between the input keys and
-                                        the ABOUT field names - mapping.config
-    --mapping-file                      Use a custom mapping file with mapping between input
-                                        keys and ABOUT field names.
+    --reference PATH                    Path to a directory with reference license
+                                        data and text files.
     --verbose                           Show all the errors and warning.
     -q, --quiet                         Do not print any error/warning.
     -h, --help                          Show this message and exit.
@@ -212,41 +185,42 @@ Options
 
 ::
 
+    --android
+
+        Create an empty file named `MODULE_LICENSE_XXX` where `XXX` is the license
+        key and create a NOTICE file which these two files follow the design from
+        Android Open Source Project.
+
+        The input **must** have the license key information as this is needed to
+        create the empty MODULE_LICENSE_XXX
+
+    $ about gen --android LOCATION OUTPUT
+
     --fetch-license
 
         Fetch licenses text from a DejaCode API. and create <license>.LICENSE side-by-side
-        with the generated .ABOUT file using data fetched from a DejaCode License Library.
+        with the generated .ABOUT file using data fetched from the DejaCode License Library.
 
         This option requires 2 parameters:
-            api_url - URL to the DJE License Library
+            api_url - URL to the DJE License Library.
             api_key - Hash key to authenticate yourself in the API.
 
         In addition, the input needs to have the 'license_expression' field.
-        (Please contact nexB to get the api_* value to use for this feature)
+        (Please contact nexB to get the api_* value for this feature)
 
     $ about gen --fetch-license 'api_url' 'api_key' LOCATION OUTPUT
 
-    --license-notice-text-location
+    --reference
 
-        Copy the license files and notice files to the generated location based on the
-        'license_file' and 'notice_file' value in the input from the directory
+        Copy the reference files such as 'license_files' and 'notice_files' to the
+        generated location from the specified directory.
 
         For instance,
-        the directory, /home/licenses_notices/, contains all the licenses and notices that you want:
-        /home/license/apache2.LICENSE
-        /home/license/jquery.js.NOTICE
+        the specified directory, /home/licenses_notices/, contains all the licenses and notices:
+        /home/licenses_notices/apache2.LICENSE
+        /home/licenses_notices/jquery.js.NOTICE
 
     $ about gen --license-notice-text-location /home/licenses_notices/ LOCATION OUTPUT
-
-    --mapping
-
-        See mapping.config for details
-
-    --mapping-file
-
-        Same behavior as `--mapping` but with custom mapping file
-
-    $ about attrib --mapping-file CUSTOM_MAPPING_FILE_PATH LOCATION OUTPUT
 
     --verbose
 
@@ -270,13 +244,7 @@ inventory
 
 ::
 
-    --filter TEXT               Filter for the output inventory.
     -f, --format [json|csv]     Set OUTPUT file format.  [default: csv]
-    --mapping                   Use file mapping.config to collect the defined not supported fields in ABOUT files.
-    --mapping-file              Use a custom mapping file with mapping between input
-                                keys and ABOUT field names.
-    --mapping-output FILE       Use a custom mapping file with mapping between
-                                ABOUT field names and output keys
     --verbose                   Show all the errors and warning.
     -q, --quiet                 Do not print any error/warning.
     -h, --help                  Show this message and exit.
@@ -290,41 +258,13 @@ Options
 
 ::
 
-    -filter TEXT
-
-        Filter for the output inventory.
-
-    $ about inventory --filter "license_expression=gpl-2.0" LOCATION OUTPUT
-
     The above command will only inventory the ABOUT files which have the "license_expression: gpl-2.0"
 
     -f, --format [json|csv]
-
+ 
         Set OUTPUT file format.  [default: csv]
 
     $ about inventory -f json LOCATION OUTPUT
-
-    --mapping
-
-        See mapping.config for details
-
-    --mapping-file
-
-        Same behavior as `--mapping` but with custom mapping file
-
-    $ about inventory --mapping-file CUSTOM_MAPPING_FILE_PATH LOCATION OUTPUT
-
-    --mapping-output
-
-        Same behavior as `--mapping-file` but with custom mapping file
-        In the custom mapping file, the left side is the custom key name where
-        the right side is the ABOUT field name. For instance,
-        Component: name
-
-        The "Component" is a custom field name for the output
-        The "name" is one of the defaul ABOUT field name that user want to convert
-
-    $ about inventory --mapping-output CUSTOM_MAPPING_FILE_PATH LOCATION OUTPUT
 
     --verbose
 
@@ -354,7 +294,88 @@ The multiple licenses support format for ABOUT files are by "grouping" with the 
     name: test
     licenses:
         -   key: apache 2.0
-            name: apache-2.0.LICENSE
+            file: apache-2.0.LICENSE
         -   key: mit
-            name: mit.LICENSE
+            file: mit.LICENSE
 
+
+Multiple license_file support 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+To support multiple license file for a license, the correct format is to separate by comma
+
++----------------+------+-----------------+----------------------+
+| about_resource | name | license_key     | license_file         |
++----------------+------+-----------------+----------------------+
+| test.tar.xz    | test | gpl-2.0         | COPYING, COPYINGv2   |
+|                |      |                 |                      |
+|                |      | mit             | mit.LICENSE          |
++----------------+------+-----------------+----------------------+
+
+
+::
+
+    about_resource: test.tar.xz
+    name: test
+    licenses:
+        -   key: gpl-2.0
+            file: COPYING, COPYING.v2
+        -   key: mit
+            file: mit.LICENSE
+
+
+transform
+---------
+
+**Syntax**
+
+::
+
+    about transform [OPTIONS] LOCATION OUTPUT
+
+    LOCATION: Path to a CSV file.
+    OUTPUT: Path to CSV inventory file to create.
+
+**Options:**
+
+::
+
+  -c, --configuration FILE  Path to an optional YAML configuration file. See
+                            --help-format for format help.
+  --help-format             Show configuration file format help and exit.
+  -q, --quiet               Do not print error or warning messages.
+  --verbose                 Show all error and warning messages.
+  -h, --help                Show this message and exit.
+
+Purpose
+^^^^^^^
+Transform the CSV file at LOCATION by applying renamings, filters and checks and write a new CSV to OUTPUT.
+
+Options
+^^^^^^^
+
+::
+
+    -c, --configuration
+
+        Path to an optional YAML configuration file. See--help-format for format help.
+
+    $ about transform -c 'path to the YAML configuration file' LOCATION OUTPUT
+
+    --help-format
+
+        Show configuration file format help and exit.
+        This option will print out examples of the the YAML configuration file.
+        
+        Keys configuration are: `field_renamings`, `required_fields` and `field_filters`
+
+    $ about transform --help-format
+
+    --verbose
+
+        This option tells the tool to show all errors found.
+        The default behavior will only show 'CRITICAL', 'ERROR', and 'WARNING'
+
+Special Notes
+-------------
+When using the `field_filters` configuration, all the standard required columns
+(`about_resource` and `name`) and the user defined `required_fields` need to be included.
