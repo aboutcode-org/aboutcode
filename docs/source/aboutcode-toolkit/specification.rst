@@ -130,8 +130,8 @@ For instance::
      software component that additional continuation line is used.
 
 
-When a field value contains more than one line of text, a 'literal block'
-(using \|) is need.
+When a field value contains more than one line of text, a 'literal block' (using \|) is need.
+
 
 For instance::
 
