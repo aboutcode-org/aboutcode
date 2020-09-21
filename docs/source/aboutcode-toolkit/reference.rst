@@ -87,7 +87,7 @@ Options
 
         Users can use the following in the template to get the vartext:
         {{ variables['title'] }}
-        {{ variables['header'] }} 
+        {{ variables['header'] }}
 
     --verbose
 
@@ -98,9 +98,12 @@ Options
 The following data are passed to jinja2 and, therefore, can be used for a custom template:
  * about object: the about objects
  * common_licenses: a common license keys list in licenses.py
- * license_key_and_context: a dictionary list with license_key as a key and license text as the value
- * license_file_name_and_key: a dictionary list with license file name as a key and license key as the value
- * license_key_to_license_name: a dictionary list with license key as a key and license file name as the value
+ * license_key_and_context: a dictionary list with license_key as a key
+   and license text as the value
+ * license_file_name_and_key: a dictionary list with license file name as
+   a key and license key as the value
+ * license_key_to_license_name: a dictionary list with license key as a key
+   and license file name as the value
 
 
 check
@@ -261,7 +264,7 @@ Options
     The above command will only inventory the ABOUT files which have the "license_expression: gpl-2.0"
 
     -f, --format [json|csv]
- 
+
         Set OUTPUT file format.  [default: csv]
 
     $ about inventory -f json LOCATION OUTPUT
@@ -299,7 +302,7 @@ The multiple licenses support format for ABOUT files are by "grouping" with the 
             file: mit.LICENSE
 
 
-Multiple license_file support 
+Multiple license_file support
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 To support multiple license file for a license, the correct format is to separate by comma
 
@@ -348,7 +351,8 @@ transform
 
 Purpose
 ^^^^^^^
-Transform the CSV file at LOCATION by applying renamings, filters and checks and write a new CSV to OUTPUT.
+Transform the CSV file at LOCATION by applying renamings, filters and checks
+and write a new CSV to OUTPUT.
 
 Options
 ^^^^^^^
@@ -365,7 +369,7 @@ Options
 
         Show configuration file format help and exit.
         This option will print out examples of the the YAML configuration file.
-        
+
         Keys configuration are: `field_renamings`, `required_fields` and `field_filters`
 
     $ about transform --help-format

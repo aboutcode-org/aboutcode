@@ -106,8 +106,8 @@ A field name can contain only these US-ASCII characters:
 - Field names are not case sensitive. For example, "HOMEPAGE_URL" and "HomePage_url"
   represent the same field name.
 
-- A field name must start at the beginning of a new line. No spaces is allowed in the 
-  field name. It can be followed by one or more spaces that must be ignored. 
+- A field name must start at the beginning of a new line. No spaces is allowed in the
+  field name. It can be followed by one or more spaces that must be ignored.
   These spaces are commonly used to improve the readability of an ABOUT file.
 
 
@@ -158,7 +158,7 @@ name syntax or invalid content. Tools should report additional validation error
 details. The validation process should check that each field name is
 syntactically correct and that fields contain correct values according to its
 concise, common sense definition in this specification. For certain fields,
-additional and specific validations are relevant such as URL validation, 
+additional and specific validations are relevant such as URL validation,
 path resolution and verification, and so forth. Tools should
 report a warning for present fields that do not have any value.
 
@@ -230,7 +230,7 @@ Referencing the file or directory documented by an ABOUT file
 
 An ABOUT file documents one file or directory. The mandatory "about_resource"
 field reference the documented file or directory. The value of the
-"about_resource" field is the name or path of the referenced file or directory. 
+"about_resource" field is the name or path of the referenced file or directory.
 
 A tool processing an ABOUT file must report an error if this field is missing.
 
@@ -404,7 +404,7 @@ These fields support checksums (such as SHA1 and MD5)commonly provided with
 downloaded archives to verify their integrity. A tool can optionally use these
 to verify the integrity of a file documented by an ABOUT file.
 
-- checksum_md5: MD5 for the file documented by this ABOUT file in the 
+- checksum_md5: MD5 for the file documented by this ABOUT file in the
   "about_resource" field.
 
 - checksum_sha1: SHA1 for the file documented by this ABOUT file in the
@@ -412,7 +412,7 @@ to verify the integrity of a file documented by an ABOUT file.
 
 - checksum_sha256: SHA256 for the file documented by this ABOUT file in the
   "about_resource" field.
-  
+
 Some examples::
 
       checksum_md5: f30b9c173b1f19cf42ffa44f78e4b96c
