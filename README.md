@@ -1,6 +1,6 @@
 # AboutCode Documentation
 
-### What is AboutCode
+# What is AboutCode
 
 AboutCode is a suite of tools to uncover data ... about software and code:
 
