@@ -1,5 +1,6 @@
+#######################
 AboutCode Documentation
-=======================
+#######################
 
 Welcome to the AboutCode documentation.
 
@@ -7,43 +8,54 @@ This set of documents provides an overview of the AboutCode Projects sponsored b
 AboutCode.org (https://www.aboutcode.org), as well as references to the various GitHub project
 sites that maintain the actual projects and their documentation.
 
-All community contributions are welcome. Note that AboutCode.org is applying to participate in
-the 2020 Google Season of Docs (`GSoD 2020 <https://developers.google.com/season-of-docs>`_).
+All community contributions are welcome.
 
 ----
 
-.. toctree::
-   :maxdepth: 2
+***************************
+AboutCode Organization Docs
+***************************
 
+.. toctree::
+   :maxdepth: 1
+
+   contributing
+   doc_guidelines
    aboutcode-project-overview
    aboutcode-data/abcd
-   coding-toc
-   doc_guidelines
-   gsoc-toc
-   gsod-toc
    license
 
 ..    aboutcode-docs/home
 
 ----
 
+
+**********************
+AboutCode Project Docs
+**********************
+
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    aboutcode-toolkit/index
 
 
-
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    deltacode/index
 
 ----
 
+**************
+Community Docs
+**************
+
 .. toctree::
    :maxdepth: 2
 
+   gsoc-toc
+   gsod-toc
    contributor_project_ideas
 
 
