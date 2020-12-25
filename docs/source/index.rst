@@ -6,7 +6,7 @@ Welcome to the AboutCode documentation.
 
 This set of documents provides an overview of the AboutCode Projects sponsored by
 AboutCode.org (https://www.aboutcode.org), as well as references to the various GitHub project
-sites that maintain the actual projects and their documentation.
+sites that maintain the actual projects and their documentations.
 
 All community contributions are welcome.
 
