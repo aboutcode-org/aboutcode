@@ -132,13 +132,14 @@ Please select a project from the list below.
 Create and update scancode.io user and developer guides
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Create documentation on integrating third-party libraries in a scancode.io pipeline step.
-* Add a simple tutorial example of adding a new pipeline with a third-party library.
-* Update and extend the user guide for code analysis project creation and processing.
-* Upgrade the scancode.io documentation on making sense of the results using the UI.
+* Create an HowTo guide for integrating third-party libraries into a ScanCode.io Pipeline.
+* Add a tutorial for adding a new Pipeline with a third-party library.
+* Extend the HowTo Guides to cover Software Composition Analysis workflows based on ScanCode.io.
+* Upgrade the scancode.io Web UI documentation.
 * Create an introductory `video <https://opensource.com/article/21/3/video-open-source-tools>`_
   to teach how the web UI is used.
-* Create and generate pipes reference API documentation.
+* Update and improve the existing Pipe libraries reference API documentation (which is generated from code documentation "docstrings").
+* Sync the new documentation set with the code to support continuous integration with code changes.
 
 - **Level**
 
