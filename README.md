@@ -34,7 +34,7 @@ If you want to get in touch with the team with issues other than documentation, 
 
 Each AboutCode project has its own repository:
 
-- **[ScanCode Toolkit](https://github.com/nexB/scancode-toolkit)**: This is a set of code scanning tools to detect the origin and license of code and dependencies. ScanCode now uses a plug-in architecture to run a series of scan-related tools in one process flow. This is the most popular projects and is used by 100's of software teams. https://github.com/nexB/scancode-toolkit . The lead maintainer is @pombredanne
+- **[ScanCode Toolkit](https://github.com/nexB/scancode-toolkit)**: This is a set of code scanning tools to detect the origin and license of code and dependencies. ScanCode now uses a plug-in architecture to run a series of scan-related tools in one process flow. This is the most popular project and is used by 100's of software teams. https://github.com/nexB/scancode-toolkit . The lead maintainer is @pombredanne
 
 - **[Scancode Workbench](https://github.com/nexB/scancode-workbench)** 
 (formerly AboutCode Manager) This is a desktop application (based on Electron) to review the results of a scan and document your conclusions about the origin and license of software components and packages. https://github.com/nexB/aboutcode-manager . The lead maintainer is @majurg
