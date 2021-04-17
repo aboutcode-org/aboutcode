@@ -45,9 +45,9 @@ Each AboutCode project has its own repository:
 
 - **[Conan](https://github.com/nexB/conan)**: stands for "CONtainer ANalysis" and is a tool to analyze the structure and provenance of software components in Docker images using static analysis. https://github.com/nexB/conan Maintained by @pombredanne
 
-- **[license-expression](https://github.com/nexB/license-expression/)**: this is a library to parse, analyze, compare and normalize SPDX and SPDX-like license expressions using a boolean logic expression engine. See https://spdx.org/spdx-specification-21-web-version#h.jxpfx0ykyb60 to understand what an expression is. See https://github.com/nexB/license-expression for the code. The underlying boolea engine live at https://github.com/bastikr/boolean.py . Both are co-maintained by @pombredanne
+- **[license-expression](https://github.com/nexB/license-expression/)**: this is a library to parse, analyze, compare and normalize SPDX and SPDX-like license expressions using a boolean logic expression engine. See https://spdx.org/spdx-specification-21-web-version#h.jxpfx0ykyb60 to understand what an expression is. See https://github.com/nexB/license-expression for the code. The underlying boolean engine lives at https://github.com/bastikr/boolean.py . Both are co-maintained by @pombredanne
 
-- **ABCD aka AboutCode Data** is a simple set of conventions to define data structures that all the AboutCode tools can understand and use to exchange data. The specification lives in this repository. .ABOUT files and ScanCode tooklit data are example of this approach. Other projects such as https://libraries.io and and [OSS Review Toolkit](https://github.com/heremaps/oss-review-toolkit) are also using these conventions. 
+- **ABCD aka AboutCode Data** is a simple set of conventions to define data structures that all the AboutCode tools can understand and use to exchange data. The specification lives in this repository. .ABOUT files and ScanCode toolkit data are examples of this approach. Other projects such as https://libraries.io and [OSS Review Toolkit](https://github.com/heremaps/oss-review-toolkit) are also using these conventions. 
 
 - **[DeltaCode](https://github.com/nexB/deltacode)** is a command line
 tool to compare scans and determine if and where there are material
@@ -59,8 +59,8 @@ server-side application to collect and track known package vulnerabilities.
 
 We also co-started and work closely with a few key other orgs and projects:
 
-- [Package URL](https://github.com/package-url)  which is an emerging
-standard to reference software packages of all types with simple, readable and
+- [Package URL](https://github.com/package-url) is an emerging
+standard to reference software packages of all types with simple, readable, and
 concise URLs.
 
 - [SPDX](http://SPDX.org) aka. Software Package Data Exchange, a spec to
