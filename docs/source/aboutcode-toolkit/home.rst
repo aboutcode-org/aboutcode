@@ -37,7 +37,7 @@ https://github.com/nexB/aboutcode-toolkit/blob/develop/SPECIFICATION.rst
 
 REQUIREMENTS
 ------------
-The AboutCode Toolkit is tested with Python 2.7 and 3.6 on Linux, Mac and Windows.
+The AboutCode Toolkit is tested with Python 2.7 and 3.6.2 on Linux, Mac and Windows.
 You will need to install a Python interpreter if you do not have one already
 installed.
 
