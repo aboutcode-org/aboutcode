@@ -31,7 +31,7 @@ In addition, this tool is able to generate attribution notices and
 identify redistributable source code used in your project to help you comply
 with open source licenses conditions.
 
-This version of the AboutCode Toolkit follows the ABOUT specification version 3.0 at:
+This version of the AboutCode Toolkit follows the ABOUT specification version 3.2.1 at:
 https://aboutcode-toolkit.readthedocs.io/en/latest/specificaltion.html
 
 
