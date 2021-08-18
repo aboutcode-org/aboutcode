@@ -1,7 +1,7 @@
 Comprehensive Installation
 ==========================
 
-DeltaCode requires Python 3.6(or above) and is tested on Linux, Mac, and Windows. Make sure Python 3.6 (or above) is
+DeltaCode requires Python 3.6+ and is tested on Linux, Mac, and Windows. Make sure Python 3.6 (or above) is
 installed first.
 
 System Requirements
@@ -123,3 +123,15 @@ Un-installation
 
 - Delete the directory in which you extracted DeltaCode.
 - Delete any temporary files created in your system temp directory under a deltacode directory.
+
+Using the docker image for testing Deltacode
+---------------
+
+- In the project root directory run `docker-compose up`.
+- This will create an image of deltacode with the name `delta_code`.
+- To verify the image created run `docker image ls`.
+- To run the image run `docker run -itd --name <specific name of container>  delta_code `.
+- The above command runs the image in the background and creates a container with the name as per specified.
+- To execute the container in a bash mode run `docker exec -it <container name> bash`.
+- The above command will open a bash shell in the container.
+- To run the commands / pytest inside the shell you can use the commands as specified in the documentations.
