@@ -1,17 +1,8 @@
 AboutCode Toolkit
 =================
 
-Build and tests status
+Introduction
 ----------------------
-
-+-------+-----------------+--------------+
-|Branch | **Linux/macOS** | **Windows**  |
-+=======+=================+==============+
-|Master | |master-posix|  | |master-win| |
-+-------+-----------------+--------------+
-|Develop| |devel-posix|   | |devel-win|  |
-+-------+-----------------+--------------+
-
 
 The AboutCode Toolkit and ABOUT files provide a simple way to document the
 origin, license, usage and other important or interesting information about
@@ -34,6 +25,16 @@ with open source licenses conditions.
 This version of the AboutCode Toolkit follows the ABOUT specification version 3.0 at:
 https://github.com/nexB/aboutcode-toolkit/blob/develop/SPECIFICATION.rst
 
+Build and tests status
+----------------------
+
++-------+-----------------+--------------+
+|Branch | **Linux/macOS** | **Windows**  |
++=======+=================+==============+
+|Master | |master-posix|  | |master-win| |
++-------+-----------------+--------------+
+|Develop| |devel-posix|   | |devel-win|  |
++-------+-----------------+--------------+
 
 REQUIREMENTS
 ------------
