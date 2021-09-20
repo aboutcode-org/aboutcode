@@ -1,6 +1,29 @@
 AboutCode Toolkit
 =================
 
+Introduction
+------------
+The AboutCode Toolkit and ABOUT files provide a simple way to document the
+origin, license, usage and other important or interesting information about
+third-party software components that you use in your project.
+
+You start by storing ABOUT files (a small YAML formatted text file with field/value pairs)
+side-by-side with each of the third-party software components you use.
+Each ABOUT file documents origin and license for one software.
+There are many examples of ABOUT files (valid or invalid) in the testdata/
+directory of the whole repository.
+
+The current version of the AboutCode Toolkit can read these ABOUT files so that you
+can collect and validate the inventory of third-party components that you use.
+
+In addition, this tool is able to generate attribution notices and
+identify redistributable source code used in your project to help you comply
+with open source licenses conditions.
+
+This version of the AboutCode Toolkit follows the ABOUT specification version 3.2.1 at:
+https://aboutcode-toolkit.readthedocs.io/en/latest/specification.html
+
+
 Build and tests status
 ----------------------
 
@@ -13,30 +36,9 @@ Build and tests status
 +-------+-----------------+--------------+
 
 
-The AboutCode Toolkit and ABOUT files provide a simple way to document the
-origin, license, usage and other important or interesting information about
-third-party software components that you use in your project.
-
-You start by storing ABOUT files (a small YAML formatted text file with field/value pairs)
-side-by-side with each of the third-party software components you use.
-Each ABOUT file documents origin and license for one software.
-For more information on the ABOUT file format, visit http://www.dejacode.org
-There are many examples of ABOUT files (valid or invalid) in the testdata/
-directory of the whole repository.
-
-The current version of the AboutCode Toolkit can read these ABOUT files so that you
-can collect and validate the inventory of third-party components that you use.
-
-In addition, this tool is able to generate attribution notices and
-identify redistributable source code used in your project to help you comply
-with open source licenses conditions.
-
-This version of the AboutCode Toolkit follows the ABOUT specification version 3.1.2 at:
-https://aboutcode-toolkit.readthedocs.io/en/latest/specification.html
-
 REQUIREMENTS
 ------------
-The AboutCode Toolkit is tested with Python 2.7 and 3.6 on Linux, Mac and Windows.
+The AboutCode Toolkit is tested with Python 3.6.2 or above only on Linux, Mac and Windows.
 You will need to install a Python interpreter if you do not have one already
 installed.
 
@@ -61,6 +63,30 @@ To install all the needed dependencies in a virtualenv, run (on posix):
     source configure
 or on windows:
     configure
+
+
+Activate the virtualenv
+-----------------------
+To activate the virtualenv, run (on posix):
+    source bin/activate
+or on windows:
+    bin\\activate
+
+
+Deactivate the virtualenv
+-------------------------
+To deactivate the virtualenv, run (on both posix and windows):
+    deactivate
+
+
+VERSIONING SCHEMA
+-----------------
+Starting at AboutCode version 4.0.0, the AboutCode Toolkit will follow SemVer for the versioning schema.
+
+i.e. MAJOR.MINOR.PATCH format
+    1. MAJOR version when making incompatible API changes,
+    2. MINOR version when making functionality in a backwards compatible manner, and
+    3. PATCH version when making backwards compatible bug fixes.
 
 
 REFERENCE
@@ -100,7 +126,7 @@ The AboutCode Toolkit is available through GitHub. For the latest version visit:
 HACKING
 -------
 We accept pull requests provided under the same license as this tool.
-You agree to the http://developercertificate.org/
+You agree to the http://developercertificate.org/ 
 
 
 LICENSE
