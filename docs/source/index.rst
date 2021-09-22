@@ -37,12 +37,6 @@ AboutCode Project Docs
 .. toctree::
    :maxdepth: 1
 
-   aboutcode-toolkit/index
-
-
-.. toctree::
-   :maxdepth: 1
-
    deltacode/index
 
 ----
