@@ -29,18 +29,6 @@ AboutCode Organization Docs
 
 ----
 
-
-**********************
-AboutCode Project Docs
-**********************
-
-.. toctree::
-   :maxdepth: 1
-
-   deltacode/index
-
-----
-
 **************
 Community Docs
 **************
@@ -71,7 +59,6 @@ Community Docs
 .. .. toctree::
 ..    :maxdepth: 1
 
-..    deltacode/index
 ..    aboutcode-docs/home
 ..    aboutcode-toolkit/index
 ..    aboutcode-data/abcd
