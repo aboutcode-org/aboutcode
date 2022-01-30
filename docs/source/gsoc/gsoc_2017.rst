@@ -38,8 +38,8 @@ The list archive have also plenty of interesting information. Someone may have a
 before. Search and browse the archives at
 https://sourceforge.net/p/aboutcode/mailman/aboutcode-discuss/ !
 
-For short chats, you can also join the #aboutcode IRC channel on Freenode or the Gitter channel at
-https://gitter.im/aboutcode-org/discuss
+For short chats, you can join the #aboutcode IRC channel on liberachat at https://web.libera.chat/?#aboutcode
+or the Gitter channel at https://gitter.im/aboutcode-org/discuss
 
 For personal issues, you can contact the org admin directly: @pombredanne and pombredanne@gmail.com
 
@@ -82,8 +82,10 @@ relevant:
   vacations/holidays? Will you be available full time to work on your project? (Hint: do not bother
   applying if this is not a serious full time commitment)
 
-Subscribe to the mailing list at https://lists.sourceforge.net/lists/listinfo/aboutcode-discuss or
-join the #aboutcode IRC channel on Freenode and introduce yourself and start the discussion!
+Subscribe to the mailing list at https://lists.sourceforge.net/lists/listinfo/aboutcode-discuss
+or join the IRC channel on Gitter at https://gitter.im/aboutcode-org/discuss introduce yourself 
+and start the discussion!. You can alo use your favorite IRC client or use the web chat 
+at https://web.libera.chat/?#aboutcode .
 
 You need to understand something about open source licensing or package managers or code and
 binaries static analysis. The best way to demonstrate your capability would be to submit a small
