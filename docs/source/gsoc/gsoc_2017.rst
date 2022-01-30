@@ -38,7 +38,7 @@ The list archive have also plenty of interesting information. Someone may have a
 before. Search and browse the archives at
 https://sourceforge.net/p/aboutcode/mailman/aboutcode-discuss/ !
 
-For short chats, you can join the #aboutcode IRC channel on liberachat at https://web.libera.chat/?#aboutcode
+For short chats, you can also join the #aboutcode IRC channel on liberachat at https://web.libera.chat/?#aboutcode
 or the Gitter channel at https://gitter.im/aboutcode-org/discuss
 
 For personal issues, you can contact the org admin directly: @pombredanne and pombredanne@gmail.com
