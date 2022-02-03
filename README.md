@@ -16,9 +16,9 @@ These are important questions when there are millions of free and open source so
 
 ### Important Links 
 
-Our homepage lives at http://aboutcode.org
+Our homepage is at http://aboutcode.org
 
-Our documentation (in progress) lives at https://aboutcode.readthedocs.io/en/latest/ 
+Our documentation (in progress) is at https://aboutcode.readthedocs.io/en/latest/ 
 
 AboutCode Documentation Group Email Addresses:
 
@@ -46,7 +46,7 @@ Each AboutCode project has its own repository:
 
 - **[license-expression](https://github.com/nexB/license-expression/)**: a library to parse, analyze, compare and normalize SPDX and SPDX-like license expressions using a boolean logic expression engine. See https://spdx.org/spdx-specification-21-web-version#h.jxpfx0ykyb60 to understand what an expression is. See https://github.com/nexB/license-expression for the code. The underlying boolea engine live at https://github.com/bastikr/boolean.py . Both are co-maintained by @pombredanne
 
-- **ABCD aka AboutCode Data**: a simple set of conventions to define data structures that all the AboutCode tools can understand and use to exchange data. The specification lives in this repository. .ABOUT files and ScanCode tooklit data are example of this approach. Other projects such as https://libraries.io and and [OSS Review Toolkit](https://github.com/heremaps/oss-review-toolkit) are also using these conventions. 
+- **ABCD aka AboutCode Data**: a simple set of conventions to define data structures that all the AboutCode tools can understand and use to exchange data. The details are at [AboutCode Data](https://aboutcode.readthedocs.io/en/latest/aboutcode-data/abcd.html). ABOUT files and ScanCode Toolkit data are example of this approach. Other projects such as https://libraries.io and and [OSS Review Toolkit](https://github.com/heremaps/oss-review-toolkit) are also using these conventions. 
 
 - **[DeltaCode](https://github.com/nexB/deltacode)**: a command line tool to compare scans and determine if and where there are material
 differences that affect licensing. The lead maintainer is @majurg
