@@ -203,7 +203,7 @@ areas for improvement.
 - **Mentors**
 
   - https://github.com/johnmhoran
-  - @steven-esser https://github.com/steven-esser
+  - https://github.com/steven-esser
 
 Automate Code Documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -232,7 +232,7 @@ Automate Code Documentation
 - **Mentors**
 
   - https://github.com/johnmhoran
-  - @steven-esser https://github.com/steven-esser
+  - https://github.com/steven-esser
 
 ----
 
