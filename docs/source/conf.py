@@ -74,3 +74,5 @@ html_context = {
     }
 
 master_doc = 'index'
+
+linkcheck_ignore = [r'urn:dje:component:16fusb:1.0']

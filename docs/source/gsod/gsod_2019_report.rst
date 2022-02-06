@@ -96,7 +96,7 @@ GSoD PRs @ nexB/aboutcode
 Acknowledgments
 ---------------
 
-I would like to thank `Dennis Clark <https://github.com/DennisClark>`_, `Philippe Ombredanne <https://github.com/pombredanne>`_ and `Steven Esser <https://github.com/majurg>`_
+I would like to thank `Dennis Clark <https://github.com/DennisClark>`_, `Philippe Ombredanne <https://github.com/pombredanne>`_ and `Steven Esser <https://github.com/steven-esser>`_
 for their help throughout my GSoD project, from helping me prepare my proposal and project to
 constructive criticism, nit-picky reviews, conference calls to discuss project roadmaps and to
 explain to me when I was stuck in any problem. Their support and positivity helped me through

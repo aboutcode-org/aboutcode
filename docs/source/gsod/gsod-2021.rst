@@ -207,7 +207,7 @@ many examples of specific areas for improvement.
 - **Mentors**
 
   - https://github.com/johnmhoran
-  - https://github.com/majurg
+  - @steven-esser https://github.com/steven-esser
   - https://github.com/AyanSinhaMahapatra
 
 

@@ -107,7 +107,7 @@ scan based on a received tweet of similar IRC or IM integration.
 
 - **Mentors**  :
 
-  * @majurg https://github.com/majurg
+  * @steven-esser https://github.com/steven-esser
   * @tdruez https://github.com/tdruez
 
 **Package security vulnerability data feed (and scanner)**  :
@@ -152,7 +152,7 @@ The key points to tackle are:
 
 - **Mentors**  :
 
-  * @majurg https://github.com/majurg
+  * @steven-esser https://github.com/steven-esser
   * @JonoYang https://github.com/JonoYang
   * @pombredanne https://github.com/pombredanne
 
@@ -174,7 +174,7 @@ normalize ScanCode and SPDX license expressions either in Python or JavaScript.
 - **Mentors**  :
 
   * @JonoYang https://github.com/JonoYang
-  * @majurg https://github.com/majurg
+  * @steven-esser https://github.com/steven-esser
 
 **MatchCode**  :
 ^^^^^^^^^^^^^^^^^^
@@ -224,7 +224,7 @@ differences, rather it focuses on changes in licensing based on differences betw
 
 - **Mentor**  :
 
-  * @majurg https://github.com/majurg
+  * @steven-esser https://github.com/steven-esser
 
 **License and copyright detection benchmark**  :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
