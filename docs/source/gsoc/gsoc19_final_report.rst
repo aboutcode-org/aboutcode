@@ -64,6 +64,6 @@ Links
 
 I’ve had a wonderful time during these three months and have learned plenty of things. I would
 really like to thank `@pombredanne <https://github.com/pombredanne>`_,
-`@majurg <https://github.com/majurg>`_, and `@JonoYang <https://github.com/JonoYang>`_ for their
+`@steven-esser <https://github.com/steven-esser>`_, and `@JonoYang <https://github.com/JonoYang>`_ for their
 constant support throughout the journey. From good job claps to nit-picky constructive
 code-reviews, I enjoyed every bit of this GSoC project.

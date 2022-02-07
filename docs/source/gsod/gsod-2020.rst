@@ -196,14 +196,14 @@ areas for improvement.
 
 - **URLs**
 
-  - https://scancode-workbench.readthedocs.io/en/latest/index.html
+  - https://scancode-workbench.readthedocs.io/en/develop/index.html
   - https://github.com/nexB/scancode-workbench
   - https://gitter.im/aboutcode-org/scancode-workbench
 
 - **Mentors**
 
   - https://github.com/johnmhoran
-  - https://github.com/majurg
+  - https://github.com/steven-esser
 
 Automate Code Documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -225,14 +225,14 @@ Automate Code Documentation
 
 - **URLs**
 
-  - https://scancode-workbench.readthedocs.io/en/latest/index.html
+  - https://scancode-workbench.readthedocs.io/en/develop/index.html
   - https://github.com/nexB/scancode-workbench
   - https://gitter.im/aboutcode-org/scancode-workbench
 
 - **Mentors**
 
   - https://github.com/johnmhoran
-  - https://github.com/majurg
+  - https://github.com/steven-esser
 
 ----
 
