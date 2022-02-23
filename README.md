@@ -47,7 +47,7 @@ API to run and review scans in rich scripted ScanPipe pipelines.
 
 - **[container-inspector](https://github.com/nexB/container-inspector)**: a tool to analyze the structure and provenance of software components in Docker images using static analysis. Maintained by @pombredanne
 
-- **[license-expression](https://github.com/nexB/license-expression/)**: a library to parse, analyze, compare and normalize SPDX and SPDX-like license expressions using a boolean logic expression engine. See https://spdx.org/spdx-specification-21-web-version#h.jxpfx0ykyb60 to understand what an expression is. See https://github.com/nexB/license-expression for the code. The underlying boolea engine live at https://github.com/bastikr/boolean.py . Both are co-maintained by @pombredanne
+- **[license-expression](https://github.com/nexB/license-expression/)**: a library to parse, analyze, compare and normalize SPDX and SPDX-like license expressions using a boolean logic expression engine. See https://spdx.org/spdx-specification-21-web-version#h.jxpfx0ykyb60 to understand what an expression is. See https://github.com/nexB/license-expression for the code. The underlying boolean engine live at https://github.com/bastikr/boolean.py . Both are co-maintained by @pombredanne
 
 - **ABCD aka AboutCode Data**: a simple set of conventions to define data structures that all the AboutCode tools can understand and use to exchange data. The details are at [AboutCode Data](https://aboutcode.readthedocs.io/en/latest/aboutcode-data/abcd.html). ABOUT files and ScanCode Toolkit data are example of this approach. Other projects such as https://libraries.io and and [OSS Review Toolkit](https://github.com/heremaps/oss-review-toolkit) are also using these conventions. 
 
