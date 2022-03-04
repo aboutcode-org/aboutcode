@@ -1,14 +1,14 @@
-# AboutCode Documentation
+# AboutCode
 
-### What is AboutCode
+### What is AboutCode?
 
-AboutCode is a suite of tools to uncover data ... about software and code:
+AboutCode is a suite of tools to uncover data ... about software:
 
  - Where does it come from?
  - What is its license?
  - Is it secure, maintained, well coded?
 
-These are important questions when there are millions of free and open source software components available on the web.
+These are important questions when there are millions of free and open source software components and packages available on the web.
 
 ### Documentation Build Status
 
