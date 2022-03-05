@@ -4,25 +4,38 @@
 AboutCode Project Overview
 ==========================
 
-AboutCode is a suite of open source projects.
+The primary current AboutCode projects are:
 
-AboutCode Projects
-******************
+- `ScanCode Toolkit <https://github.com/nexB/scancode-toolkit>`_: is a code scanning "engine" and command-line tool to detect the provenance and license of code and its dependencies. ScanCode TK is a command-line tool with many scanning options and output formats (JSON, HTML, CSV or SPDX). ScanCode detects licenses, copyrights, package manifests and more in both source code and binary files. There is already a large set of pre- and post-plugins and you can also create your own plugins.
 
-- `ScanCode Toolkit <https://github.com/nexB/scancode-toolkit>`_: This is a set of code scanning tools to detect the origin and license of code and dependencies. ScanCode Toolkit uses a plug-in architecture to run a series of scan-related tools in one process flow. This is the most popular project and is used by hundreds of software teams. https://github.com/nexB/scancode-toolkit . The lead maintainer is @pombredanne
+  - Read more at: https://scancode-toolkit.readthedocs.io
+  - Get the code at: https://github.com/nexB/scancode-toolkit
 
-- `Scancode Workbench <https://github.com/nexB/scancode-workbench>`_ (formerly AboutCode Manager) This is a desktop application (based on Electron) to review the results of a scan and document your conclusions about the origin and license of software components and packages. https://github.com/nexB/aboutcode-manager . The lead maintainer is @majurg
+|
 
-- `DeltaCode <https://github.com/nexB/deltacode>`_ is a command line tool to compare scans and determine if and where there are material differences that affect licensing. The lead maintainer is @majurg
+- `ScanCode.io <https://github.com/nexB/scancode.io>`_: is a Cloud application server that automates Software Composition Analysis with pipelines. ScanCode.io has standard pipelines for Docker and VM images, root filesystems and packages. ScanCode.io organizes these complex code analyses as scripted pipelines and stores the results in its database for automated code analysis.
 
-- `AboutCode Toolkit <https://github.com/nexB/aboutcode-toolkit>`_: This is a set of command line tools to document the provenance of your code and generate attribution notices.  AboutCode Toolkit uses small yaml files to document code provenance inside a codebase. https://github.com/nexB/aboutcode-toolkit . The lead maintainer is @chinyeungli
+  - Read more at: https://scancodeio.readthedocs.io
+  - Get the code at: https://github.com/nexB/scancode.io
 
-- `TraceCode Toolkit <https://github.com/nexB/tracecode-toolkit>`_: This is a set of tools to trace files from your deployment or distribution packages back to their origin in a development codebase or repository.  The primary tool uses strace https://github.com/strace/strace/ to trace system calls on Linux and construct a build graph from syscalls to show which files are used to build a binary. We are contributors to strace. Maintained by @pombredanne
+|
 
-- `VulnerableCode <https://github.com/nexB/vulnerablecode>`_: an emerging server-side application to collect and track known package vulnerabilities.
+- `ScanCode Workbench <https://github.com/nexB/scancode-workbench>`_: is a desktop application (based on Electron) to review the results of a scan and document your conclusions about the origin and license of software components and packages.
 
-- `Conan <https://github.com/nexB/conan>`_: "conan" stands for "CONtainer ANalysis" and is a tool to analyze the structure and provenance of software components in Docker images using static analysis. https://github.com/nexB/conan Maintained by @pombredanne
+  - Read more at: https://scancode-workbench.readthedocs.io
+  - Get the code at: https://github.com/nexB/scancode-workbench
 
-- `license-expression <https://github.com/nexB/license-expression/>`_: This is a library to parse, analyze, compare and normalize SPDX-like license expressions using a boolean logic expression engine. See https://spdx.org/spdx-specification-21-web-version#h.jxpfx0ykyb60 to understand what a license expression is. See https://github.com/nexB/license-expression for the code. The underlying boolean engine is at https://github.com/bastikr/boolean.py . Both are co-maintained by @pombredanne
+|
 
-- `ABCD aka AboutCode Data <https://github.com/AyanSinhaMahapatra/aboutcode/blob/master/docs/source/aboutcode-data/abcd.rst>`_: is a simple set of conventions to define data structures that all the AboutCode tools can understand and use to exchange data. The specification lives in this repository. .ABOUT files and ScanCode tooklit data are examples of this approach. Other projects such as https://libraries.io and `OSS Review Toolkit <https://github.com/heremaps/oss-review-toolkit>`_ also use these conventions.
+- `VulnerableCode <https://github.com/nexB/vulnerablecode>`_: is an early stage project to provide a free and open source database of vulnerabilities and the packages they impact with tools to aggregate and correlate those vulnerabilities. The initial development of VulnerableCode was supported by the NLNet Foundation.
+
+  - Read more at: https://vulnerablecode.readthedocs.io
+  - Get the code at: https://github.com/nexB/vulnerablecode
+
+|
+
+- `AboutCode Toolkit <https://github.com/nexB/aboutcode-toolkit>`_: AboutCode Toolkit provides a set of command-line tools to generate Attribution documents and software BOM reports from any source. It also provides a standard ABCD format for yaml files to document software provenance and license metadata in a codebase where this is not already covered by a package manager.
+
+  - Read more at: https://aboutcode-toolkit.readthedocs.io
+  - Get the code at: https://github.com/nexB/aboutcode-toolkit
+
