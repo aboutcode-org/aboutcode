@@ -1,86 +1,66 @@
-#######################
-AboutCode Documentation
-#######################
+#########
+AboutCode
+#########
 
-Welcome to the AboutCode documentation.
+Welcome to the AboutCode documentation homepage. `AboutCode.org <https://www.aboutcode.org/>`_ is a community of open source developers who are trying to make open source easier to use by providing open source tools to discover, identify and track open source components (aka Software Composition Analysis – SCA). AboutCode is the collective name for these open source tools.
 
-This set of documents provides an overview of the AboutCode Projects sponsored by
-AboutCode.org (https://www.aboutcode.org), as well as references to the various GitHub project
-sites that maintain the actual projects and their documentation.
+This home page provides a directory of our major projects and their documentation on ReadTheDocs plus information about how to contribute to AboutCode documentation
 
 All community contributions are welcome.
 
+
 ----
 
-***************************
-AboutCode Organization Docs
-***************************
+*****************
+Table of Contents
+*****************
 
 .. toctree::
    :maxdepth: 1
 
-   contributing
-   doc_guidelines
    aboutcode-project-overview
    aboutcode-data/abcd
+   contributing
+   doc_guidelines
    license
-
-..    aboutcode-docs/home
 
 ----
 
-**************
-Community Docs
-**************
+**************************
+AboutCode Project Overview
+**************************
 
-.. toctree::
-   :maxdepth: 2
+The primary current AboutCode projects are:
 
-   gsoc-toc
-   gsod-toc
-   contributor_project_ideas
+- `ScanCode Toolkit <https://github.com/nexB/scancode-toolkit>`_: is a code scanning "engine" and command-line tool to detect the provenance and license of code and its dependencies. ScanCode TK is a command-line tool with many scanning options and output formats (JSON, HTML, CSV or SPDX). ScanCode detects licenses, copyrights, package manifests and more in both source code and binary files. There is already a large set of pre- and post-plugins and you can also create your own plugins.
 
+  - Read more at: https://scancode-toolkit.readthedocs.io
+  - Get the code at: https://github.com/nexB/scancode-toolkit
 
-.. Aboutcode Documentation Websites
-.. --------------------------------
+|
 
-.. | **Scancode-Toolkit** has its documentation website at ``scancode-toolkit.readthedocs.io``.
-.. | `Click here <https://scancode-toolkit.readthedocs.io>`__ to visit the Scancode Documentation.
+- `ScanCode.io <https://github.com/nexB/scancode.io>`_: is a Cloud application server that automates Software Composition Analysis with pipelines. ScanCode.io has standard pipelines for Docker and VM images, root filesystems and packages. ScanCode.io organizes these complex code analyses as scripted pipelines and stores the results in its database for automated code analysis.
 
-.. | **Scancode-Workbench** has its documentation website at ``scancode-workbench.readthedocs.io``.
-.. | `Click here <https://scancode-workbench.readthedocs.io>`__ to visit the Workbench Documentation.
+  - Read more at: https://scancodeio.readthedocs.io
+  - Get the code at: https://github.com/nexB/scancode.io
 
-.. Other Aboutcode Projects
-.. ------------------------
+|
 
-.. These are the Projects that don’t have a seperate documentation website currently.
-.. Note that these might be outdated, as these documentations are updated in their wiki's primarily.
+- `ScanCode Workbench <https://github.com/nexB/scancode-workbench>`_: is a desktop application (based on Electron) to review the results of a scan and document your conclusions about the origin and license of software components and packages.
 
-.. .. toctree::
-..    :maxdepth: 1
+  - Read more at: https://scancode-workbench.readthedocs.io
+  - Get the code at: https://github.com/nexB/scancode-workbench
 
-..    aboutcode-docs/home
-..    aboutcode-toolkit/index
-..    aboutcode-data/abcd
-..    gsoc-toc
-..    gsod-toc
+|
 
-.. Documentation Guide
-.. -------------------
+- `VulnerableCode <https://github.com/nexB/vulnerablecode>`_: is an early stage project to provide a free and open source database of vulnerabilities and the packages they impact with tools to aggregate and correlate those vulnerabilities. The initial development of VulnerableCode was supported by the NLNet Foundation.
 
-.. .. toctree::
-..    :maxdepth: 2
+  - Read more at: https://vulnerablecode.readthedocs.io
+  - Get the code at: https://github.com/nexB/vulnerablecode
 
-..    aboutcode-project-overview
-..    license
-..    doc_maintenance
+|
 
-.. Indices and Tables
-.. ------------------
+- `AboutCode Toolkit <https://github.com/nexB/aboutcode-toolkit>`_: AboutCode Toolkit provides a set of command-line tools to generate Attribution documents and software BOM reports from any source. It also provides a standard ABCD format for yaml files to document software provenance and license metadata in a codebase where this is not already covered by a package manager.
 
-.. * :ref:`genindex`
-.. * :ref:`modindex`
-
-.. .. _improve_docs:
-
-.. .. include::  /rst_snippets/improve_docs.rst
+  - Read more at: https://aboutcode-toolkit.readthedocs.io
+  - Get the code at: https://github.com/nexB/aboutcode-toolkit
