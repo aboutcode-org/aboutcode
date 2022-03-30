@@ -13,6 +13,7 @@ More about GSoc - <https://summerofcode.withgoogle.com/about/>_
 .. toctree::
    :maxdepth: 2
 
+   gsoc/gsoc21_final_report
    gsoc/gsoc19_final_report
    gsoc/gsoc_2019
    gsoc/gsoc_2018
