@@ -2,7 +2,7 @@
 #
 # This file only contains a selection of the most common options. For a full
 # list see the documentation:
-# http://www.sphinx-doc.org/en/master/config
+# https://www.sphinx-doc.org/en/master/usage/configuration.html
 
 # -- Path setup --------------------------------------------------------------
 
@@ -14,20 +14,12 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-# Adding Support for GIFs in Sphinx
-from sphinx.builders.html import StandaloneHTMLBuilder
-StandaloneHTMLBuilder.supported_image_types = [
-    'image/svg+xml',
-    'image/gif',
-    'image/png',
-    'image/jpeg'
-]
 
 # -- Project information -----------------------------------------------------
 
-project = 'AboutCode'
-copyright = 'AboutCode Authors'
-author = 'AboutCode Authors'
+project = "aboutcode"
+copyright = "nexB Inc. and others."
+author = "AboutCode.org authors and contributors"
 
 
 # -- General configuration ---------------------------------------------------
@@ -36,17 +28,21 @@ author = 'AboutCode Authors'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-'sphinx.ext.intersphinx'
+'sphinx.ext.intersphinx',
 ]
 
-# This points to scancode-toolkit.readthedocs.io
+# This points to aboutcode.readthedocs.io
 # In case of "undefined label" ERRORS check docs on intersphinx to troubleshoot
-# Link was created at commit - https://github.com/nexB/scancode-toolkit/commit/3a71e44a403e0da18217f327f2362f6031f53d4b
-intersphinx_mapping = {'scancode-toolkit': ('https://scancode-toolkit.readthedocs.io/en/latest/', None),
-                       'scancode-workbench': ('https://scancode-workbench.readthedocs.io/en/develop/', None)}
+# Link was created at commit - https://github.com/nexB/aboutcode/commit/faea9fcf3248f8f198844fe34d43833224ac4a83
+
+intersphinx_mapping = {
+    'aboutcode': ('https://aboutcode.readthedocs.io/en/latest/', None),
+    'scancode-workbench': ('https://scancode-workbench.readthedocs.io/en/develop/', None),
+}
+
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ["_templates"]
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -59,18 +55,45 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = "sphinx_rtd_theme"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-
-html_static_path = ['_static']
-
-html_context = {
-    'css_files': [
-        '_static/theme_overrides.css',  # override wide tables in RTD theme
-        ],
-    }
+html_static_path = ["_static"]
 
 master_doc = 'index'
+
+html_context = {
+    "display_github": True,
+    "github_user": "nexB",
+    "github_repo": "aboutcode",
+    "github_version": "master",  # branch
+    "conf_py_path": "/docs/source/",  # path in the checkout to the docs root
+}
+
+html_css_files = [
+    '_static/theme_overrides.css'
+    ]
+
+
+# If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
+html_show_sphinx = True
+
+# Define CSS and HTML abbreviations used in .rst files.  These are examples.
+# .. role:: is used to refer to styles defined in _static/theme_overrides.css and is used like this: :red:`text`
+rst_prolog = """
+.. |psf| replace:: Python Software Foundation
+
+.. # define a hard line break for HTML
+.. |br| raw:: html
+
+   <br />
+
+.. role:: red
+
+.. role:: img-title
+
+.. role:: img-title-para
+
+"""

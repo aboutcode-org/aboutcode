@@ -99,8 +99,8 @@ We also work closely, contribute and co-started several other orgs and projects:
   document the origin and licensing of packages.
 
 -
-  `ClearlyDefined <ClearlyDefined.io>`_ to review and help FOSS projects
-  improve their licensing and documentation clarity.
+  `ClearlyDefined <https://clearlydefined.io>`_ to review and help FOSS
+  projects improve their licensing and documentation clarity.
 
 .. _contact_gsoc19:
 
@@ -269,7 +269,7 @@ ScanCode to support both Python 2 and Python 3.
 
 - **Mentors**
 
-  * @majurg https://github.com/majurg
+  * @steven-esser https://github.com/steven-esser
 
 .. _improve_programming_language_detection_and_classification_in_scancode:
 
@@ -441,7 +441,7 @@ meterial in the code files (e.g. such that small changes may be ignored)
 
 - **Mentors**
 
-  * @majurg https://github.com/majurg
+  * @steven-esser https://github.com/steven-esser
   * @johnmhoran https://github.com/johnmhoran
 
 .. _tracecode_projects:
@@ -633,7 +633,7 @@ The features and TODO for this updated server would be:
 
 - **Mentors**
 
-    * @majurg https://github.com/majurg
+    * @steven-esser https://github.com/steven-esser
     * @JonoYang https://github.com/JonoYang
 
 **High volume matching automatons and data structures**

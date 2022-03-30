@@ -1,6 +1,7 @@
-############
-Contributing
-############
+#########################
+Contributing to AboutCode
+#########################
+
 The AboutCode organization welcomes you and your interest in contributing to our
 organization. We are always looking for enthusiatic contributors and we are willing to
 lend a helping hand if you have any questions or comments. That being said, here a few

@@ -83,7 +83,7 @@ although proposals to improve the documents of other AboutCode projects are welc
 - `SPDX <http://SPDX.org>`_ is the Software Package Data Exchange, a specification to document
   the origin and licensing of software packages.
 
-- `ClearlyDefined <ClearlyDefined.io>`_ is a project to review FOSS software and help FOSS projects
+- `ClearlyDefined <https://clearlydefined.io/>`_ is a project to review FOSS software and help FOSS projects
   to improve their licensing and documentation clarity.
 
 .. _contact_gsod:

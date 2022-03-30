@@ -138,7 +138,8 @@ Create and update scancode.io user and developer guides
 * Upgrade the scancode.io Web UI documentation.
 * Create an introductory `video <https://opensource.com/article/21/3/video-open-source-tools>`_
   to teach how the web UI is used.
-* Update and improve the existing Pipe libraries reference API documentation (which is generated from code documentation "docstrings").
+* Update and improve the existing Pipe libraries reference API documentation (which is generated
+  from code documentation "docstrings").
 * Sync the new documentation set with the code to support continuous integration with code changes.
 
 - **Level**
@@ -154,7 +155,7 @@ Create and update scancode.io user and developer guides
 - **URLs**
 
   - https://scancodeio.readthedocs.io
-  - https://github.com/nexB/scancode-io
+  - https://github.com/nexB/scancode.io
   - https://gitter.im/aboutcode-org/discuss
 
 - **Mentors**
@@ -206,7 +207,7 @@ many examples of specific areas for improvement.
 - **Mentors**
 
   - https://github.com/johnmhoran
-  - https://github.com/majurg
+  - https://github.com/steven-esser
   - https://github.com/AyanSinhaMahapatra
 
 

@@ -225,7 +225,7 @@ The features of this updated server would be:
 
 - **Mentors**
 
-    * @majurg https://github.com/majurg
+    * @steven-esser https://github.com/steven-esser
     * @tdruez https://github.com/tdruez
 
 .. _vulnerablecode_package_security_vulnerability_data_feed_and_scanner:
@@ -285,7 +285,7 @@ The features and TODO for this updated server would be:
 
 - **Mentors**
 
-    * @majurg https://github.com/majurg
+    * @steven-esser https://github.com/steven-esser
     * @JonoYang https://github.com/JonoYang
     * @pombredanne https://github.com/pombredanne
 
@@ -331,7 +331,7 @@ projects and evolve the license expression library as needed:
 - **Mentors**
 
     * @JonoYang https://github.com/JonoYang
-    * @majurg https://github.com/majurg
+    * @steven-esser https://github.com/steven-esser
 
 .. _high_volume_matching_automatons_and_data_structures:
 

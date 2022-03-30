@@ -1,7 +1,7 @@
 .. _aboutcode_data:
 
-AboutCode Data : ABCD
-=====================
+AboutCode Data Structure (ABCD)
+===============================
 
 Summary
 -------
