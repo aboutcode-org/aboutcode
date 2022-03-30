@@ -1,95 +1,69 @@
 body {
     color: #000000;
-    /* this is the font-family used in the SPATS wiki */
-    /* font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; */
 }
 
 p {
     margin-bottom: 10px;
 }
 
-/* ul, ul.simple {
-    margin-bottom: 10px;
-} */
-
 .wy-plain-list-disc, .rst-content .section ul, .rst-content .toctree-wrapper ul, article ul {
     margin-bottom: 10px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 10px;
+.custom_header_01 {
+    color: #cc0000;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 50px;
 }
 
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 20px;
     margin-top: 20px;
-    margin-top: 30px;
 }
 
 h5 {
-    font-size: 17px;
     font-size: 18px;
-    color: #666666;
     color: #000000;
     font-style: italic;
     margin-bottom: 10px;
 }
 
 h6 {
-    font-size: 16px;
-    color: #666666;
-    color: #999999;
-    color: #778899;
-    color: #009999;
-    color: #006666;
-    color: #996633;
-    color: #009933;
-    color: #661aff;
-    /* color: #666699; */
-
-    /* font-style: italic; */
-    /* font-weight: normal; */
+    font-size: 15px;
+    color: #000000;
+    font-style: italic;
     margin-bottom: 10px;
 }
 
 /* custom admonitions */
 /* success */
 .custom-admonition-success  .admonition-title {
-    color: #ffffff;
     color: #000000;
-    background: #009900;
-    background: #00b33c;
     background: #ccffcc;
     border-radius: 5px 5px 0px 0px;
 }
 div.custom-admonition-success.admonition {
     color: #000000;
-    background: #f5f5f5;
     background: #ffffff;
-    border: solid 1px #e8e8e8;
     border: solid 1px #cccccc;
     border-radius: 5px;
-    /* box-shadow: 5px 5px 18px #d8d8d8; */
     box-shadow: 1px 1px 5px 3px #d8d8d8;
     margin: 20px 0px 30px 0px;
 }
 
 /* important */
 .custom-admonition-important  .admonition-title {
-    color: #ffffff;
     color: #000000;
-    background: #009900;
-    background: #00b33c;
     background: #ccffcc;
     border-radius: 5px 5px 0px 0px;
+    border-bottom: solid 1px #000000;
 }
 div.custom-admonition-important.admonition {
     color: #000000;
-    background: #f5f5f5;
     background: #ffffff;
-    border: solid 1px #e8e8e8;
     border: solid 1px #cccccc;
     border-radius: 5px;
-    /* box-shadow: 5px 5px 18px #d8d8d8; */
     box-shadow: 1px 1px 5px 3px #d8d8d8;
     margin: 20px 0px 30px 0px;
 }
@@ -97,20 +71,15 @@ div.custom-admonition-important.admonition {
 /* caution */
 .custom-admonition-caution  .admonition-title {
     color: #000000;
-    background: #ffff66;
     background: #ffff99;
-    background: #fff3cd;
     border-radius: 5px 5px 0px 0px;
     border-bottom: solid 1px #e8e8e8;
 }
 div.custom-admonition-caution.admonition {
     color: #000000;
-    background: #f5f5f5;
     background: #ffffff;
-    border: solid 1px #e8e8e8;
     border: solid 1px #cccccc;
     border-radius: 5px;
-    /* box-shadow: 5px 5px 18px #d8d8d8; */
     box-shadow: 1px 1px 5px 3px #d8d8d8;
     margin: 20px 0px 30px 0px;
 }
@@ -118,24 +87,14 @@ div.custom-admonition-caution.admonition {
 /* note */
 .custom-admonition-note  .admonition-title {
     color: #ffffff;
-    /* color: #000000; */
-    background: #3399ff;
     background: #006bb3;
-    background: #cce5ff;
-    background: #b3d7ff;
-    background: #2196f3;
     border-radius: 5px 5px 0px 0px;
 }
 div.custom-admonition-note.admonition {
     color: #000000;
-    background: #f5f5f5;
     background: #ffffff;
-    border: solid 1px #e8e8e8;
     border: solid 1px #cccccc;
-    /* border: solid 1px #80bdff; */
-    /* border: solid 1px #2196f3; */
     border-radius: 5px;
-    /* box-shadow: 5px 5px 18px #d8d8d8; */
     box-shadow: 1px 1px 5px 3px #d8d8d8;
     margin: 20px 0px 30px 0px;
 }
@@ -143,34 +102,15 @@ div.custom-admonition-note.admonition {
 /* todo */
 .custom-admonition-todo  .admonition-title {
     color: #000000;
-    color: #cc0000;
     background: #cce6ff;
-    background: #ffcc00;
-    background: #ffeb99;
-    background: #ccffff;
-    background: #ffd9b3;
-    background: #ffffff;
     border-radius: 5px 5px 0px 0px;
     border-bottom: solid 1px #99ccff;
-    border-bottom: solid 1px #ffcc00;
-    border-bottom: solid 1px #ffeb99;
-    border-bottom: solid 1px #e8e8e8;
-    border-bottom: solid 1px #ffd9b3;
-    border-bottom: solid 1px #d8d8d8;
 }
 div.custom-admonition-todo.admonition {
     color: #000000;
-    background: #f5f5f5;
     background: #ffffff;
-    border: solid 1px #e8e8e8;
-    border: solid 1px #cccccc;
     border: solid 1px #99ccff;
-    border: solid 1px #ffcc00;
-    border: solid 1px #ffeb99;
-    border: solid 1px #ffd9b3;
-    border: solid 1px #cc0000;
     border-radius: 5px;
-    /* box-shadow: 5px 5px 18px #d8d8d8; */
     box-shadow: 1px 1px 5px 3px #d8d8d8;
     margin: 20px 0px 30px 0px;
 }
@@ -178,28 +118,20 @@ div.custom-admonition-todo.admonition {
 /* examples */
 .custom-admonition-examples  .admonition-title {
     color: #000000;
-    /* color: #ffffff; */
-    background: #f5f5f5;
-    background: #e8e8e8;
     background: #ffe6cc;
-    /* background: #606060; */
     border-radius: 5px 5px 0px 0px;
     border-bottom: solid 1px #d8d8d8;
 }
 div.custom-admonition-examples.admonition {
     color: #000000;
-    background: #f5f5f5;
     background: #ffffff;
     border: solid 1px #cccccc;
     border-radius: 5px;
-    /* box-shadow: 5px 5px 18px #d8d8d8; */
     box-shadow: 1px 1px 5px 3px #d8d8d8;
     margin: 20px 0px 30px 0px;
 }
 
 .wy-nav-content {
-    /* max-width: 800px; */
-    /* max-width: 1200px; */
     max-width: 100%;
     padding-right: 100px;
     padding-left: 100px;
@@ -209,42 +141,17 @@ div.custom-admonition-examples.admonition {
 div.rst-content {
     background-color: #ffffff;
     border: solid 1px #e5e5e5;
-    padding: 20px;
     padding: 20px 40px 20px 40px;
 }
 
 .rst-content .guilabel {
-    /* border: 1px solid #7fbbe3; */
-    /* border: 1px solid #e7f2fa; */
-    /* border: 1px solid #ffff99; */
-    /* border: 1px solid #ccffcc; */
-    /* border: 1px solid #f2f2f2; */
-    /* border: 1px solid #e6f2ff; */
-    /* border: 1px solid #fff3cd; */
-    border: 1px solid #ccffff;
-
-    /* background: #e7f2fa; */
-    /* background: #e6ffff; */
-    /* background: #ffff99; */
-    /* background: #ccffcc; */
-    /* background-color: #f2f2f2; */
-    /* background: #e6f2ff; */
-    /* background: #fff3cd; */
-    background: #ccffff;
-
-    /* font-size: 80%; */
+    border: 1px solid #ffff99;
+    background: #ffff99;
     font-size: 100%;
-    /* font-size: 12px; */
-    /* font-size: 14px; */
-    /* font-size: 16px; */
-    font-weight: 700;
     font-weight: normal;
     border-radius: 4px;
-    padding: 2.4px 6px;
-    padding: 4px 6px;
     padding: 2px 0px;
     margin: auto 2px;
-
     vertical-align: middle;
 }
 
@@ -273,13 +180,9 @@ div.rst-content {
 .wy-table-responsive table td {
     white-space: normal !important;
 }
-/* .wy-table-responsive {
-    overflow: visible !important;
-} */
 
 .rst-content table.docutils td,
 .rst-content table.docutils th {
-    padding: 5px;
     padding: 5px 10px 5px 10px;
 }
 .rst-content table.docutils td p,
@@ -294,11 +197,9 @@ div.rst-content {
 }
 
 .colwidths-given th {
-    /* border: solid 1px #e8e8e8 !important; */
     border: solid 1px #d8d8d8 !important;
 }
 .colwidths-given td {
-    /* border: solid 1px #e8e8e8 !important; */
     border: solid 1px #d8d8d8 !important;
 }
 
@@ -308,7 +209,6 @@ div.rst-content {
     background-color: transparent;
     font-style: normal;
     font-family: "Courier New";
-    font-size: 12px;
     font-size: 13px;
     padding: 3px 3px 3px 3px;
 }
@@ -316,19 +216,13 @@ div.rst-content {
 .rst-content pre.literal-block, .rst-content div[class^="highlight"] pre, .rst-content .linenodiv pre {
     font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",Courier,monospace;
     font-size: 13px;
-    /* line-height: 1.5; */
     overflow: visible;
     white-space: pre-wrap;
-    /* color: #e74c3c; */
+    color: #000000;
 }
 
 .rst-content pre.literal-block, .rst-content div[class^='highlight'] {
-    border: 1px solid #e1e4e5;
-    border: 0;
-    background-color: #f6f8fa;
     background-color: #f8f8f8;
-    /* background-color: #f2f2f2; */
-    border: solid 1px #e5e5e5;
     border: solid 1px #e8e8e8;
 }
 
@@ -338,7 +232,7 @@ code, .rst-content tt, .rst-content code {
     padding: 2px 3px 1px;
     border-radius: 3px;
     font-size: 13px;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
 }
 
 /* use this added class for code blocks attached to bulleted list items */
@@ -347,16 +241,14 @@ code, .rst-content tt, .rst-content code {
 }
 
 /* change color of inline code block */
-/* span.pre {
-    color: #e74c3c;
+span.pre {
     color: #e01e5a;
-} */
+}
 
 .wy-body-for-nav blockquote {
     margin: 1em 0;
     padding-left: 1em;
     border-left: 4px solid #ddd;
-    color: #6a6a6a;
     color: #000000;
 }
 
@@ -383,12 +275,15 @@ code, .rst-content tt, .rst-content code {
 /* remove extra space at bottom of multine list-table cell */
 .rst-content .line-block {
     margin-left: 0px;
-    margin-bottom: 24px;
     margin-bottom: 0px;
     line-height: 24px;
 }
 
-/* === */
+/* fix extra vertical spacing in page toctree */
+.rst-content .toctree-wrapper ul li ul, article ul li ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 /* this is used by the genindex added via layout.html (see source/_templates/) to sidebar toc */
 .reference.internal.toc-index {
@@ -402,9 +297,14 @@ code, .rst-content tt, .rst-content code {
 }
 
 .toc-index-div {
-    border-top: solid 1px #666666;
+    border-top: solid 1px #000000;
     margin-top: 10px;
-    padding-top: 10px;
+    padding-top: 5px;
+}
+
+.indextable ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
 }
 
 /* The next 2 fix the poor vertical spacing in genindex.html (the alphabetized index) */
@@ -413,5 +313,41 @@ code, .rst-content tt, .rst-content code {
 }
 
 div.genindex-jumpbox {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+/* rst image classes */
+
+.clear-both {
+    clear: both;
+  }
+
+.float-left {
+    float: left;
+    margin-right: 20px;
+}
+
+img {
+    border: solid 1px #e8e8e8;
+}
+
+/* These are custom and need to be defined in conf.py to access in all pages, e.g., '.. role:: red' */
+.img-title {
+    color: #000000;
+    /* neither padding nor margin works for vertical spacing bc it's a span -- line-height does, sort of */
+    line-height: 3.0;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.img-title-para {
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.red {
+    color: red;
 }
