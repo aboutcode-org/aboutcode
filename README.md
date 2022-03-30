@@ -12,7 +12,7 @@ These are important questions when there are millions of free and open source so
 
 ### Documentation Build Status
 
-[![Build Status](https://travis-ci.org/nexB/aboutcode.svg?branch=master)](https://travis-ci.org/nexB/aboutcode)
+![Doc Build](https://github.com/nexB/aboutcode/actions/workflows/docs-ci.yml/badge.svg)
 
 ### Important Links 
 
@@ -30,6 +30,11 @@ AboutCode Documentation Group Email Addresses:
 
 If you want to get in touch with the team with issues other than documentation, head to the gitter channel [here](https://gitter.im/aboutcode-org/discuss).
 
+Look at our [wiki](https://github.com/nexB/aboutcode/wiki) for information about our participation
+in the GSoC and GSoD programs.
+
+We have a weekly meeting, see more details [here](https://github.com/nexB/aboutcode/wiki/MeetingMinutes).
+
 ### Projects
 
 Each AboutCode project has its own repository:
@@ -38,6 +43,8 @@ Each AboutCode project has its own repository:
 
 - **[Scancode.io](https://github.com/nexB/scancode.io)**: a web-based and
 API to run and review scans in rich scripted ScanPipe pipelines.
+
+- **[VulnerableCode](https://github.com/nexB/vulnerablecode)**: an emerging server-side application to collect and track known package vulnerabilities.
 
 - **[Scancode Workbench](https://github.com/nexB/scancode-workbench)**: a desktop application (based on Electron) to review the results of a scan and document your conclusions about the origin and license of software components and packages. 
 
@@ -53,8 +60,6 @@ API to run and review scans in rich scripted ScanPipe pipelines.
 
 - **[DeltaCode](https://github.com/nexB/deltacode)**: a command line tool to compare scans and determine if and where there are material
 differences that affect licensing. 
-
-- **[VulnerableCode](https://github.com/nexB/vulnerablecode)**: an emerging server-side application to collect and track known package vulnerabilities.
 
 
 We also co-started and work closely with other FOSS orgs and projects:
