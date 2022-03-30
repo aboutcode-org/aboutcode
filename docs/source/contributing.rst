@@ -27,3 +27,4 @@ Contribution Guidelines:
 
    contributing/writing_good_commit_messages
    contributing/testing
+   contributing/contrib_doc
