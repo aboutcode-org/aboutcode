@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "nexb-skeleton"
+project = "aboutcode"
 copyright = "nexB Inc. and others."
 author = "AboutCode.org authors and contributors"
 
@@ -67,8 +67,8 @@ master_doc = 'index'
 html_context = {
     "display_github": True,
     "github_user": "nexB",
-    "github_repo": "nexb-skeleton",
-    "github_version": "develop",  # branch
+    "github_repo": "aboutcode",
+    "github_version": "master",  # branch
     "conf_py_path": "/docs/source/",  # path in the checkout to the docs root
 }
 
