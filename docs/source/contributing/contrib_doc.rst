@@ -12,12 +12,12 @@ To get started, create or identify a working directory on your local machine.
 
 Open that directory and execute the following command in a terminal session::
 
-    git clone https://github.com/nexB/skeleton.git
+    git clone https://github.com/nexB/aboutcode.git
 
-That will create an ``/skeleton`` directory in your working directory.
+That will create an ``/aboutcode`` directory in your working directory.
 Now you can install the dependencies in a virtualenv::
 
-    cd skeleton
+    cd aboutcode
     ./configure --docs
 
 .. note::
