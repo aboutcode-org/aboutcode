@@ -11,7 +11,7 @@ More about of GSoD - <https://developers.google.com/season-of-docs>_
 .. toctree::
    :maxdepth: 2
 
-   gsod/gsod-2021
-   gsod/gsod-2020
-   gsod/gsod_2019_report
-   gsod/gsod_2019
+   gsod/reports/2019/scancode_toolkit_ayan
+   gsod/org_pages/gsod-2021
+   gsod/org_pages/gsod-2020
+   gsod/org_pages/gsod_2019

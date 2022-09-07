@@ -1,5 +1,5 @@
-Google Summer of Code 2021 - Final report
-=========================================
+Virtual Codebase support
+=========================
 
 Project: Virtual Codebase support in DeltaCode
 ----------------------------------------------------------
