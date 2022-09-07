@@ -6,14 +6,15 @@ GSoC -- Google Summer of Code
 open source software development. GSoC is completely online designed to encourage university
 student participation in open source software development.
 It was started by Google in 2005.
-More about GSoc - <https://summerofcode.withgoogle.com/about/>_
+More about GSoC at https://summerofcode.withgoogle.com/about/
 
 GSoC 2022
 ---------
 
 .. toctree::
    :maxdepth: 2
-
+   
+   gsoc/reports/2022/scancodeio_scantext_lf32
    gsoc/reports/2022/scancode_workbench_omkar
 
 GSoC 2021
