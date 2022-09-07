@@ -1,4 +1,4 @@
-Google Summer of Code 2019 - Final report
+Approximately similar file detection
 =========================================
 
 Project: Approximately similar file detection in DeltaCode
