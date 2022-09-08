@@ -14,6 +14,7 @@ GSoC 2022
 .. toctree::
    :maxdepth: 2
 
+   gsoc/reports/2022/scancodeio_akhil
    gsoc/reports/2022/scancode_workbench_omkar
 
 GSoC 2021
