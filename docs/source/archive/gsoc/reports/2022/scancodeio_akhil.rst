@@ -72,8 +72,9 @@ Links
 -----
 
 * `Project Idea <https://github.com/nexB/aboutcode/wiki/GSOC-2022#scancodeio--scancode-toolkit-create-web-application-to-scan-and-review-a-single-license-text>`_
-* `Project Proposal <https://summerofcode.withgoogle.com/programs/2022/projects/qLGnC87T>`_
-* `Project Source Code <https://github.com/nexB/scancode.io/tree/5c883673e58654624cd178b539708942ae404a18>`_
+* `GSoC Proposal <https://summerofcode.withgoogle.com/programs/2022/projects/qLGnC87T>`_
+* `Source Code <https://github.com/lf32/scancode.io/tree/lf32-licensetext-devel/scantext>`_
+* `Merged Commits <https://github.com/nexB/scancode.io/commits?author=lf32>`_
 
 Acknowledgements
 ----------------
