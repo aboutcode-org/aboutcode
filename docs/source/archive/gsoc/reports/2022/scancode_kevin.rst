@@ -56,5 +56,5 @@ Links
 Acknowledgements
 ----------------
 
-Thanks to Jono and Phillippe for being my mentors. I enjoyed all the meetings, code reviews, and design discussions.
-Thank you for your time and your patience!
+Thanks to Jono and Phillippe for being my mentors. I enjoyed all the meetings, code reviews,
+and design discussions. Thank you for your time and your patience!
