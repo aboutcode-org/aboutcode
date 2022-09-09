@@ -13,8 +13,8 @@ Overview
 
 When doing license detection, ScanCode uses the licenses and rules in the ScanCode LicenseDB.
 The goal of this project is to extend the capabilities of ScanCode license detection to include
-licenses that are external to LicenseDB, such as proprietary licenses to be kept within an organization.
-I also extended it to include licenses installed from external sources.
+licenses that are external to LicenseDB, such as proprietary licenses to be kept within an
+organization. I also extended it to include licenses installed from external sources.
 
 Implementation
 --------------
@@ -40,8 +40,8 @@ behavior and error handling as needed.
 Post GSoC
 ---------
 
-I would like to merge this PR into Scancode Toolkit, hopefully allowing users to leverage this feature to
-expand their license detection capabilities.
+I would like to merge this PR into Scancode Toolkit, hopefully allowing users to leverage
+this feature to expand their license detection capabilities.
 
 Links
 -----
@@ -50,7 +50,8 @@ Links
 
 `Official GSoC project page <https://summerofcode.withgoogle.com/programs/2022/projects/e2m1eokW>`_
 
-`GSoC Proposal <https://docs.google.com/document/d/1FGkFTN79Hq-Z0FLVZdeqn1B9TgTamo9T3Mux1HU4h8M/edit?usp=sharing>`_
+`GSoC Proposal <https://docs.google.com/document/d/1FGkFTN79Hq
+-Z0FLVZdeqn1B9TgTamo9T3Mux1HU4h8M/edit?usp=sharing>`_
 
 Acknowledgements
 ----------------
