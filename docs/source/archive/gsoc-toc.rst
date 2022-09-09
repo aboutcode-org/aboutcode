@@ -16,6 +16,7 @@ GSoC 2022
 
    gsoc/reports/2022/scancodeio_akhil
    gsoc/reports/2022/scancode_workbench_omkar
+   gsoc/reports/2022/vulnerablecode_vulntotal_keshav
 
 GSoC 2021
 ---------
