@@ -14,10 +14,10 @@ GSoC 2022
 .. toctree::
    :maxdepth: 2
 
+   gsoc/reports/2022/scancode_kevin
    gsoc/reports/2022/scancodeio_akhil
    gsoc/reports/2022/scancode_workbench_omkar
    gsoc/reports/2022/vulnerablecode_vulntotal_keshav
-
    gsoc/reports/2022/vulnerablecode_ziad
 
 GSoC 2021
