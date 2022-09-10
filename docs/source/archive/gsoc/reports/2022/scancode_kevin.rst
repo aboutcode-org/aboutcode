@@ -53,6 +53,8 @@ Links
 `GSoC Proposal <https://docs.google.com/document/d/1FGkFTN79Hq
 -Z0FLVZdeqn1B9TgTamo9T3Mux1HU4h8M/edit?usp=sharing>`_
 
+`Documentation page about the feature <https://github.com/KevinJi22/scancode-toolkit/blob/external-licenses-480/docs/source/how-to-guides/install_new_license_plugin.rst>`_
+
 Acknowledgements
 ----------------
 
