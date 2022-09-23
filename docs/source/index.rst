@@ -21,11 +21,13 @@ Table of Contents
 *****************
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    aboutcode-project-overview
-   aboutcode-data/abcd
    contributing
+   archive/gsoc-toc
+   archive/gsod-toc
+   aboutcode-data/abcd
    doc_guidelines
    archive
    license
