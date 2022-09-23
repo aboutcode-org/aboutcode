@@ -1,5 +1,5 @@
-Google Season of Docs 2019 Report
-=================================
+scancode-toolkit Documentation GSoD Report
+==========================================
 
 Project Name
 ------------
