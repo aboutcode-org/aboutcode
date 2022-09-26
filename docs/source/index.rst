@@ -16,16 +16,34 @@ All community contributions are welcome.
 
 ----
 
-*****************
-Table of Contents
-*****************
+********
+Overview
+********
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    aboutcode-project-overview
-   aboutcode-data/abcd
+
+**************************
+Contributing and GSoC/GSoD
+**************************
+
+.. toctree::
+   :maxdepth: 3
+
    contributing
+   archive/gsoc-toc
+   archive/gsod-toc
    doc_guidelines
+
+******
+Others
+******
+
+.. toctree::
+   :maxdepth: 2
+
+   aboutcode-data/abcd
    archive
    license
