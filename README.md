@@ -69,10 +69,6 @@ Each AboutCode project has its own repository:
 - **[FetchCode](https://github.com/nexB/fetchcode)** is a library
   to reliably fetch any code via HTTP, FTP and version control systems such as git.
 
-- **[python-inspector](https://github.com/nexB/python-inspector)** and **[nuget inspector](https://github.com/nexB/nuget-inspector/)**
-  inspects manifests and code to resolve dependencies (vulnerable and non-vulnerable) for
-  python and nuget packages respectively.
-
 - **[Scancode Workbench](https://github.com/nexB/scancode-workbench)**: a desktop application
   based on typescript and react to visualize and review scan results from scancode scans. 
 
@@ -80,14 +76,12 @@ Each AboutCode project has its own repository:
   the provenance of your code and generate attribution notices.  AboutCode Toolkit uses small yaml files to
   document code provenance inside a codebase. The lead maintainer is @chinyeungli
 
-- **[TraceCode Toolkit](https://github.com/nexB/tracecode-toolkit)**: a set of tools to trace files from your
-  deployment or distribution packages back to their origin in a development codebase or repository.
-  The primary tool uses strace https://github.com/strace/strace/ to trace system calls on Linux and construct
-  a build graph from syscalls to show which files are used to build a binary. We are contributors to strace.
-  Maintained by @pombredanne
-
 - **[container-inspector](https://github.com/nexB/container-inspector)**: a tool to analyze the structure
   and provenance of software components in Docker images using static analysis. Maintained by @pombredanne
+
+- **[python-inspector](https://github.com/nexB/python-inspector)** and **[nuget inspector](https://github.com/nexB/nuget-inspector/)**
+  inspects manifests and code to resolve dependencies (vulnerable and non-vulnerable) for
+  python and nuget packages respectively.
 
 - **[license-expression](https://github.com/nexB/license-expression/)**: a library to parse, analyze, compare
   and normalize SPDX and SPDX-like license expressions using a boolean logic expression engine.
@@ -102,13 +96,15 @@ Each AboutCode project has its own repository:
   https://libraries.io and and [OSS Review Toolkit](https://github.com/heremaps/oss-review-toolkit)
   are also using these conventions. 
 
-- **[DeltaCode](https://github.com/nexB/deltacode)**: a command line tool to compare scans and
-  determine if and where there are material differences that affect licensing. 
-
+- **[TraceCode Toolkit](https://github.com/nexB/tracecode-toolkit)**: a set of tools to trace files from your
+  deployment or distribution packages back to their origin in a development codebase or repository.
+  The primary tool uses strace https://github.com/strace/strace/ to trace system calls on Linux and construct
+  a build graph from syscalls to show which files are used to build a binary. We are contributors to strace.
+  Maintained by @pombredanne
 
 We also co-started and worked closely with other FOSS orgs and projects:
 
-- [Package URL](https://github.com/package-url): an emerging standard to reference software packages of all types with simple,
+- [Package URL](https://github.com/package-url): a widely used standard to reference software packages of all types with simple,
   readable and concise URLs.
 
 - [SPDX](http://SPDX.org): aka. Software Package Data Exchange, a spec to document the origin and licensing of packages.
