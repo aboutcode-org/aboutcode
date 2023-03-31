@@ -48,7 +48,7 @@ Each AboutCode project has its own repository:
 
 - **[ScanCode Toolkit](https://github.com/nexB/scancode-toolkit)**: a set of code scanning tools to detect
   the origin and license of code and dependencies. ScanCode now uses a plug-in architecture to run a series
-  of scan-related tools in one process flow. TThis is the most popular project used by hundreds of software
+  of scan-related tools in one process flow. This is the most popular project used by hundreds of software
   teams. The lead maintainer is @pombredanne
 
 - **[Scancode.io](https://github.com/nexB/scancode.io)**: is a web-based API to run and review scans in
