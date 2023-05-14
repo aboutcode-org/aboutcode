@@ -5,7 +5,7 @@
 # Required
 version: 2
 
-# Build PDF & ePub
+# Enabling options to download pdf and epub versions
 formats:
   - epub
   - pdf
