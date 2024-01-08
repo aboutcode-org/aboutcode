@@ -6,15 +6,15 @@ AboutCode is a family of FOSS projects to uncover data ... about software:
 
 - where does the code come from? which software package?
 - what is its license? copyright?
-- is the code vulnerable, maintained, well coded?
-- what are its dependencies, are there vulneribilities/licensing issues?
+- is the code vulnerable, maintained, and well coded?
+- what are its dependencies, are there vulnerabilities/licensing issues?
 
 All these are questions that are important to answer: there are millions
-of free and open source software components available on the web for reuse.
+of free and open-source software components available on the web for reuse.
 
-Knowing where a software package comes from, what its license is and whether it is
+Knowing where a software package comes from, what its license is, and whether it is
 vulnerable should be a problem of the past such that everyone can safely consume
-more free and open source software. We support not only open source software, but
+more free and open-source software. We support not only open-source software but
 also open data, generated and curated by our applications.
 
 > **_NOTE:_** This is a repository with information on aboutcode open source activities and not
@@ -48,11 +48,11 @@ Each AboutCode project has its own repository:
 - **[ScanCode Toolkit](https://github.com/nexB/scancode-toolkit)**: a set of code scanning tools to detect
   the origin and license of code and dependencies. ScanCode now uses a plug-in architecture to run a series
   of scan-related tools in one process flow. This is the most popular project and is used by 100's of software
-  teams . The lead maintainer is @pombredanne
+  teams. The lead maintainer is @pombredanne
 
-- **[Scancode.io](https://github.com/nexB/scancode.io)**: is a web-based and API to run and review scans in
-  rich scripted pipelines, on different kinds of containers, docker images, package archives, manifests etc,
-  to get information on licenses, copyrights, source, vulneribilities. The lead maintainer is @tdruez
+- **[Scancode.io](https://github.com/nexB/scancode.io)**: is a web-based API to run and review scans in
+  rich scripted pipelines, on different kinds of containers, docker images, package archives, manifests, etc,
+  to get information on licenses, copyrights, source, vulnerabilities. The lead maintainer is @tdruez
 
 - **[VulnerableCode](https://github.com/nexB/vulnerablecode)**: is a web-based API and 
   database to collect and track all the known software package vulnerabilities, with
@@ -63,17 +63,17 @@ Each AboutCode project has its own repository:
   all the package versions and all the ranges.
 
 - **[purlDB](https://github.com/nexB/purldb)** consists of tools to create and expose
-  a database of purls (Package URLs) and also has package data for all of these
+  a database of PURLs (Package URLs) and also has package data for all of these
   packages created from scans. This is maintained by @jyang
 
 - **[FetchCode](https://github.com/nexB/fetchcode)** is a library
-  to reliably fetch any code via HTTP, FTP and version control systems such as git.
+  to reliably fetch any code via HTTP, FTP, and version control systems such as git.
 
 - **[Scancode Workbench](https://github.com/nexB/scancode-workbench)**: a desktop application
   based on typescript and react to visualize and review scan results from scancode scans. 
 
 - **[AboutCode Toolkit](https://github.com/nexB/aboutcode-toolkit)**: a set of command line tools to document
-  the provenance of your code and generate attribution notices.  AboutCode Toolkit uses small yaml files to
+  the provenance of your code and generate attribution notices.  AboutCode Toolkit uses small YAML files to
   document code provenance inside a codebase. The lead maintainer is @chinyeungli
 
 - **[container-inspector](https://github.com/nexB/container-inspector)**: a tool to analyze the structure
@@ -90,10 +90,10 @@ Each AboutCode project has its own repository:
   https://github.com/bastikr/boolean.py . Both are co-maintained by @pombredanne
 
 - **ABCD aka AboutCode Data**: a simple set of conventions to define data structures that all the
-  AboutCode tools can understand and use to exchange data. The details are at
+  AboutCode tools can be understood and used to exchange data. The details are at
   [AboutCode Data](https://aboutcode.readthedocs.io/en/latest/aboutcode-data/abcd.html).
   ABOUT files and ScanCode Toolkit data are examples of this approach. Other projects such as
-  https://libraries.io and and [OSS Review Toolkit](https://github.com/heremaps/oss-review-toolkit)
+  https://libraries.io and [OSS Review Toolkit](https://github.com/heremaps/oss-review-toolkit)
   are also using these conventions. 
 
 - **[TraceCode Toolkit](https://github.com/nexB/tracecode-toolkit)**: a set of tools to trace files from your
@@ -102,7 +102,7 @@ Each AboutCode project has its own repository:
   a build graph from syscalls to show which files are used to build a binary. We are contributors to strace.
   Maintained by @pombredanne
 
-We also co-started and worked closely with other FOSS orgs and projects:
+We also co-started and worked closely with other FOSS organizations and projects:
 
 - [Package URL](https://github.com/package-url): a widely used standard to reference software packages of all types with simple,
   readable and concise URLs.
