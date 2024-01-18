@@ -28,16 +28,29 @@ author = "AboutCode.org authors and contributors"
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-'sphinx.ext.intersphinx',
+    "sphinx.ext.intersphinx",
+    "sphinx_reredirects",
+    "sphinx_rtd_theme",
+    "sphinx_rtd_dark_mode",
+    "sphinx.ext.extlinks",
+    "sphinx_copybutton",
 ]
+
+
+# Redirects for olds pages
+# See https://documatt.gitlab.io/sphinx-reredirects/usage.html
+redirects = {}
 
 # This points to aboutcode.readthedocs.io
 # In case of "undefined label" ERRORS check docs on intersphinx to troubleshoot
 # Link was created at commit - https://github.com/nexB/aboutcode/commit/faea9fcf3248f8f198844fe34d43833224ac4a83
 
 intersphinx_mapping = {
-    'aboutcode': ('https://aboutcode.readthedocs.io/en/latest/', None),
-    'scancode-workbench': ('https://scancode-workbench.readthedocs.io/en/develop/', None),
+    "aboutcode": ("https://aboutcode.readthedocs.io/en/latest/", None),
+    "scancode-workbench": (
+        "https://scancode-workbench.readthedocs.io/en/develop/",
+        None,
+    ),
 }
 
 
@@ -62,7 +75,7 @@ html_theme = "sphinx_rtd_theme"
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
 
-master_doc = 'index'
+master_doc = "index"
 
 html_context = {
     "display_github": True,
@@ -73,8 +86,8 @@ html_context = {
 }
 
 html_css_files = [
-    '_static/theme_overrides.css'
-    ]
+    "theme_overrides.css",
+]
 
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
@@ -100,6 +113,4 @@ rst_prolog = """
 
 # -- Options for LaTeX output -------------------------------------------------
 
-latex_elements = {
-    'classoptions': ',openany,oneside'
-}
+latex_elements = {"classoptions": ",openany,oneside"}
