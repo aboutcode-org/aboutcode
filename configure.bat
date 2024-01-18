@@ -33,7 +33,7 @@ set "DOCS_REQUIREMENTS=--editable .[docs]"
 set "VIRTUALENV_DIR=venv"
 
 @rem # Cleanable files and directories to delete with the --clean option
-set "CLEANABLE=build venv"
+set "CLEANABLE=build dist venv .cache .eggs"
 
 @rem # extra  arguments passed to pip
 set "PIP_EXTRA_ARGS= "
@@ -51,11 +51,10 @@ set "CFG_BIN_DIR=%CFG_ROOT_DIR%\%VIRTUALENV_DIR%\Scripts"
 
 @rem ################################
 @rem # Thirdparty package locations and index handling
-@rem # Find packages from the local thirdparty directory or from thirdparty.aboutcode.org
+@rem # Find packages from the local thirdparty directory
 if exist "%CFG_ROOT_DIR%\thirdparty" (
     set PIP_EXTRA_ARGS=--find-links "%CFG_ROOT_DIR%\thirdparty"
 )
-set "PIP_EXTRA_ARGS=%PIP_EXTRA_ARGS% --find-links https://thirdparty.aboutcode.org/pypi/simple/links.html"
 
 
 @rem ################################
@@ -68,7 +67,6 @@ if not defined CFG_QUIET (
 @rem ################################
 @rem # Main command line entry point
 set "CFG_REQUIREMENTS=%REQUIREMENTS%"
-set "NO_INDEX=--no-index"
 
 :again
 if not "%1" == "" (
