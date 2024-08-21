@@ -7,7 +7,7 @@ organization. We are always looking for enthusiatic contributors and we are will
 lend a helping hand if you have any questions or comments. That being said, here a few
 resources to help you get started.
 
-1) Take a look through our public repos here: https://github.com/nexB/
+1) Take a look through our public repos here: https://github.com/aboutcode-org/
     * Find one you are interested in and check out its open **Issues**
 2) If you have specific questions browse through our documentation here: https://aboutcode.readthedocs.io/en/latest/
     * Depending on the project, there may be a seperate ReadTheDocs website
