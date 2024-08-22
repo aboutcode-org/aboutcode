@@ -3,6 +3,23 @@
 Contributing to the Documentation
 =================================
 
+Document Software Setup
+-----------------------
+
+AboutCode documentation is built using Sphinx.
+See http://www.sphinx-doc.org/en/master/index.html
+
+AboutCode documentation is distributed using "Read the Docs".
+See https://readthedocs.org/
+
+Individual document files are in reStructuredText format.
+See http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
+
+You create, build, and preview AboutCode documentation on your local machine.
+
+You commit your updates to the AboutCode repository on GitHub, which triggers
+an automatic rebuild of https://aboutcode.readthedocs.io/en/latest/index.html
+
 .. _contrib_doc_setup_local:
 
 Setup Local Build
