@@ -15,7 +15,6 @@ GSoC 2024
    :maxdepth: 2
 
    gsoc/reports/2024/scancode_toolkit_swastkk
-   
 
 GSoC 2022
 ---------
