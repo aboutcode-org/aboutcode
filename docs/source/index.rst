@@ -35,7 +35,6 @@ Contributing and GSoC/GSoD
    contributing
    archive/gsoc-toc
    archive/gsod-toc
-   doc_guidelines
 
 ******
 Others
