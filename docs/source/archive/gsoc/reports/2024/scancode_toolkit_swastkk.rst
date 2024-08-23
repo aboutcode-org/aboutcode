@@ -11,17 +11,18 @@ Compute summary for all detected packages.
 Overview
 --------
 
-Previously we were computing the summary at the codebase level which involves `license_clarity_score`,
-`declared_holder`, `other_license_expressions` and many more. This project aims to improve scanning accuracy
-by computing summary and license clarity scores for each package and its files, rather than for the entire scan.
-This involves enhancing package models, and ensuring proper attribute collection for all package ecosystems.
+Previously, we computed the summary at the codebase level, which included elements like the 
+`license_clarity_score`, `declared_holder`, `other_license_expressions`, and more.
+This project aims to improve scanning accuracy by computing summaries and license clarity scores for
+each package and its files, rather than for the entire scan. This involves enhancing package models
+and ensuring accurate attribute collection across all package ecosystems.
 
 Implementation
 --------------
 
 All the work I did is contained in `this single PR <https://github.com/aboutcode-org/scancode-toolkit/pull/3792>`_.
-I added a new command line option called ``--package-summary`` that someone can use
-to get the package level summary within a single codebase. The package level summary involves the 
+I added a new command-line option called ``--package-summary`` that users can employ to obtain
+a package-level summary within a single codebase. The package level summary involves the 
 ``license_clarity_score`` calculation and population of package attributes like ``copyright``,
 ``holder``, ``other_license_expression``, ``notice_text``. This option must be called with ``--classify``
 option that helps ScanCode further classify scanned files/directories, to determine whether
@@ -55,10 +56,12 @@ Acknowledgements
 ----------------
 
 I would like to thank my mentors
+
 - `@pombredanne <https://github.com/pombredanne>`_
 - `@AyanSinhaMahapatra <https://github.com/AyanSinhaMahapatra>`_
 - `@AvishrantSh <https://github.com/AvishrantSsh>`_
 - `@35C4n0r <https://github.com/35C4n0r>`_
+- `@jono-yang <https://github.com/JonoYang>`_
 
 Weekly calls were greatly helpful and those special 1:1 call with `@AyanSinhaMahapatra` and `@pombredanne` 
 were so amazing. Thank you for your time and your patience!
