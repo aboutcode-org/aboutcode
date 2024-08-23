@@ -22,12 +22,14 @@ Implementation
 --------------
 
 - **Added a new command-line option called** ``--package-summary``:
+
   - Provides a package-level summary within a single codebase.
   - Involves the ``license_clarity_score`` calculation.
   - Populates package attributes like ``copyright``, ``holder``,
     ``other_license_expression``, ``notice_text``.
 
 - **The** ``--package-summary`` **option must be used with:**
+
   - ``--classify``: Helps ScanCode further classify scanned files/directories into
     categories like ``legal``, ``readme``, ``top-level``, ``manifest``.
   - ``--package`` or ``-p``: Detects various package manifests, lockfiles, and
@@ -35,6 +37,7 @@ Implementation
     files as part of the packages.
 
 - **Benefits of the change:**
+
   - Allows users to obtain a more refined summary for each individual package in
     a codebase.
   - Improves package assembly for various package ecosystems like npm, python-whl,
@@ -45,6 +48,7 @@ Implementation
     for top-level packages, which helps in correctly tagging the key files.
 
 - **Testing:**
+
   - All changes are tested through multiple full scan tests.
   - Validated both correct behavior and error handling.
 
