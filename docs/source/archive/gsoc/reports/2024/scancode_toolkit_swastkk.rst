@@ -6,7 +6,8 @@ Compute summary for all detected packages.
 | **Organization:** `AboutCode <https://aboutcode.org>`_
 | **Project:** `Scancode Toolkit <https://github.com/aboutcode-org/scancode-toolkit>`_
 | **Mentee:** `Swastik Sharma (swastkk) <https://github.com/swastkk>`_
-| **Mentors:** `Philippe Ombredanne`_, `Ayan Sinha Mahapatra`_, `Avishrant Sharma`_, `Jonathan Yang`_, `Jay Kumar`_
+| **Mentors:** `Philippe Ombredanne`_, `Ayan Sinha Mahapatra`_, `Avishrant Sharma`_,
+                `Jonathan Yang`_, `Jay Kumar`_
 
 Overview
 --------
@@ -21,35 +22,31 @@ Implementation
 --------------
 
 - **Added a new command-line option called** ``--package-summary``:
-  
   - Provides a package-level summary within a single codebase.
   - Involves the ``license_clarity_score`` calculation.
-  - Populates package attributes like ``copyright``, ``holder``, 
+  - Populates package attributes like ``copyright``, ``holder``,
     ``other_license_expression``, ``notice_text``.
 
 - **The** ``--package-summary`` **option must be used with:**
-  
-  - ``--classify``: Helps ScanCode further classify scanned files/directories into 
+  - ``--classify``: Helps ScanCode further classify scanned files/directories into
     categories like ``legal``, ``readme``, ``top-level``, ``manifest``.
-  - ``--package`` or ``-p``: Detects various package manifests, lockfiles, and 
-    package-like data, assembles codebase-level packages and dependencies, and tags 
+  - ``--package`` or ``-p``: Detects various package manifests, lockfiles, and
+    package-like data, assembles codebase-level packages and dependencies, and tags
     files as part of the packages.
 
 - **Benefits of the change:**
-  
-  - Allows users to obtain a more refined summary for each individual package in 
+  - Allows users to obtain a more refined summary for each individual package in
     a codebase.
-  - Improves package assembly for various package ecosystems like npm, python-whl, 
-    rust, rubygems, etc. Since the package-level summary heavily depends on the package assembly,
-    there were several scenarios where key files for top-level packages were not properly tagged.
-    To address this, a method called ``get_top_level_resources`` was implemented. This method retrieves 
-    the resources for top-level packages, which helps in correctly tagging the key files.
+  - Improves package assembly for various package ecosystems like npm, python-whl,
+    rust, rubygems, etc. Since the package-level summary heavily depends on the
+    package assembly, there were several scenarios where key files for top-level
+    packages were not properly tagged. To address this, a method called
+    ``get_top_level_resources`` was implemented. This method retrieves the resources
+    for top-level packages, which helps in correctly tagging the key files.
 
 - **Testing:**
-  
   - All changes are tested through multiple full scan tests.
   - Validated both correct behavior and error handling.
-
 
 Linked Pull Requests
 --------------------
@@ -68,7 +65,7 @@ Linked Pull Requests
 Related Issues
 --------------
 
-.. list-table:: 
+.. list-table::
    :widths: 10 60 30
    :header-rows: 1
 
@@ -135,7 +132,8 @@ I would like to thank my mentors:
 - `Jonathan Yang`_
 
 Weekly Status calls were greatly helpful and those special 1:1 calls with
-`Ayan Sinha Mahapatra`_ and `Philippe Ombredanne`_ were so amazing. Thank you for your time and your patience!
+`Ayan Sinha Mahapatra`_ and `Philippe Ombredanne`_ were so amazing.
+Thank you for your time and your patience!
 
 
 .. _Philippe Ombredanne: https://github.com/pombredanne
