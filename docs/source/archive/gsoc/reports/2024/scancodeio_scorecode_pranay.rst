@@ -12,11 +12,13 @@ Enrich SBOM data based on OSSF Security Score Card
 **Mentee:** `Pranay Das (404-geek) <https://github.com/404-geek>`_
 
 **Mentors:**
+
 - `Philippe Ombredanne <https://github.com/pombredanne>`_
 - `Ayan Sinha Mahapatra <https://github.com/AyanSinhaMahapatra>`_
 - `Thomas Druez <https://github.com/thomasdruez>`_
 - `Jonathan Yang <https://github.com/JonoYang>`_
 - `Tushar Goel <https://github.com/tushar-goel>`_
+
 
 --------------------------------------------------------------------------------
 
