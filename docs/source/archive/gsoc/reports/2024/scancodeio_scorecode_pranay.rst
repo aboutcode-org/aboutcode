@@ -6,12 +6,14 @@ Enrich SBOM data based on OSSF Security Score Card
 **Organization:** `AboutCode <https://aboutcode.org>`_
 
 **Projects:**
+
 - `Scancode.io <https://github.com/aboutcode-org/scancode.io>`_
 - `Scorecode <https://github.com/aboutcode-org/scorecode>`_
 
 **Mentee:** `Pranay Das (404-geek) <https://github.com/404-geek>`_
 
 **Mentors:**
+
 - `Philippe Ombredanne <https://github.com/pombredanne>`_
 - `Ayan Sinha Mahapatra <https://github.com/AyanSinhaMahapatra>`_
 - `Thomas Druez <https://github.com/thomasdruez>`_
