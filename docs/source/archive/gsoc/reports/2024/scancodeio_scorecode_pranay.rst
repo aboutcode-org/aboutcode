@@ -45,8 +45,8 @@ utilization of Scorecard data across various projects.
 In the `Scancode.io` project, I added a pipeline that interacts with the `scorecode`
 package to fetch and store Scorecard data in the Scancode.io database. The data can then
 be exported into various outputs like the Software Bill of Materials (SBOM)
-CycloneDX format (and SPDX too in the future), providing comprehensive security
-insights in standardized formats.
+CycloneDX format (and SPDX too in the future), providing insights into security and
+community health
 
 --------------------------------------------------------------------------------
 
@@ -119,19 +119,19 @@ Linked Pull Requests
      - Status
    * - 1
      - Scorecard Integration
-     - https://github.com/aboutcode-org/scancode.io/pull/1294
+     - `aboutcode.org/scancode.io#1294 <https://github.com/aboutcode-org/scancode.io/pull/1294>`_
      - Open
    * - 2
      - Models integration
-     - https://github.com/aboutcode-org/scorecode/pull/5
+     - `aboutcode.org/scorecode#5 <https://github.com/aboutcode-org/scorecode/pull/5>`_
      - Merged
    * - 3
      - Scorcard api call integration
-     - https://github.com/aboutcode-org/scorecode/pull/1
+     - `aboutcode.org/scorecode#1 <https://github.com/aboutcode-org/scorecode/pull/1>`_
      - Merged
    * - 4
      - Mixin models for storing scorecard data
-     - https://github.com/aboutcode-org/scorecode/pull/4
+     - `aboutcode.org/scorecode#4 <https://github.com/aboutcode-org/scorecode/pull/4>`_
      - Merged
 
 
@@ -172,6 +172,9 @@ Project Reference Links
 * `Official GSoC project page <https://summerofcode.withgoogle.com/programs/2024/projects/kB8HkEli>`_
 
 * `GSoC Proposal <https://docs.google.com/document/d/10EiGjTGR_eZExMjcxEmwmMQPt7B9i6lHc_osW4Ogm6c/edit?usp=sharing>`_
+
+* `Project Board <https://github.com/orgs/nexB/projects/60/views/6>`_
+
 
 Pre GSOC Work
 -----------------------
