@@ -15,6 +15,7 @@ GSoC 2024
    :maxdepth: 2
 
    gsoc/reports/2024/scancode_toolkit_swastkk
+   gsoc/reports/2024/scancodeio_scorecode_pranay
 
 GSoC 2022
 ---------
