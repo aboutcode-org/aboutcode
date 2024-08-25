@@ -12,7 +12,6 @@ Enrich SBOM data based on OSSF Security Score Card
 **Mentee:** `Pranay Das (404-geek) <https://github.com/404-geek>`_
 
 **Mentors:**
-
 - `Philippe Ombredanne <https://github.com/pombredanne>`_
 - `Ayan Sinha Mahapatra <https://github.com/AyanSinhaMahapatra>`_
 - `Thomas Druez <https://github.com/thomasdruez>`_
@@ -36,7 +35,8 @@ within scanning pipelines.
 
 `scorecode package <https://pypi.org/project/scorecode/>`_ serves as a PyPI package
 that has the functions to fetch and store OpenSSF Scorecard data using the OpenSSF
-public API. It also includes Django mixin models that can be extended and integrated
+public API (`https://api.securityscorecards.dev/ <https://api.securityscorecards.dev/>`_).
+It also includes Django mixin models that can be extended and integrated
 into other platforms with databases, such as Scancode.io and PurlDB, ensuring seamless
 utilization of Scorecard data across various projects.
 
