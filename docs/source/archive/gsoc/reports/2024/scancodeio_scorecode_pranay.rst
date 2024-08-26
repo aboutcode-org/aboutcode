@@ -12,11 +12,12 @@ Enrich SBOM data based on OSSF Security Score Card
 **Mentee:** `Pranay Das (404-geek) <https://github.com/404-geek>`_
 
 **Mentors:**
+
 - `Philippe Ombredanne <https://github.com/pombredanne>`_
 - `Ayan Sinha Mahapatra <https://github.com/AyanSinhaMahapatra>`_
-- `Thomas Druez <https://github.com/thomasdruez>`_
+- `Thomas Druez <https://github.com/tdruez>`_
 - `Jonathan Yang <https://github.com/JonoYang>`_
-- `Tushar Goel <https://github.com/tushar-goel>`_
+- `Tushar Goel <https://github.com/TG1999>`_
 
 
 --------------------------------------------------------------------------------
@@ -214,9 +215,9 @@ of an outstanding team:
 
 - `Philippe Ombredanne <https://github.com/pombredanne>`_
 - `Ayan Sinha Mahapatra <https://github.com/AyanSinhaMahapatra>`_
-- `Thomas Druez <https://github.com/thomasdruez>`_
+- `Thomas Druez <https://github.com/tdruez>`_
 - `Jonathan Yang <https://github.com/JonoYang>`_
-- `Tushar Goel <https://github.com/tushar-goel>`_
+- `Tushar Goel <https://github.com/TG1999>`_
 
 The weekly status calls were more than just updates; they were a source of inspiration,
 ideas, and camaraderie. And the 1:1 calls with `Ayan Sinha Mahapatra`_ and
