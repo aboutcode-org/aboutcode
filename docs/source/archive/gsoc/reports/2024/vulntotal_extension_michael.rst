@@ -7,7 +7,8 @@ Organization - `AboutCode <https://www.aboutcode.org>`_
 | GitHub: `michaelehab <https://github.com/michaelehab>`_
 | LinkedIn: `@michaelehab16 <https://www.linkedin.com/in/michaelehab16/>`_
 | Project: `VulnTotal Browser Extension <https://github.com/aboutcode-org/vulntotal-extension>`_
-| Proposal: `Link <https://docs.google.com/document/d/1K7oGBlfHxbrxah3TJW1PcUGgaLMR6q0ctK7_Y10hpVY/edit?usp=sharing>`_
+| Official GSoC project page: `Project Link <https://summerofcode.withgoogle.com/programs/2024/projects/26FZNTGx>`_
+| GSoC Proposal: `Proposal Link <https://docs.google.com/document/d/1K7oGBlfHxbrxah3TJW1PcUGgaLMR6q0ctK7_Y10hpVY/edit?usp=sharing>`_
 
 Overview
 --------
@@ -120,7 +121,6 @@ following steps:
 * Using Python Code in JavaScript: I wrote the VulnTotalWorker.js class to
   manage the interaction between the Python environment and the browser.
   This class handles various tasks:
-  
     * Environment Initialization: It ensures that the Pyodide environment
       is correctly initialized and ready for executing Python code.
     * Communication with UI: It updates the user interface with loading
