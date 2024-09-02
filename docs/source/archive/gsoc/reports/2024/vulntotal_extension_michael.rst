@@ -121,15 +121,16 @@ following steps:
 * Using Python Code in JavaScript: I wrote the VulnTotalWorker.js class to
   manage the interaction between the Python environment and the browser.
   This class handles various tasks:
-    * Environment Initialization: It ensures that the Pyodide environment
-      is correctly initialized and ready for executing Python code.
-    * Communication with UI: It updates the user interface with loading
-      progress and other relevant information.
-    * API Key Management: It manages API keys required for VulnTotal
-      operations within the Python environment.
-    * Request Handling: It processes scan requests, which include the
-      Package URL (PURL) and the enabled or disabled data sources, and
-      returns the analysis results.
+
+  * Environment Initialization: It ensures that the Pyodide environment
+    is correctly initialized and ready for executing Python code.
+  * Communication with UI: It updates the user interface with loading
+    progress and other relevant information.
+  * API Key Management: It manages API keys required for VulnTotal
+    operations within the Python environment.
+  * Request Handling: It processes scan requests, which include the
+    Package URL (PURL) and the enabled or disabled data sources, and
+    returns the analysis results.
 
 Web Worker Integration
 ^^^^^^^^^^^^^^^^^^^^^^
