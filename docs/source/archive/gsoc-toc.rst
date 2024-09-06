@@ -17,6 +17,7 @@ GSoC 2024
    gsoc/reports/2024/scancode_toolkit_swastkk
    gsoc/reports/2024/scancodeio_scorecode_pranay
    gsoc/reports/2024/vulntotal_extension_michael
+   gsoc/reports/2024/vulnerablecode_ambuj
 
 GSoC 2022
 ---------
