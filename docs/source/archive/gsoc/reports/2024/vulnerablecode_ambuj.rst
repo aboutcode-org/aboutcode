@@ -1,6 +1,6 @@
-======================================================================================
-Add more data sources and mine the graph to find correlations between vulnerabilities
-======================================================================================
+===============================================
+Add more data sources and improve data quality
+===============================================
 
 
 **Organization:** `AboutCode <https://aboutcode.org>`_
@@ -11,9 +11,11 @@ Add more data sources and mine the graph to find correlations between vulnerabil
 
 **Mentors:**
 
-- `Keshav Priyadarshi <https://github.com/keshav-space>`_
+- `Philippe Ombredanne <https://github.com/pombredanne>`_
+- `Ayan Sinha Mahapatra <https://github.com/AyanSinhaMahapatra>`_
 - `Ziad Hany <https://github.com/ziadhany>`_
 - `Tushar Goel <https://github.com/TG1999>`_
+- `Keshav Priyadarshi <https://github.com/keshav-space>`_
 
 
 Overview
