@@ -181,9 +181,9 @@ What is checked:
     - no carriage returns (use UNIX newlines) - D004
     - no newline at end of file - D005
 
-.. _doc_interspinx:
+.. _doc_intersphinx:
 
-Interspinx
+Intersphinx
 ----------
 
 ScanCode toolkit documentation uses `Intersphinx <http://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html>`_
