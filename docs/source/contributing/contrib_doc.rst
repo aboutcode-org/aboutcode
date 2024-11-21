@@ -184,7 +184,7 @@ What is checked:
 .. _doc_intersphinx:
 
 Intersphinx
-----------
+-----------
 
 ScanCode toolkit documentation uses `Intersphinx <http://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html>`_
 to link to other Sphinx Documentations, to maintain links to other Aboutcode Projects.
