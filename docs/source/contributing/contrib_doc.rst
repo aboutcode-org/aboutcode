@@ -243,7 +243,7 @@ For more information, refer this tutorial named
 .. _doc_style_conv:
 
 Style Conventions for the Documentation
---------------------------------------
+---------------------------------------
 
 1. Headings
 
