@@ -7,7 +7,7 @@ AboutCode is a family of FOSS projects to uncover data ... about software:
 -   where does the code come from? which software package?
 -   what is its license? copyright?
 -   is the code vulnerable, maintained, well coded?
--   what are its dependencies, are there vulneribilities/licensing issues?
+-   what are its dependencies, are there vulnerabilities/licensing issues?
 
 All these are questions that are important to answer: there are millions of free
 and open source software components available on the web for reuse.
@@ -61,13 +61,13 @@ Each AboutCode project has its own repository:
 -   **[Scancode.io](https://github.com/aboutcode-org/scancode.io)**: is a
     web-based and API to run and review scans in rich scripted pipelines, on
     different kinds of containers, docker images, package archives, manifests
-    etc, to get information on licenses, copyrights, source, vulneribilities.
+    etc, to get information on licenses, copyrights, source, vulnerabilities.
     The lead maintainer is @tdruez
 
 -   **[VulnerableCode](https://github.com/aboutcode-org/vulnerablecode)**: is a
     web-based API and database to collect and track all the known software
     package vulnerabilities, with affected and fixed packages, references and a
-    standalone tool Vulntotal to compare this vulneribility information across
+    standalone tool Vulntotal to compare this vulnerability information across
     similar tools. This is maintained by @tg1999 and @pombredanne
 
 -   **[univers](https://github.com/aboutcode-org/univers)** is a package to

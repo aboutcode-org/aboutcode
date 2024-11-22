@@ -71,7 +71,7 @@ relevant:
 * Detailed description of your idea including explanation on why is it innovative and what it will
   contribute
 
-  * hint: explain your data structures and the main processing flows in details.
+  * hint: explain your data structures and the main processing flows in detail.
 
 * Description of previous work, existing solutions (links to prototypes, bibliography are more
   than welcome)
