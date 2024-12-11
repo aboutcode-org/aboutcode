@@ -127,7 +127,7 @@ Each AboutCode project has its own repository:
     to build a binary. We are contributors to strace. Maintained by @pombredanne
 
 -   **[DejaCode](https://github.com/aboutcode-org/dejacode)**: an enterprise-level
-    application to automate open source license compliance and ensure software supply
+    platform to automate open source license compliance and ensure software supply
     chain integrity. DejaCode helps manage open-source and third-party components, enforce
     license and component usage policies, and generate Software Bill of Materials (SBOMs).
     It integrates with ScanCode Toolkit, ScanCode.io, and VulnerableCode to provide
