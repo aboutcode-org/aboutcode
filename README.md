@@ -134,7 +134,6 @@ Each AboutCode project has its own repository:
     comprehensive compliance, vulnerability tracking, and reporting features.
     Maintained by @nexB and contributors.
 
-
 We also co-started and worked closely with other FOSS orgs and projects:
 
 -   [Package URL](https://github.com/package-url): a widely used standard to
