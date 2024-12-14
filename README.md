@@ -1,103 +1,144 @@
 # AboutCode
 
-**AboutCode** is a family of FOSS (Free and Open Source Software) projects designed to uncover data about software:
+### What is AboutCode?
 
-- Where does the code come from? Which software package?  
-- What is its license? Copyright?  
-- Is the code vulnerable, maintained, or well-written?  
-- What are its dependencies? Are there vulnerabilities or licensing issues?  
+AboutCode is a family of FOSS projects to uncover data ... about software:
 
-These questions are critical, as millions of free and open source software components are available for reuse on the web. By answering these, we aim to make software consumption safer and more efficient.  
+-   Where does the code come from? which software package?
+-   What is its license? copyright?
+-   Is the code vulnerable, maintained, well coded?
+-   What are its dependencies, are there vulneribilities/licensing issues?
 
-We support not only open source software but also open data, which is generated and curated by our applications.  
+All these are questions that are important to answer: there are millions of free
+and open source software components available on the web for reuse.
 
-> **Note:**  
-> This repository contains information about AboutCode's open source activities and is not the actual code repository. See the **Projects** section below for links to all code repositories, along with an overview of each project. Refer to our [wiki](#important-links) if you’d like to contribute.
+Knowing where a software package comes from, what its license is and whether it
+is vulnerable should be a problem of the past such that everyone can safely
+consume more free and open source software. We support not only open source
+software, but also open data, generated and curated by our applications.
 
----
+> **_NOTE:_** This is a repository with information on aboutcode open source
+> activities and not the actual code repository. See the
+> [projects section](https://github.com/aboutcode-org/aboutcode#projects) below
+> for links to all the code repositories of our projects with a brief overview
+> and our [wiki](https://github.com/aboutcode-org/aboutcode/wiki) if you are
+> looking to participate.
 
-## Documentation Build Status
+### Documentation Build Status
+
 ![Doc Build](https://github.com/aboutcode-org/aboutcode/actions/workflows/docs-ci.yml/badge.svg)
 
----
+### Important Links
 
-## Important Links
-- **Homepage:** [aboutcode.org](http://aboutcode.org)  
-- **Documentation (in progress):** [aboutcode.readthedocs.io](https://aboutcode.readthedocs.io/en/latest/)  
-- **Online Chat:** Join the discussion on Gitter at [app.gitter.im](https://app.gitter.im/#/room/#aboutcode-org#discuss). Alternatively, use the Element app, set the homeserver to `gitter.im`, and join the `#aboutcode-org#discuss` chatroom.  
-- **Wiki:** Visit our [wiki](https://github.com/aboutcode-org/aboutcode/wiki) for information on participation in GSoC (Google Summer of Code) and GSoD (Google Season of Docs).  
-- **Weekly Meeting Details:** [Meeting Schedule](#)  
+Our homepage is at http://aboutcode.org
 
----
+Our documentation (in progress) is at
+https://aboutcode.readthedocs.io/en/latest/
 
-## Projects
+Join the chat online at
+[app.gitter.im : aboutcode-org#discuss](https://app.gitter.im/#/room/#aboutcode-org_discuss:gitter.im)
+or if you're using the element app set the homeserver to `gitter.im` and then
+join the
+[aboutcode-org#discuss](https://matrix.to/#/#aboutcode-org_discuss:gitter.im)
+chatroom. Introduce yourself and start the discussion!
+
+Look at our [wiki](https://github.com/aboutcode-org/aboutcode/wiki) for
+information about our participation in the GSoC and GSoD programs.
+
+We have a weekly meeting, see more details
+[here](https://github.com/aboutcode-org/aboutcode/wiki/MeetingMinutes).
+
+### Projects
+
 Each AboutCode project has its own repository:
 
-1. **[ScanCode Toolkit](https://github.com/aboutcode-org/scancode-toolkit):**  
-   A set of code scanning tools to detect the origin, license, and dependencies of code. It uses a plug-in architecture for streamlined scanning processes.  
-   - **Lead Maintainer:** [@pombredanne](#)
+-   **[ScanCode Toolkit](https://github.com/aboutcode-org/scancode-toolkit)**: A
+    set of code scanning tools to detect the origin and license of code and
+    dependencies. ScanCode now uses a plug-in architecture to run a series of
+    scan-related tools in one process flow. This is the most popular project and
+    is used by 100's of software teams . The lead maintainer is @pombredanne
 
-2. **[Scancode.io](https://github.com/aboutcode-org/scancode.io):**  
-   A web-based API for running and reviewing scans on containers, Docker images, package archives, and manifests.  
-   - **Lead Maintainer:** [@tdruez](#)
+-   **[Scancode.io](https://github.com/aboutcode-org/scancode.io)**: Is a
+    web-based and API to run and review scans in rich scripted pipelines, on
+    different kinds of containers, docker images, package archives, manifests
+    etc, to get information on licenses, copyrights, source, vulneribilities.
+    The lead maintainer is @tdruez
 
-3. **[VulnerableCode](https://github.com/aboutcode-org/vulnerablecode):**  
-   A web-based API and database for tracking software vulnerabilities, affected/fixed packages, and references.  
-   - **Maintainers:** [@tg1999](#), [@pombredanne](#)
+-   **[VulnerableCode](https://github.com/aboutcode-org/vulnerablecode)**: is a
+    web-based API and database to collect and track all the known software
+    package vulnerabilities, with affected and fixed packages, references and a
+    standalone tool Vulntotal to compare this vulneribility information across
+    similar tools. This is maintained by @tg1999 and @pombredanne
 
-4. **[univers](https://github.com/aboutcode-org/univers):**  
-   A package for parsing and comparing all package versions and ranges.
+-   **[univers](https://github.com/aboutcode-org/univers)** is a package to
+    parse and compare all the package versions and all the ranges.
 
-5. **[purlDB](https://github.com/aboutcode-org/purlDB):**  
-   Tools to create and expose a database of Package URLs (purls) and associated package data.  
-   - **Maintainer:** [@jyang](#)
+-   **[purlDB](https://github.com/aboutcode-org/purldb)** consists of tools to
+    create and expose a database of purls (Package URLs) and also has package
+    data for all of these packages created from scans. This is maintained by
+    @jyang
 
-6. **[FetchCode](https://github.com/aboutcode-org/fetchcode):**  
-   A library for fetching code reliably via HTTP, FTP, and version control systems like Git.
+-   **[FetchCode](https://github.com/aboutcode-org/fetchcode)** is a library to
+    reliably fetch any code via HTTP, FTP and version control systems such as
+    git.
 
-7. **[Scancode Workbench](https://github.com/aboutcode-org/scancode-workbench):**  
-   A desktop application based on TypeScript and React to visualize and review scan results from ScanCode scans.
+-   **[Scancode Workbench](https://github.com/aboutcode-org/scancode-workbench)**:
+    A desktop application based on typescript and react to visualize and review
+    scan results from scancode scans.
 
-8. **[AboutCode Toolkit](https://github.com/aboutcode-org/aboutcode-toolkit):**  
-   Command-line tools for documenting code provenance and generating attribution notices.  
-   - **Lead Maintainer:** [@chinyeungli](#)
+-   **[AboutCode Toolkit](https://github.com/aboutcode-org/aboutcode-toolkit)**:
+    A set of command line tools to document the provenance of your code and
+    generate attribution notices. AboutCode Toolkit uses small yaml files to
+    document code provenance inside a codebase. The lead maintainer is
+    @chinyeungli
 
-9. **[container-inspector](https://github.com/aboutcode-org/container-inspector):**  
-   A tool for analyzing the structure and provenance of software components in Docker images.  
-   - **Maintainer:** [@pombredanne](#)
+-   **[container-inspector](https://github.com/aboutcode-org/container-inspector)**:
+    A tool to analyze the structure and provenance of software components in
+    Docker images using static analysis. Maintained by @pombredanne
 
-10. **[python-inspector](https://github.com/aboutcode-org/python-inspector) and [nuget-inspector](https://github.com/aboutcode-org/nuget-inspector):**  
-    Tools to inspect manifests and resolve dependencies (vulnerable and non-vulnerable) for Python and NuGet packages, respectively.
+-   **[python-inspector](https://github.com/aboutcode-org/python-inspector)**
+    and **[nuget inspector](https://github.com/aboutcode-org/nuget-inspector/)**
+    inspects manifests and code to resolve dependencies (vulnerable and
+    non-vulnerable) for python and nuget packages respectively.
 
-11. **[license-expression](https://github.com/aboutcode-org/license-expression):**  
-    A library to parse, analyze, compare, and normalize SPDX and SPDX-like license expressions using a Boolean logic engine.  
-    - See the [SPDX Specification](https://spdx.org/spdx-specification-21-web-version#h.jxpfx0ykyb60) for details on expressions.  
-    - Boolean engine: [boolean.py](https://github.com/bastikr/boolean.py)  
+-   **[license-expression](https://github.com/aboutcode-org/license-expression/)**:
+    A library to parse, analyze, compare and normalize SPDX and SPDX-like
+    license expressions using a boolean logic expression engine. See
+    https://spdx.org/spdx-specification-21-web-version#h.jxpfx0ykyb60 to
+    understand what an expression is. See
+    https://github.com/aboutcode-org/license-expression for the code. The
+    underlying boolean engine is live at https://github.com/bastikr/boolean.py .
+    Both are co-maintained by @pombredanne
 
-12. **[ABCD (AboutCode Data)](https://github.com/aboutcode-org/abcd):**  
-    A set of conventions defining data structures that AboutCode tools use to exchange data.  
+-   **ABCD aka AboutCode Data**: A simple set of conventions to define data
+    structures that all the AboutCode tools can understand and use to exchange
+    data. The details are at
+    [AboutCode Data](https://aboutcode.readthedocs.io/en/latest/aboutcode-data/abcd.html).
+    ABOUT files and ScanCode Toolkit data are examples of this approach. Other
+    projects such as https://libraries.io and and
+    [OSS Review Toolkit](https://github.com/heremaps/oss-review-toolkit) are
+    also using these conventions.
 
-13. **[TraceCode Toolkit](https://github.com/aboutcode-org/tracecode-toolkit):**  
-    Tools to trace files from deployment packages back to their origin in development repositories using system calls.  
-    - **Maintainer:** [@pombredanne](#)
+-   **[TraceCode Toolkit](https://github.com/aboutcode-org/tracecode-toolkit)**:
+    A set of tools to trace files from your deployment or distribution packages
+    back to their origin in a development codebase or repository. The primary
+    tool uses strace https://github.com/strace/strace/ to trace system calls on
+    Linux and construct a build graph from syscalls to show which files are used
+    to build a binary. We are contributors to strace. Maintained by @pombredanne
 
----
+We also co-started and worked closely with other FOSS orgs and projects:
 
-## Other Contributions
-We also collaborate with several FOSS organizations and projects:  
+-   [Package URL](https://github.com/package-url): A widely used standard to
+    reference software packages of all types with simple, readable and concise
+    URLs.
 
-- **[Package URL](https://github.com/package-url):** A standard for referencing software packages with simple, readable URLs.  
-- **[SPDX](https://spdx.dev):** A specification for documenting package origin and licensing.  
-- **[CycloneDX](https://cyclonedx.org):** A Bill of Materials (BOM) standard for advanced supply chain capabilities.  
-- **[ClearlyDefined](https://clearlydefined.io):** A project to improve licensing and documentation clarity for FOSS projects.
+-   [SPDX](http://SPDX.org): aka. Software Package Data Exchange, a spec to
+    document the origin and licensing of packages.
 
----
+-   [CycloneDX](https://cyclonedx.org) aka. OWASP CycloneDX is a full-stack Bill
+    of Materials (BOM) standard that provides advanced supply chain capabilities
+    for cyber risk reduction
 
-## How to Contribute
-1. Check our [documentation](https://aboutcode.readthedocs.io/en/latest/) to understand our tools and workflows.  
-2. Browse open issues on our repositories and join discussions in the [chatroom](https://app.gitter.im/#/room/#aboutcode-org#discuss).  
-3. Submit pull requests following our [contribution guidelines](#).  
-
----
-
-Let us know how we can make AboutCode better!
+-   [ClearlyDefined](https://ClearlyDefined.io): A project to review and help
+    FOSS projects improve their licensing and documentation clarity. This
+    project is incubating with https://opensource.org
