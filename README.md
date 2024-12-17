@@ -30,6 +30,52 @@ software, but also open data, generated and curated by our applications.
 
 ### Important Links
 
+DejaCode
+========
+
+DejaCode is a complete enterprise-level application to automate open source license
+compliance and ensure software supply chain integrity, powered by
+`ScanCode <https://github.com/nexB/scancode-toolkit>`_,
+the industry-leading code scanner.
+
+- Run scans and track all the open source and third-party products and components used
+  in your software.
+- Apply usage policies at the license or component level, and integrate into
+  ScanCode to ensure compliance.
+- Capture software inventories (SBOMs), generate compliance artifacts, and keep
+  historical data.
+- Ensure FOSS compliance with enterprise-grade features and integrations for DevOps and
+  software systems.
+- Scan a software package, simply by providing its Download URL, to get comprehensive
+  details of its composition and create an SBOM.
+- Load software package data into DejaCode with the integration for the open source
+  ScanCode.io and ScanCode Toolkit projects to create a product’s SBOM.
+- Track and report vulnerability tracking and reporting by integrating with the open
+  source VulnerableCode project.
+- Create, publish and share SBOM documents in DejaCode, including detailed attribution
+  documentation and custom reports in multiple file formats and standards, such as
+  CycloneDX and SPDX.
+
+Getting started
+---------------
+
+The DejaCode documentation is available here: https://dejacode.readthedocs.io/
+
+If you have questions please ask them in
+`Discussions <https://github.com/aboutcode-org/dejacode/discussions>`_.
+
+If you want to contribute to DejaCode, start with our
+`Contributing <https://dejacode.readthedocs.io/en/latest/contributing.html>`_ page.
+
+Build and tests status
+----------------------
+
++------------+-------------------+
+| **Tests**  | **Documentation** |
++============+===================+
+| |ci-tests| |    |docs-rtd|     |
++------------+-------------------+
+
 Our homepage is at http://aboutcode.org
 
 Our documentation (in progress) is at
