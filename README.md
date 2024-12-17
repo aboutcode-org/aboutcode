@@ -7,7 +7,7 @@ AboutCode is a family of FOSS projects to uncover data ... about software:
 -   where does the code come from? which software package?
 -   what is its license? copyright?
 -   is the code vulnerable, maintained, well coded?
--   what are its dependencies, are there vulneribilities/licensing issues?
+-   what are its dependencies, are there vulnerabilities/licensing issues?
 
 All these are questions that are important to answer: there are millions of free
 and open source software components available on the web for reuse.
