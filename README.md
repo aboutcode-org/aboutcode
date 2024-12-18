@@ -24,6 +24,7 @@ software, but also open data, generated and curated by our applications.
 > and our [wiki](https://github.com/aboutcode-org/aboutcode/wiki) if you are
 > looking to participate.
 
+
 ### Documentation Build Status
 
 ![Doc Build](https://github.com/aboutcode-org/aboutcode/actions/workflows/docs-ci.yml/badge.svg)
@@ -125,6 +126,10 @@ Each AboutCode project has its own repository:
     tool uses strace https://github.com/strace/strace/ to trace system calls on
     Linux and construct a build graph from syscalls to show which files are used
     to build a binary. We are contributors to strace. Maintained by @pombredanne
+
+-   **[DejaCode](https://github.com/aboutcode-org/dejacode)**:
+    DejaCode is a complete enterprise-level application to automate open source license
+    compliance and ensure software supply chain integrity, powered by the industry-leading code scanner.
 
 We also co-started and worked closely with other FOSS orgs and projects:
 
