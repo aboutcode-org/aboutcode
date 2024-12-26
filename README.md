@@ -61,13 +61,13 @@ Each AboutCode project has its own repository:
 -   **[Scancode.io](https://github.com/aboutcode-org/scancode.io)**: is a
     web-based and API to run and review scans in rich scripted pipelines, on
     different kinds of containers, docker images, package archives, manifests
-    etc, to get information on licenses, copyrights, source, vulneribilities.
+    etc, to get information on licenses, copyrights, source, vulnerabilities.
     The lead maintainer is @tdruez
 
 -   **[VulnerableCode](https://github.com/aboutcode-org/vulnerablecode)**: is a
     web-based API and database to collect and track all the known software
     package vulnerabilities, with affected and fixed packages, references and a
-    standalone tool Vulntotal to compare this vulneribility information across
+    standalone tool Vulntotal to compare this vulnerability information across
     similar tools. This is maintained by @tg1999 and @pombredanne
 
 -   **[univers](https://github.com/aboutcode-org/univers)** is a package to
@@ -125,6 +125,8 @@ Each AboutCode project has its own repository:
     tool uses strace https://github.com/strace/strace/ to trace system calls on
     Linux and construct a build graph from syscalls to show which files are used
     to build a binary. We are contributors to strace. Maintained by @pombredanne
+
+-   **[DejaCode](https://github.com/aboutcode-org/dejacode)**: an enterprise-level application designed to automate open source license compliance and ensure software supply chain integrity. Powered by ScanCode, it helps organizations manage open source components efficiently and securely. Learn more at [DejaCode](https://dejacode.readthedocs.io/en/latest/).
 
 We also co-started and worked closely with other FOSS orgs and projects:
 
