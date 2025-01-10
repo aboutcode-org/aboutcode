@@ -13,10 +13,10 @@ AboutCode is a project to uncover data ... about software code:
 
 
 * where does the code come from? which software package?
-* what's is its license? copyright?
+* what is its license? copyright?
 * is the code secure, maintained, well coded?
 
-All these are questions that are important to find answers to: there are million
+All these are questions that are important to find answers to: there are millions
 of free and open source software components available on the web.
 
 Knowing where a software package comes from, if it is vulnerable and what's its
@@ -28,7 +28,7 @@ more free and open source software.
 Our tools are used to help detect and report the origin and license of source
 code, packages and binaries as well as discover software and package
 dependencies, and track security vulnerabilities, bugs and other important
-software package attributes. This is a suite of command line tools, web-based
+software package attributes. This is a suite of command-line tools, web-based
 and API servers and desktop applications.
 
 Table of Contents
@@ -250,13 +250,13 @@ The features and TODO for this updated server would be:
 * Aggregate more and new packages vulnerabilities feeds,
 
 * Automating correlation: add smart relationship detection to infer new
-  relatiosnhips between available packages and vulnerabilities from mining the
+  relationships between available packages and vulnerabilities from mining the
   graph of existing relations.
 
 * Create a ScanCode plugin to report vulnerabilities with detected packages
   using this data.
 
-* Integrate API lookup on the server withe the AboutCode Manager UI
+* Integrate API lookup on the server with the AboutCode Manager UI
 
 * Create a UI and model for community curation of vulnerability to package
   mappings, correlations and enhancements.
@@ -474,7 +474,7 @@ Copyright detection is the slowest scanner in ScanCode. It is based on NLTK part
 of speech tagging and a copyright grammar.
 
 The goal of this project is to refactor Copyright detection for speed and
-simplicity possibly implementaing a new parser (PEG?, etc) or reimplementing
+simplicity possibly implementing a new parser (PEG?, etc) or reimplementing
 core elements in Rust with a Python binding.
 
 This would include also keeping track of line numbers and offsets where copyrights are found.
@@ -549,7 +549,7 @@ to effectively support proper inventory of installed packages without running
 the containers.
 
 This includes determining which packages are installed in Docker layers for
-RPMs, Debian or Alpine Linux. And this woudl eventually require the integration
+RPMs, Debian or Alpine Linux. And this would eventually require the integration
 of ScanCode.
 
 
@@ -580,7 +580,7 @@ TraceCode does system call tracing only today.
 - This project also would cover updating TraceCode to use the Click comamnd line toolkit
   (like for ScanCode).
 
-- Finally thsi project should improve the tracing of the lifecycle of file
+- Finally this project should improve the tracing of the lifecycle of file
   descriptors in TraceCode build. We need to improve how TraceCode does system
   call tracing by improving the way we track open/close file descriptors in the
   trace to reconstruct the lifecycle of a traced file.
@@ -642,7 +642,7 @@ This requires a good understanding of packaging and Python.
 **Package URL implementations in many programming languages**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-We have a purl implmentation in Python, Go and possibly Java today.
+We have a purl implementation in Python, Go and possibly Java today.
 
 The goal of this project is to create multiple parsers and builders in several
 programming languages:
