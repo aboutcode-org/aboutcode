@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:asmahapatra@aboutcode.org
+X-WR-TIMEZONE:Asia/Kolkata
+BEGIN:VTIMEZONE
+TZID:Africa/Ceuta
+X-LIC-LOCATION:Africa/Ceuta
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:GMT+2
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:GMT+1
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART:20250224T150000Z
+DTEND:20250224T160000Z
+RRULE:FREQ=WEEKLY;BYDAY=MO
+DTSTAMP:20250224T140255Z
+UID:4lnp9koeqfmj3gce4ko3vt7bc2@google.com
+CREATED:20250224T140129Z
+DESCRIPTION:Let's meet at 15:00 UTC for a Aboutcode Status Call\, focusing 
+ on AboutCode projects\, GSoC projects\, other collaborations and to discuss
+  any questions/concerns.<br>This is a weekly call\, happening every monday.
+ <br> <br>See you at <a href="https://meet.jit.si/AboutCode">https://meet.ji
+ t.si/AboutCode</a><br> <br>Meeting Minutes at <a href="https://github.com/n
+ exB/aboutcode/wiki/MeetingMinutes">https://github.com/nexB/aboutcode/wiki/M
+ eetingMinutes</a>
+LAST-MODIFIED:20250224T140129Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:AboutCode Community Call
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
