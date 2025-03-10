@@ -193,7 +193,7 @@ Each of these objects has a few identifying attributes and eventually
 many tool- or application-specific data attributes. Each tool defines
 and documents the attributes they can handle and care for. When some
 agreement is reached on the definition of new attributes or objects, the
-ABCD dictionary may be updated accordingly with new objects types such
+ABCD dictionary may be updated accordingly with new object types such
 as for software security, quality or other interesting aspects.
 
 Objects are interrelated with other objects. Objects can relate to each
@@ -226,7 +226,7 @@ process the known objects and attributes.
 -  Attributes are name/value pairs.
 
 -  Attribute names are always strings, not numbers, not booleans, not any
-   other data format. In these strings, leading and trailing white spaces
+   other data format. In these strings, leading and trailing whitespace
    (spaces, tabs, line returns, etc) are not significant and can be safely
    ignored or removed.
 
@@ -254,7 +254,7 @@ Name conventions
    underscores. Names cannot start with a number. Names cannot contain
    spaces nor other punctuation, not even a dot or period.
 
--  Names are NOT case sensitive: upper or lowercase does not matter and
+-  Names are NOT case-sensitive: upper or lowercase does not matter and
    the standard is to use lowercase. It is a mistake to use upper or
    mixed case but this is something a parser receiving ABC Data should
    recover from nicely by converting the names to lowercase.
@@ -413,7 +413,7 @@ for the value type or meaning:
    is about some status.
 
 -  xxx_name: such as short_name. Indicates that the value is a name.
-   Commonly used for long_name, short_name. The bare name shout be
+   Commonly used for long_name, short_name. The bare name should be
    preferred for the obvious and most common way an object is named.
 
 -  xxx_flag, is_xxx, has_xxx: such as is_license_notice. Indicates
@@ -462,7 +462,7 @@ The minimal way to identify top level objects is the combination of a
 implicit when two parties are exchanging data privately or explicit
 using the "source" attribute.
 
-Within a source, we use the most obvious and natural identifies for an
+Within a source, we use the most obvious and natural identifiers for an
 object. For example:
 
 -  For Products, Components and Packages we can use their name and
@@ -834,7 +834,7 @@ writing primarily by humans.
    separators).
 
 -  Beware of parser shenanigans:  Most YAML parsers recognize and convert
-   automatically certain data types such as numbers, booleans or dates.
+   automatically certain data types such as numbers, booleans, or dates.
    You should be aware of this because the ABC Data strings may contain
    date stamps. You may want to configure a YAML parser to deactivate some
    of these automated format conversions to avoid unwanted conversions.
@@ -920,7 +920,7 @@ mappings to ABC Data attribute and object names.
 Since ABC Data can be related by reference, the preferred (and
 cumbersome) way to store ABC Data in a spreadsheet is to use one tab for
 each object type and use identifying attributes to relate objects
-between each others across tabs. For instance, in a Bill of Materials
+between each other across tabs. For instance, in a Bill of Materials
 (BOM) spreadsheet for a Product, you could use a tab to describe the
 Product attributes and another tab to describe the Components used in
 this Product and possibly additional tabs to describe the related
@@ -930,7 +930,7 @@ packages and files corresponding to these
    versions, unicode and UTF-8 to avoid damaging content (aka. mojibake)
 
 Spreadsheet tools such as Excel or LibreOffice  automatically recognize
-and convert data to their own format: a date of 20016-08-17 may be
+and convert data to their own format: a date of 2016-08-17 may be
 converted to a date number when a CSV is loaded and difficult to recover
 as a correct original date stamp string afterwards. Or a version 1.0 may
 be irreversibly converted to 1 or 1.90 to 1.9 losing important version

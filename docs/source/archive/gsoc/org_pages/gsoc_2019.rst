@@ -4,7 +4,7 @@ Google Summer of Code 2019
 ==========================
 
 AboutCode is participating in the Google Summer of Code in 2019 as a mentoring org. This page
-contain all the information for students and anyone else interested in helping.
+contains all the information for students and anyone else interested in helping.
 
 AboutCode is a family of FOSS projects to uncover data ... about software code:
 
@@ -13,7 +13,7 @@ AboutCode is a family of FOSS projects to uncover data ... about software code:
 - what is its license? copyright?
 - is the code secure, maintained, well coded?
 
-All these are questions that are important to answer: there are million
+All these are questions that are important to answer: there are millions
 of free and open source software components available on the web for reuse.
 
 Knowing where a software package comes from, what is its license and if it is
@@ -420,11 +420,11 @@ DeltaCode projects
 DeltaCode is a tool to compare and report scan differences.
 When comparing files, it only uses exact comparison.
 The goal of this project is to improve the usefulness of the delta by also
-finding files that are mostly the same (e.g. quasi or nrea duplicates) vs. files
+finding files that are mostly the same (e.g. quasi or near duplicates) vs. files
 that are completely different. Then the DeltaCode comparison core should be
 updated accordingly to detect and report material changes to scans (such as
-new, update or removed licenses, origins and packages) when changes are also
-meterial in the code files (e.g. such that small changes may be ignored)
+new, updated or removed licenses, origins and packages) when changes are also
+material in the code files (e.g. such that small changes may be ignored)
 
 
 - **Level**
@@ -454,7 +454,7 @@ TraceCode projects
 
 TraceCode does system call tracing only today. The primary goal of this project
 is to create a tool that provides the same results as the strace-based tracing
-but would be using using ELF symbols, DWARF debug symbols, signatures or string
+but would be using ELF symbols, DWARF debug symbols, signatures or string
 matching to  determine when and how a source code file is built in a binary
 using only a static analysis. The primary target should be Linux executables,
 though the code should be designed to be extensible to Windows PE and macOS Dylib and exes.
@@ -593,13 +593,13 @@ The features and TODO for this updated server would be:
 - Aggregate more and new packages vulnerabilities feeds,
 
 - Automating correlation: add smart relationship detection to infer new
-  relatiosnhips between available packages and vulnerabilities from mining the
+  relationships between available packages and vulnerabilities from mining the
   graph of existing relations.
 
 - Create a ScanCode plugin to report vulnerabilities with detected packages
   using this data.
 
-- Integrate API lookup on the server withe the AboutCode Manager UI
+- Integrate API lookup on the server with the AboutCode Manager UI
 
 - Create a UI and model for community curation of vulnerability to package
   mappings, correlations and enhancements.
@@ -657,7 +657,7 @@ There are several areas to research and prototype such as:
 - A data structure to match efficiently a batch of fix-width checksums (e.g.
   SHA1) against a large index of such checksums, where each checksum points to
   one or more files or packages. A possible direction is to use finite state
-  transducers, specialized B-tree indexes, blomm-like filters. Since when a
+  transducers, specialized B-tree indexes, bloom-like filters. Since when a
   codebase is being matched there can be millions of lookups to do, the batch
   matching is preferred.
 
@@ -677,7 +677,7 @@ There are several areas to research and prototype such as:
 
 - Feature hashing research: we deal with many "features" and hashing to limit
   the number and size of the each features seems to be a valuable thing. The goal
-  is to research the validaty of feature hashing with short hashes (15, 16 and
+  is to research the validity of feature hashing with short hashes (15, 16 and
   32 bits) and evaluate if this leads to acceptable false-positive and loss of
   accuracy in the context of the data structures mentioned above.
 
@@ -708,5 +708,5 @@ This is a green field project.
 Mentoring
 ---------
 
-We welcome new mentors to help with the program and require some good unerstanding of the project
+We welcome new mentors to help with the program and require some good understanding of the project
 codebase and domain to join as a mentor. Contact the team on Gitter.
