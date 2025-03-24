@@ -56,5 +56,3 @@ We contribute to these important standards:
 
 ## License
 Licensed under [Apache 2.0](https://opensource.org/licenses/Apache-2.0)
-
-☑️ Sign off by adding the DCO Signed-off-by line
