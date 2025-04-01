@@ -21,12 +21,6 @@ README, read through existing documentation, and browse existing issues to
 develop some understanding of the project and confirm whether a given
 issue/feature has previously been discussed.
 
-Ways to Contribute
-------------------
-
-Contributing to the codebase is not the only way to add value to AboutCode or
-join our community. Below are some examples to get involved:
-
 First Timers
 ^^^^^^^^^^^^
 
@@ -92,8 +86,7 @@ attribution.
 
 3. **Commit messages and Developer Certificate of Origin**
 
-  Follow the instructions at `Writing good Commit Messages <https://aboutcode.readthedocs.io/en/latest/contributing/writing_good_commit_messages.html>`_
-  and `check some examples <https://github.com/aboutcode-org/scancode.io/commits/main>`_.
+  Follow the instructions at `Writing good Commit Messages <https://aboutcode.readthedocs.io/en/latest/contributing/writing_good_commit_messages.html>`_.
 
   **You must include a "Signed-off-by" to your commit messages**::
 
