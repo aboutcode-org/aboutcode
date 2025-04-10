@@ -152,28 +152,32 @@ The [python-inspector](https://github.com/nexB/python-inspector) repository serv
 
 ### Best Practices
 
-1. **Avoid Using `assert` Statements**
+1. **Never Use `assert` Statements in Production Code**
    - `assert` statements are removed when running with Python's `-O` or `-OO` flags
    - They should only be used for debugging and testing purposes
-   - Instead, use proper exception handling with descriptive error messages
+   - Using `assert` in production code can lead to silent failures
+   - Example of what NOT to do:
+     ```python
+     # Bad: Using assert in production code
+     assert len(items) > 0, "Items list cannot be empty"
+     ```
 
-2. **Proper Exception Handling**
-   - Use built-in exceptions when appropriate (ValueError, TypeError, etc.)
-   - Create custom exceptions for project-specific error cases
-   - Include descriptive error messages that help users understand and fix the issue
-   - Document exceptions in function docstrings
+2. **Use Proper Exception Handling**
+   - Use built-in exceptions when appropriate:
+     - `ValueError`: For invalid values
+     - `TypeError`: For invalid types
+     - `KeyError`: For missing dictionary keys
+     - `IndexError`: For invalid sequence indices
+     - `FileNotFoundError`: For missing files
+   - Create custom exceptions for project-specific cases
+   - Example of good practice:
+     ```python
+     # Good: Using proper exception handling
+     if not items:
+         raise ValueError("Items list cannot be empty")
+     ```
 
-3. **Example of Good Error Handling**
-   ```python
-   # Bad: Using assert
-   assert len(items) > 0, "Items list cannot be empty"
-   
-   # Good: Using proper exception
-   if not items:
-       raise ValueError("Items list cannot be empty")
-   ```
-
-4. **Exception Documentation**
+3. **Exception Documentation**
    - Document all exceptions that a function can raise
    - Use the `:raises:` directive in docstrings
    - Example:
@@ -196,4 +200,28 @@ The [python-inspector](https://github.com/nexB/python-inspector) repository serv
          if not items:
              raise ValueError("items list cannot be empty")
          # ... rest of the function
+     ```
+
+4. **Error Messages**
+   - Make error messages clear and actionable
+   - Include relevant context in the error message
+   - Example:
+     ```python
+     # Bad: Unclear error message
+     raise ValueError("Invalid input")
+     
+     # Good: Clear, actionable error message
+     raise ValueError(
+         f"Invalid input: expected positive integer, got {value} of type {type(value)}"
+     )
+     ```
+
+5. **Testing Error Cases**
+   - Write tests for error conditions
+   - Use `pytest.raises` to test expected exceptions
+   - Example:
+     ```python
+     def test_process_items_empty_list():
+         with pytest.raises(ValueError, match="items list cannot be empty"):
+             process_items([])
      ```
