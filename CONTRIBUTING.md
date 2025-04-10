@@ -146,4 +146,54 @@ We maintain a central repository of development tools and configurations at [abo
 
 ## Reference Implementation
 
-The [python-inspector](https://github.com/nexB/python-inspector) repository serves as our reference implementation for these guidelines. New projects should use it as a template, and existing projects should gradually align with its practices. 
+The [python-inspector](https://github.com/nexB/python-inspector) repository serves as our reference implementation for these guidelines. New projects should use it as a template, and existing projects should gradually align with its practices.
+
+## Error Handling
+
+### Best Practices
+
+1. **Avoid Using `assert` Statements**
+   - `assert` statements are removed when running with Python's `-O` or `-OO` flags
+   - They should only be used for debugging and testing purposes
+   - Instead, use proper exception handling with descriptive error messages
+
+2. **Proper Exception Handling**
+   - Use built-in exceptions when appropriate (ValueError, TypeError, etc.)
+   - Create custom exceptions for project-specific error cases
+   - Include descriptive error messages that help users understand and fix the issue
+   - Document exceptions in function docstrings
+
+3. **Example of Good Error Handling**
+   ```python
+   # Bad: Using assert
+   assert len(items) > 0, "Items list cannot be empty"
+   
+   # Good: Using proper exception
+   if not items:
+       raise ValueError("Items list cannot be empty")
+   ```
+
+4. **Exception Documentation**
+   - Document all exceptions that a function can raise
+   - Use the `:raises:` directive in docstrings
+   - Example:
+     ```python
+     def process_items(items):
+         """Process a list of items.
+         
+         Args:
+             items: List of items to process
+             
+         Returns:
+             Processed items
+             
+         Raises:
+             ValueError: If items list is empty
+             TypeError: If items is not a list
+         """
+         if not isinstance(items, list):
+             raise TypeError("items must be a list")
+         if not items:
+             raise ValueError("items list cannot be empty")
+         # ... rest of the function
+     ```
