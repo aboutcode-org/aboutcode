@@ -673,7 +673,7 @@ it is not obvious and requires some extra specification.  Each tool can
 define additional attributes to document these. For instance a common
 relationship between a party and a product or component is a role such
 as owner. For packages a role can be maintainer, author, etc.  Or the
-license of a file or package may be the "asserted" license by the
+license of a file or package may be the "assert" license by the
 project authors. It may differ from the "detected" license from a scan
 or code inspection and may further differ from a "concluded" license or
 a "selected" license when there is a license choice. At the package and
