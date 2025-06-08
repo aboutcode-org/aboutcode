@@ -21,20 +21,18 @@ Overview
 ********
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    aboutcode-project-overview
 
-**************************
-Contributing and GSoC/GSoD
-**************************
+************
+Contributing
+************
 
 .. toctree::
    :maxdepth: 3
 
    contributing
-   archive/gsoc-toc
-   archive/gsod-toc
 
 ******
 Others
