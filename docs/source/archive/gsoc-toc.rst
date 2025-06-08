@@ -2,11 +2,11 @@
 GSoC -- Google Summer of Code
 =============================
 
-**Google Summer of Code** is a global annual program focused on introducing students to
-open source software development. GSoC is completely online designed to encourage university
-student participation in open source software development.
-It was started by Google in 2005.
-More about GSoC - `<https://summerofcode.withgoogle.com/about/>`_
+**Google Summer of Code** is a global annual program focused on introducing
+students to open source software development. GSoC is completely online
+designed to encourage university student participation in open source
+software development. It was started by Google in 2005. More about GSoC -
+`<https://summerofcode.withgoogle.com/about/>`_
 
 GSoC 2024
 ---------

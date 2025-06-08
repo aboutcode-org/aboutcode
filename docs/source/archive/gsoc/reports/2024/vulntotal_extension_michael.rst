@@ -6,9 +6,12 @@ Organization - `AboutCode <https://www.aboutcode.org>`_
 | **Michael Ehab Mikhail**
 | GitHub: `michaelehab <https://github.com/michaelehab>`_
 | LinkedIn: `@michaelehab16 <https://www.linkedin.com/in/michaelehab16/>`_
-| Project: `VulnTotal Browser Extension <https://github.com/aboutcode-org/vulntotal-extension>`_
-| Official GSoC project page: `Project Link <https://summerofcode.withgoogle.com/programs/2024/projects/26FZNTGx>`_
-| GSoC Proposal: `Proposal Link <https://docs.google.com/document/d/1K7oGBlfHxbrxah3TJW1PcUGgaLMR6q0ctK7_Y10hpVY/edit?usp=sharing>`_
+| Project: `VulnTotal Browser Extension
+  <https://github.com/aboutcode-org/vulntotal-extension>`_
+| Official GSoC project page: `Project Link
+  <https://summerofcode.withgoogle.com/programs/2024/projects/26FZNTGx>`_
+| GSoC Proposal: `Proposal Link
+  <https://docs.google.com/document/d/1K7oGBlfHxbrxah3TJW1PcUGgaLMR6q0ctK7_Y10hpVY/edit?usp=sharing>`_
 
 Overview
 --------
@@ -24,18 +27,19 @@ of CPython to WebAssembly/Emscripten, which enables Python code to run
 natively in the browser.
 
 By integrating Pyodide with VulnTotal, the extension can perform
-vulnerability analysis directly within the browser environment,
-eliminating the need for server-side components or external applications.
-The extension provides a user-friendly interface that displays the results
-of vulnerability analyses in a clear and interpretable table format. The
-table allows users to quickly assess the security status of the software
-packages they are examining.
+vulnerability analysis directly within the browser environment, eliminating
+the need for server-side components or external applications. The extension
+provides a user-friendly interface that displays the results of
+vulnerability analyses in a clear and interpretable table format. The table
+allows users to quickly assess the security status of the software packages
+they are examining.
 
 This project not only enhances the functionality and reach of VulnTotal but
 also provides a valuable tool for developers and security professionals who
 seek to ensure the safety of their software directly from their browsers.
 By simplifying and streamlining the vulnerability-checking process, this
-extension contributes to safer and more secure software development practices.
+extension contributes to safer and more secure software development
+practices.
 
 Extension Preview
 -----------------
@@ -60,9 +64,9 @@ Project Design and Architecture
 The design of this project revolves around the integration of VulnTotal
 with a browser environment, enabling seamless vulnerability analysis
 without the need for server-side processing. This is achieved by leveraging
-Pyodide, which runs Python code directly in the browser through WebAssembly.
-Below, we discuss the core components of the project and how they interact
-to deliver a functional and user-friendly extension.
+Pyodide, which runs Python code directly in the browser through
+WebAssembly. Below, we discuss the core components of the project and how
+they interact to deliver a functional and user-friendly extension.
 
 Pyodide Integration
 ^^^^^^^^^^^^^^^^^^^
@@ -79,8 +83,8 @@ infrastructure, making the extension self-contained and easy to deploy.
    :width: 70%
 
    In the context of this extension, Pyodide serves as the bridge between
-   the browser's JavaScript environment and the Python-based VulnTotal tool.
-   The extension uses Pyodide to load the VulnTotal code, perform
+   the browser's JavaScript environment and the Python-based VulnTotal
+   tool. The extension uses Pyodide to load the VulnTotal code, perform
    vulnerability checks, and return the results to the user interface,
    where they are displayed in a structured format.
 
@@ -88,8 +92,8 @@ Implementation
 --------------
 
 The implementation of the browser extension involved several key steps,
-each crucial to ensuring the extension's functionality and integration
-with VulnTotal. The process began with designing the frontend and progressed
+each crucial to ensuring the extension's functionality and integration with
+VulnTotal. The process began with designing the frontend and progressed
 through setting up Pyodide, creating core classes, and integrating all
 components. Below is a detailed account of the implementation process.
 
@@ -104,8 +108,8 @@ analysis.
 
 I created a full demo using JavaScript to simulate how the extension should
 function. This demo utilized a JSON response from the VulnTotal Python
-package, allowing me to test and validate the user interface and interaction
-flow before integrating with Pyodide.
+package, allowing me to test and validate the user interface and
+interaction flow before integrating with Pyodide.
 
 Pyodide Integration
 ^^^^^^^^^^^^^^^^^^^
@@ -122,15 +126,15 @@ following steps:
   manage the interaction between the Python environment and the browser.
   This class handles various tasks:
 
-  * Environment Initialization: It ensures that the Pyodide environment
-    is correctly initialized and ready for executing Python code.
+  * Environment Initialization: It ensures that the Pyodide environment is
+    correctly initialized and ready for executing Python code.
   * Communication with UI: It updates the user interface with loading
     progress and other relevant information.
   * API Key Management: It manages API keys required for VulnTotal
     operations within the Python environment.
-  * Request Handling: It processes scan requests, which include the
-    Package URL (PURL) and the enabled or disabled data sources, and
-    returns the analysis results.
+  * Request Handling: It processes scan requests, which include the Package
+    URL (PURL) and the enabled or disabled data sources, and returns the
+    analysis results.
 
 Web Worker Integration
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -144,10 +148,11 @@ VulnTotalWorker class to fetch and return results.
 Background Script
 ^^^^^^^^^^^^^^^^^
 
-The background script is responsible for managing user settings and API keys.
-It stores these preferences and ensures that they are accessible to other
-components of the extension. This worker plays a crucial role in maintaining
-user-specific configurations and providing a seamless experience.
+The background script is responsible for managing user settings and API
+keys. It stores these preferences and ensures that they are accessible to
+other components of the extension. This worker plays a crucial role in
+maintaining user-specific configurations and providing a seamless
+experience.
 
 Content Script
 ^^^^^^^^^^^^^^
@@ -176,7 +181,8 @@ to enable vulnerability analysis directly within the browser environment.
    work together to provide vulnerability analysis within the browser. The
    frontend interacts with the content script, which coordinates requests
    and data flow between the background script, web worker, and Pyodide
-   environment. This setup ensures a seamless and efficient user experience.
+   environment. This setup ensures a seamless and efficient user
+   experience.
 
 Challenges and Solutions
 ------------------------
@@ -211,12 +217,12 @@ the browser environment.
 3. GitLab Data Source Integration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Another challenge was integrating the GitLab data source into the extension.
-The original VulnTotal tool had specific configurations and data retrieval
-methods for GitLab that required adaptation for the browser environment.
-Ensuring proper data retrieval and presentation from GitLab required
-modifying the existing VulnTotal code and handling data fetching and
-parsing within the browser constraints.
+Another challenge was integrating the GitLab data source into the
+extension. The original VulnTotal tool had specific configurations and data
+retrieval methods for GitLab that required adaptation for the browser
+environment. Ensuring proper data retrieval and presentation from GitLab
+required modifying the existing VulnTotal code and handling data fetching
+and parsing within the browser constraints.
 
 4. Extension Size Optimization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -258,19 +264,23 @@ Linked Pull Requests
      - Status
    * - 1
      - Frontend Demo
-     - `aboutcode-org/vulntotal-extension#5 <https://github.com/aboutcode-org/vulntotal-extension/pull/5>`_
+     - `aboutcode-org/vulntotal-extension#5
+       <https://github.com/aboutcode-org/vulntotal-extension/pull/5>`_
      - Merged
    * - 2
      - Gitlab Change
-     - `aboutcode-org/vulnerablecode#1524 <https://github.com/aboutcode-org/vulnerablecode/pull/1524>`_
+     - `aboutcode-org/vulnerablecode#1524
+       <https://github.com/aboutcode-org/vulnerablecode/pull/1524>`_
      - Merged
    * - 3
      - Backend Integration
-     - `aboutcode-org/vulntotal-extension#6 <https://github.com/aboutcode-org/vulntotal-extension/pull/6>`_
+     - `aboutcode-org/vulntotal-extension#6
+       <https://github.com/aboutcode-org/vulntotal-extension/pull/6>`_
      - Merged
    * - 4
      - Build Scripts and Readme
-     - `aboutcode-org/vulntotal-extension#9 <https://github.com/aboutcode-org/vulntotal-extension/pull/9>`_
+     - `aboutcode-org/vulntotal-extension#9
+       <https://github.com/aboutcode-org/vulntotal-extension/pull/9>`_
      - Merged
 
 Closing Thoughts
@@ -281,9 +291,9 @@ the new technologies I used, like WebAssembly, and getting it running in a
 complex project with packages and multiple files like VulnTotal.
 
 I appreciated the weekly status calls and the feedback I received from my
-mentors and the amazing team. They were really helpful and supportive.
-- `Philippe Ombredanne <https://github.com/pombredanne>`_
-- `Ayan Sinha Mahapatra <https://github.com/AyanSinhaMahapatra>`_
-- `Ziad Hany <https://github.com/ziadhany>`_
-- `Keshav Priyadarshi <https://github.com/keshav-space>`_
-- `Omkar Phansopkar <https://github.com/OmkarPh>`_
+mentors and the amazing team. They were really helpful and supportive. -
+`Philippe Ombredanne <https://github.com/pombredanne>`_ - `Ayan Sinha
+Mahapatra <https://github.com/AyanSinhaMahapatra>`_ - `Ziad Hany
+<https://github.com/ziadhany>`_ - `Keshav Priyadarshi
+<https://github.com/keshav-space>`_ - `Omkar Phansopkar
+<https://github.com/OmkarPh>`_

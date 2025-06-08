@@ -1,14 +1,17 @@
 .. _GSoD2021:
 
-===================================
-:index:`Google Season of Docs 2021`
-===================================
 
-AboutCode.org is applying to be a mentoring organization for the `Google Season of Docs (GSoD) 2021 <https://developers.google.com/season-of-docs>`_.
+Google Season of Docs 2021
+==========================
 
-In the event that our proposal is accepted, we'll be looking for fellow members of the FOSS
-community with technical writing skills and an interest in helping.  If you're interested, keep
-reading to get a sense of what we have in mind for GSoD 2021.
+AboutCode.org is applying to be a mentoring organization for the `Google
+Season of Docs (GSoD) 2021
+<https://developers.google.com/season-of-docs>`_.
+
+In the event that our proposal is accepted, we'll be looking for fellow
+members of the FOSS community with technical writing skills and an interest
+in helping.  If you're interested, keep reading to get a sense of what we
+have in mind for GSoD 2021.
 
 ----
 
@@ -21,9 +24,9 @@ reading to get a sense of what we have in mind for GSoD 2021.
 AboutCode Overview
 ------------------
 
-AboutCode.org is a community of developers behind a suite of Software Composition Analysis tools
-(command line tools, web-based and API servers and desktop applications) and data for
-license, origin and security:
+AboutCode.org is a community of developers behind a suite of Software
+Composition Analysis tools (command line tools, web-based and API servers
+and desktop applications) and data for license, origin and security:
 
 * Where does the code come from?
 * What software packages are present?
@@ -31,9 +34,10 @@ license, origin and security:
 * Is the code secure, maintained, well coded?
 * Are there any known vulnerabilities?
 
-All these questions are important, and are relevant to millions of free and open source
-software components available on the web for reuse. The answers are critical to ensure that
-everyone can safely consume free and open source software.
+All these questions are important, and are relevant to millions of free and
+open source software components available on the web for reuse. The answers
+are critical to ensure that everyone can safely consume free and open
+source software.
 
 
 *Join us to make it so!*
@@ -42,7 +46,8 @@ everyone can safely consume free and open source software.
 AboutCode Projects
 ~~~~~~~~~~~~~~~~~~
 
-Our focus for GSoD 2021 is to improve documentation on our flagship projects:
+Our focus for GSoD 2021 is to improve documentation on our flagship
+projects:
 
 - `ScanCode Toolkit <https://github.com/nexB/scancode-toolkit>`_
 - `ScanCode.io <https://github.com/nexB/scancode.io>`_
@@ -50,19 +55,22 @@ Our focus for GSoD 2021 is to improve documentation on our flagship projects:
 
 And specifically to create/update developement and user guides.
 
-See :ref:`aboutcode-project-overview` for a complete list of AboutCode projects.
+See :ref:`aboutcode-project-overview` for a complete list of AboutCode
+projects.
 
 
 Technology
 ~~~~~~~~~~
 
-We use Python for programming AboutCode software. Our projects are a combination of
-command line tools, libraries, and web based applications based on Django and JavaScript.
+We use Python for programming AboutCode software. Our projects are a
+combination of command line tools, libraries, and web based applications
+based on Django and JavaScript.
 
 Our command line tools are designed to run on Linux, macOS and Windows, and
 our web-based applications run only on Linux.
 
-We write our documentation using reStructuredText with Sphinx and ReadTheDocs.
+We write our documentation using reStructuredText with Sphinx and
+ReadTheDocs.
 
 We use git and GitHub to store our code and track tasks and issues.
 
@@ -72,32 +80,37 @@ Technical Skills Needed
 
 Incoming technical writers will need the following skills:
 
-- Basic understanding of reStructuredText, Sphinx and ReadTheDocs-based documentation
-  toolchain including git.
-- Ability to understand and run programs from the command line in a terminal.
-- Ability to read well-structured Python code, and to update Python docstrings.
-- Ability to manage Windows and Linux based installation of our tools if need be in
-  virtual machines.
-- Ability to write technical documentation such as Tutorials, How-To Guides, and
-  API References.
+- Basic understanding of reStructuredText, Sphinx and ReadTheDocs-based
+  documentation toolchain including git.
+- Ability to understand and run programs from the command line in a
+  terminal.
+- Ability to read well-structured Python code, and to update Python
+  docstrings.
+- Ability to manage Windows and Linux based installation of our tools if
+  need be in virtual machines.
+- Ability to write technical documentation such as Tutorials, How-To
+  Guides, and API References.
 
-We do not expect a working knowledge of our tools as this will be picked from mentors and
-community guidance. An interest in FOSS licensing and software code and origin
-analysis would be welcome but is not a hard requirement.
+We do not expect a working knowledge of our tools as this will be picked
+from mentors and community guidance. An interest in FOSS licensing and
+software code and origin analysis would be welcome but is not a hard
+requirement.
 
-Some of these skills could be picked up during the project with help from your mentors, for
-candidates with strong writing skills.
+Some of these skills could be picked up during the project with help from
+your mentors, for candidates with strong writing skills.
 
 
 About Your Project Application
 ------------------------------
 
-Check out the `GSoD Tech Writer Guide <https://developers.google.com/season-of-docs/docs/tech-writer-guide>`_
- and `Statement Template <https://developers.google.com/season-of-docs/docs/tech-writer-statement>`_.
+Check out the `GSoD Tech Writer Guide
+<https://developers.google.com/season-of-docs/docs/tech-writer-guide>`_ and
+`Statement Template
+<https://developers.google.com/season-of-docs/docs/tech-writer-statement>`_.
 
-Your statement of interest should be in the range of 1,000 words,
-and should contain the following information, plus anything else that
-you think is relevant:
+Your statement of interest should be in the range of 1,000 words, and
+should contain the following information, plus anything else that you think
+is relevant:
 
 - Personal information, i.e. Your name and contact details.
 
@@ -107,23 +120,26 @@ you think is relevant:
 
 - Description of your relevant skills.
 
-- Professional information: Description of previous work, existing solutions,
-  open-source projects, preferably with links.
+- Professional information: Description of previous work, existing
+  solutions, open-source projects, preferably with links.
 
 - Proposed Timeline
 
 - Proposed total budget
 
-- Do you plan to have any other commitments during GSoD that may affect your work? Any
-  vacations/holidays? Will you be available full time to work on your project? Please apply
-  only if this is a serious full time commitment during the GSoD time frame.
+- Do you plan to have any other commitments during GSoD that may affect
+  your work? Any vacations/holidays? Will you be available full time to
+  work on your project? Please apply only if this is a serious full time
+  commitment during the GSoD time frame.
 
-Join the chat online or by IRC at https://gitter.im/aboutcode-org/gsod-season-of-docs.
-Introduce yourself and start a discussion!
+Join the chat online or by IRC at
+https://gitter.im/aboutcode-org/gsod-season-of-docs. Introduce yourself and
+start a discussion!
 
-An excellent, competitive way to demonstrate your capability would be to submit a documentation
-improvement (small changes/typos are welcome but do not demonstrate your ability to write
-documentation) to an AboutCode project, especially to ScanCode Toolkit, Scancode.io.
+An excellent, competitive way to demonstrate your capability would be to
+submit a documentation improvement (small changes/typos are welcome but do
+not demonstrate your ability to write documentation) to an AboutCode
+project, especially to ScanCode Toolkit, Scancode.io.
 
 Please select a project from the list below.
 
@@ -132,15 +148,19 @@ Please select a project from the list below.
 Create and update scancode.io user and developer guides
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Create an HowTo guide for integrating third-party libraries into a ScanCode.io Pipeline.
+* Create an HowTo guide for integrating third-party libraries into a
+  ScanCode.io Pipeline.
 * Add a tutorial for adding a new Pipeline with a third-party library.
-* Extend the HowTo Guides to cover Software Composition Analysis workflows based on ScanCode.io.
+* Extend the HowTo Guides to cover Software Composition Analysis workflows
+  based on ScanCode.io.
 * Upgrade the scancode.io Web UI documentation.
-* Create an introductory `video <https://opensource.com/article/21/3/video-open-source-tools>`_
-  to teach how the web UI is used.
-* Update and improve the existing Pipe libraries reference API documentation (which is generated
-  from code documentation "docstrings").
-* Sync the new documentation set with the code to support continuous integration with code changes.
+* Create an introductory `video
+  <https://opensource.com/article/21/3/video-open-source-tools>`_ to teach
+  how the web UI is used.
+* Update and improve the existing Pipe libraries reference API
+  documentation (which is generated from code documentation "docstrings").
+* Sync the new documentation set with the code to support continuous
+  integration with code changes.
 
 - **Level**
 
@@ -170,22 +190,25 @@ Create ScanCode-Toolkit Plugin Author Guide
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The goal of this guide is to provide an end-to-end tutorial and instruction
-set on how to create scancode-toolkit plugins, with concrete examples and to
-generate a reference API documentation for modules, classes and functions used to
-create plugins.
+set on how to create scancode-toolkit plugins, with concrete examples and
+to generate a reference API documentation for modules, classes and
+functions used to create plugins.
 
 Some of the specific supported activities would be:
 
 * Explain the Plugin Architechture used in scancode-toolkit
 * Explain the types of plugins used in scancode-toolkit
   (pre-installed/seperately-installed) and (post-scan, pre-scan, scanner)
-* An exhaustive list of all plugins and what they do, with links to their code.
-* How to create a minimal plugin adding some functionality to scancode-toolkit.
+* An exhaustive list of all plugins and what they do, with links to their
+  code.
+* How to create a minimal plugin adding some functionality to
+  scancode-toolkit.
 * Useful examples of different types of plugins
-* Using `nexb/skeleton <https://github.com/nexB/skeleton>`_ as a template for plugins.
+* Using `nexb/skeleton <https://github.com/nexB/skeleton>`_ as a template
+  for plugins.
 
-Note: Filter current scancode-toolkit GitHub Issues by Label 'documentation' to see
-many examples of specific areas for improvement.
+Note: Filter current scancode-toolkit GitHub Issues by Label
+'documentation' to see many examples of specific areas for improvement.
 
 - **Level**
 
@@ -216,17 +239,19 @@ many examples of specific areas for improvement.
 Mentoring
 ---------
 
-We have an established team of contributors that are willing to mentor the selected
-Tech Writers, and they have extensive experience from mentoring in the open, including
-a successful previous participation in Google Season of Docs 2019. We have a developed
-a gentle and efficient way to mentor our contributors to success.
+We have an established team of contributors that are willing to mentor the
+selected Tech Writers, and they have extensive experience from mentoring in
+the open, including a successful previous participation in Google Season of
+Docs 2019. We have a developed a gentle and efficient way to mentor our
+contributors to success.
 
 
 Contact Info
 ~~~~~~~~~~~~
 
-Join the chat online or by IRC at https://gitter.im/aboutcode-org/gsod-season-of-docs.
-Introduce yourself and start the discussion!
+Join the chat online or by IRC at
+https://gitter.im/aboutcode-org/gsod-season-of-docs. Introduce yourself and
+start the discussion!
 
 You can also contact:
 
