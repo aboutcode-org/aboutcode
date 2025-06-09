@@ -43,7 +43,7 @@ join the
 chatroom. Introduce yourself and start the discussion!
 
 Look at our [wiki](https://github.com/aboutcode-org/aboutcode/wiki) for
-information about our participation in the GSoC and GSoD programs.
+information about our participation in the GSoC program.
 
 We have a weekly meeting, see more details
 [here](https://github.com/aboutcode-org/aboutcode/wiki/MeetingMinutes).
