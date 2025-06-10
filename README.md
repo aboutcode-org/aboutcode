@@ -2,7 +2,7 @@
 
 ### What is AboutCode?
 
-AboutCode is a family of FOSS projects to uncover data ... about software:
+AboutCode is a family of FOSS projects to uncover metadata about software:
 
 -   where does the code come from? which software package?
 -   what is its license? copyright?
