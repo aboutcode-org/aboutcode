@@ -70,6 +70,10 @@ Each AboutCode project has its own repository:
     standalone tool Vulntotal to compare this vulneribility information across
     similar tools. This is maintained by @tg1999 and @pombredanne
 
+-   **[DejaCode](https://github.com/aboutcode-org/dejacode)**: is a
+    complete enterprise-level application to automate open source license
+    compliance and ensure software supply chain integrity.
+
 -   **[univers](https://github.com/aboutcode-org/univers)** is a package to
     parse and compare all the package versions and all the ranges.
 
@@ -126,7 +130,7 @@ Each AboutCode project has its own repository:
     Linux and construct a build graph from syscalls to show which files are used
     to build a binary. We are contributors to strace. Maintained by @pombredanne
 
-We also co-started and worked closely with other FOSS orgs and projects:
+We have also co-started and worked closely with other FOSS orgs and projects:
 
 -   [Package URL](https://github.com/package-url): a widely used standard to
     reference software packages of all types with simple, readable and concise
