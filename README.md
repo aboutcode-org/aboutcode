@@ -52,6 +52,12 @@ We have a weekly meeting, see more details
 
 Each AboutCode project has its own repository:
 
+-   **[DejaCode](https://github.com/aboutcode-org/dejacode)**:
+    DejaCode is a complete enterprise-level application to automate open source
+    license compliance and ensure software supply chain integrity, powered by
+    **[Scancode](https://github.com/aboutcode-org/scancode.io)**, the 
+    industry-leading code scanner. Maintained by @tdruez
+
 -   **[ScanCode Toolkit](https://github.com/aboutcode-org/scancode-toolkit)**: a
     set of code scanning tools to detect the origin and license of code and
     dependencies. ScanCode now uses a plug-in architecture to run a series of
