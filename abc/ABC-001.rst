@@ -1,0 +1,53 @@
+====================================================================================
+ABC-001: Operating systems, CPU architectures and Python versions support
+====================================================================================
+
+This is the AboutCode policy for platform support.
+
+Operating systems and CPU architectures support
+------------------------------------------------
+
+- We run automated CI tests on supported configurations. We do not support
+  configurations that we cannot test.
+
+- Linux on x86/64 for web apps: Web application projects should support only Linux.
+
+  - They may support other OSes for development, but in general we should limit the
+    number of OSse we support to the minimum. 
+
+  - This also include limiting the number of distro and OS versions to a few of the
+    mainline Linux distro, typically the latest Debian stable version.
+    Things may work on other distro versions and architectures but that's not a goal.
+    Deployment using containers makes this mostly a non-issue.
+
+
+- Linux, Windows and macOS on x86/64 for libraries and command line apps on multiple OSes.
+
+  - Library projects and CLI apps should try to support Linux, Windows and macOS
+    on x86/64 for current and supported OS versions.
+
+  - Libraries project releases should be built for all the supported OS/Arch/Python versions.
+
+  - CLI app project releases should be built for only one Python version for each supported
+    OS/Arch. They should include a bundled Python and an installer when possible. 
+
+
+Python versions support
+-------------------------
+
+- We typically support the same Python versions that the Django project supports for its latest stable release.
+  We do not consider the first few releases of a new major Django stream as stable.
+  See https://docs.djangoproject.com/en/dev/faq/install/#what-python-version-can-i-use-with-django for details
+
+- We code against the syntax and standard library of the oldest Python version we support.
+  For instance if we support Python 3.8, 3.9 and 3.10, we use Python 3.8 syntax and standard library.
+
+- We should run tests on all supported Python versions.
+
+- When we drop support for a Python version in a project, we must make a new major release
+
+- Application project releases should be built for only one of the supported Python versions.
+  This should be neither the latest, nor the oldest.
+  For instance if we support Python 3.8, 3.9 and 3.10, we build app releases for Python 3.9.  
+
+- Libraries project releases should be built for all the supported Python version.
