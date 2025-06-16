@@ -58,31 +58,32 @@ Each AboutCode project has its own repository:
     scan-related tools in one process flow. This is the most popular project and
     is used by 100's of software teams . The lead maintainer is @pombredanne
 
--   **[Scancode.io](https://github.com/aboutcode-org/scancode.io)**: is a
+-   **[Scancode.io](https://github.com/aboutcode-org/scancode.io)**: a
     web-based and API to run and review scans in rich scripted pipelines, on
     different kinds of containers, docker images, package archives, manifests
     etc, to get information on licenses, copyrights, source, vulneribilities.
     The lead maintainer is @tdruez
 
--   **[VulnerableCode](https://github.com/aboutcode-org/vulnerablecode)**: is a
+-   **[VulnerableCode](https://github.com/aboutcode-org/vulnerablecode)**: a
     web-based API and database to collect and track all the known software
     package vulnerabilities, with affected and fixed packages, references and a
     standalone tool Vulntotal to compare this vulneribility information across
     similar tools. This is maintained by @tg1999 and @pombredanne
 
--   **[DejaCode](https://github.com/aboutcode-org/dejacode)**: is a
-    complete enterprise-level application to automate open source license
-    compliance and ensure software supply chain integrity.
-
--   **[univers](https://github.com/aboutcode-org/univers)** is a package to
+-   **[univers](https://github.com/aboutcode-org/univers)**: a package to
     parse and compare all the package versions and all the ranges.
 
--   **[purlDB](https://github.com/aboutcode-org/purldb)** consists of tools to
-    create and expose a database of purls (Package URLs) and also has package
+-   **[purlDB](https://github.com/aboutcode-org/purldb)**: tools to
+    create and expose a database of purls (Package URLs) along with package
     data for all of these packages created from scans. This is maintained by
     @jyang
 
--   **[FetchCode](https://github.com/aboutcode-org/fetchcode)** is a library to
+-   **[DejaCode](https://github.com/aboutcode-org/dejacode)**: a
+    complete enterprise-level application, powered by ScanCode,
+    VulnerableCode and purlDB, to automate open source license
+    compliance and ensure software supply chain integrity.
+
+-   **[FetchCode](https://github.com/aboutcode-org/fetchcode)**: a library to
     reliably fetch any code via HTTP, FTP and version control systems such as
     git.
 
@@ -101,8 +102,8 @@ Each AboutCode project has its own repository:
     Docker images using static analysis. Maintained by @pombredanne
 
 -   **[python-inspector](https://github.com/aboutcode-org/python-inspector)**
-    and **[nuget inspector](https://github.com/aboutcode-org/nuget-inspector/)**
-    inspects manifests and code to resolve dependencies (vulnerable and
+    and **[nuget inspector](https://github.com/aboutcode-org/nuget-inspector/)**:
+    tools to inpsect manifests and code to resolve dependencies (vulnerable and
     non-vulnerable) for python and nuget packages respectively.
 
 -   **[license-expression](https://github.com/aboutcode-org/license-expression/)**:
@@ -132,11 +133,12 @@ Each AboutCode project has its own repository:
 
 We have also co-started and worked closely with other FOSS orgs and projects:
 
--   [Package URL](https://github.com/package-url): a widely used standard to
-    reference software packages of all types with simple, readable and concise
-    URLs.
+-   [Package URL](https://github.com/package-url): a widely used standard to identify
+    precisely software packages of all types with simple, readable and concise URLs.
+    The PURL standard is currently being prepared for Ecma standardization.
+    See https://github.com/package-url/purl-spec/discussions for more details.
 
--   [SPDX](http://SPDX.org): aka. Software Package Data Exchange, a spec to
+-   [SPDX](http://SPDX.org): aka System Package Data Exchange, a spec to
     document the origin and licensing of packages.
 
 -   [CycloneDX](https://cyclonedx.org) aka. OWASP CycloneDX is a full-stack Bill
