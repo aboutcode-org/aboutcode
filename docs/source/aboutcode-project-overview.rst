@@ -20,31 +20,14 @@ The primary current AboutCode projects are:
 Getting Started
 ---------------
 
-Use AboutCode to manage and communicate license policies
---------------------------------------------------------
+.. toctree::
+   :maxdepth: 2
+
    getting-started/manage-license-policies
 
-Use AboutCode to ensure license compliance in your products
------------------------------------------------------------
-   getting-started/license-compliance
-
-Use AboutCode to create SBOMs for your products
------------------------------------------------
    getting-started/create-sboms
 
-Use AboutCode to consume SBOMs from your suppliers
---------------------------------------------------
    getting-started/consume-sboms
 
-Use AboutCode to find security vulnerabilities in your codebase
----------------------------------------------------------------
-   getting-started/find-security-vulnerabilities
-
-Use AboutCode to manage your security remediation tasks
--------------------------------------------------------
-   getting-started/security-remediation
-
-Use AboutCode to support CRA compliance
----------------------------------------
    getting-started/cra-compliance
 
