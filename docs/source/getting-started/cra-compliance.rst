@@ -3,11 +3,9 @@
 Use AboutCode to support CRA compliance
 =======================================
 
-Intro ...
-**work-in-progress**
+The AboutCode stack provides you with the tools you need to support CRA Compliance
+activities, including code scanning and analysis, license identification, vulnerability
+management, and SBOM generation.
 
-1. Install AboutCode Projects
------------------------------
-
-**work-in-progress**
+https://dejacode.readthedocs.io/en/latest/reference-3-cravex.html
 
