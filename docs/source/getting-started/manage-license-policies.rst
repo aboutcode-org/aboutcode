@@ -20,10 +20,11 @@ https://dejacode.readthedocs.io/en/latest/installation.html
 
 https://dejacode.readthedocs.io/en/latest/dataspace.html
 
-Not ready to install your own instance of DejaCode? Consider taking a look at
-the DejaCode public evaluation site to take a test drive, and if you have specific
-requirements, you may also request a private SaaS evaluation dataspace.
-See https://public.dejacode.com/account/register/
+.. note::
+    Not ready to install your own instance of DejaCode? Consider taking a look at
+    the DejaCode public evaluation site to take a test drive, and if you have specific
+    requirements, you may also request a private SaaS evaluation dataspace.
+    See https://public.dejacode.com/account/register/
 
 2. Create Your Usage Policies
 -----------------------------
@@ -42,11 +43,17 @@ https://dejacode.readthedocs.io/en/latest/howto-1.html#make-usage-policies-visib
 3. Export Your Usage Policies
 -----------------------------
 
-To use your Usage Policies in **ScanCode Toolkit** and **ScanCode.io** see
+You can export your DejaCode Usage Policies to a file that can be used in other
+applications.
 
 https://dejacode.readthedocs.io/en/latest/howto-1.html#export-license-policy-definitions
 
+You can use your Usage Policies in **ScanCode Toolkit** with the "--license-policy"
+Post-Scan option
+
 https://scancode-toolkit.readthedocs.io/en/stable/cli-reference/list-options.html#all-post-scan-options
+
+You can use your Usage Policies in **ScanCode.io** with a "policies.yml" file
 
 https://scancodeio.readthedocs.io/en/latest/tutorial_license_policies.html#license-policies-and-compliance-alerts
 
