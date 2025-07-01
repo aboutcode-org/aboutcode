@@ -4,17 +4,25 @@
 AboutCode Project Overview
 ==========================
 
-The primary current AboutCode projects are:
+Primary AboutCode Projects
+--------------------------
 
 .. toctree::
    :maxdepth: 2
 
-   aboutcode-projects/scancode-toolkit-project
    aboutcode-projects/scancodeio-project
-   aboutcode-projects/dejacode-project
-   aboutcode-projects/purldb-project
-   aboutcode-projects/scancode-workbench-project
    aboutcode-projects/vulnerablecode-project
+   aboutcode-projects/purldb-project
+   aboutcode-projects/scancode-toolkit-project
+   aboutcode-projects/scancode-workbench-project
+   aboutcode-projects/dejacode-project
+
+Supporting AboutCode Projects
+-----------------------------
+
+.. toctree::
+   :maxdepth: 2
+
    aboutcode-projects/aboutcode-toolkit-project
 
 Getting Started
