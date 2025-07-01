@@ -17,16 +17,21 @@ is vulnerable should be a problem of the past such that everyone can safely
 consume more free and open source software. We support not only open source
 software, but also open data, generated and curated by our applications.
 
-> **_NOTE:_** This is a repository with information on aboutcode open source
+> [!NOTE]
+> This is a repository with information on aboutcode open source
 > activities and not the actual code repository. See the
 > [projects section](https://github.com/aboutcode-org/aboutcode#projects) below
 > for links to all the code repositories of our projects with a brief overview
 > and our [wiki](https://github.com/aboutcode-org/aboutcode/wiki) if you are
 > looking to participate.
 
-### Documentation Build Status
+### Documentation Build
 
 ![Doc Build](https://github.com/aboutcode-org/aboutcode/actions/workflows/docs-ci.yml/badge.svg)
+
+> [!NOTE]
+> To manually build the documentation, run the `$ make docs` command from 
+> the root of this repo.
 
 ### Important Links
 
