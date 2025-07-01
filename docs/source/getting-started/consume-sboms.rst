@@ -14,6 +14,10 @@ context of an SBOM that you intend to use in one of your own products.
 1. Install AboutCode Projects
 -----------------------------
 
+**Install ScanCode.io**
+
+https://scancodeio.readthedocs.io/en/latest/installation.html
+
 **Install DejaCode.**
 
 https://dejacode.readthedocs.io/en/latest/installation.html
@@ -27,10 +31,6 @@ https://dejacode.readthedocs.io/en/latest/dataspace.html
     the DejaCode public evaluation site to take a test drive, and if you have specific
     requirements, you may also request a private SaaS evaluation dataspace.
     See https://public.dejacode.com/account/register/
-
-**Install ScanCode.io**
-
-https://scancodeio.readthedocs.io/en/latest/installation.html
 
 Configure DejaCode to integrate with ScanCode.io. See
 
