@@ -23,6 +23,8 @@ Supporting AboutCode Projects
 .. toctree::
    :maxdepth: 2
 
+   aboutcode-projects/license-expression-project
+   aboutcode-projects/scancode-action-project
    aboutcode-projects/aboutcode-toolkit-project
 
 Getting Started
@@ -30,6 +32,8 @@ Getting Started
 
 .. toctree::
    :maxdepth: 2
+
+   getting-started/start-scanning-code
 
    getting-started/manage-license-policies
 
