@@ -24,6 +24,9 @@ Supporting AboutCode Projects
    :maxdepth: 2
 
    aboutcode-projects/license-expression-project
+   aboutcode-projects/scancode-licensedb-project
+   aboutcode-projects/source-inspector-project
+   aboutcode-projects/python-inspector-project
    aboutcode-projects/scancode-action-project
    aboutcode-projects/aboutcode-toolkit-project
 
