@@ -74,7 +74,8 @@ https://scancodeio.readthedocs.io/en/latest/built-in-pipelines.html#load-sbom
 
 Review the details in your ScanCode.io project.
 
-Export the results in the appropriate format to share with your team.
+Export the results in the appropriate format to share with your team, such as CycloneDX
+and SPDX SBOMs.
 
 https://scancodeio.readthedocs.io/en/latest/output-files.html#output-files
 

@@ -6,7 +6,7 @@ DejaCode
 `DejaCode <https://github.com/aboutcode-org/dejacode>`_: is a Cloud
 application server that automates open source license compliance and ensures
 software supply chain integrity. It is a comprehensive enterprise-level application,
-powered by `ScanCode <https://github.com/nexB/scancode-toolkit>`_,
+powered by `ScanCode <https://github.com/aboutcode-org/scancode-toolkit>`_,
 the industry-leading code scanner.
 
 * Run scans and track all the open source and third-party products and

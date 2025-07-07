@@ -48,7 +48,7 @@ applications.
 
 https://dejacode.readthedocs.io/en/latest/howto-1.html#export-license-policy-definitions
 
-You can use your Usage Policies in **ScanCode Toolkit** with the "--license-policy"
+You can use your Usage Policies in **ScanCode-Toolkit** with the "--license-policy"
 Post-Scan option
 
 https://scancode-toolkit.readthedocs.io/en/stable/cli-reference/list-options.html#all-post-scan-options

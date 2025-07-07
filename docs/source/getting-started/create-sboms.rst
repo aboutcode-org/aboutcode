@@ -75,7 +75,8 @@ the exact pipelines to use for particular platforms and technologies.
 https://scancodeio.readthedocs.io/en/latest/user-interface.html#creating-a-new-project
 
 Export the scan results in the appropriate format to share with your team. ScanCode.io
-will report details of the identified packages if you choose to export SBOMs.
+will report details of the identified packages if you choose to export CycloneDX
+and SPDX SBOMs.
 
 https://scancodeio.readthedocs.io/en/latest/output-files.html#output-files
 
