@@ -35,7 +35,7 @@ software, but also open data, generated and curated by our applications.
 
 ### Important Links
 
-Our homepage is at http://aboutcode.org
+Our homepage is at https://aboutcode.org
 
 Our documentation (in progress) is at
 https://aboutcode.readthedocs.io/en/latest/
@@ -120,7 +120,7 @@ Each AboutCode project has its own repository:
     data. The details are at
     [AboutCode Data](https://aboutcode.readthedocs.io/en/latest/aboutcode-data/abcd.html).
     ABOUT files and ScanCode Toolkit data are examples of this approach. Other
-    projects such as https://libraries.io and and
+    projects such as https://libraries.io and
     [OSS Review Toolkit](https://github.com/heremaps/oss-review-toolkit) are
     also using these conventions.
 
@@ -137,7 +137,7 @@ We also co-started and worked closely with other FOSS orgs and projects:
     reference software packages of all types with simple, readable and concise
     URLs.
 
--   [SPDX](http://SPDX.org): aka. Software Package Data Exchange, a spec to
+-   [SPDX](https://spdx.org): aka. Software Package Data Exchange, a spec to
     document the origin and licensing of packages.
 
 -   [CycloneDX](https://cyclonedx.org) aka. OWASP CycloneDX is a full-stack Bill
