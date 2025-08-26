@@ -81,15 +81,21 @@ API Endpoint
 The new API endpoint is responsible for handling live evaluation requests.
 
 * Input:
-  * ``purl_string`` (required)
-  * ``no_threading`` (optional, default ``false``)
+  * ``purl`` (required)
 * Execution:
   * Checks ``LIVE_IMPORTERS_REGISTRY`` for importers whose ``supported_types`` match the PURL.
-  * Runs compatible importers in parallel unless ``no_threading`` is true.
+  * Enqueues the pipelines runs of these live importers in a ``live`` rq.
+  * Returns the Live Run ID, information about the pipelines to run, and the status url.
+  * The status URL shows the current state of a live evaluation run and its individual pipeline runs.
 * Output:
   * A set of advisories affecting the requested PURL, imported directly into the database and returned as JSON.
 
-.. figure:: https://private-user-images.githubusercontent.com/29122581/480716572-a29dbafc-3290-49dd-8cca-20afd0291d68.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU4MTMxNDQsIm5iZiI6MTc1NTgxMjg0NCwicGF0aCI6Ii8yOTEyMjU4MS80ODA3MTY1NzItYTI5ZGJhZmMtMzI5MC00OWRkLThjY2EtMjBhZmQwMjkxZDY4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIxVDIxNDcyNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE1NDczZGNhN2JhYjA2YmQzNWMwNGUzMzI1NmY5MTc3YzJjZmM4YTk2MWE2MjAwYWE0YmQzYWU0YmJiNGI5MzAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.DWqFUO5SnUVedEvTL3i5i-eI6tGHNaGKWTXT9yQt9Cs
+.. figure:: https://private-user-images.githubusercontent.com/29122581/482222427-38b61fc5-b5c3-414a-a372-fb2ec11e4023.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTYyMjkwMjcsIm5iZiI6MTc1NjIyODcyNywicGF0aCI6Ii8yOTEyMjU4MS80ODIyMjI0MjctMzhiNjFmYzUtYjVjMy00MTRhLWEzNzItZmIyZWMxMWU0MDIzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODI2VDE3MTg0N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTZkZjE5ZWJkMWU2ZmFjZTM5M2RiZjZkNTdjYjMyMjBlNDY3NzU4NDEyOTRiMWUyMjI3M2RjZmJjMjQzNTgzY2QmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.TjybPFq85LrsEdtkbmNMynE7thE9zo5sRr8C280ZEuE
+   :alt: Live Pipeline Run Class
+   :align: center
+   :width: 70%
+
+.. figure:: https://private-user-images.githubusercontent.com/29122581/482222353-524383d3-086d-466e-8b14-2d6314e9d72b.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTYyMjkwMjcsIm5iZiI6MTc1NjIyODcyNywicGF0aCI6Ii8yOTEyMjU4MS80ODIyMjIzNTMtNTI0MzgzZDMtMDg2ZC00NjZlLThiMTQtMmQ2MzE0ZTlkNzJiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODI2VDE3MTg0N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNlNzE4NWI2YjRiMDk1OGViYmJjNWI1MDJkNGIxMmMwYmQzNjFhMDAyMzYwMmE1YjE2NTk0NmIwMmUyNmRiMjEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Vp0G3_bbJ2QLu-sJjfDA26I4OEbUUl59-WotALf3Ce8
    :alt: Live Importers API request flow
    :align: center
    :width: 70%
