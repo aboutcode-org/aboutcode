@@ -1,5 +1,5 @@
-VulnerableCode: On-demand live evaluation of packages and Integration with VulnTotal and its browser extension
-==============================================================================================================
+VulnerableCode: On-demand live evaluation of packages
+=====================================================
 
 Organization - `AboutCode <https://www.aboutcode.org>`_
 -----------------------------------------------------------
@@ -16,23 +16,27 @@ Organization - `AboutCode <https://www.aboutcode.org>`_
 Overview
 --------
 
-VulnerableCode traditionally relied on **batch importers** to fetch and store
-all advisories from a source at once. While effective for building complete
-databases, batch importers are slow and resource-heavy for developers who only
-need vulnerability data for a **single package**.
+VulnerableCode traditionally relied on **batch importers** to fetch
+and store all advisories from a source at once. While effective for
+building complete databases, batch importers are slow and
+resource-heavy for developers who only need vulnerability
+data for a **single package**.
 
-This project introduces **live importers**, a new class of importers that
-operate in a *package-first* mode. Instead of pulling all advisories, they run
-against a single PackageURL (PURL), returning only the advisories affecting that
-package. This makes vulnerability evaluation **faster, more efficient, and more
-personalized**, since the database is gradually filled with only the advisories
+This project introduces **live importers**, a new class of
+importers that operate in a *package-first* mode. Instead of
+pulling all advisories, they run against a single
+PackageURL (PURL), returning only the advisories affecting
+that package. This makes vulnerability evaluation
+**faster, more efficient, and more personalized**, since the
+database is gradually filled with only the advisories
 that matter to each user.
 
 To support this, I added:
 
 * A new **LIVE_IMPORTERS_REGISTRY** that tracks available live importers.
-* A new **API endpoint** that accepts a PURL and runs all compatible live
-  importers in parallel (unless the ``no_threading`` flag is set).
+* A new **API endpoint** that accepts a **PURL**, enqueues compatible
+  live importer pipelines into a Redis queue, and executes them asynchronously
+  via workers.
 * Integration with **VulnTotal** and its **browser extension**, enabling users
   to evaluate packages in real-time through a seamless interface.
 
@@ -42,14 +46,14 @@ better integration with developer workflows.
 
 .. note::
    A PURL (Package URL) is a universal way to identify and locate software
-   packages. `More on PURL <https://github.com/package-url>`_
+   packages. `More on PURL <https://github.com/package-url/purl-spec>`_
 
 
 Project Design and Architecture
 -------------------------------
 
-The new live importers system builds on existing batch importers, while
-introducing a parallel registry and execution model for package-first runs.
+The new live importers system builds on existing batch importers, while introducing
+a parallel registry and asynchronous execution model for package-first runs.
 
 Importer Registries
 ^^^^^^^^^^^^^^^^^^^
@@ -66,6 +70,11 @@ Each live importer:
   ecosystems (``"pypi"``, ``"npm"``, ``"maven"``, ``"generic"``, etc).
 * Implements a package-first ``collect_advisories()`` method, which
   restricts results to advisories relevant to the given PURL.
+
+Live importer executions are asynchronous: once triggered, they are placed in
+a Redis-backed job queue and processed by dedicated workers. This prevents
+blocking the main API thread and allows multiple evaluations to run safely
+in parallel.
 
 .. figure:: https://private-user-images.githubusercontent.com/29122581/480716687-1ffa16ba-fbce-41bd-b71a-674620a2fec3.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU4MTMxNDQsIm5iZiI6MTc1NTgxMjg0NCwicGF0aCI6Ii8yOTEyMjU4MS80ODA3MTY2ODctMWZmYTE2YmEtZmJjZS00MWJkLWI3MWEtNjc0NjIwYTJmZWMzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIxVDIxNDcyNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI4MWQ2ZmY4MzkxY2MzOTYwNTI3MTViZThiZTk1Yzc0Y2Y0Y2E3YWNhY2Q5OTU5OTE5MTgxOGI5NGM1OTlkODcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Mt9-TVHRNDduOHHMnLuhr-vzKSxrbfmAz1JtWfksFA4
    :alt: Class architecture of importers registries
@@ -85,15 +94,19 @@ The new API endpoint is responsible for handling live evaluation requests.
 * Execution:
   * Checks ``LIVE_IMPORTERS_REGISTRY`` for importers whose ``supported_types`` match the PURL.
   * Enqueues the pipelines runs of these live importers in a ``live`` rq.
-  * Returns the Live Run ID, information about the pipelines to run, and the status url.
-  * The status URL shows the current state of a live evaluation run and its individual pipeline runs.
+  * Returns the **Live Run ID**, information about the pipelines to run, and the status url.
+  * The status URL shows the current state of a live evaluation run
+  and its individual pipeline runs.
 * Output:
-  * A set of advisories affecting the requested PURL, imported directly into the database and returned as JSON.
+  * Once workers complete execution, the resulting advisories are imported
+  into the database and exposed as JSON through the status endpoint.
 
 .. figure:: https://private-user-images.githubusercontent.com/29122581/482222427-38b61fc5-b5c3-414a-a372-fb2ec11e4023.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTYyMjkwMjcsIm5iZiI6MTc1NjIyODcyNywicGF0aCI6Ii8yOTEyMjU4MS80ODIyMjI0MjctMzhiNjFmYzUtYjVjMy00MTRhLWEzNzItZmIyZWMxMWU0MDIzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODI2VDE3MTg0N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTZkZjE5ZWJkMWU2ZmFjZTM5M2RiZjZkNTdjYjMyMjBlNDY3NzU4NDEyOTRiMWUyMjI3M2RjZmJjMjQzNTgzY2QmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.TjybPFq85LrsEdtkbmNMynE7thE9zo5sRr8C280ZEuE
    :alt: Live Pipeline Run Class
    :align: center
    :width: 70%
+
+   Live Pipeline Run Class and how it groups multiple PipelineRuns.
 
 .. figure:: https://private-user-images.githubusercontent.com/29122581/482222353-524383d3-086d-466e-8b14-2d6314e9d72b.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTYyMjkwMjcsIm5iZiI6MTc1NjIyODcyNywicGF0aCI6Ii8yOTEyMjU4MS80ODIyMjIzNTMtNTI0MzgzZDMtMDg2ZC00NjZlLThiMTQtMmQ2MzE0ZTlkNzJiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODI2VDE3MTg0N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNlNzE4NWI2YjRiMDk1OGViYmJjNWI1MDJkNGIxMmMwYmQzNjFhMDAyMzYwMmE1YjE2NTk0NmIwMmUyNmRiMjEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Vp0G3_bbJ2QLu-sJjfDA26I4OEbUUl59-WotALf3Ce8
    :alt: Live Importers API request flow
@@ -193,9 +206,14 @@ from batch importers to package-first live importers, We enabled a faster,
 more personalized, and more flexible way of building vulnerability databases.
 
 I especially enjoyed designing the **registry + API architecture** and
-discussing it with mentors and integrating it seamlessly across **VulnerableCode, VulnTotal, and the
-browser extension**. This work lays the foundation for even richer
-interactivity in the ecosystem and brings vulnerability evaluation closer
+integrating Redis queues and workers for asynchronous execution. This improved
+scalability, responsiveness, and fault tolerance, ensuring the API never blocks
+and multiple live evaluations can run in parallel. I also appreciated discussing
+it with mentors and integrating it seamlessly across
+**VulnerableCode, VulnTotal, and the browser extension**.
+
+This work lays the foundation for even richer interactivity
+in the ecosystem and brings vulnerability evaluation closer
 to developers' workflows.
 
 I appreciated the weekly status calls and the feedback I received from my
