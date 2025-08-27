@@ -1,0 +1,37 @@
+name: Sync README.md to docs/index.rst
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'README.md'
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install m2r2 for Markdown → RST
+        run: |
+          pip install m2r2
+
+      - name: Convert README.md to docs/index.rst
+        run: |
+          m2r2 README.md --output docs/index.rst
+
+      - name: Commit and push changes (if any)
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add docs/index.rst
+          git diff --cached --quiet || git commit -m "Sync README.md to docs/index.rst"
+          git push
