@@ -90,25 +90,31 @@ API Endpoint
 The new API endpoint is responsible for handling live evaluation requests.
 
 * Input:
+
   * ``purl`` (required)
 * Execution:
-  * Checks ``LIVE_IMPORTERS_REGISTRY`` for importers whose ``supported_types`` match the PURL.
-  * Enqueues the pipelines runs of these live importers in a ``live`` rq.
-  * Returns the **Live Run ID**, information about the pipelines to run, and the status url.
-  * The status URL shows the current state of a live evaluation run
-  and its individual pipeline runs.
-* Output:
-  * Once workers complete execution, the resulting advisories are imported
-  into the database and exposed as JSON through the status endpoint.
 
-.. figure:: https://private-user-images.githubusercontent.com/29122581/482222427-38b61fc5-b5c3-414a-a372-fb2ec11e4023.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTYyMjkwMjcsIm5iZiI6MTc1NjIyODcyNywicGF0aCI6Ii8yOTEyMjU4MS80ODIyMjI0MjctMzhiNjFmYzUtYjVjMy00MTRhLWEzNzItZmIyZWMxMWU0MDIzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODI2VDE3MTg0N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTZkZjE5ZWJkMWU2ZmFjZTM5M2RiZjZkNTdjYjMyMjBlNDY3NzU4NDEyOTRiMWUyMjI3M2RjZmJjMjQzNTgzY2QmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.TjybPFq85LrsEdtkbmNMynE7thE9zo5sRr8C280ZEuE
+  * Checks ``LIVE_IMPORTERS_REGISTRY`` for importers whose ``supported_types``
+    match the PURL.
+  * Enqueues the pipelines runs of these live importers in a ``live`` rq.
+  * Returns the **Live Run ID**, information about the pipelines to
+    run, and the status url.
+  * The status URL shows the current state of a live evaluation run
+    and its individual pipeline runs.
+
+* Output:
+
+  * Once workers complete execution, the resulting advisories are imported
+    into the database and exposed as JSON through the status endpoint.
+
+.. figure:: /_static/gsoc2025/vulnerablecode_michael/live_pipeline_run.png
    :alt: Live Pipeline Run Class
    :align: center
    :width: 70%
 
    Live Pipeline Run Class and how it groups multiple PipelineRuns.
 
-.. figure:: https://private-user-images.githubusercontent.com/29122581/482222353-524383d3-086d-466e-8b14-2d6314e9d72b.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTYyMjkwMjcsIm5iZiI6MTc1NjIyODcyNywicGF0aCI6Ii8yOTEyMjU4MS80ODIyMjIzNTMtNTI0MzgzZDMtMDg2ZC00NjZlLThiMTQtMmQ2MzE0ZTlkNzJiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODI2VDE3MTg0N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNlNzE4NWI2YjRiMDk1OGViYmJjNWI1MDJkNGIxMmMwYmQzNjFhMDAyMzYwMmE1YjE2NTk0NmIwMmUyNmRiMjEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Vp0G3_bbJ2QLu-sJjfDA26I4OEbUUl59-WotALf3Ce8
+.. figure:: /_static/gsoc2025/vulnerablecode_michael/api.png
    :alt: Live Importers API request flow
    :align: center
    :width: 70%
@@ -139,7 +145,7 @@ The VulnTotal browser extension was updated to support live importers:
 * This reduces setup effort—developers can get live vulnerability checks
   directly in their browser, provided they have a local VC instance.
 
-.. figure:: https://private-user-images.githubusercontent.com/29122581/480717461-29806bc6-faf5-48c9-8632-608c23d96e83.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU4MTMzNTksIm5iZiI6MTc1NTgxMzA1OSwicGF0aCI6Ii8yOTEyMjU4MS80ODA3MTc0NjEtMjk4MDZiYzYtZmFmNS00OGM5LTg2MzItNjA4YzIzZDk2ZTgzLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIxVDIxNTA1OVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWUwOTRkNWI1OTViNzYxODM4MjAyYTBjYTdmY2QyMzQ1Mzg2MTVmM2M5N2Q0M2I1MDQwMGRiNWJjZDllNmRjODQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.lmRcQBxwP1kbhcQ8Siq6vvm1GrBfd_BhkIbIte2NuYs
+.. figure:: /_static/gsoc2025/vulnerablecode_michael/extension_demo.gif
    :alt: Live evaluation demo in VulnTotal browser extension
    :align: center
    :width: 70%
@@ -217,8 +223,8 @@ in the ecosystem and brings vulnerability evaluation closer
 to developers' workflows.
 
 I appreciated the weekly status calls and the feedback I received from my
-mentors and the amazing team. They were really helpful and supportive. -
-`Philippe Ombredanne <https://github.com/pombredanne>`_ - `Ayan Sinha
-Mahapatra <https://github.com/AyanSinhaMahapatra>`_ - `Tushar Goel
-<https://github.com/TG1999>`_ - `Keshav Priyadarshi
-<https://github.com/keshav-space>`_
+mentors and the amazing team. They were really helpful and supportive.
+`Philippe Ombredanne <https://github.com/pombredanne>`_,
+`Ayan Sinha Mahapatra <https://github.com/AyanSinhaMahapatra>`_,
+`Tushar Goel <https://github.com/TG1999>`_,
+`Keshav Priyadarshi <https://github.com/keshav-space>`_
