@@ -8,6 +8,14 @@ designed to encourage university student participation in open source
 software development. It was started by Google in 2005. More about GSoC -
 `<https://summerofcode.withgoogle.com/about/>`_
 
+GSoC 2025
+---------
+
+.. toctree::
+   :maxdepth: 2
+
+   gsoc/reports/2025/scancodeio_aayush
+
 GSoC 2024
 ---------
 
