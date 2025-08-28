@@ -66,6 +66,8 @@ Implementation
   - Covered various edge cases where `extra-words` might be misplaced or exceed
     the maximum allowable count, ensuring the scoring and logging behave as expected.
 
+--------------------------------------------------------------------------------
+
 Linked Pull Requests
 --------------------
 
@@ -86,6 +88,11 @@ Linked Pull Requests
      - Improve score by supporting `extra_phrase` for `extra-words` in rules
      - `aboutcode.org/scancode-toolkit#4432
        <https://github.com/aboutcode-org/scancode-toolkit/pull/4432>`_
+     - Open
+   * - 3
+     - Add extra-phrase in rules
+     - `aboutcode.org/scancode-toolkit#4518
+       <https://github.com/aboutcode-org/scancode-toolkit/pull/4518>`_
      - Open
 
 Related Issues
@@ -112,18 +119,45 @@ Pre GSoC Work
 
 Before GSoC, I had contributed the following PRs:
 
-- `Renaming the dependency attribute is_resolved to is_pinned
-  <https://github.com/aboutcode-org/scancode-workbench/pull/638>`_
-- `Add test for all PyPI METADATA versions
-  <https://github.com/aboutcode-org/scancode-toolkit/pull/4180>`_
-- `Add test for false positive GPL3 license
-  <https://github.com/aboutcode-org/scancode-toolkit/pull/4106>`_
-- `Add new rules for EUPL license
-  <https://github.com/aboutcode-org/scancode-toolkit/pull/4204>`_
-- `Add DUMB License and detection rule
-  <https://github.com/aboutcode-org/scancode-toolkit/pull/4143>`_
-- `Fixing the dead link by cross-reference in the documentation
-  <https://github.com/aboutcode-org/purldb/pull/550>`_
+.. list-table::
+   :widths: 10 60 30
+   :header-rows: 1
+
+   * - Sr. no
+     - Name
+     - Link
+   * - 1
+     - Renaming the dependency attribute `is_resolved` to `is_pinned`
+     - `aboutcode-org/scancode-workbench#638
+       <https://github.com/aboutcode-org/scancode-workbench/pull/638>`_
+   * - 2
+     - Add test for all PyPI METADATA versions
+     - `aboutcode-org/scancode-toolkit#4180
+       <https://github.com/aboutcode-org/scancode-toolkit/pull/4180>`_
+   * - 3
+     - Add test for false positive GPL3 license
+     - `aboutcode-org/scancode-toolkit#4106
+       <https://github.com/aboutcode-org/scancode-toolkit/pull/4106>`_
+   * - 4
+     - Add new rules for EUPL license
+     - `aboutcode-org/scancode-toolkit#4204
+       <https://github.com/aboutcode-org/scancode-toolkit/pull/4204>`_
+   * - 5
+     - Add DUMB License and detection rule
+     - `aboutcode-org/scancode-toolkit#4400
+       <https://github.com/aboutcode-org/scancode-toolkit/issues/4400>`_
+   * - 6
+     - Fixing the dead link by cross-reference in the documentation
+     - `aboutcode-org/purldb#550
+       <https://github.com/aboutcode-org/purldb/pull/550>`_
+   * - 7
+     - Add test for equivalent word
+     - `aboutcode-org/scancode-toolkit#4305
+       <https://github.com/aboutcode-org/scancode-toolkit/pull/4305>`_
+   * - 8
+     - Enhance code visibility in dark mode
+     - `aboutcode-org/scancode-workbench#637
+       <https://github.com/aboutcode-org/scancode-workbench/pull/637>`_
 
 Post GSoC
 ---------
@@ -131,6 +165,11 @@ Post GSoC
 I plan to continue contributing by adding `extra-phrase` support across many
 license rules. This will strengthen license detection by making it more accurate
 and flexible in handling variations within the rules.
+
+For identifying named entities in rules, I created a new repository i.e
+`named-entity-utils <https://github.com/alok1304/named-entity-utils>`_ which I am
+currently working on. This utility is used to add `extra-phrase` markers in rules
+at positions where named entities are present.
 
 Links
 -----
