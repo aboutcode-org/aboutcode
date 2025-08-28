@@ -76,7 +76,7 @@ a Redis-backed job queue and processed by dedicated workers. This prevents
 blocking the main API thread and allows multiple evaluations to run safely
 in parallel.
 
-.. figure:: https://private-user-images.githubusercontent.com/29122581/480716687-1ffa16ba-fbce-41bd-b71a-674620a2fec3.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU4MTMxNDQsIm5iZiI6MTc1NTgxMjg0NCwicGF0aCI6Ii8yOTEyMjU4MS80ODA3MTY2ODctMWZmYTE2YmEtZmJjZS00MWJkLWI3MWEtNjc0NjIwYTJmZWMzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIxVDIxNDcyNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI4MWQ2ZmY4MzkxY2MzOTYwNTI3MTViZThiZTk1Yzc0Y2Y0Y2E3YWNhY2Q5OTU5OTE5MTgxOGI5NGM1OTlkODcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Mt9-TVHRNDduOHHMnLuhr-vzKSxrbfmAz1JtWfksFA4
+.. figure:: /_static/gsoc2025/vulnerablecode_michael/registries.png
    :alt: Class architecture of importers registries
    :align: center
    :width: 70%
