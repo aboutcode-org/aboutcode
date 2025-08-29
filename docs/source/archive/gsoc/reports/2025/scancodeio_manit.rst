@@ -41,7 +41,8 @@ Implementation
 --------------
 - **Independent Compliance Mechanisms:**
 
-  - Developed an independent mechanism for compliance based on scorecard scores and license clarity scores.
+  - Developed an independent mechanism for compliance based on scorecard scores
+    and license clarity scores.
   - Integrated these mechanisms into the database's project extra_data field, API endpoints,
     check compliance command, and UI project view.
   - Created a unified threshold mechanism for both license clarity and scorecard compliance,
@@ -232,5 +233,5 @@ I would like to thank my mentors:
 
 
 Their guidance was instrumental throughout the project development. The regular feedback sessions
-helped me navigate complex architectural decisions, especially when designing the unified compliance
-mechanism.
+helped me navigate complex architectural decisions, especially when designing the unified
+compliance mechanism.
