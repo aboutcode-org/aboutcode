@@ -15,6 +15,10 @@ GSoC 2025
    :maxdepth: 2
 
    gsoc/reports/2025/scancodeio_aayush
+   gsoc/reports/2025/scancodeio_manit
+   gsoc/reports/2025/scancode_toolkit_alok
+   gsoc/reports/2025/vulnerablecode_michael
+
 
 GSoC 2024
 ---------
