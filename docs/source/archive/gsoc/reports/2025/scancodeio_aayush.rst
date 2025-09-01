@@ -1,5 +1,5 @@
 ========================================================================
-Create file-system tree view for project scans
+Create file-system tree view for scanned codebases
 ========================================================================
 
 **Organization:** `AboutCode <https://aboutcode.org>`_
@@ -29,15 +29,15 @@ Implementation
 --------------
 - **Changes in the CodebaseResource model:**
     - Introduced a new parent_path field to the CodebaseResource model to
-    efficiently fetch the children of a directory.
+      efficiently fetch the children of a directory.
     - Ensured that top-level paths are stored during resource creation,
-    which is necessary for rendering root-level nodes in the file tree.
+      which is necessary for rendering root-level nodes in the file tree.
 
 - **Backend View:**
     - Implemented a new `CodebaseResourceTreeView` View to fetch and display
-    immediate children of a directory.
+      immediate children of a directory.
     - Added a new `CodebaseResourceTableView` View to display the details of a file
-    in tabular format with support for filtering.
+      in tabular format with support for filtering.
     - Used HTMX to update data in place without needing to reload the file for each change.
 
 - **Frontend Codebase Tree:**
@@ -46,15 +46,15 @@ Implementation
         - If children were already fetched, they are simply shown or hidden.
         - Directories with no children display without a chevron.
     - Enabled lazy loading to fetch directory contents only when expanded,
-    reducing initial load time.
+      reducing initial load time.
 
 
 - **Testing:**
 
     - Conducted large-scale testing to ensure API and UI can handle thousands of files efficiently.
     - Added unit tests for both backend and frontend to verify that the APIs return correct data,
-    the tree view expands and collapses properly, and file/directory details are displayed as
-    expected.
+      the tree view expands and collapses properly, and file/directory details are displayed as
+      expected.
 
 
 Linked Pull Requests
