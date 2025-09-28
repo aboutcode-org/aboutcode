@@ -14,6 +14,7 @@ GSoC 2025
 .. toctree::
    :maxdepth: 2
 
+   gsoc/reports/2025/scancodeio_varsha
    gsoc/reports/2025/scancodeio_aayush
    gsoc/reports/2025/scancodeio_manit
    gsoc/reports/2025/scancode_toolkit_alok
