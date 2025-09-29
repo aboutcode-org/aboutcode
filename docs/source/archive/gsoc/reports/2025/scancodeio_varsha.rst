@@ -1,3 +1,4 @@
+
 =====================================================
 Adding Ability to Store and Query Downloaded Packages
 =====================================================
@@ -26,6 +27,9 @@ reliable preservation.
 Implementation
 --------------
 
+The project involved the following key components and steps:
+
+
 .. figure:: /_static/gsoc2025/scancodeio_varsha/project_flow.png
    :alt: Project Flow Diagram
    :align: center
@@ -33,6 +37,7 @@ Implementation
 
 This project addresses the limitations of ScanCode.io's unstructured package
 storage by adding a system to index, reuse, and preserve packages reliably.
+
 
 Storage System Development:
 
@@ -68,6 +73,7 @@ Validation and Testing:
    `LocalFilesystemProvider` functionality (`put`, `get`, `list`,
    `find`), testing normal cases, edge cases (e.g., empty files), and
    errors (e.g., duplicate origins).
+
 
 Linked Pull Requests
 --------------------
@@ -138,3 +144,6 @@ Closing Note
 During GSoC 2025, my mentors and I held weekly meetings to discuss progress,
 challenges, and next steps. I am deeply grateful to my mentors for their guidance
 and support, which greatly enriched my learning experience.
+
+
+
