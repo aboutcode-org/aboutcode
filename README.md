@@ -64,15 +64,15 @@ Each AboutCode project has its own repository:
     is used by 100's of software teams . The lead maintainer is @pombredanne
 
 -   **[Scancode.io](https://github.com/aboutcode-org/scancode.io)**: is a
-    web-based and API to run and review scans in rich scripted pipelines, on
+    web-based UI and API to run and review scans in rich scripted pipelines, on
     different kinds of containers, docker images, package archives, manifests
-    etc, to get information on licenses, copyrights, source, vulneribilities.
+    etc, to get information on licenses, copyrights, source, vulnerabilities.
     The lead maintainer is @tdruez
 
 -   **[VulnerableCode](https://github.com/aboutcode-org/vulnerablecode)**: is a
     web-based API and database to collect and track all the known software
     package vulnerabilities, with affected and fixed packages, references and a
-    standalone tool Vulntotal to compare this vulneribility information across
+    standalone tool Vulntotal to compare this vulnerability information across
     similar tools. This is maintained by @tg1999 and @pombredanne
 
 -   **[univers](https://github.com/aboutcode-org/univers)** is a package to
