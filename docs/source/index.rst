@@ -1,48 +1,62 @@
-#########
 AboutCode
-#########
+=========
 
-Welcome to the AboutCode documentation homepage. `AboutCode.org
-<https://www.aboutcode.org/>`_ is a community of open source developers who
-are trying to make open source easier to use by providing open source tools
-to discover, identify and track open source components (aka Software
-Composition Analysis – SCA). AboutCode is the collective name for these
-open source tools.
+AboutCode is a family of free and open-source tools that help organizations
+understand what software they use, where it comes from, how it is licensed, and
+whether it is safe. These tools analyze source code, packages, containers, and
+build artifacts to answer essential software supply-chain questions.
 
-This home page provides a directory of our major projects and their
-documentation on ReadTheDocs plus information about how to contribute to
-AboutCode documentation.
+This documentation provides an overview of the AboutCode ecosystem, with links
+to individual projects and their documentation.
 
-All community contributions are welcome.
+Primary Projects
+----------------
 
+* **ScanCode Toolkit** – Detect licenses, copyrights, packages, metadata,
+  dependencies, and file origins.  
+  https://github.com/aboutcode-org/scancode-toolkit
 
-----
+* **Scancode.io** – Web UI and API for ScanCode pipelines and container/package
+  analysis.  
+  https://github.com/aboutcode-org/scancode.io
 
-********
-Overview
-********
+* **VulnerableCode** – Unified vulnerability database and APIs.  
+  https://github.com/aboutcode-org/vulnerablecode
 
-.. toctree::
-   :maxdepth: 3
+* **purlDB** – Package URL database and package metadata pipelines.  
+  https://github.com/aboutcode-org/purldb
 
-   aboutcode-project-overview
+* **univers** – Version and version-range parsing and comparison utilities.  
+  https://github.com/aboutcode-org/univers
 
-************
-Contributing
-************
+Supporting Tools
+----------------
 
-.. toctree::
-   :maxdepth: 3
+* **FetchCode** – Reliable code fetching library  
+  https://github.com/aboutcode-org/fetchcode
 
-   contributing
+* **container-inspector** – OCI/Docker image inspection  
+  https://github.com/aboutcode-org/container-inspector
 
-******
-Others
-******
+* **python-inspector**, **nuget-inspector** – Dependency resolvers  
+  https://github.com/aboutcode-org/python-inspector  
+  https://github.com/aboutcode-org/nuget-inspector
 
-.. toctree::
-   :maxdepth: 2
+* **license-expression** – SPDX expression parsing and normalization  
+  https://github.com/aboutcode-org/license-expression
 
-   aboutcode-data/abcd
-   archive
-   license
+Standards & Collaborations
+--------------------------
+
+* **Package URL (purl)** – Open standard for package identifiers  
+  https://github.com/package-url
+
+* **SPDX** – Software Package Data Exchange  
+  https://spdx.org
+
+* **CycloneDX** – SBOM specification from OWASP  
+  https://cyclonedx.org
+
+* **ClearlyDefined** – Community project for improving FOSS licensing  
+  https://clearlydefined.io
+
