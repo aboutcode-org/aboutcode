@@ -1,4 +1,4 @@
-# AboutCode Revisited
+# AboutCode
 
 ### What is AboutCode?
 
