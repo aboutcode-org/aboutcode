@@ -62,9 +62,9 @@ ScanCode Toolkit is a set of code scanning tools that detect the origin (copyrig
 
 ScanCode Toolkit is the leading tool in scanning depth and accuracy, used by hundreds of software teams. You can use ScanCode Toolkit as a command line tool or as a library.
 
-### **Custodian**
+### **Maintainer**
 
-The primary ScanCode Toolkit custodian is [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra)
+The primary ScanCode Toolkit maintainer is [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra)
 
 
 ## [**ScanCode.io**](http://ScanCode.io)
@@ -79,9 +79,9 @@ ScanCode.io provides a Web UI and API to run and review complex scans in rich sc
 
 ScanCode.io provides an easy-to-use front-end to ScanCode Toolkit and other AboutCode projects.The flexible pipeline technology supports advanced scanning tasks such as container scanning and deploy-to-develop analysis. You can run ScanCode.io in a Docker container or install it on a Linux server. It provides full support for generating and consuming CycloneDX and SPDX SBOMs.
 
-### **Custodian**
+### **Maintainer**
 
-The primary ScanCode.io custodian is [https://github.com/tdruez](https://github.com/tdruez) 
+The primary ScanCode.io maintainer is [https://github.com/tdruez](https://github.com/tdruez) 
 
 ## **ScanCode LicenseDB**
 
@@ -95,9 +95,9 @@ ScanCode LIcenseDB is a free and open database of software and related licenses 
 
 ScanCode LIcenseDB provides the most comprehensive list of software license identifiers, supporting SPDX-compliant license expressions. API access is available to the public database. 
 
-### **Custodian**
+### **Maintainer**
 
-The primary ScanCode LIcenseDB custodians are [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) and [https://github.com/DennisClark](https://github.com/DennisClark)
+The primary ScanCode LIcenseDB maintainers are [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) and [https://github.com/DennisClark](https://github.com/DennisClark)
 
 
 ## **ScanCode Workbench** 
@@ -112,9 +112,9 @@ ScanCode Workbench is an application to visualize and review scan results from S
 
 ScanCode Workbench provides an easy-to-use tool to review and edit ScanCode Toolkit results.
 
-### **Custodian**
+### **Maintainer**
 
-The primary ScanCode Workbench custodians are [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) and [https://github.com/mjherzog](https://github.com/mjherzog) 
+The primary ScanCode Workbench maintainers are [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) and [https://github.com/mjherzog](https://github.com/mjherzog) 
 
 ## **DejaCode** 
 
@@ -128,9 +128,9 @@ DejaCode provides an enterprise-level application to automate open source licens
 
 DejaCode is your system of record as a single source of truth with quality data for licenses, vulnerabilities, and package provenance and metadata, enabling you to ensure FOSS compliance with enterprise-grade features and integrations for DevOps and software systems.
 
-### **Custodian**
+### **Maintainer**
 
-The primary DejaCode custodians are [https://github.com/tdruez](https://github.com/tdruez) and [https://github.com/DennisClark](https://github.com/DennisClark) 
+The primary DejaCode maintainers are [https://github.com/tdruez](https://github.com/tdruez) and [https://github.com/DennisClark](https://github.com/DennisClark) 
 
 ## **VulnerableCode**
 
@@ -144,9 +144,9 @@ VulnerableCode provides a Web UI and API to access a database of known software 
 
 Known software package vulnerabilities are aggregated in a single database to query a richer graph of relations between multiple versions of a package identified by Package-URL (PURL).
 
-### **Custodian**
+### **Maintainer**
 
-The primary VulnerableCode custodians are [https://github.com/TG1999](https://github.com/TG1999) and [https://github.com/keshav-space](https://github.com/keshav-space) 
+The primary VulnerableCode maintainers are [https://github.com/TG1999](https://github.com/TG1999) and [https://github.com/keshav-space](https://github.com/keshav-space) 
 
 ## **PURLDB**
 
@@ -160,9 +160,9 @@ PURLDB provides tools to create and update a database of package metadata keyed 
 
 Take advantage of the PURLDB to get fast pre-scanned metadata for popular software packages, integrated with other AboutCode projects. 
 
-### **Custodian**
+### **Maintainer**
 
-The primary PURLDB custodian is [https://github.com/JonoYang](https://github.com/JonoYang) 
+The primary PURLDB maintainer is [https://github.com/JonoYang](https://github.com/JonoYang) 
 
 # **AboutCode Inspectors** 
 
@@ -180,9 +180,9 @@ binary-inspector is a utility to extract symbols from various kinds of binaries,
 
 binary-inspector supports the analysis intended to determine the code sources of a binary object and is designed to be used as a ScanCode Toolkit plugin or integrated in ScanCode.io pipelines.
 
-### **Custodian**
+### **Maintainer**
 
-The primary binary-inspector custodian is [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) 
+The primary binary-inspector maintainer is [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) 
 
 ## **container-inspector** 
 
@@ -196,9 +196,9 @@ container-inspector is a tool to analyze the structure and provenance of softwar
 
 container-inspector supports the analysis of the contents of the various layers of a container and is designed to be integrated in ScanCode.io pipelines.
 
-### **Custodian**
+### **Maintainer**
 
-The primary container-inspector custodians are [https://github.com/JonoYang](https://github.com/JonoYang) and [https://github.com/chinyeungli](https://github.com/chinyeungli) 
+The primary container-inspector maintainers are [https://github.com/JonoYang](https://github.com/JonoYang) and [https://github.com/chinyeungli](https://github.com/chinyeungli) 
 
 ## **source-inspector**
 
@@ -212,9 +212,9 @@ source-inspector is a set of utilities to inspect and analyze source code and co
 
 source-inspector supports the analysis of source code and is designed to be used as a ScanCode Toolkit plugin
 
-### **Custodian**
+### **Maintainer**
 
-The primary source-inspector custodian is [https://github.com/JonoYang](https://github.com/JonoYang) 
+The primary source-inspector maintainer is [https://github.com/JonoYang](https://github.com/JonoYang) 
 
 ## **nuget-inspector** 
 
@@ -228,9 +228,9 @@ nuget-inspector is a tool to inspect manifests and code to resolve dependencies 
 
 Nuget-inspector provides a reliable way to analyze .NET code projects and their dependencies independently of the availability of a dotnet SDK installed on the machine that runs this analysis. It is a comprehensive tool that can handle every style of .NET and NuGet projects and package layouts, manifests and lockfiles.
 
-### **Custodian**
+### **Maintainer**
 
-The primary nuget-inspector custodian is [https://github.com/JonoYang](https://github.com/JonoYang)
+The primary nuget-inspector maintainer is [https://github.com/JonoYang](https://github.com/JonoYang)
 
 ## **python-inspector** 
 
@@ -244,9 +244,9 @@ python-inspector is a tool to inspect manifests and code to resolve dependencies
 
 python-inspector supports ScanCode to find and analyze PyPI archives and installed Python packages and their files. It is a comprehensive library that can handle every style of Python package layouts, manifests and lockfiles.
 
-### **Custodian**
+### **Maintainer**
 
-The primary python-inspector custodians are [https://github.com/TG1999](https://github.com/TG1999) and  [https://github.com/chinyeungli](https://github.com/chinyeungli) 
+The primary python-inspector maintainers are [https://github.com/TG1999](https://github.com/TG1999) and  [https://github.com/chinyeungli](https://github.com/chinyeungli) 
 
 ## **debian-inspector**  
 
@@ -260,9 +260,9 @@ debian-inspector is a tool to inspect debian codebases.
 
 debian-inspector is more flexible than other libraries, capable of parsing and inspecting almost correct control files that are not fully machine readable. 
 
-### **Custodian**
+### **Maintainer**
 
-The primary debian-inspector custodians are [https://github.com/JonoYang](https://github.com/JonoYang) and  [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) 
+The primary debian-inspector maintainers are [https://github.com/JonoYang](https://github.com/JonoYang) and  [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) 
 
 ## **elf-inspector** 
 
@@ -276,9 +276,9 @@ elf-inspector is a set of utilities to inspect binary ELF files and collect inte
 
 elf-inspector is designed to be used as a ScanCode Toolkit plugin as well as integrated in ScanCode.io pipelines.
 
-### **Custodian**
+### **Maintainer**
 
-The primary elf-inspector custodian is [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) 
+The primary elf-inspector maintainer is [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) 
 
 ## **go-inspector** 
 
@@ -292,9 +292,9 @@ go-inspector is a utility to extract dependencies and symbols from Go binaries.
 
 go-inspector is designed to be used as a ScanCode Toolkit plugin as well as integrated in ScanCode.io pipelines. 
 
-### **Custodian**
+### **Maintainer**
 
-The primary go-inspector custodian is [https://github.com/JonoYang](https://github.com/JonoYang)
+The primary go-inspector maintainer is [https://github.com/JonoYang](https://github.com/JonoYang)
 
 
 ## **rust-inspector** 
@@ -309,9 +309,9 @@ rust-inspector is a utility to extract dependencies and symbols from Rust binari
 
 rust-inspector is designed to be used as a ScanCode Toolkit plugin as well as integrated in ScanCode.io pipelines. 
 
-### **Custodian**
+### **Maintainer**
 
-The primary rust-inspector custodian is [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra)
+The primary rust-inspector maintainer is [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra)
 
 
 # **AboutCode Libraries**
@@ -328,9 +328,9 @@ license-expression is a library to parse, analyze, compare and normalize SPDX an
 
 license-expression  is designed to be used as a ScanCode Toolkit plugin as well as integrated in ScanCode.io pipelines. 
 
-### **Custodian**
+### **Maintainer**
 
-The primary license-expression custodian is [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) 
+The primary license-expression maintainer is [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) 
 
 ## **commoncode**
 
@@ -344,9 +344,9 @@ commoncode provides a set of common functions and utilities for handling various
 
 commoncode is shared by multiple AboutCode projects. 
 
-### **Custodian**
+### **Maintainer**
 
-The primary commoncode custodian is [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) 
+The primary commoncode maintainer is [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) 
 
 
 ## **extractcode** 
@@ -361,9 +361,9 @@ extractcode is a mostly universal file extraction library and CLI tool to extrac
 
 extractcode supports  one of the largest number of archive formats and will extract things where other archive and compressed file extractors may fail.
 
-### **Custodian**
+### **Maintainer**
 
-The primary extractcode custodian is [https://github.com/JonoYang](https://github.com/JonoYang)
+The primary extractcode maintainer is [https://github.com/JonoYang](https://github.com/JonoYang)
 
 
 ## **fetchcode**
@@ -378,9 +378,9 @@ fetchcode is a utility to reliably fetch any code via HTTP, FTP and version cont
 
 It is surprisingly difficult to have a simple API to consistently fetch code from package repositories, version control repositories and APIs: each site and each package manager has its own unique and peculiar ways. FetchCode goal is to abstract all these details and make it easy to fetch things reliably. 
 
-### **Custodian**
+### **Maintainer**
 
-The primary fetchcode custodian is [https://github.com/JonoYang](https://github.com/JonoYang)
+The primary fetchcode maintainer is [https://github.com/JonoYang](https://github.com/JonoYang)
 
 
 # **Other AboutCode Tools**
@@ -397,9 +397,9 @@ aboutcode-toolkit is a set of command line tools to document the provenance of y
 
 The aboutcode-toolkit and ABOUT files provide a simple way to document the origin, license, usage and other important or interesting information about third-party software components that you use in your project. 
 
-### **Custodian**
+### **Maintainer**
 
-The primary aboutcode-toolkit custodian is [https://github.com/chinyeungli](https://github.com/chinyeungli)
+The primary aboutcode-toolkit maintainer is [https://github.com/chinyeungli](https://github.com/chinyeungli)
 
 
 ## **univers**
@@ -414,9 +414,9 @@ univers is a Python package to parse and compare all package versions and packag
 
 univers provides a mostly universal way to store version ranges and to compare two software package versions in VulnerableCode.
 
-### **Custodian**
+### **Maintainer**
 
-The primary univers custodian is [https://github.com/TG1999](https://github.com/TG1999)
+The primary univers maintainer is [https://github.com/TG1999](https://github.com/TG1999)
 
 
 ## **federatedcode**
@@ -431,9 +431,9 @@ federatedcode is a decentralized, federated metadata system for open source soft
 
 federatedcode is funded, supported and sponsored by multiple global organizations. 
 
-### **Custodian**
+### **Maintainer**
 
-The primary federatedcode custodian is [https://github.com/keshav-space](https://github.com/keshav-space)
+The primary federatedcode maintainer is [https://github.com/keshav-space](https://github.com/keshav-space)
 
 
 ## **AboutCode Data**
@@ -462,9 +462,9 @@ A purl is a URL string used to identify and locate a software package in a mostl
 
 PURL supports accuracy of software identification in SBOMs. PURL originated from ScanCode and is in process to become an Ecma standard.
 
-### **Custodian**
+### **Maintainer**
 
-The primary PURL custodian is [https://github.com/johnmhoran](https://github.com/johnmhoran)
+The primary PURL maintainer is [https://github.com/johnmhoran](https://github.com/johnmhoran)
 
 ## **VERS**
 
