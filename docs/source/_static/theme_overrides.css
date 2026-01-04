@@ -1,7 +1,7 @@
 /* this is the container for the pages */
 .wy-nav-content {
     max-width: 100%;
-    padding: 0px 40px 0px 0px;
+    padding: 60px 40px 0px 0px; /* added top padding */
     margin-top: 0px;
 }
 
