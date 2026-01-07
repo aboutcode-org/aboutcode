@@ -1,3 +1,17 @@
+/* =========================
+   Dark mode overrides
+   ========================= */
+
+   html[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #e6e6e6;
+    --link-color: #58a6ff;
+    --sidebar-bg: #1e1e1e;
+    --border-color: #333333;
+    --code-bg: #1b1f23;
+  }
+  
+
 /* this is the container for the pages */
 .wy-nav-content {
     max-width: 100%;
@@ -24,3 +38,29 @@ div.rst-content {
         margin-left: 0px;
     }
 }
+
+
+
+html[data-theme="dark"] body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  html[data-theme="dark"] .wy-nav-side {
+    background-color: var(--sidebar-bg);
+  }
+  
+  html[data-theme="dark"] a {
+    color: var(--link-color);
+  }
+  
+  html[data-theme="dark"] .wy-nav-content-wrap {
+    border-color: var(--border-color);
+  }
+  
+  html[data-theme="dark"] pre,
+  html[data-theme="dark"] code {
+    background-color: var(--code-bg);
+    color: var(--text-color);
+  }
+  
