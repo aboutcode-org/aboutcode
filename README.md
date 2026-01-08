@@ -504,3 +504,4 @@ We also co-started and work closely with other FOSS orgs and projects:
 -   [ClearlyDefined](https://ClearlyDefined.io): a project to review and help
     FOSS projects improve their licensing and documentation clarity. This
     project is incubating with https://opensource.org
+    
