@@ -69,7 +69,7 @@ ScanCode Toolkit is the leading tool in scanning depth and accuracy, used by hun
 
 ### **Maintainer**
 
-The primary ScanCode Toolkit maintainer is [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra)
+The primary ScanCode Toolkit maintainer is [@AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra)
 
 
 ## [**ScanCode.io**](http://ScanCode.io)
@@ -78,15 +78,15 @@ The primary ScanCode Toolkit maintainer is [https://github.com/AyanSinhaMahapatr
 
 ### **What**
 
-ScanCode.io provides a Web UI and API to run and review complex scans in rich scripted pipelines, on different kinds of containers, docker images, package archives, manifests etc, to get information on licenses, copyrights, sources, and vulnerabilities.
+ScanCode.io provides a Web UI and API to run and review complex scans in rich scripted pipelines, on different kinds of containers, Docker images, package archives, manifests etc, to get information on licenses, copyrights, sources, and vulnerabilities.
 
 ### **Why**
 
-ScanCode.io provides an easy-to-use front-end to ScanCode Toolkit and other AboutCode projects.The flexible pipeline technology supports advanced scanning tasks such as container scanning and deploy-to-develop analysis. You can run ScanCode.io in a Docker container or install it on a Linux server. It provides full support for generating and consuming CycloneDX and SPDX SBOMs.
+ScanCode.io provides an easy-to-use front-end to ScanCode Toolkit and other AboutCode projects. The flexible pipeline technology supports advanced scanning tasks such as container scanning and deploy-to-develop analysis. You can run ScanCode.io in a Docker container or install it on a Linux server. It provides full support for generating and consuming CycloneDX and SPDX SBOMs.
 
 ### **Maintainer**
 
-The primary ScanCode.io maintainer is [https://github.com/tdruez](https://github.com/tdruez) 
+The primary ScanCode.io maintainer is [@tdruez](https://github.com/tdruez) 
 
 ## **ScanCode LicenseDB**
 
@@ -94,15 +94,15 @@ The primary ScanCode.io maintainer is [https://github.com/tdruez](https://github
 
 ### **What**
 
-ScanCode LIcenseDB is a free and open database of software and related licenses with over 2400 curated license texts, their metadata and ScanCode license detection rules. There is a public database available at: [https://scancode-licensedb.aboutcode.org/](https://scancode-licensedb.aboutcode.org/) 
+ScanCode LicenseDB is a free and open database of software and related licenses with over 2400 curated license texts, their metadata and ScanCode license detection rules. There is a public database available at: [https://scancode-licensedb.aboutcode.org/](https://scancode-licensedb.aboutcode.org/) 
 
 ### **Why**
 
-ScanCode LIcenseDB provides the most comprehensive list of software license identifiers, supporting SPDX-compliant license expressions. API access is available to the public database. 
+ScanCode LicenseDB provides the most comprehensive list of software license identifiers, supporting SPDX-compliant license expressions. API access is available to the public database. 
 
 ### **Maintainer**
 
-The primary ScanCode LIcenseDB maintainers are [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) and [https://github.com/DennisClark](https://github.com/DennisClark)
+The primary ScanCode LicenseDB maintainers are [@AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) and [@DennisClark](https://github.com/DennisClark)
 
 
 ## **ScanCode Workbench** 
@@ -119,7 +119,7 @@ ScanCode Workbench provides an easy-to-use tool to review and edit ScanCode Tool
 
 ### **Maintainer**
 
-The primary ScanCode Workbench maintainers are [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) and [https://github.com/mjherzog](https://github.com/mjherzog) 
+The primary ScanCode Workbench maintainers are [@AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) and [@mjherzog](https://github.com/mjherzog) 
 
 ## **DejaCode** 
 
@@ -135,7 +135,7 @@ DejaCode is your system of record as a single source of truth with quality data 
 
 ### **Maintainer**
 
-The primary DejaCode maintainers are [https://github.com/tdruez](https://github.com/tdruez) and [https://github.com/DennisClark](https://github.com/DennisClark) 
+The primary DejaCode maintainers are [@tdruez](https://github.com/tdruez) and [@DennisClark](https://github.com/DennisClark) 
 
 ## **VulnerableCode**
 
@@ -151,7 +151,7 @@ Known software package vulnerabilities are aggregated in a single database to qu
 
 ### **Maintainer**
 
-The primary VulnerableCode maintainers are [https://github.com/TG1999](https://github.com/TG1999) and [https://github.com/keshav-space](https://github.com/keshav-space) 
+The primary VulnerableCode maintainers are [@TG1999](https://github.com/TG1999) and [@keshav-space](https://github.com/keshav-space) 
 
 ## **PURLDB**
 
@@ -167,7 +167,7 @@ Take advantage of the PURLDB to get fast pre-scanned metadata for popular softwa
 
 ### **Maintainer**
 
-The primary PURLDB maintainer is [https://github.com/JonoYang](https://github.com/JonoYang) 
+The primary PURLDB maintainer is [@JonoYang](https://github.com/JonoYang) 
 
 # **AboutCode Inspectors** 
 
@@ -187,7 +187,7 @@ binary-inspector supports the analysis intended to determine the code sources of
 
 ### **Maintainer**
 
-The primary binary-inspector maintainer is [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) 
+The primary binary-inspector maintainer is [@AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) 
 
 ## **container-inspector** 
 
@@ -203,7 +203,7 @@ container-inspector supports the analysis of the contents of the various layers 
 
 ### **Maintainer**
 
-The primary container-inspector maintainers are [https://github.com/JonoYang](https://github.com/JonoYang) and [https://github.com/chinyeungli](https://github.com/chinyeungli) 
+The primary container-inspector maintainers are [@JonoYang](https://github.com/JonoYang) and [@chinyeungli](https://github.com/chinyeungli) 
 
 ## **source-inspector**
 
@@ -219,7 +219,7 @@ source-inspector supports the analysis of source code and is designed to be used
 
 ### **Maintainer**
 
-The primary source-inspector maintainer is [https://github.com/JonoYang](https://github.com/JonoYang) 
+The primary source-inspector maintainer is [@JonoYang](https://github.com/JonoYang) 
 
 ## **nuget-inspector** 
 
@@ -235,7 +235,7 @@ Nuget-inspector provides a reliable way to analyze .NET code projects and their 
 
 ### **Maintainer**
 
-The primary nuget-inspector maintainer is [https://github.com/JonoYang](https://github.com/JonoYang)
+The primary nuget-inspector maintainer is [@JonoYang](https://github.com/JonoYang)
 
 ## **python-inspector** 
 
@@ -251,7 +251,7 @@ python-inspector supports ScanCode to find and analyze PyPI archives and install
 
 ### **Maintainer**
 
-The primary python-inspector maintainers are [https://github.com/TG1999](https://github.com/TG1999) and  [https://github.com/chinyeungli](https://github.com/chinyeungli) 
+The primary python-inspector maintainers are [@TG1999](https://github.com/TG1999) and  [@chinyeungli](https://github.com/chinyeungli) 
 
 ## **debian-inspector**  
 
@@ -267,7 +267,7 @@ debian-inspector is more flexible than other libraries, capable of parsing and i
 
 ### **Maintainer**
 
-The primary debian-inspector maintainers are [https://github.com/JonoYang](https://github.com/JonoYang) and  [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) 
+The primary debian-inspector maintainers are [@JonoYang](https://github.com/JonoYang) and  [@AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) 
 
 ## **elf-inspector** 
 
@@ -283,7 +283,7 @@ elf-inspector is designed to be used as a ScanCode Toolkit plugin as well as int
 
 ### **Maintainer**
 
-The primary elf-inspector maintainer is [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) 
+The primary elf-inspector maintainer is [@AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) 
 
 ## **go-inspector** 
 
@@ -299,7 +299,7 @@ go-inspector is designed to be used as a ScanCode Toolkit plugin as well as inte
 
 ### **Maintainer**
 
-The primary go-inspector maintainer is [https://github.com/JonoYang](https://github.com/JonoYang)
+The primary go-inspector maintainer is [@JonoYang](https://github.com/JonoYang)
 
 
 ## **rust-inspector** 
@@ -316,7 +316,7 @@ rust-inspector is designed to be used as a ScanCode Toolkit plugin as well as in
 
 ### **Maintainer**
 
-The primary rust-inspector maintainer is [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra)
+The primary rust-inspector maintainer is [@AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra)
 
 
 # **AboutCode Libraries**
@@ -335,7 +335,7 @@ license-expression  is designed to be used as a ScanCode Toolkit plugin as well 
 
 ### **Maintainer**
 
-The primary license-expression maintainer is [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) 
+The primary license-expression maintainer is [@AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) 
 
 ## **commoncode**
 
@@ -351,7 +351,7 @@ commoncode is shared by multiple AboutCode projects.
 
 ### **Maintainer**
 
-The primary commoncode maintainer is [https://github.com/AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) 
+The primary commoncode maintainer is [@AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) 
 
 
 ## **extractcode** 
@@ -368,7 +368,7 @@ extractcode supports  one of the largest number of archive formats and will extr
 
 ### **Maintainer**
 
-The primary extractcode maintainer is [https://github.com/JonoYang](https://github.com/JonoYang)
+The primary extractcode maintainer is [@JonoYang](https://github.com/JonoYang)
 
 
 ## **fetchcode**
@@ -381,11 +381,11 @@ fetchcode is a utility to reliably fetch any code via HTTP, FTP and version cont
 
 ### **Why**
 
-It is surprisingly difficult to have a simple API to consistently fetch code from package repositories, version control repositories and APIs: each site and each package manager has its own unique and peculiar ways. FetchCode goal is to abstract all these details and make it easy to fetch things reliably. 
+It is surprisingly difficult to have a simple API to consistently fetch code from package repositories, version control repositories and APIs: each site and each package manager has its own unique and peculiar ways. FetchCode's goal is to abstract all these details and make it easy to fetch things reliably. 
 
 ### **Maintainer**
 
-The primary fetchcode maintainer is [https://github.com/JonoYang](https://github.com/JonoYang)
+The primary fetchcode maintainer is [@JonoYang](https://github.com/JonoYang)
 
 
 # **Other AboutCode Tools**
@@ -404,7 +404,7 @@ The aboutcode-toolkit and ABOUT files provide a simple way to document the origi
 
 ### **Maintainer**
 
-The primary aboutcode-toolkit maintainer is [https://github.com/chinyeungli](https://github.com/chinyeungli)
+The primary aboutcode-toolkit maintainer is [@chinyeungli](https://github.com/chinyeungli)
 
 
 ## **univers**
@@ -421,7 +421,7 @@ univers provides a mostly universal way to store version ranges and to compare t
 
 ### **Maintainer**
 
-The primary univers maintainer is [https://github.com/TG1999](https://github.com/TG1999)
+The primary univers maintainer is [@TG1999](https://github.com/TG1999)
 
 
 ## **federatedcode**
@@ -438,7 +438,7 @@ federatedcode is funded, supported and sponsored by multiple global organization
 
 ### **Maintainer**
 
-The primary federatedcode maintainer is [https://github.com/keshav-space](https://github.com/keshav-space)
+The primary federatedcode maintainer is [@keshav-space](https://github.com/keshav-space)
 
 
 ## **AboutCode Data**
@@ -449,7 +449,7 @@ AboutCode Data is a simple set of conventions to define data structures that all
 
 ### **Why**
 
-AboutCode Data supports other projects such as [https://libraries.io](https://libraries.io/) and and [OSS Review Toolkit](https://github.com/heremaps/oss-review-toolkit) 
+AboutCode Data supports other projects such as [https://libraries.io](https://libraries.io/) and [OSS Review Toolkit](https://github.com/heremaps/oss-review-toolkit) 
 
 # **AboutCode Standards and Related Projects**
 
@@ -469,7 +469,7 @@ PURL supports accuracy of software identification in SBOMs. PURL originated from
 
 ### **Maintainer**
 
-The primary PURL maintainer is [https://github.com/johnmhoran](https://github.com/johnmhoran)
+The primary PURL maintainer is [@johnmhoran](https://github.com/johnmhoran)
 
 ## **VERS**
 
