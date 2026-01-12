@@ -2,6 +2,12 @@
 Contributing to AboutCode
 #########################
 
+.. important::
+   For general contributing guidelines across all AboutCode projects, see our
+   `Organization-Wide Contributing Guide <https://github.com/aboutcode-org/aboutcode/blob/main/CONTRIBUTING.md>`_.
+   
+   This page contains AboutCode-specific documentation contribution guidelines.
+
 We welcome you and your interest in contributing to open source software!
 AboutCode is always looking for enthusiatic contributors and we are happy
 to help with any questions or comments. Here a few resources to get
