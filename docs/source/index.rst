@@ -26,6 +26,7 @@ Overview
    :maxdepth: 3
 
    aboutcode-project-overview
+   user_roles
 
 ************
 Contributing
