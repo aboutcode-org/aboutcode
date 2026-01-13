@@ -24,3 +24,17 @@ div.rst-content {
         margin-left: 0px;
     }
 }
+
+
+
+/* Add proper spacing below the top navigation bar */
+.wy-nav-content {
+    padding-top: 80px; 
+}
+
+/* Improve visibility and spacing of large banner text */
+.section h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
