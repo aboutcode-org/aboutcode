@@ -19,7 +19,10 @@ The main style points are these:
 
 Subject:
 
-- Add a issue number at the end of the line when available as in "#234"
+- Prefer full issue URLs (e.g. ``https://github.com/aboutcode-org/aboutcode/issues/234``)
+  to keep references valid if code moves to another repo.
+- Shorthand ``#234`` is acceptable only when the work is guaranteed to remain in
+  the same repository.
 - Limit the subject line to 50 characters
 - Capitalize the subject line
 - Do not end the subject line with a period
@@ -38,9 +41,8 @@ Body:
 
 Other comments:
 
-We like to suffix the subject line with an issue number. If this was a
-trivial change it may not have one though. If it had one a you would use
-``#156`` as a suffix to the first line.
+We like to suffix the subject line with an issue reference. Use the full URL by
+default; shorthand ``#156`` only if the commit will stay in the same repository.
 
 We like to tell why the commit is there and use an imperative style, like
 if you were giving an order to the codebase with your commit:

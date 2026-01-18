@@ -97,7 +97,9 @@ following commands are examples::
     git add source/index.rst
     git add source/how-to-scan.rst
     git status
-    git commit -m "New how-to document that explains how to scan"
+    # Prefer full issue URLs for cross-repo clarity. Use shorthand #123 only
+    # if the change will stay in the same repository.
+    git commit -m "New how-to document that explains how to scan https://github.com/aboutcode-org/aboutcode/issues/106"
     git status
     git push
     git status
