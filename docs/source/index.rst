@@ -27,6 +27,15 @@ Overview
 
    aboutcode-project-overview
 
+********
+Standards
+********
+
+.. toctree::
+   :maxdepth: 2
+
+   standards/index
+
 ************
 Contributing
 ************
@@ -35,6 +44,15 @@ Contributing
    :maxdepth: 3
 
    contributing
+
+****
+News
+****
+
+.. toctree::
+   :maxdepth: 1
+
+   news/index
 
 ******
 Others
@@ -45,4 +63,5 @@ Others
 
    aboutcode-data/abcd
    archive
+   privacy-policy
    license
