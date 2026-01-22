@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  aboutcode:
+    build:
+      context: .
+    container_name: aboutcode-container
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+    command: python about.py
+
+  db:
+    image: postgres:14
+    container_name: aboutcode-db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: aboutcode
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
