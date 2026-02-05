@@ -2,7 +2,7 @@
 .wy-nav-content {
     max-width: 100%;
     padding: 0px 40px 0px 0px;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 
 .wy-nav-content-wrap {
@@ -12,16 +12,18 @@
 div.rst-content {
     max-width: 1300px;
     border: 0;
-    padding: 10px 80px 10px 80px;
+    padding: 30px 80px 10px 80px;
     margin-left: 50px;
+    line-height: 1.6;
 }
 
 @media (max-width: 768px) {
     div.rst-content {
         max-width: 1300px;
         border: 0;
-        padding: 0px 10px 10px 10px;
+        padding: 20px 10px 10px 10px;
         margin-left: 0px;
+        line-height: 1.5;
     }
 }
 
