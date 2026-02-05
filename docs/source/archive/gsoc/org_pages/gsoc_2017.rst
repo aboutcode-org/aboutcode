@@ -1,6 +1,13 @@
 Google Summer of Code 2017
 ==========================
 
+
+.. image:: /_static/images/aboutcode_logo.svg
+   :target: https://www.aboutcode.org/
+   :alt: AboutCode Logo
+   :width: 200px
+
+
 Welcome to AboutCode! This year AboutCode is a mentoring Organization for
 the Google Summer of Code 2017 edition.
 
