@@ -12,6 +12,9 @@ scanning to meet your analysis requirements.
 
 **Install ScanCode.io**
 
+Follow the official installation guide to set up ScanCode.io locally
+or using containers:
+
 https://scancodeio.readthedocs.io/en/latest/installation.html
 
 Configure ScanCode.io to identify software vulnerabilities.
