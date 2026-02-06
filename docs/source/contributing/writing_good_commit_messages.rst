@@ -19,7 +19,13 @@ The main style points are these:
 
 Subject:
 
-- Add a issue number at the end of the line when available as in "#234"
+- Add an issue reference at the end of the line when available. For commit 
+  messages within the same repository, you can use the shorthand format like 
+  "Fixes #234". However, for code comments or cross-repository references, 
+  always use full GitHub URLs (e.g., 
+  "https://github.com/aboutcode-org/aboutcode/issues/234") to prevent broken 
+  references if the code is moved to another repository. See 
+  https://github.com/aboutcode-org/aboutcode/issues/106 for more context.
 - Limit the subject line to 50 characters
 - Capitalize the subject line
 - Do not end the subject line with a period
@@ -38,15 +44,16 @@ Body:
 
 Other comments:
 
-We like to suffix the subject line with an issue number. If this was a
-trivial change it may not have one though. If it had one a you would use
-``#156`` as a suffix to the first line.
+We like to suffix the subject line with an issue reference. If this was a
+trivial change it may not have one though. For commits within this repository,
+you can use the shorthand ``#156`` as a suffix to the first line. For code 
+comments that might be moved to other repositories, use full URLs.
 
 We like to tell why the commit is there and use an imperative style, like
 if you were giving an order to the codebase with your commit:
 
 e.g rather than : ``Minor fix for unnecessary operations.`` may be ``Remove
-unnecessary operations #123`` or::
+unnecessary operations https://github.com/aboutcode-org/aboutcode/issues/123`` or::
 
     Remove unnecessary operations #123
 
