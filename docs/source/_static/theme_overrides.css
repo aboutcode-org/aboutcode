@@ -1,27 +1,22 @@
 /* this is the container for the pages */
 .wy-nav-content {
     max-width: 100%;
-    padding: 0px 40px 0px 0px;
-    margin-top: 0px;
+    padding: 2em 40px; /* Adjusted padding for better spacing */
 }
 
 .wy-nav-content-wrap {
-    border-right: solid 1px;
+    border-right: none; /* Removed border as it is usually not needed */
 }
 
 div.rst-content {
-    max-width: 1300px;
-    border: 0;
-    padding: 10px 80px 10px 80px;
-    margin-left: 50px;
+    max-width: 1000px; /* Reduced max-width for better readability */
+    margin: 0 auto;    /* Center the content */
+    padding: 20px;     /* Simplified padding */
 }
 
 @media (max-width: 768px) {
     div.rst-content {
-        max-width: 1300px;
-        border: 0;
-        padding: 0px 10px 10px 10px;
-        margin-left: 0px;
+        padding: 20px;
     }
 }
 
