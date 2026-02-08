@@ -24,3 +24,30 @@ div.rst-content {
         margin-left: 0px;
     }
 }
+
+/* Minimal UI fixes */
+
+/* Fix 1: Reduce excessive header sizes */
+.rst-content h1 {
+    font-size: 2.2rem;
+}
+
+.rst-content h2 {
+    font-size: 1.8rem;
+}
+
+/* Fix 2: Improve dark mode link visibility */
+[data-theme="dark"] .rst-content a {
+    color: #5ca8ff;
+}
+
+/* Fix 3: Better sidebar navigation spacing */
+.wy-menu-vertical li a {
+    padding: 0.6em 1.2em;
+}
+
+/* Fix 4: Reduce list indentation */
+.rst-content ul,
+.rst-content ol {
+    margin-left: 1.5rem;
+}

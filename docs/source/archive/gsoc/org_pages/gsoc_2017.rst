@@ -2,9 +2,10 @@ Google Summer of Code 2017
 ==========================
 
 
-.. image:: https://cdn.rawgit.com/wiki/nexB/aboutcode/aboutcode_logo.svg
-   :target: http://www.aboutcode.org/
+.. image:: /_static/images/aboutcode_logo.svg
+   :target: https://www.aboutcode.org/
    :alt: AboutCode Logo
+   :width: 200px
 
 
 Welcome to AboutCode! This year AboutCode is a mentoring Organization for
