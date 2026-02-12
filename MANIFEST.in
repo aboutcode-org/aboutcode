@@ -1,6 +1,6 @@
 graft src
 
-include *.LICENSE
+include LICENSE
 include NOTICE
 include *.ABOUT
 include *.toml
