@@ -3,7 +3,7 @@ Contributing to AboutCode
 #########################
 
 We welcome you and your interest in contributing to open source software!
-AboutCode is always looking for enthusiatic contributors and we are happy
+AboutCode is always looking for enthusiastic contributors and we are happy
 to help with any questions or comments. Here a few resources to get
 started:
 
