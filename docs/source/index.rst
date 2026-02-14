@@ -18,6 +18,41 @@ All community contributions are welcome.
 
 ----
 
+******************
+Choose Your Path
+******************
+
+AboutCode serves different users with different goals. Choose the path that best
+describes you to find the documentation most relevant to your needs:
+
+**Legal & Compliance Professionals**
+    You're responsible for ensuring license compliance, managing open source policies,
+    or generating attribution documentation. You need high-level summaries and
+    compliance workflows.
+
+    → :ref:`persona-legal-compliance`
+
+**Security & SCA Professionals**
+    You're focused on identifying vulnerabilities, managing security risks, or
+    performing software composition analysis. You need vulnerability scanning and
+    security analysis workflows.
+
+    → :ref:`persona-security-researcher`
+
+**Developers & Integrators**
+    You're integrating AboutCode into your development workflow, CI/CD pipeline, or
+    building applications that consume AboutCode data. You need APIs, CLIs, and
+    automation guides.
+
+    → :ref:`persona-developer-integrator`
+
+.. note::
+    Not sure which path fits you? That's okay! You can explore all paths, and each
+    one includes links to the others where relevant.
+
+
+----
+
 ********
 Overview
 ********
@@ -26,6 +61,17 @@ Overview
    :maxdepth: 3
 
    aboutcode-project-overview
+
+**************
+Persona Paths
+**************
+
+.. toctree::
+   :maxdepth: 2
+
+   personas/legal-compliance
+   personas/security-researcher
+   personas/developer-integrator
 
 ************
 Contributing
