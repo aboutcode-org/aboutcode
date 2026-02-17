@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  docs:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    command: sphinx-autobuild docs/source docs/build/html --host 0.0.0.0 --port 8000
