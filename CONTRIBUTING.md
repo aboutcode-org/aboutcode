@@ -13,7 +13,7 @@ Welcome! We're excited that you're interested in contributing to AboutCode. This
 
 - **Gitter Chat**: [aboutcode-org#discuss](https://app.gitter.im/#/room/#aboutcode-org_discuss:gitter.im)
 - **Slack**: [Join our workspace](https://join.slack.com/t/aboutcode-org/shared_invite/zt-1paqwxccw-IuafuiAvYJFkTqGaZsC1og)
-- **Weekly Meetings**: We hold weekly community calls. See [meeting minutes](https://github.com/aboutcode-org/aboutcode/wiki/MeetingMinutes) for details
+- **Community**: Participate in our [Wiki](https://github.com/aboutcode-org/aboutcode/wiki) or check [Meeting Minutes](https://github.com/aboutcode-org/aboutcode/wiki/MeetingMinutes) for the latest community calls.
 
 ## How to Contribute
 
