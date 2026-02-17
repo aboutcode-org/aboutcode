@@ -3,7 +3,7 @@
 PurlDB
 ======
 
-`PurlDB <https://github.com/aboutcode-org/purldb>`_: is a set of
+PurlDB is a set of
 tools to create and expose a database of purls (Package URLs). This project is
 sponsored by NLnet project https://nlnet.nl/project/vulnerabilitydatabase/ and
 nexB for https://www.aboutcode.org/
@@ -20,7 +20,6 @@ The PurlDB tools include:
 * purldb-toolkit CLI utility and library to use the PurlDB, its API and various
   related libraries.
 
-Read more at: https://purldb.readthedocs.io
-
-Get the code at: https://github.com/aboutcode-org/purldb
+- **Documentation**: https://purldb.readthedocs.io
+- **Source Code**: https://github.com/aboutcode-org/purldb
 
