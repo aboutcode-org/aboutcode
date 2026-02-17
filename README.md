@@ -27,6 +27,12 @@ Knowing where a software package comes from, what its license is and whether it 
 
 > [!TIP]
 > To manually build the documentation, run `make docs` from the root of this repo.
+>
+> Alternatively, you can use Docker to build and serve the documentation with live-reload:
+> ```bash
+> docker-compose up
+> ```
+> The documentation will be available at http://localhost:8000.
 
 ## Contributing
 
