@@ -1,0 +1,53 @@
+name: Publish Release News
+on:
+  release:
+    types: [published]
+
+jobs:
+  create-news-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Get Release Info
+        id: release_info
+        run: |
+          echo "VERSION=${{ github.event.release.tag_name }}" >> $GITHUB_ENV
+          echo "URL=${{ github.event.release.html_url }}" >> $GITHUB_ENV
+          echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+          # Extract project name from repo name or set manually
+          echo "PROJECT_NAME=ScanCode Toolkit" >> $GITHUB_ENV # TODO: Customize this per project
+
+      - name: Download Generator Script
+        run: |
+          # Downloads the generator script from the main AboutCode repo
+          curl -O https://raw.githubusercontent.com/aboutcode-org/aboutcode/main/automation/generate_release_post.py
+
+      - name: Generate Post
+        run: |
+          python3 generate_release_post.py \
+            --project "${{ env.PROJECT_NAME }}" \
+            --version "${{ env.VERSION }}" \
+            --url "${{ env.URL }}" \
+            --date "${{ env.DATE }}" \
+            --output-dir "news"
+
+      - name: Create Pull Request to Website Repo
+        # Note: This step assumes you are pushing to the website repo.
+        # AboutCode maintainers need to configure the target repository and token.
+        # This uses peter-evans/create-pull-request as an example.
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.BOT_TOKEN }} # Ensure this secret is set
+          path: news
+          commit-message: "docs: add release news for ${{ env.PROJECT_NAME }} ${{ env.VERSION }}"
+          title: "News: ${{ env.PROJECT_NAME }} ${{ env.VERSION }} Released"
+          body: "Automated release post for ${{ env.PROJECT_NAME }} ${{ env.VERSION }}"
+          branch: "news/${{ env.PROJECT_NAME }}-${{ env.VERSION }}"
+          base: main
