@@ -1,0 +1,41 @@
+{
+  "user_role_template": {
+    "role_name": "Example: Open Source Compliance Manager",
+    "job_title": "Example: Compliance Manager, Open Source Program Office Lead",
+    "professional_status": "student | professional",
+    "technical_level": "technical | not-so-technical | non-technical",
+    "organizational_level": "management | individual_contributor | executive",
+    "primary_interests": {
+      "license_compliance": true,
+      "cybersecurity": false,
+      "software_supply_chain": true,
+      "research_development": false,
+      "other": "Specify other objectives here"
+    },
+    "experience_level": {
+      "license_compliance": "beginner | intermediate | advanced | expert",
+      "cybersecurity": "beginner | intermediate | advanced | expert",
+      "software_supply_chain": "beginner | intermediate | advanced | expert"
+    },
+    "other_objectives": "Additional goals or use cases specific to this role",
+    "preferred_aboutcode_tools": [
+      "scancode-toolkit",
+      "scancode.io",
+      "vulnerablecode",
+      "dejacode",
+      "scancode-workbench",
+      "other"
+    ],
+    "use_cases": [
+      "Example: Generate SBOMs for compliance",
+      "Example: Scan dependencies for vulnerabilities",
+      "Example: Review license compatibility"
+    ]
+  },
+  "collection_metadata": {
+    "collected_via": "slack | survey | registration | other",
+    "collection_date": "YYYY-MM-DD",
+    "collector": "Name or identifier of person collecting",
+    "notes": "Any additional notes about this role"
+  }
+}
