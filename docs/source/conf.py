@@ -1,5 +1,6 @@
 # Configuration file for the Sphinx documentation builder.
 #
+# Updated documentation configuration (minor fix)
 # This file only contains a selection of the most common options. For a full
 # list see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
