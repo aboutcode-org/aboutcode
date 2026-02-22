@@ -27,9 +27,9 @@ Overview
 
    aboutcode-project-overview
 
-************
+------------
 Contributing
-************
+------------
 
 .. toctree::
    :maxdepth: 3
