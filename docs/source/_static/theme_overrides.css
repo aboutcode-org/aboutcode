@@ -53,3 +53,6 @@ div.rst-content {
 .rst-content ol {
     margin-left: 1.5rem;
 }
+body {
+  padding-top: 80px;
+}
