@@ -18,7 +18,7 @@ Knowing where a software package comes from, what its license is and whether it 
 
 ## Important Links
 
-- **Homepage**: http://aboutcode.org
+- **Homepage**: https://aboutcode.org
 - **Documentation**: https://aboutcode.readthedocs.io/en/latest/
 - **Chat**: [Gitter](https://app.gitter.im/#/room/#aboutcode-org_discuss:gitter.im) | [Slack](https://join.slack.com/t/aboutcode-org/shared_invite/zt-1paqwxccw-IuafuiAvYJFkTqGaZsC1og)
 - **Weekly Meetings**: [Meeting Minutes](https://github.com/aboutcode-org/aboutcode/wiki/MeetingMinutes)
