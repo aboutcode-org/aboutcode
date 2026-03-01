@@ -89,3 +89,27 @@ By contributing to AboutCode, you agree that your contributions will be licensed
 ---
 
 Thank you for contributing to AboutCode! Your efforts help make open source software safer and more transparent for everyone.
+
+## Runtime checks and `assert`
+
+Do not use Python `assert` statements for runtime input validation or enforcing library invariants. `assert` is intended for debugging and may be disabled when Python is run with `-O` or `-OO`, which can silently remove important checks. Instead:
+
+- Use explicit condition checks and `raise` a clear, appropriate exception (for example, `TypeError`, `ValueError`, or a project-specific exception).
+- Include an informative message to help users and calling code understand why the check failed.
+
+Example:
+
+Bad:
+
+```py
+assert items is not None
+```
+
+Good:
+
+```py
+if items is None:
+	raise ValueError("items must not be None")
+```
+
+We include an automated check in CI to prevent accidental `assert` usage in non-test code. If you need help migrating existing `assert` uses, ask on the project chat or open a pull request describing the change.
