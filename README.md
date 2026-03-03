@@ -39,54 +39,9 @@ We welcome contributions! Whether you're fixing bugs, adding features, or improv
 
 ## Projects
 
-### Core Tools
+For the latest list of AboutCode projects and tools, please visit our website:
 
-| Project | Description | Maintainer |
-|---------|-------------|------------|
-| [ScanCode Toolkit](https://github.com/aboutcode-org/scancode-toolkit) | Detect origin, license, and vulnerabilities in code, packages, and dependencies | [@AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) |
-| [ScanCode.io](https://github.com/aboutcode-org/scancode.io) | Web UI and API for running complex scans in pipelines with CycloneDX and SPDX support | [@tdruez](https://github.com/tdruez) |
-| [ScanCode LicenseDB](https://github.com/aboutcode-org/scancode-licensedb) | Free database of 2400+ software licenses with metadata and detection rules ([public instance](https://scancode-licensedb.aboutcode.org/)) | [@AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra), [@DennisClark](https://github.com/DennisClark) |
-| [ScanCode Workbench](https://github.com/aboutcode-org/scancode-workbench) | Desktop application to visualize and review ScanCode Toolkit scan results | [@AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra), [@mjherzog](https://github.com/mjherzog) |
-| [DejaCode](https://github.com/aboutcode-org/dejacode) | Enterprise application for open source license compliance and supply chain integrity | [@tdruez](https://github.com/tdruez), [@DennisClark](https://github.com/DennisClark) |
-| [VulnerableCode](https://github.com/aboutcode-org/vulnerablecode) | Database of software package vulnerabilities with Web UI and API ([public instance](https://public.vulnerablecode.io/)) | [@TG1999](https://github.com/TG1999), [@keshav-space](https://github.com/keshav-space) |
-| [PURLDB](https://github.com/aboutcode-org/purldb) | Database of package metadata keyed by PURL with API access | [@JonoYang](https://github.com/JonoYang) |
-
-### Inspectors
-
-Special-purpose analysis tools that run as ScanCode Toolkit plugins, ScanCode.io pipeline steps, or from the command line.
-
-| Project | Description | Maintainer |
-|---------|-------------|------------|
-| [binary-inspector](https://github.com/aboutcode-org/binary-inspector) | Extract symbols from ELF, Mach-O, WinPE and other binary formats | [@AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) |
-| [container-inspector](https://github.com/aboutcode-org/container-inspector) | Analyze structure and provenance of Docker image layers | [@JonoYang](https://github.com/JonoYang), [@chinyeungli](https://github.com/chinyeungli) |
-| [source-inspector](https://github.com/aboutcode-org/source-inspector) | Inspect source code to collect symbols, strings, and comments | [@JonoYang](https://github.com/JonoYang) |
-| [nuget-inspector](https://github.com/aboutcode-org/nuget-inspector) | Resolve dependencies for .NET/NuGet projects without requiring dotnet SDK | [@JonoYang](https://github.com/JonoYang) |
-| [python-inspector](https://github.com/aboutcode-org/python-inspector) | Analyze PyPI packages and resolve Python dependencies | [@TG1999](https://github.com/TG1999), [@chinyeungli](https://github.com/chinyeungli) |
-| [debian-inspector](https://github.com/aboutcode-org/debian-inspector) | Parse and inspect Debian control files and codebases | [@JonoYang](https://github.com/JonoYang), [@AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) |
-| [elf-inspector](https://github.com/aboutcode-org/elf-inspector) | Inspect binary ELF files and collect metadata | [@AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) |
-| [go-inspector](https://github.com/aboutcode-org/go-inspector) | Extract dependencies and symbols from Go binaries | [@JonoYang](https://github.com/JonoYang) |
-| [rust-inspector](https://github.com/aboutcode-org/rust-inspector) | Extract dependencies and symbols from Rust binaries | [@AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) |
-
-### Libraries
-
-| Project | Description | Maintainer |
-|---------|-------------|------------|
-| [license-expression](https://github.com/aboutcode-org/license-expression) | Parse, analyze, and normalize SPDX license expressions | [@AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) |
-| [commoncode](https://github.com/aboutcode-org/commoncode) | Common utilities for paths, dates, files, and hashes | [@AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) |
-| [extractcode](https://github.com/aboutcode-org/extractcode) | Universal archive extraction library and CLI tool | [@JonoYang](https://github.com/JonoYang) |
-| [fetchcode](https://github.com/aboutcode-org/fetchcode) | Reliably fetch code via HTTP, FTP, and version control systems | [@JonoYang](https://github.com/JonoYang) |
-
-### Other Tools
-
-| Project | Description | Maintainer |
-|---------|-------------|------------|
-| [aboutcode-toolkit](https://github.com/aboutcode-org/aboutcode-toolkit) | Document code provenance and generate attribution notices using ABOUT files | [@chinyeungli](https://github.com/chinyeungli) |
-| [univers](https://github.com/aboutcode-org/univers) | Parse and compare package versions across all ecosystems | [@TG1999](https://github.com/TG1999) |
-| [federatedcode](https://github.com/aboutcode-org/federatedcode) | Decentralized, federated metadata system for open source software | [@keshav-space](https://github.com/keshav-space) |
-
-### AboutCode Data
-
-AboutCode Data is a set of conventions for data structures that all AboutCode tools can use to exchange data. ABOUT files and ScanCode Toolkit data are examples of this approach, supporting projects like [libraries.io](https://libraries.io/) and [OSS Review Toolkit](https://github.com/heremaps/oss-review-toolkit).
+- [AboutCode Projects](https://www.aboutcode.org/projects/)
 
 ## Standards and Related Projects
 
