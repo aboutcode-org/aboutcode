@@ -25,3 +25,34 @@ The goal of python-inspector is to be a comprehensive library
 that can handle every style of Python package layouts, manifests and lockfiles.
 
  - Get the code at: https://github.com/aboutcode-org/python-inspector
+
+
+Example Usage 
+--------------
+
+You can use python-inspector to resolve dependencies for a package.
+
+.. code-block:: bash  
+   
+   pip install python-inspector
+   python-inspector analyze requests
+
+
+This command will: 
+  - Download the requests package from PyPI
+  - Inspect the package 
+  - Display the dependencies
+  - Metadata about the package
+
+This will resolve the dependencies for the requests package and print the results to the console.
+
+.. code-block:: json
+
+   {
+    "dependencies": [
+        {
+            "name": "requests",
+            "version": "2.28.1"
+        }
+    ]
+}
