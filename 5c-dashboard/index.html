@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5C — Continuous Code Compliance Control Center | AboutCode</title>
+  <meta name="description" content="5C provides visual compliance observability for software supply chains. Monitor packages, licenses, vulnerabilities, and CRA compliance at scale.">
+  <meta name="author" content="AboutCode">
+  <meta name="keywords" content="compliance, cybersecurity, SBOM, license, vulnerability, CRA, AboutCode, ScanCode, DejaCode">
+  <meta property="og:title" content="5C — Continuous Code Compliance Control Center">
+  <meta property="og:description" content="Visual compliance observability for software supply chains at scale.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+  <!-- ═══ Sidebar ═══ -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo">
+        <div class="logo-icon">5C</div>
+        <div class="logo-text">
+          <span class="title">5C Dashboard</span>
+          <span class="subtitle">Compliance Control Center</span>
+        </div>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="nav-section">
+        <div class="nav-section-title">Overview</div>
+        <div class="nav-item active" data-section="section-kci">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          Dashboard
+        </div>
+        <div class="nav-item" data-section="section-products">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          Products
+        </div>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">Analysis</div>
+        <div class="nav-item" data-section="section-vulnerabilities">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          Vulnerabilities
+          <span class="nav-badge">12</span>
+        </div>
+        <div class="nav-item" data-section="section-licenses">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          Licenses
+        </div>
+        <div class="nav-item" data-section="section-policies">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          Policy Rules
+          <span class="nav-badge">2</span>
+        </div>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">Activity</div>
+        <div class="nav-item" data-section="section-events">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          Events
+        </div>
+      </div>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="sidebar-footer-text">
+        Powered by <a href="https://aboutcode.org" target="_blank" rel="noopener">AboutCode</a><br>
+        ScanCode · DejaCode · VulnerableCode
+      </div>
+    </div>
+  </aside>
+
+  <!-- ═══ Main Content ═══ -->
+  <main class="main-content">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <h1 class="header-title">Compliance Dashboard</h1>
+        <span class="header-breadcrumb">/ All Products</span>
+      </div>
+      <div class="header-right">
+        <div class="header-status">
+          <span class="status-dot"></span>
+          Monitoring Active
+        </div>
+        <button class="btn" title="Refresh data">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+          Refresh
+        </button>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="page-content">
+
+      <!-- ═══ KCI Section ═══ -->
+      <section id="section-kci">
+        <div class="section-header">
+          <h2 class="section-title">
+            <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            Key Compliance Indicators
+          </h2>
+        </div>
+        <div class="kci-grid" id="kci-grid"></div>
+      </section>
+
+      <!-- ═══ Trends Section ═══ -->
+      <div class="dashboard-grid" style="margin-bottom:var(--space-2xl)">
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+              Compliance Trend
+            </span>
+          </div>
+          <div class="card-body" id="compliance-trend"></div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>
+              Vulnerability Trend
+            </span>
+          </div>
+          <div class="card-body" id="vuln-trend"></div>
+        </div>
+      </div>
+
+      <!-- ═══ Vulnerabilities Section ═══ -->
+      <section id="section-vulnerabilities">
+        <div class="section-header">
+          <h2 class="section-title">
+            <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            Vulnerability Overview
+          </h2>
+        </div>
+        <div class="dashboard-grid">
+          <div class="card">
+            <div class="card-header">
+              <span class="card-title">Severity Distribution</span>
+            </div>
+            <div class="card-body">
+              <div class="severity-bars" id="vuln-severity-bars"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="card-title">Top Vulnerable Packages</span>
+            </div>
+            <div class="card-body">
+              <div class="vuln-package-list" id="top-vuln-packages"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══ Licenses Section ═══ -->
+      <section id="section-licenses" style="margin-top:var(--space-2xl)">
+        <div class="section-header">
+          <h2 class="section-title">
+            <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+            License Analysis
+          </h2>
+        </div>
+        <div class="dashboard-grid">
+          <div class="card">
+            <div class="card-header">
+              <span class="card-title">License Category Breakdown</span>
+            </div>
+            <div class="card-body" id="license-donut"></div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="card-title">Package Ecosystems</span>
+            </div>
+            <div class="card-body" id="ecosystem-chart"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══ Products Section ═══ -->
+      <section id="section-products" style="margin-top:var(--space-2xl)">
+        <div class="section-header">
+          <h2 class="section-title">
+            <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            Products Overview
+          </h2>
+        </div>
+        <div class="card full-width">
+          <div class="card-body">
+            <div class="products-grid" id="products-grid"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══ Policy Rules Section ═══ -->
+      <section id="section-policies" style="margin-top:var(--space-2xl)">
+        <div class="section-header">
+          <h2 class="section-title">
+            <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            Policy Rules & Thresholds
+          </h2>
+        </div>
+        <div class="card full-width">
+          <div class="card-body" style="overflow-x:auto">
+            <table class="policy-table">
+              <thead>
+                <tr>
+                  <th>Rule</th>
+                  <th>Category</th>
+                  <th>Current / Threshold</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="policy-rules-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══ Events Timeline Section ═══ -->
+      <section id="section-events" style="margin-top:var(--space-2xl)">
+        <div class="section-header">
+          <h2 class="section-title">
+            <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            Compliance Events
+          </h2>
+          <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="vulnerability">Vulnerabilities</button>
+            <button class="filter-btn" data-filter="license">Licenses</button>
+            <button class="filter-btn" data-filter="policy">Policy</button>
+            <button class="filter-btn" data-filter="scan">Scans</button>
+          </div>
+        </div>
+        <div class="card full-width">
+          <div class="events-list" id="events-list"></div>
+        </div>
+      </section>
+
+    </div><!-- /page-content -->
+  </main>
+</div><!-- /app-layout -->
+
+<!-- ═══ Detail Panel (Drill-Down) ═══ -->
+<div class="detail-overlay" id="detail-overlay"></div>
+<div class="detail-panel" id="detail-panel">
+  <div class="detail-panel-header">
+    <h3 class="detail-panel-title" id="detail-panel-title"></h3>
+    <button class="detail-close-btn" id="detail-close-btn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="detail-panel-body" id="detail-panel-body"></div>
+</div>
+
+<!-- Scripts -->
+<script src="data/mock-data.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
