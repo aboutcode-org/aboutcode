@@ -50,6 +50,9 @@ jobs:
 
 
   create-gh-release:
+    permissions:
+      contents: write # to create GitHub release (softprops/action-gh-release)
+
     name: Create GH release
     needs:
       - build-pypi-distribs
