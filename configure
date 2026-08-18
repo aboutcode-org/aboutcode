@@ -29,13 +29,13 @@ CLI_ARGS=$1
 
 # Requirement arguments passed to pip and used by default or with --dev.
 REQUIREMENTS="--editable . "
-DOCS_REQUIREMENTS="--editable .[docs]"
+DOCS_REQUIREMENTS="--editable .[dev]"
 
 # where we create a virtualenv
 VIRTUALENV_DIR=venv
 
 # Cleanable files and directories to delete with the --clean option
-CLEANABLE="build dist venv .cache .eggs"
+CLEANABLE="build dist venv .cache .eggs *.egg-info docs/_build/ pip-selfcheck.json"
 
 # extra  arguments passed to pip
 PIP_EXTRA_ARGS=" "
@@ -110,7 +110,7 @@ create_virtualenv() {
         fi
 
         $PYTHON_EXECUTABLE "$VIRTUALENV_PYZ" \
-            --wheel embed --pip embed --setuptools embed \
+            --pip embed --setuptools embed \
             --seeder pip \
             --never-download \
             --no-periodic-update \
@@ -167,6 +167,7 @@ clean() {
     for cln in $CLEANABLE;
         do rm -rf "${CFG_ROOT_DIR:?}/${cln:?}";
     done
+    find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
     set +e
     exit
 }
