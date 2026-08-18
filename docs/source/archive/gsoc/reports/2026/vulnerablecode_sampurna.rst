@@ -83,9 +83,10 @@ definitions, ensuring instantaneous page loads.
 
 The UI integrates Billboard.js to render interactive charts.
 
-| More:
-| https://github.com/aboutcode-org/vulnerablecode/pull/2391
-| https://github.com/aboutcode-org/vulnerablecode/pull/2408
+More:
+
+* https://github.com/aboutcode-org/vulnerablecode/pull/2391
+* https://github.com/aboutcode-org/vulnerablecode/pull/2408
 
 
 History of Advisories
@@ -204,6 +205,13 @@ richer data analytics and visibility. These insights act as a direct feedback lo
 continuously refine VulnerableCode by guiding the development of new data pipelines,
 targeted improvers, and architectural enhancements.
 
+Next Steps
+^^^^^^^^^^
+
+* `Review Vulnerablecode after Insights is Live #2413 <https://github.com/aboutcode-org/vulnerablecode/issues/2413>`_
+* `Risk Panel in Insights #2414 <https://github.com/aboutcode-org/vulnerablecode/issues/2414>`_
+* `Improve UX of CWE distribution chart #2416 <https://github.com/aboutcode-org/vulnerablecode/issues/2416>`_
+* `Make charts more interactive #2417 <https://github.com/aboutcode-org/vulnerablecode/issues/2417>`_
 
 Closing Thoughts
 ----------------
