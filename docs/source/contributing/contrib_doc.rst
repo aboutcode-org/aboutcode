@@ -43,9 +43,9 @@ you can install the dependencies in a virtualenv::
 
 .. note::
 
-    In case of windows, run ``configure --docs`` instead of this.
+    In case of windows, run ``configure --dev``.
 
-Now, this will install the following prerequisites:
+This will install and configure all requirements foer development including for docs development.
 
 - Sphinx
 - sphinx_rtd_theme (the format theme used by ReadTheDocs)
@@ -57,21 +57,21 @@ These requirements are already present in setup.cfg and `./configure
 Now you can build the HTML documents locally::
 
     source venv/bin/activate
-    cd docs
-    make html
+    make docs
 
 Assuming that your Sphinx installation was successful, Sphinx should build
 a local instance of the documentation .html files::
 
-    open build/html/index.html
+    open docs/_build/index.html
 
-.. note::
 
     In case this command did not work, for example on Ubuntu 18.04 you may
     get a message like “Couldn’t get a file descriptor referring to the
     console”, try:
 
-    ::
+    source venv/bin/activate
+    make doc8
+    make docs-check
 
         see build/html/index.html
 
@@ -119,22 +119,18 @@ that common errors are avoided and documentation standards are enforced.
 Travis-CI presently checks for these 3 aspects of the documentation :
 
 1. Successful Builds (By using ``sphinx-build``)
-2. No Broken Links   (By Using ``link-check``)
-3. Linting Errors    (By Using ``Doc8``)
+2. No Broken Links   (By Using ``linkcheck``)
+3. Linting Errors    (By Using ``doc8``)
 
-So run these scripts at your local system before creating a Pull Request::
+You myst run these scripts locally before creating a pull request::
 
-    cd docs
-    ./scripts/sphinx_build_link_check.sh
-    ./scripts/doc8_style_check.sh
+    make doc8
+    make check-docs
 
-If you don't have permission to run the scripts, run::
-
-    chmod u+x ./scripts/doc8_style_check.sh
 
 .. _doc_style_docs8:
 
-Style Checks Using ``Doc8``
+Style Checks Using ``doc8``
 ---------------------------
 
 How To Run Style Tests
@@ -142,8 +138,7 @@ How To Run Style Tests
 
 In the project root, run the following commands::
 
-    $ cd docs
-    $ ./scripts/doc8_style_check.sh
+    make doc8
 
 A sample output is::
 
@@ -167,6 +162,7 @@ A sample output is::
 
 Now fix the errors and run again till there isn't any style error in the
 documentation.
+
 
 What is Checked?
 ^^^^^^^^^^^^^^^^
@@ -259,6 +255,7 @@ create a link to the local label.
 For more information, refer this tutorial named `Using Intersphinx
 <https://my-favorite-documentation-test.readthedocs.io/en/latest/using_intersphinx.html>`_.
 
+
 .. _doc_style_conv:
 
 Style Conventions for the Documentaion
@@ -349,6 +346,7 @@ Style Conventions for the Documentaion
     ``rst_snippets/note_snippets/`` and ``rst_snippets/warning_snippets/``
     and then included to eliminate redundancy, as these are frequently used
     in multiple files.
+
 
 Converting from Markdown
 ------------------------

@@ -1,4 +1,6 @@
 graft src
+graft docs
+graft etc
 
 include *.LICENSE
 include NOTICE
@@ -6,10 +8,18 @@ include *.ABOUT
 include *.toml
 include *.yml
 include *.rst
+include *.png
 include setup.*
 include configure*
 include requirements*
-include .git*
+include .dockerignore
+include .gitignore
+include .readthedocs.yml
+include manage.py
+include Dockerfile*
+include Makefile
+include MANIFEST.in
+
+include .VERSION
 
 global-exclude *.py[co] __pycache__ *.*~
-
