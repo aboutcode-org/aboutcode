@@ -39,7 +39,8 @@ extensions = [
 
 # Redirects for olds pages
 # See https://documatt.gitlab.io/sphinx-reredirects/usage.html
-redirects = {}
+# redirects = {}
+redirects: dict[str, str] = {}
 
 # This points to aboutcode.readthedocs.io
 # In case of "undefined label" ERRORS check docs on intersphinx to troubleshoot
@@ -60,8 +61,8 @@ templates_path = ["_templates"]
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = []
-
+# exclude_patterns = []
+exclude_patterns: list[str] = []
 
 # -- Options for HTML output -------------------------------------------------
 
