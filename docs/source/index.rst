@@ -36,6 +36,16 @@ Contributing
 
    contributing
 
+**********
+Community
+**********
+
+.. toctree::
+   :maxdepth: 2
+
+   user-roles-framework
+   slack-polling-guide
+
 ******
 Others
 ******
