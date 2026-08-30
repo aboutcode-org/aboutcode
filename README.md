@@ -6,12 +6,15 @@ AboutCode is a family of FOSS projects to uncover metadata about software:
 
 -   where does the code come from? which software package?
 -   what is its license? copyright?
--   is the code vulnerable, maintained, well coded?
+-   is the code vulnerable, actively maintained, and well-structured?
 -   what are its dependencies, are there vulnerabilities/licensing issues?
 
 All these are questions that are important to answer: there are millions of free and open source software components available on the web for reuse.
 
-Knowing where a software package comes from, what its license is and whether it is vulnerable should be a problem of the past such that everyone can safely consume more free and open source software. We support not only open source software, but also open data, generated and curated by our applications.
+Knowing where a software package comes from, what its license is and whether it is vulnerable should be a problem of the past such that everyone can safely consume more free and open source software.
+
+Free and Open Source Software (FOSS)
+
 
 > [!NOTE]
 > This is a repository with information on aboutcode open source activities and not the actual code repository. See the [projects section](#projects) below for links to all the code repositories of our projects with a brief overview and our [wiki](https://github.com/aboutcode-org/aboutcode/wiki) if you are looking to participate.
@@ -26,7 +29,8 @@ Knowing where a software package comes from, what its license is and whether it 
 - **Documentation Build**: ![Doc Build](https://github.com/aboutcode-org/aboutcode/actions/workflows/docs-ci.yml/badge.svg)
 
 > [!TIP]
-> To manually build the documentation, run `make docs` from the root of this repo.
+> To manually build the documentation locally, run `make docs` from the repository root directory.
+
 
 ## Contributing
 
@@ -45,7 +49,7 @@ We welcome contributions! Whether you're fixing bugs, adding features, or improv
 |---------|-------------|------------|
 | [ScanCode Toolkit](https://github.com/aboutcode-org/scancode-toolkit) | Detect origin, license, and vulnerabilities in code, packages, and dependencies | [@AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra) |
 | [ScanCode.io](https://github.com/aboutcode-org/scancode.io) | Web UI and API for running complex scans in pipelines with CycloneDX and SPDX support | [@tdruez](https://github.com/tdruez) |
-| [ScanCode LicenseDB](https://github.com/aboutcode-org/scancode-licensedb) | Free database of 2400+ software licenses with metadata and detection rules ([public instance](https://scancode-licensedb.aboutcode.org/)) | [@AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra), [@DennisClark](https://github.com/DennisClark) |
+| [ScanCode LicenseDB](https://github.com/aboutcode-org/scancode-licensedb) | Free database of 2,400+ software licenses with metadata and detection rules ([public instance](https://scancode-licensedb.aboutcode.org/)) | [@AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra), [@DennisClark](https://github.com/DennisClark) |
 | [ScanCode Workbench](https://github.com/aboutcode-org/scancode-workbench) | Desktop application to visualize and review ScanCode Toolkit scan results | [@AyanSinhaMahapatra](https://github.com/AyanSinhaMahapatra), [@mjherzog](https://github.com/mjherzog) |
 | [DejaCode](https://github.com/aboutcode-org/dejacode) | Enterprise application for open source license compliance and supply chain integrity | [@tdruez](https://github.com/tdruez), [@DennisClark](https://github.com/DennisClark) |
 | [VulnerableCode](https://github.com/aboutcode-org/vulnerablecode) | Database of software package vulnerabilities with Web UI and API ([public instance](https://public.vulnerablecode.io/)) | [@TG1999](https://github.com/TG1999), [@keshav-space](https://github.com/keshav-space) |
