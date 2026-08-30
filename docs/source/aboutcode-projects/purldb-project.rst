@@ -1,4 +1,4 @@
-.. purldb-project:
+.. _purldb-project:
 
 PurlDB
 ======
