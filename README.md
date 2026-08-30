@@ -25,6 +25,7 @@ Knowing where a software package comes from, what its license is and whether it 
 - **GSoC**: [Wiki](https://github.com/aboutcode-org/aboutcode/wiki)
 - **Documentation Build**: ![Doc Build](https://github.com/aboutcode-org/aboutcode/actions/workflows/docs-ci.yml/badge.svg)
 
+
 > [!TIP]
 > To manually build the documentation, run `make docs` from the root of this repo.
 
@@ -117,3 +118,4 @@ VERS is an emerging specification for resolving dependency and vulnerable versio
 ---
 
 **License**: Apache License 2.0 | **Code of Conduct**: [CODE_OF_CONDUCT.rst](CODE_OF_CONDUCT.rst)
+
