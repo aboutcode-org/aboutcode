@@ -2,7 +2,7 @@ graft src
 graft docs
 graft etc
 
-include *.LICENSE
+include LICENSE
 include NOTICE
 include *.ABOUT
 include *.toml
