@@ -1,6 +1,6 @@
-#########
+=========
 AboutCode
-#########
+=========
 
 Welcome to the AboutCode documentation homepage. `AboutCode.org
 <https://www.aboutcode.org/>`_ is a community of open source developers who
@@ -18,27 +18,24 @@ All community contributions are welcome.
 
 ----
 
-********
 Overview
-********
+--------
 
 .. toctree::
    :maxdepth: 3
 
    aboutcode-project-overview
 
-************
 Contributing
-************
+------------
 
 .. toctree::
    :maxdepth: 3
 
    contributing
 
-******
 Others
-******
+------
 
 .. toctree::
    :maxdepth: 2

@@ -20,10 +20,9 @@ Knowing where a software package comes from, what its license is and whether it 
 
 - **Homepage**: http://aboutcode.org
 - **Documentation**: https://aboutcode.readthedocs.io/en/latest/
+- **Community**: [Wiki](https://github.com/aboutcode-org/aboutcode/wiki) (includes GSoC & [Meeting Minutes](https://github.com/aboutcode-org/aboutcode/wiki/MeetingMinutes))
 - **Chat**: [Gitter](https://app.gitter.im/#/room/#aboutcode-org_discuss:gitter.im) | [Slack](https://join.slack.com/t/aboutcode-org/shared_invite/zt-1paqwxccw-IuafuiAvYJFkTqGaZsC1og)
-- **Weekly Meetings**: [Meeting Minutes](https://github.com/aboutcode-org/aboutcode/wiki/MeetingMinutes)
-- **GSoC**: [Wiki](https://github.com/aboutcode-org/aboutcode/wiki)
-- **Documentation Build**: ![Doc Build](https://github.com/aboutcode-org/aboutcode/actions/workflows/docs-ci.yml/badge.svg)
+- **Status**: ![Doc Build](https://github.com/aboutcode-org/aboutcode/actions/workflows/docs-ci.yml/badge.svg)
 
 > [!TIP]
 > To manually build the documentation, run `make docs` from the root of this repo.
