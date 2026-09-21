@@ -15,6 +15,7 @@ GSoC 2026
    :maxdepth: 2
 
    gsoc/reports/2026/vulnerablecode_sampurna
+   gsoc/reports/2026/scancode_required_phrases_kaushik
 
 GSoC 2025
 ---------
