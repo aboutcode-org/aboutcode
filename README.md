@@ -18,7 +18,7 @@ Knowing where a software package comes from, what its license is and whether it 
 
 ## Important Links
 
-- **Homepage**: http://aboutcode.org
+- **Homepage**: https://aboutcode.org
 - **Documentation**: https://aboutcode.readthedocs.io/en/latest/
 - **Chat**: [Gitter](https://app.gitter.im/#/room/#aboutcode-org_discuss:gitter.im) | [Slack](https://join.slack.com/t/aboutcode-org/shared_invite/zt-1paqwxccw-IuafuiAvYJFkTqGaZsC1og)
 - **Weekly Meetings**: [Meeting Minutes](https://github.com/aboutcode-org/aboutcode/wiki/MeetingMinutes)
@@ -86,7 +86,7 @@ Special-purpose analysis tools that run as ScanCode Toolkit plugins, ScanCode.io
 
 ### AboutCode Data
 
-AboutCode Data is a set of conventions for data structures that all AboutCode tools can use to exchange data. ABOUT files and ScanCode Toolkit data are examples of this approach, supporting projects like [libraries.io](https://libraries.io/) and [OSS Review Toolkit](https://github.com/heremaps/oss-review-toolkit).
+AboutCode Data is a set of conventions for data structures that all AboutCode tools can use to exchange data. ABOUT files and ScanCode Toolkit data are examples of this approach, supporting projects like [libraries.io](https://libraries.io/) and [OSS Review Toolkit](https://github.com/oss-review-toolkit/ort).
 
 ## Standards and Related Projects
 
