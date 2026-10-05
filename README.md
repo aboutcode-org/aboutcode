@@ -116,4 +116,4 @@ VERS is an emerging specification for resolving dependency and vulnerable versio
 
 ---
 
-**License**: Apache License 2.0 | **Code of Conduct**: [CODE_OF_CONDUCT.rst](CODE_OF_CONDUCT.rst)
+**License**: Apache License 2.0 | **Code of Conduct**: [CODE_OF_CONDUCT.rst](CODE_OF_CONDUCT.rst) 
